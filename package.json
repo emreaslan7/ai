@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "marked": "^14.1.0"
+  },
+  "name": "ai",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <h1 align=\"center\">     emreaslan   </h1>   <p align=\"center\"><i>deep notes about ai</i></p> </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

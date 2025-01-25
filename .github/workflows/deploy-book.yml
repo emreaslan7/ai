@@ -1,0 +1,48 @@
+# https://github.com/rust-lang/mdBook/wiki/Automated-Deployment%3A-GitHub-Actions
+name: your.url.here
+
+# https://github.com/orgs/vercel/discussions/3307
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
+
+on:
+  # push: # this will trigger on every push to main branch
+  workflow_dispatch: # you will manually dispatch the workflow
+    branches:
+      - main
+jobs:
+  buildAndDeploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # To push a branch
+      pull-requests: write # To create a PR from that branch
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install mdbook
+        uses: extractions/setup-crate@v1
+        with:
+          owner: rust-lang
+          name: mdBook
+
+      - name: Install KaTeX preprocessor
+        uses: extractions/setup-crate@v1
+        with:
+          owner: lzanini
+          name: mdbook-katex
+
+      - name: Install Mermaid preprocessor
+        uses: extractions/setup-crate@v1
+        with:
+          owner: badboy
+          name: mdbook-mermaid
+
+      - name: Install ToC preprocessor
+        uses: extractions/setup-crate@v1
+        with:
+          owner: badboy
+          name: mdbook-toc
+
+      - name: Generate static content for the book
+        run: mdbook build

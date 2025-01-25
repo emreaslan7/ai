@@ -1,0 +1,32 @@
+[book]
+authors = ["emreaslan"]
+language = "en"
+multilingual = false
+src = "content"
+title = "ai"
+description = "deep notes about ai"
+
+# uses KaTeX instead of MathJax, much better interop
+[preprocessor.katex]
+after = ["links"]
+
+# converts mermaid drawings to SVG
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+# generate table of contents
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output]
+
+[output.html]
+katex = true
+additional-css = ["./utilities/custom.css", "./utilities/katex/katex.min.css"]
+additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js", "./utilities/tocx.js", "./utilities/marked.min.js","./utilities/katex/katex.min.js","./utilities/katex/autorender.min.js"]
+git-repository-url = "https://github.com/emreaslan7/ai"
+git-repository-icon = "fa-github-alt"
+no-section-label = true
+default-theme = "rust"
+preferred-dark-theme = "navy"
