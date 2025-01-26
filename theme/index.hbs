@@ -69,10 +69,12 @@
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                    localStorage.setItem('theme', theme.slice(1, theme.length - 1));
                 }
 
                 if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
                     localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                    localStorage.setItem('theme', theme.slice(1, theme.length - 1));
                 }
             } catch (e) { }
         </script>

@@ -15,9 +15,9 @@ function getThemeColors(theme) {
       hoverColor: "#b3c0cc",
     },
     light: {
-      baseColor: "hsl(0, 0%, 0%)",
-      activeColor: "#1f1fff",
-      hoverColor: "#5c66d6",
+      baseColor: "#88848a",
+      activeColor: "#000",
+      hoverColor: "hsl(0, 4.70%, 74.90%)",
     },
     navy: {
       baseColor: "#bcbdd0",
@@ -25,7 +25,7 @@ function getThemeColors(theme) {
       hoverColor: "#b7b9cc",
     },
     rust: {
-      baseColor: "#bcbdd0",
+      baseColor: "#bdbdbd",
       activeColor: "#e69f67",
       hoverColor: "#e8aa2e",
     },
@@ -314,8 +314,11 @@ function updateTOC(url, theme) {
 }
 
 function initializeTOC() {
-  const theme = localStorage.getItem("mdbook-theme") || "light";
-  console.log("theme:", theme);
+  const theme = localStorage.getItem("mdbook-theme") || "rust";
+  localStorage.setItem("mdbook-theme", theme);
+  localStorage.setItem("theme", theme);
+  document.documentElement.classList.add("js");
+  console.log("themettt:", theme);
   updateTOC(currentURL, theme);
 }
 

@@ -1,8 +1,8 @@
 [Welcome](./README.md)
 
-# Number Theory and Cryptography
+# Machine Learning Specialization
 
-- [Content](./number-theory-cryptography/README.md)
+- [Content](./machine-learning-specialization/README.md)
 
 ## 1. Modular Arithmetic
 

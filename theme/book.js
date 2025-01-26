@@ -394,6 +394,7 @@ function playground_text(playground, hidden = true) {
     if (store) {
       try {
         localStorage.setItem("mdbook-theme", theme);
+        localStorage.setItem("theme", theme);
       } catch (e) {}
     }
 
