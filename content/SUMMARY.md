@@ -4,9 +4,9 @@
 
 - [Content](./machine-learning-specialization/README.md)
 
-## 1. Modular Arithmetic
+## 1. Supervised Machine Learning: Regression and Classification
 
-- [Numbers](./number-theory-cryptography/modular-arithmetic/numbers.md)
+- [Supervised Unsupervised Learning](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.md)
 - [Divisibility](./number-theory-cryptography/modular-arithmetic/divisibility.md)
 - [Remainders](./number-theory-cryptography/modular-arithmetic/remainders.md)
 - [Modular Arithmetic](./number-theory-cryptography/modular-arithmetic/modular-arithmetic.md)

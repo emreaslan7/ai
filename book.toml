@@ -24,7 +24,7 @@ renderer = ["html"]
 [output.html]
 katex = true
 additional-css = ["./utilities/custom.css", "./utilities/katex/katex.min.css"]
-additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js", "./utilities/tocz.js", "./utilities/marked.min.js","./utilities/katex/katex.min.js","./utilities/katex/autorender.min.js"]
+additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js", "./utilities/toc.js", "./utilities/marked.min.js","./utilities/katex/katex.min.js","./utilities/katex/autorender.min.js"]
 git-repository-url = "https://github.com/emreaslan7/ai"
 git-repository-icon = "fa-github-alt"
 no-section-label = true

@@ -104,8 +104,8 @@ function updateTOC(url, theme) {
           [
             SubHeading(
               "1.1",
-              "/number-theory-cryptography/modular-arithmetic/numbers.html",
-              "Numbers",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.html",
+              "Superised and Unsupervised Learning",
               theme
             ),
             SubHeading(
