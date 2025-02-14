@@ -26,11 +26,11 @@ Consider predicting house prices based on the size of the house (in square meter
 
 A simple linear regression model assumes a linear relationship between the input $x$ (house size in square meters) and the output $y$ (house price). It is represented as:
 
-$$ h\_\theta(x) = \theta_0 + \theta_1 x $$
+$$ h_θ(x) = \theta_0 + \theta_1 x $$
 
 where:
 
-- $h\_\theta(x) $ is the predicted house price.
+- $h_θ(x) $ is the predicted house price.
 - $ \theta_0 $ (intercept) and $\theta_1 $ (slope) are the parameters of the model.
 - $x$ is the house size.
 - $y$ is the actual house price.
@@ -47,9 +47,9 @@ For example, if:
 
 - $\theta_0 = 50,000$ and $\theta_1 = 300$,
 
-- A 100 m² house would cost: $ h\_\theta(100) = 50000 + 300 \cdot 100 = 80000 $
+- A 100 m² house would cost: $ h_θ(100) = 50000 + 300 \cdot 100 = 80000 $
 
-- A 200 m² house would cost: $ h\_\theta(200) = 50000 + 300 \cdot 200 = 110000 $
+- A 200 m² house would cost: $ h_θ(200) = 50000 + 300 \cdot 200 = 110000 $
 
 We can visualize this relationship using a regression line.
 
@@ -176,7 +176,7 @@ To illustrate how the cost function behaves, let's assume that $\theta_1 = 0$, m
     <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
-Since we assume $\theta_1 = 0$, our hypothesis function simplifies to: $$h_{\theta}(x) = \theta_0 $$
+Since we assume $\theta_1 = 0$, our hypothesis function simplifies to: $$h_{\theta}(x) = \theta_0 \cdot x $$
 
 We'll evaluate different values of $\theta_0$ and compute the corresponding cost function.
 
@@ -184,7 +184,7 @@ We'll evaluate different values of $\theta_0$ and compute the corresponding cost
 
 For $\theta_0 = 1$, the predicted values are:
 
-$$ h\_{\theta}(x) = 1 \cdot x = [1, 2, 3, 4] $$
+$$ h_θ(x) = 1 \cdot x = [1, 2, 3, 4] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
     <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
@@ -192,7 +192,7 @@ $$ h\_{\theta}(x) = 1 \cdot x = [1, 2, 3, 4] $$
 
 The error values:
 
-$$ \text{error} = h\_{\theta}(x) - y = [1 - 2, 2 - 4, 3 - 6, 4 - 8] = [-1, -2, -3, -4] $$
+$$ \text{error} = h_θ(x) - y = [1 - 2, 2 - 4, 3 - 6, 4 - 8] = [-1, -2, -3, -4] $$
 
 Computing the cost function:
 
@@ -208,7 +208,7 @@ $$ J(1) = \frac{1}{8} ((-1)^2 + (-2)^2 + (-3)^2 + (-4)^2) = \frac{1}{8} (1 + 4 +
 
 For $\theta_0 = 1.5$, the predicted values are:
 
-$$ h\_{\theta}(x) = 1.5 \cdot x = [1.5, 3, 4.5, 6] $$
+$$ h_θ(x) = 1.5 \cdot x = [1.5, 3, 4.5, 6] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
     <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
@@ -232,7 +232,7 @@ $$ J(1.5) = \frac{1}{8} (0.25 + 1 + 2.25 + 4) = \frac{7.5}{8} = 0.9375 $$
 
 For $\theta_0 = 2$, the predicted values match the actual values:
 
-$$ h\_{\theta}(x) = 2 \cdot x = [2, 4, 6, 8] $$
+$$ h_θ(x) = 2 \cdot x = [2, 4, 6, 8] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
     <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
