@@ -7,8 +7,8 @@
 ## 1. Supervised Machine Learning: Regression and Classification
 
 - [Supervised Unsupervised Learning](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.md)
-- [Divisibility](./number-theory-cryptography/modular-arithmetic/divisibility.md)
-- [Remainders](./number-theory-cryptography/modular-arithmetic/remainders.md)
+- [Linear Regression and Cost Function](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.md)
+- [Gradient Descent](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.md)
 - [Modular Arithmetic](./number-theory-cryptography/modular-arithmetic/modular-arithmetic.md)
 - [Modular Subtraction and Division](./number-theory-cryptography/modular-arithmetic/modular-subraction-and-division.md)
 - [Questions](./number-theory-cryptography/modular-arithmetic/questions.md)

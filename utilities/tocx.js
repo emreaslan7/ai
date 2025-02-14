@@ -105,19 +105,19 @@ function updateTOC(url, theme) {
             SubHeading(
               "1.1",
               "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.html",
-              "Superised and Unsupervised Learning",
+              "Supervised and Unsupervised Learning",
               theme
             ),
             SubHeading(
               "1.2",
-              "/number-theory-cryptography/modular-arithmetic/divisibility.html",
-              "Divisibility",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.html",
+              "Linear Regression and Cost Function",
               theme
             ),
             SubHeading(
               "1.3",
-              "/number-theory-cryptography/modular-arithmetic/remainders.html",
-              "Remainders",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.html",
+              "Gradient Descent",
               theme
             ),
             SubHeading(
