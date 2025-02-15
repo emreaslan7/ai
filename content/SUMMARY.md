@@ -9,7 +9,7 @@
 - [Supervised Unsupervised Learning](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.md)
 - [Linear Regression and Cost Function](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.md)
 - [Gradient Descent](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.md)
-- [Modular Arithmetic](./number-theory-cryptography/modular-arithmetic/modular-arithmetic.md)
+- [Multiple Features](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.md)
 - [Modular Subtraction and Division](./number-theory-cryptography/modular-arithmetic/modular-subraction-and-division.md)
 - [Questions](./number-theory-cryptography/modular-arithmetic/questions.md)
 

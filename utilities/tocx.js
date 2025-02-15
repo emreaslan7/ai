@@ -122,8 +122,8 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "1.4",
-              "/number-theory-cryptography/modular-arithmetic/modular-arithmetic.html",
-              "Modular Arithmetic",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.html",
+              "Multiple Features",
               theme
             ),
             SubHeading(
