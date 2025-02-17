@@ -10,7 +10,7 @@
 - [Linear Regression and Cost Function](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.md)
 - [Gradient Descent](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.md)
 - [Multiple Features](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.md)
-- [Modular Subtraction and Division](./number-theory-cryptography/modular-arithmetic/modular-subraction-and-division.md)
+- [Feature Engineering and Polynomial Regression](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.md)
 - [Questions](./number-theory-cryptography/modular-arithmetic/questions.md)
 
 ## 2. Euclid's Algorithm

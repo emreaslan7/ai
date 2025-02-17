@@ -128,8 +128,8 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "1.5",
-              "/number-theory-cryptography/modular-arithmetic/modular-subraction-and-division.html",
-              "Modular Subraction and Division",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.html",
+              "Feature Engineering and Polynomial Regression",
               theme
             ),
             SubHeading(
