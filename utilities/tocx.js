@@ -134,8 +134,14 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "1.6",
-              "/number-theory-cryptography/modular-arithmetic/questions.html",
-              "Questions",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/classification-with-logistic-regression.html",
+              "Classification with Logistic Regression",
+              theme
+            ),
+            SubHeading(
+              "1.7",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.html",
+              "Overfitting and Regularization",
               theme
             ),
           ],

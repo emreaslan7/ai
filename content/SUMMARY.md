@@ -11,7 +11,9 @@
 - [Gradient Descent](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.md)
 - [Multiple Features](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.md)
 - [Feature Engineering and Polynomial Regression](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.md)
-- [Questions](./number-theory-cryptography/modular-arithmetic/questions.md)
+- [Classification with Logistic Regression](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/classification-with-logistic-regression.md)
+
+- [Overfitting and Regularization](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.md)
 
 ## 2. Euclid's Algorithm
 
