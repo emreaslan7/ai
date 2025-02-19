@@ -15,6 +15,8 @@
 
 - [Overfitting and Regularization](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.md)
 
+- [Scikit-learn: Practical Applications](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.md)
+
 ## 2. Euclid's Algorithm
 
 - [Greatest Common Divisor](./number-theory-cryptography/euclids-algorithm/greatest-common-divisor.md)

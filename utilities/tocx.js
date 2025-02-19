@@ -144,6 +144,12 @@ function updateTOC(url, theme) {
               "Overfitting and Regularization",
               theme
             ),
+            SubHeading(
+              "1.8",
+              "/machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.html",
+              "Scikit-Learn: Practical Applications",
+              theme
+            ),
           ],
           true
         )
