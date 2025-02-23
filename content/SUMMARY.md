@@ -17,9 +17,9 @@
 
 - [Scikit-learn: Practical Applications](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.md)
 
-## 2. Euclid's Algorithm
+## 2. Advanced Learning Algorithms
 
-- [Greatest Common Divisor](./number-theory-cryptography/euclids-algorithm/greatest-common-divisor.md)
+- [Neural Networks: Intuition and Model](./machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.md)
 - [Euclid's Algorithm](./number-theory-cryptography/euclids-algorithm/euclids-algorithm.md)
 - [Extended Euclid's Algorithm](./number-theory-cryptography/euclids-algorithm/extended-euclids-algorithm.md)
 - ["Applications"](./number-theory-cryptography/euclids-algorithm/applications/index.md)

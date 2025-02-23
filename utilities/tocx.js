@@ -167,8 +167,8 @@ function updateTOC(url, theme) {
           [
             SubHeading(
               "2.1",
-              "/number-theory-cryptography/euclids-algorithm/greatest-common-divisor.html",
-              "Greatest Common Divisor",
+              "/machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.html",
+              "Neural Networks: Intuition and Model",
               theme
             ),
             SubHeading(
