@@ -173,8 +173,8 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "2.2",
-              "/number-theory-cryptography/euclids-algorithm/euclids-algorithm.html",
-              "Euclid's Algorithm",
+              "/machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.html",
+              "Implementation of Forward Propagation",
               theme
             ),
             SubHeading(

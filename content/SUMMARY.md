@@ -20,7 +20,7 @@
 ## 2. Advanced Learning Algorithms
 
 - [Neural Networks: Intuition and Model](./machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.md)
-- [Euclid's Algorithm](./number-theory-cryptography/euclids-algorithm/euclids-algorithm.md)
+- [Implementation of Forward Propagation](./machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.md)
 - [Extended Euclid's Algorithm](./number-theory-cryptography/euclids-algorithm/extended-euclids-algorithm.md)
 - ["Applications"](./number-theory-cryptography/euclids-algorithm/applications/index.md)
 
