@@ -21,8 +21,8 @@
 
 - [Neural Networks: Intuition and Model](./machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.md)
 - [Implementation of Forward Propagation](./machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.md)
-- [Extended Euclid's Algorithm](./number-theory-cryptography/euclids-algorithm/extended-euclids-algorithm.md)
-- ["Applications"](./number-theory-cryptography/euclids-algorithm/applications/index.md)
+- [Neural Network Training and Activation Functions](./machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.md)
+- [Advanced Neural Network Concepts](./machine-learning-specialization/advanced-learning-algorithms/advanced-neural-network-concepts.md)
 
   ### 2.4 Applications
 

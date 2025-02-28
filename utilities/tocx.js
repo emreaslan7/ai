@@ -179,40 +179,15 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "2.3",
-              "/number-theory-cryptography/euclids-algorithm/extended-euclids-algorithm.html",
-              "Extended Euclid's Algorithm",
+              "/machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.html",
+              "Neural Network Training and Activation Functions",
               theme
             ),
             SubHeading(
               "2.4",
-              "/number-theory-cryptography/euclids-algorithm/applications/index.html",
-              "Applications",
-              theme,
-              "12px",
-              "normal",
-              SubHeadingList(
-                [
-                  SubHeading(
-                    "2.4.1",
-                    "/number-theory-cryptography/euclids-algorithm/applications/least-common-multiple.html",
-                    "Least Common Multiple",
-                    theme
-                  ),
-                  SubHeading(
-                    "2.4.2",
-                    "/number-theory-cryptography/euclids-algorithm/applications/diophantine-theorem.html",
-                    "Diophantine Theorem",
-                    theme
-                  ),
-                  SubHeading(
-                    "2.4.3",
-                    "/number-theory-cryptography/euclids-algorithm/applications/modular-division.html",
-                    "Modular Division",
-                    theme
-                  ),
-                ],
-                true
-              )
+              "/machine-learning-specialization/advanced-learning-algorithms/advanced-neural-network-concepts.html",
+              "Advanced Neural Network Concepts",
+              theme
             ),
           ],
           true
