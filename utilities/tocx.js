@@ -185,8 +185,8 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "2.4",
-              "/machine-learning-specialization/advanced-learning-algorithms/advanced-neural-network-concepts.html",
-              "Advanced Neural Network Concepts",
+              "/machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.html",
+              "Optimizers and Layer Types",
               theme
             ),
           ],
