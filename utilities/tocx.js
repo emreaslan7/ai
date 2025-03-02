@@ -189,6 +189,12 @@ function updateTOC(url, theme) {
               "Optimizers and Layer Types",
               theme
             ),
+            SubHeading(
+              "2.5",
+              "/machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.html",
+              "Model Evaluation, Selection, and Improvement",
+              theme
+            ),
           ],
           true
         )

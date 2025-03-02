@@ -23,6 +23,7 @@
 - [Implementation of Forward Propagation](./machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.md)
 - [Neural Network Training and Activation Functions](./machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.md)
 - [Optimizers and Layer Types](./machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.md)
+- [Model Evaluation, Selection, and Improvement](./machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.md)
 
   ### 2.4 Applications
 
