@@ -25,6 +25,8 @@
 - [Optimizers and Layer Types](./machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.md)
 - [Model Evaluation, Selection, and Improvement](./machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.md)
 
+- [Decision Trees](./machine-learning-specialization/advanced-learning-algorithms/decision-trees.md)
+
   ### 2.4 Applications
 
   - [Least Common Multiple](./number-theory-cryptography/euclids-algorithm/applications/least-common-multiple.md)

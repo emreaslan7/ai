@@ -195,6 +195,12 @@ function updateTOC(url, theme) {
               "Model Evaluation, Selection, and Improvement",
               theme
             ),
+            SubHeading(
+              "2.6",
+              "/machine-learning-specialization/advanced-learning-algorithms/decision-trees.html",
+              "Decision Trees",
+              theme
+            ),
           ],
           true
         )
