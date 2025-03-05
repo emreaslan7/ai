@@ -13,24 +13,34 @@ A **decision tree** is a supervised machine learning algorithm used for classifi
 - **Branches**: The possible outcomes of a decision node.
 - **Leaf Nodes**: The terminal nodes that provide the final classification or prediction.
 
+```mermaid
+graph TD;
+    Root[Root Node] -->|Feature 1| Node1[Node 1];
+    Root -->|Feature 2| Node2[Node 2];
+    Node1 --> Leaf1[Leaf Node 1];
+    Node1 --> Leaf2[Leaf Node 2];
+    Node2 --> Leaf3[Leaf Node 3];
+    Node2 --> Leaf4[Leaf Node 4];
+```
+
 Decision trees work by recursively splitting data based on a selected feature until a stopping condition is met.
 
 ### Advantages and Disadvantages of Decision Trees
 
-#### Advantages:
+**Advantages:**
 
 - **Easy to Interpret**: Decision trees provide an intuitive representation of decision-making.
 - **Handles Both Numerical and Categorical Data**: They can work with mixed data types.
 - **No Need for Feature Scaling**: Unlike algorithms like logistic regression or SVMs, decision trees do not require feature normalization.
 - **Works Well with Small Datasets**: Decision trees can be effective even with limited data.
 
-#### Disadvantages:
+**Disadvantages:**
 
 - **Overfitting**: Decision trees tend to learn patterns too specifically to the training data, leading to poor generalization.
 - **Sensitive to Noisy Data**: Small variations in data can lead to different tree structures.
 - **Computational Complexity**: For large datasets, training a deep tree can be time-consuming and memory-intensive.
 
-### Example: Classifying Fruits Using a Decision Tree
+**Example: Classifying Fruits Using a Decision Tree**
 
 Consider a dataset containing different types of fruits characterized by their **color**, **size**, and **texture**. Our goal is to classify whether a given fruit is an apple or an orange.
 
@@ -41,7 +51,7 @@ Consider a dataset containing different types of fruits characterized by their *
 | Yellow | Large | Rough   | Orange |
 | Orange | Large | Rough   | Orange |
 
-#### Decision Tree Representation:
+**Decision Tree Representation:**
 
 ```mermaid
 graph TD;
@@ -60,49 +70,9 @@ The decision tree follows a top-down approach:
 
 This example demonstrates how decision trees break down complex decision-making processes into simple binary decisions.
 
-### Conclusion
-
-Decision trees are powerful tools for both classification and regression tasks. However, they require careful tuning to prevent overfitting and inefficiency. In the next sections, we will explore how decision trees learn, measure purity, and select the best splits using information gain.
-
-## Learning Process
-
-Decision trees learn by recursively partitioning the dataset into subsets based on feature values. The goal is to create the most homogeneous subsets possible at each step, ultimately leading to leaf nodes that represent final decisions or predictions.
-
-### 1. Tree Structure Formation
-
-A decision tree starts with a **root node**, which represents the entire dataset. The data is split at each step using **decision rules** based on feature values, creating **branches** that lead to new nodes. The process continues until a stopping criterion is met, forming a tree structure.
-
-```mermaid
-graph TD;
-    Root[Root Node] -->|Feature 1| Node1[Node 1];
-    Root -->|Feature 2| Node2[Node 2];
-    Node1 --> Leaf1[Leaf Node 1];
-    Node1 --> Leaf2[Leaf Node 2];
-    Node2 --> Leaf3[Leaf Node 3];
-    Node2 --> Leaf4[Leaf Node 4];
-```
-
-### 2. Recursive Partitioning
-
 The learning process involves recursively splitting the dataset into smaller subsets. The splitting criterion is chosen based on **purity measures** such as Gini impurity or entropy. Each split creates child nodes until the stopping condition is met.
 
-#### Example:
-
-Consider a dataset of fruits with the features "color" and "size" to classify whether a fruit is an apple or an orange.
-
-| Fruit | Color  | Size  | Label  |
-| ----- | ------ | ----- | ------ |
-| A     | Red    | Large | Apple  |
-| B     | Red    | Small | Apple  |
-| C     | Orange | Large | Orange |
-| D     | Orange | Small | Orange |
-
-The decision tree may first split based on **color**:
-
-- If **Red**, predict **Apple**
-- If **Orange**, predict **Orange**
-
-### 3. Stopping Criteria and Overfitting
+### Stopping Criteria and Overfitting
 
 A decision tree can continue growing until each leaf contains only one class. However, this often leads to **overfitting**, where the model memorizes the training data but fails to generalize to new data. To prevent this, stopping criteria such as:
 
@@ -112,14 +82,15 @@ A decision tree can continue growing until each leaf contains only one class. Ho
 
 can be used. Additionally, **pruning** techniques help reduce overfitting by removing branches that add little predictive value.
 
-#### Pruning Example
+**Pruning Example**
 
 - **Pre-pruning**: Stop the tree from growing beyond a certain depth.
 - **Post-pruning**: Grow the full tree and then remove unimportant branches based on validation performance.
 
----
+<br/>
+<br/>
 
-This section provides an overview of how decision trees learn. In the next section, we'll dive deeper into **Measuring Purity**, exploring Gini impurity and entropy with mathematical formulations.
+---
 
 ## Measuring Purity
 
@@ -133,19 +104,25 @@ $$ H(S) = - p_1 \log_2(p_1) - p_2 \log_2(p_2) $$
 
 where:
 
-- \( p_1 \) and \( p_2 \) are the proportions of each class in the set \( S \).
+- $ p_1 $ and $ p_2 $ are the proportions of each class in the set $ S $.
 
-#### Interpretation:
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+</div>
 
 - **Entropy = 0**: The node is pure (all samples belong to one class).
 - **Entropy is high**: The node contains a mix of different classes, meaning more disorder.
 - **Entropy is maximized at 0.5**: If there is an equal probability of both classes (i.e., 50%-50%), the entropy is at its highest.
 
-#### Example Calculation:
+**Example Calculation:**
 
 If a node contains 8 positive examples and 2 negative examples, the entropy is calculated as:
 
 $$ H(S) = - \left( \frac{8}{10} \log_2 \frac{8}{10} + \frac{2}{10} \log_2 \frac{2}{10} \right) $$
+
+$$ H(s) = 0.7958$$
+
+<br/>
 
 ### Gini Impurity
 
@@ -153,24 +130,34 @@ Gini Impurity measures how often a randomly chosen element from the set would be
 
 The formula for Gini impurity is:
 
-$$ G(S) = 1 - \sum\_{i=1}^{C} p_i^2 $$
+$$
+G(S) = 1 - \sum\limits_{i=1}^{C} p_i^2
+$$
 
 where:
 
-- \( p_i \) is the probability of class \( i \) in the dataset.
+- $ p_i $ is the probability of class $ i $ in the dataset.
 
-#### Interpretation:
+```mermaid
+graph TD;
+    A(Class Distribution) -->|Pure Node| B(Entropy = 0, Gini = 0);
+    A -->|50-50 Split| C(Entropy = 1, Gini = 0.5);
+```
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+</div>
 
 - **Gini = 0**: The node is completely pure.
 - **Gini is high**: The node contains a mixture of classes.
 
-#### Example Calculation:
+**Example Calculation:**
 
 For the same node with 8 positive and 2 negative examples:
 
 $$ G(S) = 1 - \left( \left(\frac{8}{10}\right)^2 + \left(\frac{2}{10}\right)^2 \right) $$
 
-### Comparing Entropy and Gini Impurity
+$$ G(S) = 0.32 $$
 
 Both metrics are used to determine the best way to split a node in a decision tree, but they have slight differences:
 
@@ -179,258 +166,330 @@ Both metrics are used to determine the best way to split a node in a decision tr
 
 In practice, both perform similarly, and the choice depends on the specific problem and computational constraints.
 
-### Visual Representation
-
-We can visualize entropy and Gini impurity as functions of class probabilities:
-
-```mermaid
-graph TD;
-    A(Class Distribution) -->|Pure Node| B(Entropy = 0, Gini = 0);
-    A -->|50-50 Split| C(Entropy = 1, Gini = 0.5);
-```
-
 By using these metrics, we can quantify the impurity of nodes and use them to decide the best possible splits while constructing a decision tree.
+
+<br/>
+<br/>
+
+---
 
 ## Choosing a Split: Information Gain
 
 When constructing a decision tree, selecting the best feature to split on is crucial for building an optimal model. The goal is to maximize the **Information Gain**, which measures how well a feature separates the data into pure subsets.
 
-### Entropy: Measuring Uncertainty
+<br/>
 
-Entropy quantifies the uncertainty in a dataset. A dataset with mixed labels has high entropy, while a dataset with only one class has low entropy. The entropy formula is:
-
-$$ H(S) = - \sum\_{i=1}^{c} p_i \log_2(p_i) $$
-
-where:
-
-- \( p_i \) is the proportion of class \( i \) in the dataset.
-- \( c \) is the number of unique classes.
-
-### Information Gain: Reducing Entropy
+### Reducing Entropy
 
 Information Gain (IG) is the reduction in entropy after splitting on a feature. It is calculated as:
 
-$$ IG(S, A) = H(S) - \sum\_{v \in Values(A)} \frac{|S_v|}{|S|} H(S_v) $$
+$$
+IG(S, A) = H(S) - \sum\limits_{v \in \text{Values}(A)} \frac{|S_v|}{|S|} H(S_v)
+$$
 
 where:
 
-- \( H(S) \) is the entropy of the original set.
-- \( S_v \) represents subsets created by splitting on attribute \( A \).
-- \( |S_v| / |S| \) is the weighted proportion of samples in each subset.
+- $ H(S) $ is the entropy of the original set.
+- $ S_v $ represents subsets created by splitting on attribute $ A $.
+- $ \frac{|S_v|}{|S|} $ is the weighted proportion of samples in each subset.
 
-### Example Calculation
+**Example Calculation**
 
 Consider a dataset with the following samples:
 
-| Feature  | Label |
-| -------- | ----- |
-| Sunny    | No    |
-| Rainy    | Yes   |
-| Overcast | Yes   |
-| Sunny    | No    |
-| Rainy    | Yes   |
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+</div>
 
 1. Compute initial entropy:
 
-   - 2 "No" labels and 3 "Yes" labels.
-   - \( p*{No} = 2/5, p*{Yes} = 3/5 \).
-   - \( H(S) = - (2/5) \log_2(2/5) - (3/5) \log_2(3/5) \approx 0.971 \).
+   - 5 `Cat` labels and 5 `Dog` labels.
 
-2. Compute entropy after splitting by `Feature`.
+    <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-03.png" style="display:flex; justify-content: center; width: 200px;"alt="regression-example"/>
+    </div>
 
-   - Subset "Sunny": {No, No} → \( H = 0 \)
-   - Subset "Rainy": {Yes, Yes} → \( H = 0 \)
-   - Subset "Overcast": {Yes} → \( H = 0 \)
+   - $ p_1 = \frac{5}{10} $, $ \quad p_2 = \frac{5}{10} $.
 
-3. Compute Information Gain:
-   - \( IG = 0.971 - (2/5)(0) - (2/5)(0) - (1/5)(0) = 0.971 \)
-   - Since IG is maximized, splitting on `Feature` is optimal.
+   - $ H(S) = - \frac{5}{10} \log_2\frac{5}{10} - \frac{5}{10} \log_2\frac{5}{10} = 1.0 $.
 
-### Decision Tree Representation
+    <br/>
 
-Using Mermaid to visualize Information Gain:
+2. Compute entropy after splitting by **`Ear Shape`**:
 
-```mermaid
-graph TD;
-    A[Root: Entropy = 0.971] -->|"Sunny: 0.0"| B[No]
-    A -->|"Rainy: 0.0"| C[Yes]
-    A -->|"Overcast: 0.0"| D[Yes]
+   - Subset `Pointy`: {Cat, Cat, Cat, Cat, Dog}
 
-```
+     - $ H = -\frac{4}{5} \log_2\frac{4}{5} - \frac{1}{5} \log_2\frac{1}{5} \approx 0.72 $
 
-### Implementing in Python
+   - Subset `Floppy`: {Cat, Dog, Dog, Dog, Dog}
 
-We can compute Information Gain using `scikit-learn`:
+     - $ H = -\frac{1}{5} \log_2\frac{1}{5} - \frac{4}{5} \log_2\frac{4}{5} \approx 0.72 $
+
+   - $ IG = 1.0 - (5/10)(0.72) - (5/10)(0.72) = 0.28 $
+
+    <br/>
+
+3. Compute entropy after splitting by **`Face Shape`**:
+
+   - Subset `Round`: {Cat, Cat, Cat, Dog, Dog, Dog, Cat}
+
+     - $ H = -\frac{4}{7} \log_2\frac{4}{7} - \frac{3}{7} \log_2\frac{3}{7} \approx 0.99 $
+
+   - Subset `Not Round`: {Cat, Dog, Dog}
+
+     - $ H = -\frac{1}{3} \log_2\frac{1}{3} - \frac{2}{3} \log_2\frac{2}{3} \approx 0.92 $
+
+   - $ IG = 1.0 - (7/10)(0.99) - (3/10)(0.92) = 0.03 $
+
+     <br/>
+
+4. Compute entropy after splitting by **`Whiskers`**:
+
+   - Subset `Present`: {Cat, Cat, Cat, Dog}
+
+     - $ H = -\frac{3}{4} \log_2\frac{3}{4} - \frac{1}{4} \log_2\frac{1}{4} \approx 0.81 $
+
+   - Subset `Absent`: {Dog, Dog, Dog, Dog, Cat, Cat}
+
+     - $ H = -\frac{4}{6} \log_2\frac{4}{6} - \frac{2}{6} \log_2\frac{2}{6} \approx 0.92 $
+
+   - $ IG = 1.0 - (4/10)(0.81) - (6/10)(0.92) = 0.12 $
+
+<br/>
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-05.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+</div>
+
+Since the highest Information Gain is $0.28$ (Ear Shape), splitting on either of these features is optimal.
+
+<br/>
+<br/>
+
+---
+
+<br/>
+
+## Decision Trees for Continuous Features
+
+When working with continuous features, decision trees can still be used effectively to predict outcomes, just like with categorical features.
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+</div>
+
+The key difference is that instead of using categorical values for splitting, decision trees for continuous features will determine optimal cutoffs or thresholds in the data. This allows the algorithm to make predictions for continuous target variables based on continuous input features.
+
+In this example, we will predict whether an animal is a **cat** or **dog** based on its **weight**, using a decision tree that handles continuous features.
+
+Let's say we have the following dataset of animals, and we want to predict if the animal is a **cat** or **dog** based on its **weight**:
+
+| Animal | Weight (kg) |
+| ------ | ----------- |
+| Cat    | 4.5         |
+| Cat    | 5.1         |
+| Cat    | 4.7         |
+| Dog    | 8.2         |
+| Dog    | 9.0         |
+| Cat    | 5.3         |
+| Dog    | 10.1        |
+| Dog    | 11.4        |
+| Dog    | 12.0        |
+| Dog    | 9.8         |
+
+Here, we aim to build a **decision tree** based on the **Weight** feature to determine whether an animal is a **cat** or a **dog**.
+
+<br/>
+
+**Step 1: Find the Best Split for the Weight Feature**
+
+We will evaluate potential splits based on the **Weight** feature. The decision tree will consider possible cutoffs and calculate the impurity or variance for each split.
+
+Let's consider the following splits:
+
+- **Weight ≤ 7.0 kg**: Assign `Cat`
+- **Weight > 7.0 kg**: Assign `Dog`
+
+The decision tree will evaluate these splits by computing the impurity (for classification) or variance (for regression) for each possible split.
+
+<br/>
+
+**Step 2: Train a Decision Tree Model**
+
+We can use a decision tree to learn the best split and predict the animal type based on the weight. Here is how we can implement this in Python:
 
 ```python
-from sklearn.tree import DecisionTreeClassifier
-from sklearn import datasets
 import numpy as np
+from sklearn.tree import DecisionTreeClassifier
+import pandas as pd
 
-# Sample dataset
-X = np.array([[0], [1], [2], [0], [1]])  # Categorical feature (Sunny, Rainy, Overcast)
-y = np.array([0, 1, 1, 0, 1])  # Labels (No=0, Yes=1)
+# Creating the dataset
+data = {
+    'Weight': [4.5, 5.1, 4.7, 8.2, 9.0, 5.3, 10.1, 11.4, 12.0, 9.8],
+    'Animal': ['Cat', 'Cat', 'Cat', 'Dog', 'Dog', 'Cat', 'Dog', 'Dog', 'Dog', 'Dog']
+}
+df = pd.DataFrame(data)
 
-# Decision Tree Model
-clf = DecisionTreeClassifier(criterion='entropy')
+# Splitting features and target
+X = df[['Weight']]  # Feature
+y = df['Animal']  # Target
+
+# Training a decision tree classifier
+clf = DecisionTreeClassifier(criterion='gini', max_depth=1)
 clf.fit(X, y)
 
-# Extract Information Gain
-print(f'Feature Importances (IG values): {clf.feature_importances_}')
+# Predicting animal type
+predictions = clf.predict(X)
+print(f'Predicted Animals: {predictions}')
 ```
 
-This outputs the feature importance based on Information Gain.
+<br/>
 
-### Comparing Information Gain with Gini Impurity
+**Step 3: Visualizing the Decision Tree**
 
-While Information Gain uses entropy, **Gini Impurity** is another criterion:
-
-$$ Gini = 1 - \sum\_{i=1}^{c} p_i^2 $$
-
-- Lower Gini values indicate purer nodes.
-- It is computationally faster than entropy.
-- However, both approaches often yield similar results.
-
-### Summary
-
-- **Entropy** measures the uncertainty in a dataset.
-- **Information Gain** quantifies the reduction in entropy after a split.
-- Decision Trees use Information Gain (or Gini) to determine the best feature for splitting.
-- **Visualization and Python implementation** can help understand and compute these concepts.
-
-# Decision Trees: Telco Customer Churn Dataset
-
-## 1. Understanding the Dataset
-
-The **Telco Customer Churn Dataset** contains information about telecom customers and whether they have churned (discontinued service). It includes categorical and numerical features that influence customer retention.
-
-### Features in the Dataset:
-
-- **CustomerID**: Unique ID for each customer.
-- **Gender**: Male or Female.
-- **SeniorCitizen**: Whether the customer is a senior citizen (0 or 1).
-- **Partner & Dependents**: Information about family relations.
-- **Tenure**: Number of months the customer has stayed with the company.
-- **Services**: Various telecom services (PhoneService, InternetService, StreamingTV, etc.).
-- **Contract Type**: Monthly, One Year, or Two Year.
-- **Payment Method & MonthlyCharges**: Billing details.
-- **Churn**: The target variable (Yes/No).
-
-## 2. Data Preprocessing
-
-Before training a decision tree, we need to clean and preprocess the dataset.
+The decision tree can be visualized to show how the split is made based on the Weight feature.
 
 ```python
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-
-df = pd.read_csv("telco_churn.csv")
-
-# Drop CustomerID as it is not a useful feature
-df.drop("customerID", axis=1, inplace=True)
-
-# Convert categorical variables to numeric using Label Encoding
-categorical_cols = df.select_dtypes(include=["object"]).columns
-df[categorical_cols] = df[categorical_cols].apply(LabelEncoder().fit_transform)
-
-# Splitting dataset into training and test sets
-X = df.drop("Churn", axis=1)
-y = df["Churn"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-```
-
-## 3. Building the Decision Tree Model
-
-Now, we train a **Decision Tree Classifier** using Scikit-learn.
-
-```python
-from sklearn.tree import DecisionTreeClassifier
-
-dt = DecisionTreeClassifier(criterion="entropy", max_depth=5, random_state=42)
-dt.fit(X_train, y_train)
-```
-
-## 4. Decision Tree Visualization
-
-Using Mermaid, we can illustrate a simple decision tree structure:
-
-```mermaid
-graph TD;
-  A[Start] -->|Contract=Two Year| B[No Churn];
-  A -->|Contract=Month-to-Month| C{Monthly Charges};
-  C -->|>75| D[Churn];
-  C -->|<=75| E{Tenure};
-  E -->|<6 Months| D;
-  E -->|>=6 Months| B;
-```
-
-This visualization shows that **contract type** and **monthly charges** are strong indicators of churn.
-
-## 5. Evaluating the Model
-
-To evaluate model performance, we use confusion matrix, accuracy, precision, recall, and F1-score.
-
-```python
-from sklearn.metrics import classification_report, confusion_matrix
-
-y_pred = dt.predict(X_test)
-print(confusion_matrix(y_test, y_pred))
-print(classification_report(y_test, y_pred))
-```
-
-## 6. Pruning and Hyperparameter Tuning
-
-To reduce overfitting, we apply **pruning** and **hyperparameter tuning**.
-
-```python
-from sklearn.model_selection import GridSearchCV
-
-param_grid = {
-    'max_depth': [3, 5, 10],
-    'min_samples_split': [2, 5, 10],
-    'min_samples_leaf': [1, 2, 4]
-}
-grid_search = GridSearchCV(DecisionTreeClassifier(), param_grid, cv=5, scoring='accuracy')
-grid_search.fit(X_train, y_train)
-
-print(grid_search.best_params_)
-```
-
-## 7. Feature Importance
-
-Which features impact churn prediction the most?
-
-```python
+from sklearn.tree import plot_tree
 import matplotlib.pyplot as plt
-import numpy as np
 
-feature_importance = dt.feature_importances_
-features = np.array(X.columns)
-
-plt.figure(figsize=(10, 5))
-plt.barh(features, feature_importance)
-plt.xlabel("Importance")
-plt.ylabel("Feature")
-plt.title("Feature Importance in Decision Tree")
+plt.figure(figsize=(10,8))
+plot_tree(clf, feature_names=['Weight'], class_names=['Cat', 'Dog'], filled=True)
 plt.show()
 ```
 
-## 8. Conclusion
+<br/>
 
-- **Contract Type** and **Monthly Charges** are critical churn indicators.
-- Decision trees can overfit; pruning and hyperparameter tuning help.
-- Feature importance analysis provides insights into churn behavior.
+**Step 4: Interpreting the Results**
 
-This completes our **Decision Tree analysis on the Telco Customer Churn Dataset** 🚀.
+The resulting decision tree will have a root node where the Weight feature is split at a threshold (e.g., $7.0$ kg). If the animal's weight is less than or equal to $7.0$ kg, it is classified as a `Cat`; otherwise, it is classified as a `Dog`.
 
-# Decision Trees
+<br/>
+<br/>
+
+---
+
+## Regression Trees
+
+Regression trees are used when the target variable is continuous rather than categorical. Unlike classification trees, which predict discrete labels, regression trees predict numerical values by recursively partitioning the data and assigning an average value to each leaf node.
+
+**How Regression Trees Work**
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-07.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+</div>
+
+1. **Splitting the Data:** The algorithm finds the best feature and threshold to split the data by minimizing variance.
+2. **Assigning Values to Leaves:** Instead of class labels, leaf nodes store the mean of the target values in that region.
+3. **Prediction:** Given a new sample, traverse the tree based on feature values and return the mean value from the corresponding leaf node.
+
+**Example: Predicting Animal Weights**
+
+We extend our dataset by adding a new feature: **Weight**. Our dataset consists of 10 animals, with the following features:
+
+- **Ear Shape:** (Pointy, Floppy)
+- **Face Shape:** (Round, Not Round)
+- **Whiskers:** (Present, Absent)
+- **Weight (kg):** Continuous target variable
+
+<br/>
+
+| Ear Shape | Face Shape | Whiskers | Animal | Weight (kg) |
+| --------- | ---------- | -------- | ------ | ----------- |
+| Pointy    | Round      | Present  | Cat    | 4.5         |
+| Pointy    | Round      | Present  | Cat    | 5.1         |
+| Pointy    | Round      | Absent   | Cat    | 4.7         |
+| Pointy    | Not Round  | Present  | Dog    | 8.2         |
+| Pointy    | Not Round  | Absent   | Dog    | 9.0         |
+| Floppy    | Round      | Present  | Cat    | 5.3         |
+| Floppy    | Round      | Absent   | Dog    | 10.1        |
+| Floppy    | Not Round  | Present  | Dog    | 11.4        |
+| Floppy    | Not Round  | Absent   | Dog    | 12.0        |
+| Floppy    | Round      | Absent   | Dog    | 9.8         |
+
+<br/>
+
+**Building a Regression Tree**
+
+We use **Mean Squared Error (MSE)** to determine the best split. The split that results in the lowest MSE is selected.
+
+<br/>
+
+**Step 1: Compute Initial MSE**
+
+The overall mean weight is:
+
+$$ \bar{y} = \frac{4.5 + 5.1 + 4.7 + 8.2 + 9.0 + 5.3 + 10.1 + 11.4 + 12.0 + 9.8}{10} = 7.61 $$
+
+MSE before splitting:
+$$ MSE = \frac{1}{10} \sum (y_i - \bar{y})^2 \approx 6.84 $$
+
+<br/>
+
+**Step 2: Find the Best Split**
+
+We evaluate splits based on feature values:
+
+- **Split on Ear Shape:**
+
+  - Pointy: ${(4.5, 5.1, 4.7, 8.2, 9.0)}$ → Mean = $6.3$
+  - Floppy: ${(5.3, 10.1, 11.4, 12.0, 9.8)}$ → Mean = $9.72$
+  - MSE = $3.2$ (better than initial MSE)
+
+- **Split on Face Shape:**
+
+  - Round: ${(4.5, 5.1, 4.7, 5.3, 10.1, 9.8)}$ → Mean = $6.58$
+  - Not Round: ${(8.2, 9.0, 11.4, 12.0)}$ → Mean = $10.15$
+  - MSE = $2.9$ (even better)
+
+- **Split on Whiskers:**
+  - Present: ${(4.5, 5.1, 8.2, 5.3, 11.4)}$ → Mean = $6.9$
+  - Absent: ${(4.7, 9.0, 10.1, 12.0, 9.8)}$ → Mean = $9.12$
+  - MSE = $3.1$ (better than initial but worse than Face Shape)
+
+Thus, **Face Shape** is chosen as the first split.
+
+**Implementing in Python**
+
+```python
+import numpy as np
+from sklearn.tree import DecisionTreeRegressor
+import pandas as pd
+
+# Creating the dataset
+data = {
+    'Ear_Shape': [0, 0, 0, 0, 0, 1, 1, 1, 1, 1],  # 0: Pointy, 1: Floppy
+    'Face_Shape': [0, 0, 0, 1, 1, 0, 0, 1, 1, 0],  # 0: Round, 1: Not Round
+    'Whiskers': [0, 0, 1, 0, 1, 0, 1, 1, 0, 0],  # 0: Present, 1: Absent
+    'Weight': [4.5, 5.1, 4.7, 8.2, 9.0, 5.3, 10.1, 11.4, 12.0, 9.8]
+}
+df = pd.DataFrame(data)
+
+# Splitting features and target
+X = df[['Ear_Shape', 'Face_Shape', 'Whiskers']]
+y = df['Weight']
+
+# Training a regression tree
+regressor = DecisionTreeRegressor(criterion='squared_error', max_depth=2)
+regressor.fit(X, y)
+
+# Predicting weights
+predictions = regressor.predict(X)
+print(f'Predicted Weights: {predictions}')
+```
+
+This regression tree provides predictions for the animal weights based on feature values.
+
+<br/>
+<br/>
+
+---
 
 ## Using Multiple Decision Trees
 
-### Why Use Multiple Decision Trees?
-
 Using a single decision tree can sometimes lead to overfitting or instability, especially if the dataset has noise. By using multiple decision trees together, we can improve model performance and robustness. Two main techniques to achieve this are **Bagging** and **Boosting**.
+
+<br/>
 
 ### Bagging (Bootstrap Aggregating)
 
@@ -454,77 +513,9 @@ graph TD;
     B3 --> C;
 ```
 
-### Boosting
+<br/>
 
-Boosting is another ensemble method that builds trees sequentially, with each tree trying to correct the mistakes of the previous one. It focuses on difficult examples by assigning them higher weights.
-
-The most popular boosting method is **XGBoost (Extreme Gradient Boosting)**.
-
-**Key Steps in Boosting:**
-
-1. Train a weak model on the training data.
-2. Identify misclassified samples and assign them higher weights.
-3. Train the next model focusing on these hard cases.
-4. Repeat until a stopping criterion is met.
-
-**Visualization of Boosting:**
-
-```mermaid
-graph TD;
-    A[Dataset] -->|Train Weak Model| B1[Tree 1];
-    B1 -->|Adjust Weights| B2[Tree 2];
-    B2 -->|Adjust Weights| B3[Tree 3];
-    B3 --> C[Final Prediction];
-```
-
-### Implementing Random Forest in Python
-
-Let's train a **Random Forest Classifier** using the `Telco Customer Churn Dataset`.
-
-```python
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-import pandas as pd
-
-# Load dataset
-df = pd.read_csv("telco_customer_churn.csv")
-
-# Preprocessing: Convert categorical features, handle missing values, etc.
-df = pd.get_dummies(df, drop_first=True)
-
-# Split dataset
-X = df.drop("Churn", axis=1)
-y = df["Churn"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Train Random Forest
-rf = RandomForestClassifier(n_estimators=100, random_state=42)
-rf.fit(X_train, y_train)
-
-# Evaluate Model
-y_pred = rf.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
-print(f"Random Forest Accuracy: {accuracy:.4f}")
-```
-
-### Comparison: Single Tree vs. Random Forest
-
-| Model         | Accuracy |
-| ------------- | -------- |
-| Decision Tree | 78.5%    |
-| Random Forest | 85.2%    |
-
-### Conclusion
-
-- Using multiple decision trees helps **reduce overfitting** and **improve accuracy**.
-- Bagging (Random Forest) reduces variance by averaging multiple trees.
-- Boosting (XGBoost) focuses on hard-to-classify examples and improves overall performance.
-- Random Forest is easy to use, while Boosting methods require careful tuning of parameters.
-
-## Sampling with Replacement
-
-### What is Sampling with Replacement?
+#### Sampling with Replacement
 
 Sampling with replacement is a technique where each data point has an equal probability of being selected multiple times in a new sample. This method is widely used in **Bootstrap Aggregating (Bagging)** to create multiple training datasets from the original dataset, allowing for robust model training and variance reduction.
 
@@ -533,15 +524,17 @@ Sampling with replacement is a technique where each data point has an equal prob
   - Generates multiple diverse datasets from the original dataset.
   - Prevents overfitting by averaging multiple models.
 
-### Bootstrap Sampling Process
+<br/>
 
-1. Given a dataset of size \( N \), create a new dataset by randomly selecting \( N \) samples **with replacement**.
+**Bootstrap Sampling Process**
+
+1. Given a dataset of size $ N $, create a new dataset by randomly selecting $ N $ samples **with replacement**.
 2. Some original samples may appear multiple times, while others may not appear at all.
 3. Train multiple models on these sampled datasets and aggregate predictions.
 
-#### Example: Illustration of Bootstrap Sampling
+Consider a dataset with five samples $ A, B, C, D, E $:
 
-Consider a dataset with five samples \( \{A, B, C, D, E\} \):
+<br/>
 
 | Original Data | Bootstrap Sample 1 | Bootstrap Sample 2 |
 | ------------- | ------------------ | ------------------ |
@@ -553,58 +546,20 @@ Consider a dataset with five samples \( \{A, B, C, D, E\} \):
 
 Notice that in each bootstrap sample, some samples appear multiple times while others are missing.
 
-### Applying Bootstrap Sampling on the Telco Customer Churn Dataset
+<br/>
+<br/>
 
-Now, let's apply bootstrap sampling to the **Telco Customer Churn Dataset** and train multiple decision trees using bagging:
+#### Random Forest Algorithm
 
-```python
-import pandas as pd
-import numpy as np
-from sklearn.utils import resample
-from sklearn.ensemble import BaggingClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-
-# Load dataset
-df = pd.read_csv('Telco-Customer-Churn.csv')
-
-# Preprocessing: Convert categorical variables into numerical
-df = pd.get_dummies(df, drop_first=True)
-
-# Define features and target
-X = df.drop(columns=['Churn_Yes'])  # Drop target column
-y = df['Churn_Yes']
-
-# Split dataset into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Perform bootstrap sampling
-bootstrap_sample = resample(X_train, y_train, replace=True, n_samples=len(X_train), random_state=42)
-
-# Train Decision Trees with Bagging
-bagging_model = BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=10, bootstrap=True, random_state=42)
-bagging_model.fit(X_train, y_train)
-
-# Evaluate model
-y_pred = bagging_model.predict(X_test)
-accuracy = accuracy_score(y_test, y_pred)
-print(f'Bagging Model Accuracy: {accuracy:.4f}')
-```
-
-### Conclusion
-
-- **Bootstrap sampling** helps create diverse training datasets, reducing overfitting.
-- **Bagging** improves model stability by aggregating predictions from multiple trees.
-- Using **the Telco Customer Churn Dataset**, we demonstrated how sampling with replacement is applied in real-world classification problems.
-
-Next, we will explore the **Random Forest Algorithm**, which extends bagging by adding feature selection at each split.
-
-## Random Forest Algorithm
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+</div>
 
 Random Forest is an ensemble learning method that builds multiple decision trees and merges them to achieve better performance. It is based on the concept of **bagging (Bootstrap Aggregating)**, which helps reduce overfitting and improve accuracy.
 
-### How Random Forest Works
+<br/>
+
+**How Random Forest Works**
 
 1. **Bootstrap Sampling:** Randomly select subsets of the training data (with replacement).
 2. **Decision Trees:** Train multiple decision trees on different subsets.
@@ -617,9 +572,9 @@ $$
 Prediction_{RF} = \frac{1}{N} \sum_{i=1}^{N} Tree_i(x)
 $$
 
-where \( N \) is the number of trees and \( Tree_i(x) \) is the prediction of the \( i^{th} \) tree.
+where $ N $ is the number of trees and $ Tree_i(x) $ is the prediction of the $ i^{th} $ tree.
 
-### Key Hyperparameters
+**Key Hyperparameters**
 
 | Hyperparameter      | Description                                 |
 | ------------------- | ------------------------------------------- |
@@ -629,7 +584,7 @@ where \( N \) is the number of trees and \( Tree_i(x) \) is the prediction of th
 | `min_samples_split` | Minimum samples required to split a node    |
 | `min_samples_leaf`  | Minimum samples required in a leaf node     |
 
-### Decision Tree vs. Random Forest
+**Decision Tree vs. Random Forest**
 
 ```mermaid
 graph TD;
@@ -638,7 +593,7 @@ graph TD;
     C -->|Aggregation| D[Final Prediction];
 ```
 
-### Random Forest on Telco Customer Churn Dataset
+**Random Forest example on Telco Customer Churn Dataset**
 
 ```python
 import pandas as pd
@@ -671,7 +626,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 ```
 
-### When to Use Random Forest
+**When to Use Random Forest**
 
 - When you need high accuracy with minimal tuning.
 - When dealing with large feature spaces.
@@ -680,15 +635,45 @@ print(classification_report(y_test, y_pred))
 
 Random Forest is a powerful and flexible model that performs well across various datasets. However, it can be computationally expensive for large datasets.
 
-## XGBoost
+<br/>
+<br/>
+
+### Boosting
+
+Boosting is another ensemble method that builds trees sequentially, with each tree trying to correct the mistakes of the previous one. It focuses on difficult examples by assigning them higher weights.
+
+The most popular boosting method is **XGBoost (Extreme Gradient Boosting)**.
+
+**Key Steps in Boosting:**
+
+1. Train a weak model on the training data.
+2. Identify misclassified samples and assign them higher weights.
+3. Train the next model focusing on these hard cases.
+4. Repeat until a stopping criterion is met.
+
+**Visualization of Boosting:**
+
+```mermaid
+graph TD;
+    A[Dataset] -->|Train Weak Model| B1[Tree 1];
+    B1 -->|Adjust Weights| B2[Tree 2];
+    B2 -->|Adjust Weights| B3[Tree 3];
+    B3 --> C[Final Prediction];
+```
+
+<br/>
+
+#### XGBoost
 
 XGBoost (Extreme Gradient Boosting) is a powerful and efficient implementation of gradient boosting that is widely used in machine learning competitions and real-world applications due to its high performance and scalability.
 
-### How XGBoost Works
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/decision-trees-08.ppm" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+</div>
 
 XGBoost builds an ensemble of decision trees sequentially, where each tree corrects the errors of the previous ones. The algorithm optimizes a loss function using gradient descent, allowing it to minimize errors effectively.
 
-#### Key Components of XGBoost:
+**Key Components of XGBoost:**
 
 1. **Gradient Boosting Framework:** Uses boosting to improve weak learners iteratively.
 2. **Regularization:** Includes L1 and L2 regularization to reduce overfitting.
@@ -697,29 +682,23 @@ XGBoost builds an ensemble of decision trees sequentially, where each tree corre
 5. **Tree Pruning:** Uses depth-wise pruning instead of weight pruning for efficiency.
 6. **Custom Objective Functions:** Allows defining custom loss functions.
 
-### Mathematical Model
-
 XGBoost optimizes the following objective function:
 
-$$ J(\theta) = \sum*{i=1}^{n} L(y_i, \hat{y}\_i) + \sum*{k} \Omega(T_k) $$
+$$ J(\theta) = \sum L(y_i, \hat{y}\_i) + \sum \Omega(T_k) $$
 
 Where:
 
-- \( L(y_i, \hat{y}\_i) \) is the loss function (e.g., squared error for regression, log loss for classification).
-- \( \Omega(T_k) \) is the regularization term controlling model complexity.
-- \( T_k \) represents individual trees.
+- $ L(y_i, \hat{y}\_i) $ is the loss function (e.g., squared error for regression, log loss for classification).
+- $ \Omega(T_k) $ is the regularization term controlling model complexity.
+- $ T_k $ represents individual trees.
 
-Each tree is built to minimize:
-
-$$ \mathcal{L}(t) = \sum\_{i \in leaf} (y_i - \hat{y}\_i)^2 + \lambda \| w \|^2 $$
-
-where \( w \) represents leaf weights and \( \lambda \) controls the penalty term.
-
-### Implementing XGBoost on Telco Customer Churn Dataset
+**Implementing XGBoost on Telco Customer Churn Dataset**
 
 We will train an XGBoost model to predict customer churn.
 
-#### Step 1: Load the dataset
+<br/>
+
+**Step 1: Load the dataset**
 
 ```python
 import pandas as pd
@@ -741,14 +720,18 @@ y = df["Churn_Yes"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-#### Step 2: Train the XGBoost Model
+<br/>
+
+**Step 2: Train the XGBoost Model**
 
 ```python
 xgb_model = XGBClassifier(n_estimators=100, learning_rate=0.1, max_depth=4, reg_lambda=1, use_label_encoder=False, eval_metric='logloss')
 xgb_model.fit(X_train, y_train)
 ```
 
-#### Step 3: Evaluate the Model
+<br/>
+
+**Step 3: Evaluate the Model**
 
 ```python
 y_pred = xgb_model.predict(X_test)
@@ -756,9 +739,13 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.4f}")
 ```
 
-### Hyperparameter Tuning
+<br/>
+
+**Hyperparameter Tuning**
 
 Key hyperparameters in XGBoost:
+
+<br/>
 
 | Hyperparameter     | Description                                |
 | ------------------ | ------------------------------------------ |
@@ -769,16 +756,7 @@ Key hyperparameters in XGBoost:
 | `colsample_bytree` | Fraction of features used per tree.        |
 | `gamma`            | Minimum loss reduction required for split. |
 
-### XGBoost vs. Random Forest
-
-| Feature                        | XGBoost                   | Random Forest |
-| ------------------------------ | ------------------------- | ------------- |
-| Training Speed                 | Faster (parallelized)     | Slower        |
-| Overfitting Control            | Stronger (Regularization) | Moderate      |
-| Performance on Structured Data | High                      | Good          |
-| Handles Missing Data           | Yes                       | No            |
-
-### When to Use XGBoost
+**When to Use XGBoost**
 
 - When you have structured/tabular data.
 - When you need high accuracy.
@@ -787,69 +765,13 @@ Key hyperparameters in XGBoost:
 
 XGBoost is one of the most powerful algorithms for predictive modeling. By leveraging its strengths in handling structured data, regularization, and parallel processing, it can significantly outperform traditional machine learning methods in many real-world applications.
 
-# Decision Trees
+<br/>
 
-## When to Use Decision Trees
+#### XGBoost vs Random Forest
 
-Decision trees are powerful and versatile models used for both classification and regression tasks. However, they are not always the best choice. Understanding when to use decision trees is crucial for selecting the right model.
-
-### Advantages of Decision Trees
-
-| Advantage                                       | Explanation                                                                                                         |
-| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **Interpretability**                            | Decision trees provide a clear and visual representation of the decision process.                                   |
-| **No Need for Feature Scaling**                 | Unlike SVMs or linear regression, decision trees do not require normalization or standardization of input features. |
-| **Handles Both Numerical and Categorical Data** | Decision trees work well with both discrete and continuous values.                                                  |
-| **Captures Non-Linear Relationships**           | They can model complex decision boundaries that are not linear.                                                     |
-| **Minimal Data Preprocessing**                  | No need for feature engineering like one-hot encoding (though sometimes useful).                                    |
-
-### Disadvantages of Decision Trees
-
-| Disadvantage                                 | Explanation                                                                                                                                       |
-| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Overfitting**                              | Decision trees tend to overfit on small datasets, capturing noise instead of patterns. Regularization techniques like pruning help mitigate this. |
-| **Unstable to Small Variations in Data**     | A small change in data can lead to a completely different tree structure.                                                                         |
-| **Biased Towards Dominant Classes**          | If one class dominates the dataset, the tree may favor it, leading to biased predictions.                                                         |
-| **Computationally Expensive for Large Data** | Training deep trees on large datasets can be slow and require significant memory.                                                                 |
-
-### When to Use Decision Trees
-
-Decision trees are a good choice when:
-
-- **Interpretability is important**: If you need a model that is easy to explain to stakeholders.
-- **The dataset has mixed feature types**: Decision trees handle both categorical and numerical variables effectively.
-- **There are non-linear relationships**: Decision trees can capture non-linear decision boundaries without requiring feature transformations.
-- **Missing values exist**: Decision trees can handle missing data relatively well compared to other models like linear regression.
-- **You need a quick baseline model**: Decision trees are often used as a baseline model before applying more complex techniques.
-
-### When Not to Use Decision Trees
-
-- **If high accuracy is required**: Decision trees alone may not provide the best performance. Ensemble methods like Random Forests or XGBoost improve results significantly.
-- **If dataset is too large**: Deep trees can be computationally expensive, making algorithms like Gradient Boosting or Neural Networks more suitable.
-- **If interpretability is not a concern**: If understanding the model’s decisions is not critical, more complex models may be preferable.
-
-### Alternative Models
-
-| Alternative Model                         | When to Use It                                                          |
-| ----------------------------------------- | ----------------------------------------------------------------------- |
-| **Random Forest**                         | When accuracy and robustness are needed while keeping interpretability. |
-| **Gradient Boosting (XGBoost, LightGBM)** | When you need better performance in structured data problems.           |
-| **Neural Networks**                       | When dealing with high-dimensional data like images and text.           |
-| **Support Vector Machines (SVMs)**        | When the dataset is small and decision boundaries are well-defined.     |
-
-### Visualizing Decision Tree Usage
-
-```mermaid
-graph TD;
-  A[Start] -->|Interpretability needed?| B(Use Decision Tree);
-  A -->|Accuracy priority?| C{Ensemble Methods};
-  C -->|Yes| D[Use Random Forest or XGBoost];
-  C -->|No| B;
-  A -->|Data is high-dimensional?| E{Neural Networks};
-  E -->|Yes| F[Use Neural Networks];
-  E -->|No| B;
-```
-
-### Conclusion
-
-Decision trees are a valuable tool in machine learning, offering an interpretable and flexible approach for both classification and regression tasks. However, they are best used in scenarios where model explainability is essential, and computational efficiency is manageable. For better performance and stability, ensemble methods like Random Forests and XGBoost should be considered.
+| Feature                        | XGBoost                   | Random Forest |
+| ------------------------------ | ------------------------- | ------------- |
+| Training Speed                 | Faster (parallelized)     | Slower        |
+| Overfitting Control            | Stronger (Regularization) | Moderate      |
+| Performance on Structured Data | High                      | Good          |
+| Handles Missing Data           | Yes                       | No            |
