@@ -27,18 +27,13 @@
 
 - [Decision Trees](./machine-learning-specialization/advanced-learning-algorithms/decision-trees.md)
 
-  ### 2.4 Applications
+## 3. Unsupervised Learning, Recommenders, Reinforcement Learning
 
-  - [Least Common Multiple](./number-theory-cryptography/euclids-algorithm/applications/least-common-multiple.md)
-  - [Diophantine Theorem](./number-theory-cryptography/euclids-algorithm/applications/diophantine-theorem.md)
-  - [Modular Division](./number-theory-cryptography/euclids-algorithm/applications/modular-division.md)
+- [K-means Clustering](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/k-means-clustering.md)
 
-## 3. Building Blocks of Cryptography
+- [Anomaly Detection](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.md)
 
-- [Integer Factorization](./number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/index.md)
-
-  - [Prime Numbers](./number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/prime-numbers.md)
-  - [Factoring](./number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/factoring.md)
+- [Factoring](./number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/factoring.md)
 
 - [Chinese Remainder Theorem](./number-theory-cryptography/building-blocks-of-cryptography/chinese-remainder-theorem.md)
 

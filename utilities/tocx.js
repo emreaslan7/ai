@@ -216,23 +216,23 @@ function updateTOC(url, theme) {
           [
             SubHeading(
               "3.1",
-              "/number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/index.html",
-              "Integer Factorization",
+              "",
+              "Unsupervised Learning",
               theme,
-              "12px",
+              "13px",
               "normal",
               SubHeadingList(
                 [
                   SubHeading(
                     "3.1.1",
-                    "/number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/prime-numbers.html",
-                    "Prime Numbers",
+                    "/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/k-means-clustering.html",
+                    "K-Means Clustering",
                     theme
                   ),
                   SubHeading(
                     "3.1.2",
-                    "/number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/factoring.html",
-                    "Factoring",
+                    "/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.html",
+                    "Anomaly Detection",
                     theme
                   ),
                 ],
