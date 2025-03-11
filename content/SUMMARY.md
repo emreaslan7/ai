@@ -33,7 +33,7 @@
 
 - [Anomaly Detection](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.md)
 
-- [Factoring](./number-theory-cryptography/building-blocks-of-cryptography/integer-factorization/factoring.md)
+- [Recommender Systems](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.md)
 
 - [Chinese Remainder Theorem](./number-theory-cryptography/building-blocks-of-cryptography/chinese-remainder-theorem.md)
 

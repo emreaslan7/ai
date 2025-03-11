@@ -241,8 +241,8 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "3.2",
-              "/number-theory-cryptography/building-blocks-of-cryptography/chinese-remainder-theorem.html",
-              "Chinese Remainder Theorem",
+              "/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.html",
+              "Recommender Systems",
               theme
             ),
             SubHeading(
