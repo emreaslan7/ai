@@ -35,7 +35,7 @@
 
 - [Recommender Systems](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.md)
 
-- [Chinese Remainder Theorem](./number-theory-cryptography/building-blocks-of-cryptography/chinese-remainder-theorem.md)
+- [Reinforcement Learning](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.md)
 
 ## 3.3 Modular Exponantiation
 

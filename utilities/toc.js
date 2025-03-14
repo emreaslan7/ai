@@ -247,34 +247,9 @@ function updateTOC(url, theme) {
             ),
             SubHeading(
               "3.3",
-              "",
-              "Modular Exponentiation",
-              theme,
-              "12px",
-              "normal",
-              SubHeadingList(
-                [
-                  SubHeading(
-                    "3.3.1",
-                    "/number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/fast-modular-exponentiation.html",
-                    "Fast Modular Exponentiation",
-                    theme
-                  ),
-                  SubHeading(
-                    "3.3.2",
-                    "/number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/fermats-little-theorem.html",
-                    "Fermat's Little Theorem",
-                    theme
-                  ),
-                  SubHeading(
-                    "3.3.3",
-                    "/number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/eulers-theorem.html",
-                    "Euler's Theorem",
-                    theme
-                  ),
-                ],
-                true
-              )
+              "/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.html",
+              "Reinforcement Learning",
+              theme
             ),
           ],
           true
