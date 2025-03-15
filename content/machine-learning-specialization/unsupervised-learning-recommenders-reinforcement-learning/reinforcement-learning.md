@@ -38,6 +38,8 @@ Each position is numbered from 1 to 6. The rover starts at position **4**, and i
 - **Position 6 reward**: **40** (e.g., a safe resting point)
 - **Other positions reward**: **0**
 
+<br/>
+
 **States, Actions, and Rewards**
 
 | State     | Possible Actions                | Reward |
@@ -77,6 +79,8 @@ The rover's decision is based on maximizing its **expected future rewards**. Sin
 
 To formalize this, the rover can compute the expected return **G** for each possible path, considering the **discount factor ($ \gamma $)**.
 
+<br/>
+
 ### Discount Factor ($ \gamma $) and Expected Return
 
 The discount factor **$ \gamma $** determines how much future rewards are valued relative to immediate rewards. If $ \gamma = 1 $, all future rewards are considered equally important. If $ \gamma = 0.9 $, future rewards are slightly less important than immediate rewards.
@@ -105,6 +109,11 @@ A **policy** ($ \pi $) defines the strategy of the rover: for each state, it dic
 
 If the rover follows an **optimal policy**, it should compute the total expected reward for every possible action and pick the one that maximizes its long-term return.
 
+<br/>
+<br/>
+
+---
+
 ## Markov Decision Process (MDP)
 
 Reinforcement Learning problems are often modeled as **Markov Decision Processes (MDPs)**, which are defined by:
@@ -129,6 +138,9 @@ In our **Mars Rover** example:
 - **Discount Factor ($ \gamma $)**: $ 0.9 $ (assumed)
 
 <br/>
+<br/>
+
+---
 
 ## State-Action Value Function ($Q(s,a)$)
 
@@ -156,6 +168,9 @@ Using our Mars rover example, we can estimate $Q(s,a)$ values for each state-act
 - $Q(3, \text{left}) = 50$
 
 The rover should always select the action with the highest $Q$ value to maximize rewards.
+
+<br/>
+<br/>
 
 ---
 
@@ -218,12 +233,17 @@ $$
 
 Thus, the optimal value for state `4` is `44`, meaning the agent should prefer moving left toward `3`.
 
+<br/>
+
 **Intuition Behind the Bellman Equation**
 
 1. The Bellman equation decomposes the **value of a state** into its **immediate reward** and the **expected future reward**.
 2. It allows us to compute values iteratively: we start with rough estimates and refine them over time.
 3. It helps in **policy evaluation**—determining how good a given policy is.
 4. It forms the foundation for **Dynamic Programming methods** like **Value Iteration** and **Policy Iteration**.
+
+<br/>
+<br/>
 
 ---
 
@@ -255,4 +275,136 @@ With stochastic environments, deterministic policies (always taking the best act
 
 This concept is central to algorithms like **Q-Learning** and **Policy Gradient Methods**, which we will discuss in future sections.
 
+<br/>
+<br/>
+
 ---
+
+## Continuous State vs. Discrete State
+
+In reinforcement learning, states can be either discrete or continuous. A **discrete state** means that the number of possible states is finite and well-defined, whereas a **continuous state** implies an infinite number of possible states.
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/reinforcement-learning-06.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+</div>
+
+For example, consider our **Mars Rover** example with six possible states. The rover can be in any one of these six states at any given time, making it a discrete state environment. However, if we consider a truck driving on a highway, its position, speed, angle, and other attributes can take an infinite number of values, making it a continuous state environment.
+
+Continuous state spaces are often approximated using function approximators like **neural networks** to generalize over an infinite number of states efficiently.
+
+<br/>
+<br/>
+
+---
+
+## Lunar Lander Example
+
+A classic reinforcement learning problem is the **Lunar Lander**, where the objective is to safely land a spacecraft on the surface of a planet. The agent (lander) interacts with the environment by selecting one of four possible actions:
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/reinforcement-learning-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+</div>
+
+- **Do Nothing**: No thrust is applied.
+- **Left Thruster**: Applies force to move left.
+- **Right Thruster**: Applies force to move right.
+- **Main Thruster**: Applies force to slow descent.
+
+<br/>
+
+**Rewards and Penalties:**
+
+The environment provides feedback through rewards and penalties:
+
+- **Soft Landing**: +100 reward
+- **Crash Landing**: -100 penalty
+- **Firing Main Engine**: -0.3 penalty (fuel consumption)
+- **Firing Side Thrusters**: -0.1 penalty (fuel consumption)
+
+<br/>
+
+**State Representation**
+
+The **state** of the lunar lander can be represented as:
+
+$$ s = [x, y, \theta, l, r, x', y', \theta'] $$
+
+where:
+
+- $ x, y $ : Position of the lander
+- $ \theta $ : Orientation (tilt angle)
+- $ l, r $ : Contact with left and right landing pads (binary values)
+- $ x', y' $ : Velocities in x and y directions
+- $ \theta' $ : Angular velocity
+
+The **policy** function $ \pi(s) $ determines which action to take given the current state.
+
+<br/>
+
+### Deep Q-Network (DQN) Neural Network for Lunar Lander
+
+To approximate the optimal policy, we use a **deep neural network**. The network takes the 8-dimensional state vector as input and predicts Q-values for each of the four actions.
+
+#### Network Architecture:
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/reinforcement-learning-08.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+</div>
+
+- **Input Layer (8 neurons)**: Corresponds to $ x, y, \theta, l, r, x', y', \theta' $
+- **Two Hidden Layers (64 neurons each, ReLU activation)**
+- **Output Layer (4 neurons)**: Represents the Q-values for the four possible actions
+
+The output neurons correspond to:
+
+- $ Q(s, \text{do nothing}) $
+- $ Q(s, \text{main thruster}) $
+- $ Q(s, \text{right thruster}) $
+- $ Q(s, \text{left thruster}) $
+
+The network is trained using the **Bellman equation** to minimize the difference between predicted and actual Q-values.
+
+<br/>
+<br/>
+
+---
+
+## $ \varepsilon $-Greedy Policy
+
+In reinforcement learning, an agent must balance **exploration** (trying new actions) and **exploitation** (choosing the best-known action). The **$ \varepsilon $-greedy policy** is a common approach to achieve this balance:
+
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+    <img src="../../../img/machine-learning-specialization/reinforcement-learning-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+</div>
+
+- With probability $ \varepsilon $, take a random action (exploration).
+- With probability $ 1 - \varepsilon $, take the action with the highest Q-value (exploitation).
+
+Initially, $ \varepsilon $ is set to a high value (e.g., 1.0) to encourage exploration and gradually decays over time.
+
+<br/>
+<br/>
+
+---
+
+## Mini-Batch Learning in Reinforcement Learning
+
+In deep reinforcement learning, we use **mini-batch learning** to improve training efficiency and stability.
+
+### Why Mini-Batch Learning?
+
+- Prevents large updates from a single experience (stabilizes training).
+- Helps break the correlation between consecutive experiences (improves generalization).
+- Allows efficient GPU computation (faster convergence).
+
+### How It Works:
+
+1. Store experiences **(state, action, reward, next state)** in a **replay buffer**.
+2. Sample a **mini-batch** of experiences.
+3. Compute target Q-values using the Bellman equation.
+4. Perform a **gradient descent update** on the Q-network.
+
+Mini-batch learning makes reinforcement learning more robust and prevents overfitting to recent experiences.
+
+<br/>
+<br/>
