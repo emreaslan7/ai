@@ -37,23 +37,9 @@
 
 - [Reinforcement Learning](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.md)
 
-## 3.3 Modular Exponantiation
+# Deep Learning Specialization
 
-- [Fast Modular Exponentiation](./number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/fast-modular-exponentiation.md)
-- [Fermat's Little Theorem](./number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/fermats-little-theorem.md)
-- [Euler's Theorem](./number-theory-cryptography/building-blocks-of-cryptography/modular-exponentiation/eulers-theorem.md)
-
-## 4. Cryptography
-
-- [History of Cryptography](./number-theory-cryptography/cryptography/history-of-cryptography.md)
-- [One-Time Pad](./number-theory-cryptography/cryptography/one-time-pad.md)
-- [Many Time Pad Attack](./number-theory-cryptography/cryptography/many-time-pad-attack.md)
-
-### 4.4 RSA Cryptosystem
-
-- [RSA Cryptosystem](./number-theory-cryptography/cryptography/rsa-cryptosystem.md)
-- [Attacks and Vulnerabilities](./number-theory-cryptography/cryptography/rsa-cryptosystem/attacks-and-vulnerabilities.md)
-- [Randomness Generation](./number-theory-cryptography/cryptography/rsa-cryptosystem/randomness-generation.md)
+- [Content](./deep-learning-specialization/README.md)
 
 # TR
 

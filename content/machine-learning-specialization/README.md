@@ -6,7 +6,7 @@
 &therefore;
 </p>
 
-<p align="center"><i>I completed the <a href="https://www.coursera.org/specializations/machine-learning-introduction">course</a> by taking detailed notes and summarizing critical concepts for future reference.</i></p>
+<p align="center"><i>I completed the <a href="https://www.coursera.org/specializations/machine-learning-introduction">Machine Learning Specialization Course</a> by taking detailed notes and summarizing critical concepts for future reference.</i></p>
 
 <p align="right" style="font-size : 13px">
 <b>University of Stanford & DeepLearning.AI</b>

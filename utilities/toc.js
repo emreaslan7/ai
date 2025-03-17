@@ -33,6 +33,37 @@ function getThemeColors(theme) {
   return themes[theme] || themes.light;
 }
 
+function toggleVisibility(id) {
+  const element = document.getElementById(id);
+  const title = element.previousElementSibling;
+
+  if (element.style.display === "none") {
+    element.style.display = "block";
+    title.innerHTML = `▼ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    localStorage.setItem(id, "open"); // Durumu kaydet
+  } else {
+    element.style.display = "none";
+    title.innerHTML = `▶ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    localStorage.setItem(id, "closed"); // Durumu kaydet
+  }
+}
+
+function HeadingCollapsible(text, id, fontSize = "15px", fontWeight = "bold") {
+  const isOpen = localStorage.getItem(id) === "open"; // Önceki durumu kontrol et
+  const displayStyle = isOpen ? "block" : "none";
+  const icon = isOpen ? "▼" : "▶";
+
+  return `
+    <p 
+      style="font-size: ${fontSize}; font-weight: ${fontWeight}; cursor: pointer; user-select: none; padding: 5px 0;" 
+      onclick="toggleVisibility('${id}')"
+    >
+      ${icon} ${text}
+    </p>
+    <div id="${id}" style="display: ${displayStyle}; padding-left: 15px;">
+  `;
+}
+
 function createHeadingNumberSpan(number) {
   if (!number) return "";
   return `<span style="font-weight: bold; margin-right: 5px;">${number}</span>`;
@@ -90,7 +121,10 @@ function updateTOC(url, theme) {
 
   const tocContentEn = `
     ${SubHeading("", "/", "Welcome", theme, "13px", "bold")}
-    ${Heading("Machine Learning Specialization", "15px")} 
+    ${HeadingCollapsible(
+      "Machine Learning Specialization",
+      "ml-specialization"
+    )} 
     ${SubHeading("", "/machine-learning-specialization", "Content", theme)}
     ${SubHeadingList([
       SubHeading(
@@ -255,7 +289,14 @@ function updateTOC(url, theme) {
           true
         )
       ),
-    ])}`;
+    ])}
+    </div>
+
+    ${HeadingCollapsible("Deep Learning Specialization", "dl-specialization")} 
+    ${SubHeading("", "/deep-learning-specialization", "Content", theme)}
+
+    `;
+
   const tocContentTr = `
     ${Heading("1. Lineer Cebir")}
     ${SubHeadingList([
