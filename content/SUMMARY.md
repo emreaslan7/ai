@@ -41,6 +41,14 @@
 
 - [Content](./deep-learning-specialization/README.md)
 
+## Convolutional Network Layers
+
+### Foundations of Convolutional Network Layers
+
+- [Computer Vision and Edge Detection](./deep-learning-specialization/convolutional-neural-networks/computer-vision-and-edge-detection.md)
+
+- [Convolutional Operations](./deep-learning-specialization/convolutional-neural-networks/convolutional-operations.md)
+
 # TR
 
 - [turkce](./tr/README.md)

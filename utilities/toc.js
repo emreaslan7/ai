@@ -294,6 +294,46 @@ function updateTOC(url, theme) {
 
     ${HeadingCollapsible("Deep Learning Specialization", "dl-specialization")} 
     ${SubHeading("", "/deep-learning-specialization", "Content", theme)}
+      ${SubHeadingList([
+        SubHeading(
+          "1.",
+          "",
+          "Convolutional Neural Networks",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "1.1",
+                "",
+                "Foundations of Convolutional Neural Networks",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.1.1",
+                      "/deep-learning-specialization/convolutional-neural-networks/computer-vision-and-edge-detection.html",
+                      "Computer Vision and Edge Detection",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.1.2",
+                      "/deep-learning-specialization/convolutional-neural-networks/convolutional-operations.html",
+                      "Convolutional Operations",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+      ])}
 
     `;
 
