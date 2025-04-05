@@ -52,6 +52,10 @@ where $m$ and $n$ represent height and width, and $c$ represents the number of c
 
 Edge detection aims to find points in an image where the intensity changes sharply. These points often correspond to boundaries of objects, texture changes, or discontinuities in depth. To detect these changes, we apply **convolution operations** with specific filters.
 
+<div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
+  <img src="../../../img/deep-learning-specialization/computer-vision-and-edge-detection-06.gif" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+</div>
+
 **Convolution** is a mathematical operation that helps us apply a small matrix (called a **filter** or **kernel**) across the entire image to detect specific patterns like edges.
 
 #### What Does a Filter Do?
