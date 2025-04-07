@@ -325,6 +325,12 @@ function updateTOC(url, theme) {
                       "Convolutional Operations",
                       theme
                     ),
+                    SubHeading(
+                      "1.1.3",
+                      "/deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.html",
+                      "CNN Architecture and Examples",
+                      theme
+                    ),
                   ],
                   true
                 )

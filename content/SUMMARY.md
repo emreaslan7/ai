@@ -49,6 +49,8 @@
 
 - [Convolutional Operations](./deep-learning-specialization/convolutional-neural-networks/convolutional-operations.md)
 
+- [CNN Architecture and Examples](./deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.md)
+
 # TR
 
 - [turkce](./tr/README.md)
