@@ -335,6 +335,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "1.2",
+                "",
+                "Deep Convolutional Models: Cases Studies",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.2.1",
+                      "/deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.html",
+                      "Classic Networks: LeNet-5, AlexNet, VGG",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )

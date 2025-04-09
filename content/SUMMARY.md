@@ -51,6 +51,10 @@
 
 - [CNN Architecture and Examples](./deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.md)
 
+### Deep Convolutional Models: Case Studies
+
+- [Classic Networks: LeNet-5, AlexNet, VGG](./deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.md)
+
 # TR
 
 - [turkce](./tr/README.md)
