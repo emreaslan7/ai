@@ -55,6 +55,8 @@
 
 - [Classic Networks: LeNet-5, AlexNet, VGG](./deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.md)
 
+- [Modern CNN Architectures: ResNet, Inception, MobileNet, EfficientNet](./deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.md)
+
 # TR
 
 - [turkce](./tr/README.md)

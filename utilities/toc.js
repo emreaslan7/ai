@@ -350,6 +350,12 @@ function updateTOC(url, theme) {
                       "Classic Networks: LeNet-5, AlexNet, VGG",
                       theme
                     ),
+                    SubHeading(
+                      "1.2.2",
+                      "/deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.html",
+                      "Modern CNN Architectures: ResNet, Inception, MobileNet, EfficientNet",
+                      theme
+                    ),
                   ],
                   true
                 )
