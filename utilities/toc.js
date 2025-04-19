@@ -360,6 +360,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "1.3",
+                "",
+                "Object Detection",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.3.1",
+                      "/deep-learning-specialization/convolutional-neural-networks/object-localization-and-detection.html",
+                      "Object Localization and Detection",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.3.2",
+                      "/deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.html",
+                      "Evaluation and Optimization: IoU, Non-max Suppression, Anchor Boxes",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
