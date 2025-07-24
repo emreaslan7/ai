@@ -57,11 +57,13 @@
 
 - [Modern CNN Architectures: ResNet, Inception, MobileNet, EfficientNet](./deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.md)
 
-### Object Detection
+### Object Detection and Face Recognition
 
 - [Object Localization and Detection](./deep-learning-specialization/convolutional-neural-networks/object-localization-and-detection.md)
 
 - [Evaluation and Optimization: IoU, Non-max Suppression, Anchor Boxes](./deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.md)
+
+- [Region Proposals and Semantic Segmentation: U-Net](./deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.md)
 
 # TR
 

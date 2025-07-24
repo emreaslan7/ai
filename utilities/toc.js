@@ -363,7 +363,7 @@ function updateTOC(url, theme) {
               SubHeading(
                 "1.3",
                 "",
-                "Object Detection",
+                "Object Detection and Face Recognition",
                 theme,
                 "11px",
                 "bold",
@@ -379,6 +379,12 @@ function updateTOC(url, theme) {
                       "1.3.2",
                       "/deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.html",
                       "Evaluation and Optimization: IoU, Non-max Suppression, Anchor Boxes",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.3.3",
+                      "/deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.html",
+                      "Region Proposals and Semantic Segmentation: U-Net",
                       theme
                     ),
                   ],
