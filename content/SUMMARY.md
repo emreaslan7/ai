@@ -65,6 +65,8 @@
 
 - [Region Proposals and Semantic Segmentation: U-Net](./deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.md)
 
+- [Face Recognition and Neural Style Transfer](./deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.md)
+
 # TR
 
 - [turkce](./tr/README.md)

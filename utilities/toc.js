@@ -387,6 +387,12 @@ function updateTOC(url, theme) {
                       "Region Proposals and Semantic Segmentation: U-Net",
                       theme
                     ),
+                    SubHeading(
+                      "1.3.4",
+                      "/deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.html",
+                      "Face Recognition and Neural Style Transfer",
+                      theme
+                    ),
                   ],
                   true
                 )
