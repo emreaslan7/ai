@@ -397,6 +397,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "1.4",
+                "",
+                "Sequence Models",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.4.1",
+                      "/deep-learning-specialization/sequence-models/recurrent-neural-networks.html",
+                      "Recurrent Neural Networks",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )

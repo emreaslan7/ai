@@ -67,6 +67,10 @@
 
 - [Face Recognition and Neural Style Transfer](./deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.md)
 
+### Sequence Models
+
+- [Recurrent Neural Networks](./deep-learning-specialization/sequence-models/recurrent-neural-networks.md)
+
 # TR
 
 - [turkce](./tr/README.md)
