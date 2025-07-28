@@ -412,6 +412,12 @@ function updateTOC(url, theme) {
                       "Recurrent Neural Networks",
                       theme
                     ),
+                    SubHeading(
+                      "1.4.2",
+                      "/deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.html",
+                      "Natural Language Processing and Word Embeddings",
+                      theme
+                    ),
                   ],
                   true
                 )

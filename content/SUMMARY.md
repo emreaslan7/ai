@@ -71,6 +71,8 @@
 
 - [Recurrent Neural Networks](./deep-learning-specialization/sequence-models/recurrent-neural-networks.md)
 
+- [Natural Language Models & Word Embeddings](./deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
+
 # TR
 
 - [turkce](./tr/README.md)
