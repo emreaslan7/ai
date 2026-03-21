@@ -73,6 +73,16 @@
 
 - [Natural Language Models & Word Embeddings](./deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
 
+
+
+# Data Analytics
+
+- [Content](./data-analytics/README.md)
+
+## Data Analytics Foundations
+
+- [Introduction](./data-analytics/foundations/introduction.md)
+
 # TR
 
 - [turkce](./tr/README.md)

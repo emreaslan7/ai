@@ -4,3 +4,61 @@ svg {
   display: block;
   margin: auto;
 }
+
+/* Keep menu-bar actions on one row (translate dropdown used float:right and broke flex) */
+#mdbook-menu-bar .right-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+/* Align Font Awesome 4 (globe) with embedded SVG icons in the menu bar */
+#mdbook-menu-bar .left-buttons .icon-button,
+#mdbook-menu-bar .right-buttons .icon-button,
+#mdbook-menu-bar .right-buttons > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+#mdbook-menu-bar .left-buttons .fa-svg,
+#mdbook-menu-bar .right-buttons .fa-svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+#mdbook-menu-bar .left-buttons .fa,
+#mdbook-menu-bar .right-buttons .fa {
+  font-size: 1em;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* In-page TOC from mdbook-toc (`<!-- toc -->` → first list in main): sidebar-style box */
+#mdbook-content main > ul:first-of-type {
+  float: right;
+  clear: right;
+  max-width: min(280px, 38vw);
+  margin: 0 0 1rem 1.25rem;
+  padding: 0.5rem 0.75rem 0.5rem 1.25rem;
+  font-size: 0.9em;
+  line-height: 1.35;
+  border: 1px solid var(--table-border-color);
+  border-radius: 4px;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-fg);
+}
+@media (max-width: 720px) {
+  #mdbook-content main > ul:first-of-type {
+    float: none;
+    clear: both;
+    max-width: none;
+    margin: 0 0 1rem 0;
+  }
+}
+
+#mdbook-content main::after {
+  content: "";
+  display: table;
+  clear: both;
+}

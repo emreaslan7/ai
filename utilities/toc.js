@@ -1,7 +1,5 @@
 const currentURL = window.location.href;
 
-console.log("Current URL:", currentURL);
-
 function getThemeColors(theme) {
   const themes = {
     ayu: {
@@ -115,7 +113,9 @@ function Heading(text, fontSize = "14px", fontWeight = "bold") {
 }
 
 function updateTOC(url, theme) {
-  const tocElement = document.querySelector("#sidebar .sidebar-scrollbox"); // TOC element
+  const tocElement = document.querySelector(
+    "#mdbook-sidebar .sidebar-scrollbox"
+  );
 
   if (!tocElement) return;
 
@@ -427,6 +427,32 @@ function updateTOC(url, theme) {
           )
         ),
       ])}
+    </div>
+
+    ${HeadingCollapsible("Data Analytics", "data-analytics-specialization")}
+    ${SubHeading("", "/data-analytics", "Content", theme)}
+    ${SubHeadingList([
+      SubHeading(
+        "1.",
+        "",
+        "Data Analytics Foundations",
+        theme,
+        "13px",
+        "bold",
+        SubHeadingList(
+          [
+            SubHeading(
+              "1.1",
+              "/data-analytics/foundations/introduction.html",
+              "Introduction",
+              theme
+            ),
+          ],
+          true
+        )
+      ),
+    ])}
+    </div>
 
     `;
 
@@ -461,33 +487,23 @@ function updateTOC(url, theme) {
   tocElement.innerHTML = tocContent;
 }
 
+function currentUiTheme() {
+  var t = null;
+  try {
+    t = localStorage.getItem("mdbook-theme");
+  } catch (e) {}
+  if (t) return t;
+  var names = ["light", "rust", "coal", "navy", "ayu"];
+  for (var i = 0; i < names.length; i++) {
+    if (document.documentElement.classList.contains(names[i])) {
+      return names[i];
+    }
+  }
+  return "rust";
+}
+
 function initializeTOC() {
-  const theme = localStorage.getItem("mdbook-theme") || "rust";
-  localStorage.setItem("mdbook-theme", theme);
-  localStorage.setItem("theme", theme);
-  document.documentElement.classList.add("js");
-  console.log("themettt:", theme);
-  updateTOC(currentURL, theme);
+  updateTOC(currentURL, currentUiTheme());
 }
 
 initializeTOC();
-
-function loadKaTeXStylesheet() {
-  // Create a link element for the KaTeX CSS
-  var link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css";
-
-  // Find the <main> element inside the div with id "content"
-  var mainElement = document.querySelector("#content main");
-
-  // Append the link element to the <main> element
-  if (mainElement) {
-    mainElement.appendChild(link);
-  } else {
-    console.error("Main element not found inside #content");
-  }
-}
-
-// Call the function to load the KaTeX stylesheet
-loadKaTeXStylesheet();

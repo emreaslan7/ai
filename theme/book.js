@@ -313,29 +313,39 @@ function playground_text(playground, hidden = true) {
 })();
 
 (function themes() {
-  var html = document.querySelector("html");
-  var themeToggleButton = document.getElementById("theme-toggle");
-  var themePopup = document.getElementById("theme-list");
-  var themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
-  var stylesheets = {
-    ayuHighlight: document.querySelector("[href$='ayu-highlight.css']"),
-    tomorrowNight: document.querySelector("[href$='tomorrow-night.css']"),
-    highlight: document.querySelector("[href$='highlight.css']"),
+  const html = document.querySelector("html");
+  const themeToggleButton = document.getElementById("mdbook-theme-toggle");
+  const themePopup = document.getElementById("mdbook-theme-list");
+  const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+  const themeIds = [];
+  themePopup.querySelectorAll("button.theme").forEach(function (el) {
+    themeIds.push(el.id);
+  });
+  const stylesheets = {
+    ayuHighlight: document.querySelector("#mdbook-ayu-highlight-css"),
+    tomorrowNight: document.querySelector("#mdbook-tomorrow-night-css"),
+    highlight: document.querySelector("#mdbook-highlight-css"),
   };
 
   function showThemes() {
     themePopup.style.display = "block";
     themeToggleButton.setAttribute("aria-expanded", true);
-    themePopup.querySelector("button#" + get_theme()).focus();
+    themePopup.querySelector("button#mdbook-theme-" + get_theme()).focus();
   }
 
   function updateThemeSelected() {
     themePopup.querySelectorAll(".theme-selected").forEach(function (el) {
       el.classList.remove("theme-selected");
     });
-    themePopup
-      .querySelector("button#" + get_theme())
-      .classList.add("theme-selected");
+    var selected = get_saved_theme();
+    if (selected === null || selected === undefined) {
+      selected = "default_theme";
+    }
+    var element = themePopup.querySelector("button#mdbook-theme-" + selected);
+    if (element === null) {
+      element = themePopup.querySelector("button#mdbook-theme-" + get_theme());
+    }
+    element.classList.add("theme-selected");
   }
 
   function hideThemes() {
@@ -344,18 +354,38 @@ function playground_text(playground, hidden = true) {
     themeToggleButton.focus();
   }
 
-  function get_theme() {
-    var theme;
+  function get_saved_theme() {
+    var theme = null;
     try {
       theme = localStorage.getItem("mdbook-theme");
-    } catch (e) {}
-    if (theme === null || theme === undefined) {
-      return default_theme;
-    } else {
-      return theme;
+    } catch (e) {
+      // ignore
     }
+    return theme;
   }
 
+  function delete_saved_theme() {
+    localStorage.removeItem("mdbook-theme");
+  }
+
+  function get_theme() {
+    var theme = get_saved_theme();
+    if (
+      theme === null ||
+      theme === undefined ||
+      !themeIds.includes("mdbook-theme-" + theme)
+    ) {
+      if (typeof default_dark_theme === "undefined") {
+        return default_theme;
+      }
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? default_dark_theme
+        : default_light_theme;
+    }
+    return theme;
+  }
+
+  let previousTheme = default_theme;
   function set_theme(theme, store = true) {
     let ace_theme;
 
@@ -389,8 +419,6 @@ function playground_text(playground, hidden = true) {
       });
     }
 
-    var previousTheme = get_theme();
-
     if (store) {
       try {
         localStorage.setItem("mdbook-theme", theme);
@@ -400,13 +428,16 @@ function playground_text(playground, hidden = true) {
 
     html.classList.remove(previousTheme);
     html.classList.add(theme);
+    previousTheme = theme;
     updateThemeSelected();
   }
 
-  // Set theme
-  var theme = get_theme();
+  const query = window.matchMedia("(prefers-color-scheme: dark)");
+  query.onchange = function () {
+    set_theme(get_theme(), false);
+  };
 
-  set_theme(theme, false);
+  set_theme(get_theme(), false);
 
   themeToggleButton.addEventListener("click", function () {
     if (themePopup.style.display === "block") {
@@ -417,19 +448,21 @@ function playground_text(playground, hidden = true) {
   });
 
   themePopup.addEventListener("click", function (e) {
-    var theme;
-    if (e.target.className === "theme") {
-      theme = e.target.id;
-    } else if (e.target.parentElement.className === "theme") {
-      theme = e.target.parentElement.id;
-    } else {
+    var btn = e.target.closest("button.theme");
+    if (!btn || !themePopup.contains(btn)) {
       return;
     }
-    set_theme(theme);
+    var tid = btn.id.replace(/^mdbook-theme-/, "");
+
+    if (tid === "default_theme" || tid === null) {
+      delete_saved_theme();
+      set_theme(get_theme(), false);
+    } else {
+      set_theme(tid);
+    }
   });
 
   themePopup.addEventListener("focusout", function (e) {
-    // e.relatedTarget is null in Safari and Firefox on macOS (see workaround below)
     if (
       !!e.relatedTarget &&
       !themeToggleButton.contains(e.relatedTarget) &&
@@ -439,7 +472,6 @@ function playground_text(playground, hidden = true) {
     }
   });
 
-  // Should not be needed, but it works around an issue on macOS & iOS: https://github.com/rust-lang/mdBook/issues/628
   document.addEventListener("click", function (e) {
     if (
       themePopup.style.display === "block" &&
@@ -458,6 +490,7 @@ function playground_text(playground, hidden = true) {
       return;
     }
 
+    var li;
     switch (e.key) {
       case "Escape":
         e.preventDefault();
@@ -465,14 +498,14 @@ function playground_text(playground, hidden = true) {
         break;
       case "ArrowUp":
         e.preventDefault();
-        var li = document.activeElement.parentElement;
+        li = document.activeElement.parentElement;
         if (li && li.previousElementSibling) {
           li.previousElementSibling.querySelector("button").focus();
         }
         break;
       case "ArrowDown":
         e.preventDefault();
-        var li = document.activeElement.parentElement;
+        li = document.activeElement.parentElement;
         if (li && li.nextElementSibling) {
           li.nextElementSibling.querySelector("button").focus();
         }
@@ -491,9 +524,9 @@ function playground_text(playground, hidden = true) {
 
 (function sidebar() {
   var body = document.querySelector("body");
-  var sidebar = document.getElementById("sidebar");
-  var sidebarLinks = document.querySelectorAll("#sidebar a");
-  var sidebarToggleButton = document.getElementById("sidebar-toggle");
+  var sidebar = document.getElementById("mdbook-sidebar");
+  var sidebarLinks = document.querySelectorAll("#mdbook-sidebar a");
+  var sidebarToggleButton = document.getElementById("mdbook-sidebar-toggle");
   var sidebarResizeHandle = document.getElementById("sidebar-resize-handle");
   var firstContact = null;
 
@@ -510,7 +543,7 @@ function playground_text(playground, hidden = true) {
     } catch (e) {}
   }
 
-  var sidebarAnchorToggles = document.querySelectorAll("#sidebar a.toggle");
+  var sidebarAnchorToggles = document.querySelectorAll("#mdbook-sidebar a.toggle");
 
   function toggleSection(ev) {
     ev.currentTarget.parentElement.classList.toggle("expanded");
@@ -705,7 +738,7 @@ function playground_text(playground, hidden = true) {
 })();
 
 (function controllMenu() {
-  var menu = document.getElementById("menu-bar");
+  var menu = document.getElementById("mdbook-menu-bar");
 
   (function controllPosition() {
     var scrollTop = document.scrollingElement.scrollTop;
