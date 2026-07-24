@@ -429,31 +429,6 @@ function updateTOC(url, theme) {
       ])}
     </div>
 
-    ${HeadingCollapsible("Data Analytics", "data-analytics-specialization")}
-    ${SubHeading("", "/data-analytics", "Content", theme)}
-    ${SubHeadingList([
-      SubHeading(
-        "1.",
-        "",
-        "Data Analytics Foundations",
-        theme,
-        "13px",
-        "bold",
-        SubHeadingList(
-          [
-            SubHeading(
-              "1.1",
-              "/data-analytics/foundations/introduction.html",
-              "Introduction",
-              theme
-            ),
-          ],
-          true
-        )
-      ),
-    ])}
-    </div>
-
     `;
 
   const tocContentTr = `

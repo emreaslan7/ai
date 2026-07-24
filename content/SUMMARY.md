@@ -75,14 +75,6 @@
 
 
 
-# Data Analytics
-
-- [Content](./data-analytics/README.md)
-
-## Data Analytics Foundations
-
-- [Introduction](./data-analytics/foundations/introduction.md)
-
 # TR
 
 - [turkce](./tr/README.md)
