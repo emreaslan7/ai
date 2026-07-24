@@ -432,30 +432,316 @@ function updateTOC(url, theme) {
     `;
 
   const tocContentTr = `
-    ${Heading("1. Lineer Cebir")}
+    ${SubHeading("", "/tr/", "Hoş Geldiniz", theme, "13px", "bold")}
+    ${HeadingCollapsible(
+      "Machine Learning Specialization",
+      "ml-specialization-tr"
+    )}
+    ${SubHeading("", "/tr/machine-learning-specialization", "İçerik", theme)}
     ${SubHeadingList([
-      SubHeading("1.1", "/index.html", "Açiklama", theme),
       SubHeading(
-        "1.2",
-        "/tr/bolum1.html",
-        "Lineer Cebir İcerigi",
+        "1.",
+        "",
+        "Supervised Machine Learning: Regresyon ve Sınıflandırma",
         theme,
+        "13px",
+        "bold",
         SubHeadingList(
           [
-            SubHeading("1.2.1", "/tr/subsection1.html", "Alt Bölüm 1", theme),
-            SubHeading("1.2.2", "/tr/subsection2.html", "Alt Bölüm 2", theme),
+            SubHeading(
+              "1.1",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.html",
+              "Supervised ve Unsupervised Learning",
+              theme
+            ),
+            SubHeading(
+              "1.2",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.html",
+              "Linear Regresyon ve Maliyet Fonksiyonu",
+              theme
+            ),
+            SubHeading(
+              "1.3",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.html",
+              "Gradient Descent",
+              theme
+            ),
+            SubHeading(
+              "1.4",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.html",
+              "Çoklu Özellikler",
+              theme
+            ),
+            SubHeading(
+              "1.5",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.html",
+              "Özellik Mühendisliği ve Polinom Regresyonu",
+              theme
+            ),
+            SubHeading(
+              "1.6",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/classification-with-logistic-regression.html",
+              "Lojistik Regresyon ile Sınıflandırma",
+              theme
+            ),
+            SubHeading(
+              "1.7",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.html",
+              "Overfitting ve Regularizasyon",
+              theme
+            ),
+            SubHeading(
+              "1.8",
+              "/tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.html",
+              "Scikit-Learn: Pratik Uygulamalar",
+              theme
+            ),
           ],
           true
         )
       ),
-      SubHeading("1.3", "#section3", "Bölüm 3", theme),
     ])}
-    ${Heading("Bölümler")}
     ${SubHeadingList([
-      SubHeading("2.1", "#section1", "Bölüm 1", theme),
-      SubHeading("2.2", "#section2", "Bölüm 2", theme),
-      SubHeading("2.3", "#section3", "Bölüm 3", theme),
-    ])}`;
+      SubHeading(
+        "2.",
+        "",
+        "İleri Öğrenme Algoritmaları",
+        theme,
+        "13px",
+        "bold",
+        SubHeadingList(
+          [
+            SubHeading(
+              "2.1",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.html",
+              "Sinir Ağları: Sezgi ve Model",
+              theme
+            ),
+            SubHeading(
+              "2.2",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.html",
+              "Forward Propagation Uygulaması",
+              theme
+            ),
+            SubHeading(
+              "2.3",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.html",
+              "Sinir Ağı Eğitimi ve Aktivasyon Fonksiyonları",
+              theme
+            ),
+            SubHeading(
+              "2.4",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.html",
+              "Optimizasyon ve Katman Türleri",
+              theme
+            ),
+            SubHeading(
+              "2.5",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.html",
+              "Model Değerlendirme, Seçim ve İyileştirme",
+              theme
+            ),
+            SubHeading(
+              "2.6",
+              "/tr/machine-learning-specialization/advanced-learning-algorithms/decision-trees.html",
+              "Karar Ağaçları",
+              theme
+            ),
+          ],
+          true
+        )
+      ),
+      SubHeading(
+        "3.",
+        "",
+        "Unsupervised Learning, Öneri Sistemleri, Pekiştirmeli Öğrenme",
+        theme,
+        "13px",
+        "bold",
+        SubHeadingList(
+          [
+            SubHeading(
+              "3.1",
+              "",
+              "Unsupervised Learning",
+              theme,
+              "13px",
+              "normal",
+              SubHeadingList(
+                [
+                  SubHeading(
+                    "3.1.1",
+                    "/tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/k-means-clustering.html",
+                    "K-Means Kümeleme",
+                    theme
+                  ),
+                  SubHeading(
+                    "3.1.2",
+                    "/tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.html",
+                    "Anomali Tespiti",
+                    theme
+                  ),
+                ],
+                true
+              )
+            ),
+            SubHeading(
+              "3.2",
+              "/tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.html",
+              "Öneri Sistemleri",
+              theme
+            ),
+            SubHeading(
+              "3.3",
+              "/tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.html",
+              "Pekiştirmeli Öğrenme",
+              theme
+            ),
+          ],
+          true
+        )
+      ),
+    ])}
+    </div>
+
+    ${HeadingCollapsible("Deep Learning Specialization", "dl-specialization-tr")}
+    ${SubHeading("", "/tr/deep-learning-specialization", "İçerik", theme)}
+      ${SubHeadingList([
+        SubHeading(
+          "1.",
+          "",
+          "Konvolüsyonel Sinir Ağları",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "1.1",
+                "",
+                "Konvolüsyonel Sinir Ağlarının Temelleri",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.1.1",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/computer-vision-and-edge-detection.html",
+                      "Bilgisayarlı Görü ve Kenar Tespiti",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.1.2",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/convolutional-operations.html",
+                      "Konvolüsyonel İşlemler",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.1.3",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.html",
+                      "CNN Mimarisi ve Örnekler",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "1.2",
+                "",
+                "Derin Konvolüsyonel Modeller: Vaka Çalışmaları",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.2.1",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.html",
+                      "Klasik Ağlar: LeNet-5, AlexNet, VGG",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.2.2",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.html",
+                      "Modern CNN Mimarileri: ResNet, Inception, MobileNet, EfficientNet",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "1.3",
+                "",
+                "Nesne Tespiti ve Yüz Tanıma",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.3.1",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/object-localization-and-detection.html",
+                      "Nesne Lokalizasyonu ve Tespiti",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.3.2",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.html",
+                      "Değerlendirme ve Optimizasyon: IoU, Non-max Suppression, Anchor Boxes",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.3.3",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.html",
+                      "Bölge Önerileri ve Semantik Segmentasyon: U-Net",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.3.4",
+                      "/tr/deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.html",
+                      "Yüz Tanıma ve Neural Style Transfer",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "1.4",
+                "",
+                "Sequence Modelleri",
+                theme,
+                "11px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "1.4.1",
+                      "/tr/deep-learning-specialization/sequence-models/recurrent-neural-networks.html",
+                      "Tekrarlayan Sinir Ağları (RNN)",
+                      theme
+                    ),
+                    SubHeading(
+                      "1.4.2",
+                      "/tr/deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.html",
+                      "Doğal Dil İşleme ve Kelime Gömmeleri",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+      ])}
+    </div>
+
+    `;
 
   const tocContent = url.includes("/tr") ? tocContentTr : tocContentEn;
 

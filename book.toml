@@ -6,8 +6,8 @@ title = "ai"
 description = "deep notes about ai"
 
 # uses KaTeX instead of MathJax, much better interop
-[preprocessor.katex]
-after = ["links"]
+#[preprocessor.katex]
+#after = ["links"]
 
 # converts mermaid drawings to SVG
 [preprocessor.mermaid]

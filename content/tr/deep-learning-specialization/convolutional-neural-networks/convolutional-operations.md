@@ -1,0 +1,1 @@
+# Konvolüsyonel İşlemler

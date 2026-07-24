@@ -335,8 +335,22 @@
           translateOptions.addEventListener("click", function (event) {
             if (event.target.tagName === "BUTTON") {
               const language = event.target.id;
-              const newUrl = language === "en" ? `/` : `/tr/index.html`;
-              window.location.href = newUrl;
+              const currentPath = window.location.pathname;
+
+              if (language === "tr") {
+                // Bulunulan sayfanın Türkçe karşılığına git
+                if (currentPath === "/" || currentPath === "/index.html") {
+                  window.location.href = "/tr/index.html";
+                } else if (!currentPath.startsWith("/tr")) {
+                  window.location.href = "/tr" + currentPath;
+                }
+              } else {
+                // Türkçe sayfadan İngilizce karşılığına dön
+                if (currentPath.startsWith("/tr")) {
+                  const newPath = currentPath.replace("/tr", "") || "/";
+                  window.location.href = newPath;
+                }
+              }
             }
           });
         });

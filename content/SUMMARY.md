@@ -77,4 +77,64 @@
 
 # TR
 
-- [turkce](./tr/README.md)
+- [Hoş Geldiniz](./tr/README.md)
+
+# Machine Learning Specialization
+
+- [İçerik](./tr/machine-learning-specialization/README.md)
+
+## 1. Supervised Machine Learning: Regresyon ve Sınıflandırma
+
+- [Supervised ve Unsupervised Learning](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/supervised-unsupervised-learning.md)
+- [Linear Regresyon ve Maliyet Fonksiyonu](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/linear-regression-and-cost-function.md)
+- [Gradient Descent](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/gradient-descent.md)
+- [Çoklu Özellikler](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.md)
+- [Özellik Mühendisliği ve Polinom Regresyonu](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.md)
+- [Lojistik Regresyon ile Sınıflandırma](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/classification-with-logistic-regression.md)
+- [Overfitting ve Regularizasyon](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.md)
+- [Scikit-Learn: Pratik Uygulamalar](./tr/machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.md)
+
+## 2. İleri Öğrenme Algoritmaları
+
+- [Sinir Ağları: Sezgi ve Model](./tr/machine-learning-specialization/advanced-learning-algorithms/neural-networks-intuition-and-model.md)
+- [Forward Propagation Uygulaması](./tr/machine-learning-specialization/advanced-learning-algorithms/implementation-of-forward-propagation.md)
+- [Sinir Ağı Eğitimi ve Aktivasyon Fonksiyonları](./tr/machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.md)
+- [Optimizasyon ve Katman Türleri](./tr/machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.md)
+- [Model Değerlendirme, Seçim ve İyileştirme](./tr/machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.md)
+- [Karar Ağaçları](./tr/machine-learning-specialization/advanced-learning-algorithms/decision-trees.md)
+
+## 3. Unsupervised Learning, Öneri Sistemleri, Pekiştirmeli Öğrenme
+
+- [K-Means Kümeleme](./tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/k-means-clustering.md)
+- [Anomali Tespiti](./tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.md)
+- [Öneri Sistemleri](./tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.md)
+- [Pekiştirmeli Öğrenme](./tr/machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.md)
+
+# Deep Learning Specialization
+
+- [İçerik](./tr/deep-learning-specialization/README.md)
+
+## Konvolüsyonel Sinir Ağları
+
+### Konvolüsyonel Sinir Ağlarının Temelleri
+
+- [Bilgisayarlı Görü ve Kenar Tespiti](./tr/deep-learning-specialization/convolutional-neural-networks/computer-vision-and-edge-detection.md)
+- [Konvolüsyonel İşlemler](./tr/deep-learning-specialization/convolutional-neural-networks/convolutional-operations.md)
+- [CNN Mimarisi ve Örnekler](./tr/deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.md)
+
+### Derin Konvolüsyonel Modeller: Vaka Çalışmaları
+
+- [Klasik Ağlar: LeNet-5, AlexNet, VGG](./tr/deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.md)
+- [Modern CNN Mimarileri: ResNet, Inception, MobileNet, EfficientNet](./tr/deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.md)
+
+### Nesne Tespiti ve Yüz Tanıma
+
+- [Nesne Lokalizasyonu ve Tespiti](./tr/deep-learning-specialization/convolutional-neural-networks/object-localization-and-detection.md)
+- [Değerlendirme ve Optimizasyon: IoU, Non-max Suppression, Anchor Boxes](./tr/deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.md)
+- [Bölge Önerileri ve Semantik Segmentasyon: U-Net](./tr/deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.md)
+- [Yüz Tanıma ve Neural Style Transfer](./tr/deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.md)
+
+### Sequence Modelleri
+
+- [Tekrarlayan Sinir Ağları (RNN)](./tr/deep-learning-specialization/sequence-models/recurrent-neural-networks.md)
+- [Doğal Dil İşleme ve Kelime Gömmeleri](./tr/deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
