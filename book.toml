@@ -5,7 +5,7 @@ src = "content"
 title = "ai"
 description = "deep notes about ai"
 
-# uses KaTeX instead of MathJax, much better interop
+# uses KaTeX instead of MathJax, much better interop (client-side via katex-init.js)
 #[preprocessor.katex]
 #after = ["links"]
 
@@ -22,7 +22,7 @@ renderer = ["html"]
 
 [output.html]
 additional-css = ["./utilities/custom.css", "./utilities/katex/katex.min.css"]
-additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js", "./utilities/toc.js", "./utilities/marked.min.js","./utilities/katex/katex.min.js","./utilities/katex/autorender.min.js"]
+additional-js = ["./utilities/mermaid.min.js", "./utilities/mermaid-init.js", "./utilities/toc.js", "./utilities/marked.min.js","./utilities/katex/katex.min.js","./utilities/katex/autorender.min.js","./utilities/katex-init.js"]
 git-repository-url = "https://github.com/emreaslan7/ai"
 git-repository-icon = "fab-github"
 no-section-label = true
