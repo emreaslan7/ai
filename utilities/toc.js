@@ -429,6 +429,31 @@ function updateTOC(url, theme) {
       ])}
     </div>
 
+    ${HeadingCollapsible("First Principles of Computer Vision", "fpcv-specialization")} 
+    ${SubHeading("", "/first-principles-of-computer-vision", "Content", theme)}
+      ${SubHeadingList([
+        SubHeading(
+          "1.",
+          "",
+          "Introduction",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "1.1",
+                "/first-principles-of-computer-vision/introduction-to-computer-vision.html",
+                "Introduction to Computer Vision",
+                theme
+              ),
+            ],
+            true
+          )
+        ),
+      ])}
+    </div>
+
     `;
 
   const tocContentTr = `
@@ -733,6 +758,31 @@ function updateTOC(url, theme) {
                   ],
                   true
                 )
+              ),
+            ],
+            true
+          )
+        ),
+      ])}
+    </div>
+
+    ${HeadingCollapsible("First Principles of Computer Vision", "fpcv-specialization-tr")} 
+    ${SubHeading("", "/tr/first-principles-of-computer-vision", "İçerik", theme)}
+      ${SubHeadingList([
+        SubHeading(
+          "1.",
+          "",
+          "Giriş (Introduction)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "1.1",
+                "/tr/first-principles-of-computer-vision/introduction-to-computer-vision.html",
+                "Bilgisayarlı Görmeye Giriş",
+                theme
               ),
             ],
             true

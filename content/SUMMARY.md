@@ -73,7 +73,13 @@
 
 - [Natural Language Models & Word Embeddings](./deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
 
+# First Principles of Computer Vision
 
+- [Content](./first-principles-of-computer-vision/README.md)
+
+## Introduction
+
+- [Introduction to Computer Vision](./first-principles-of-computer-vision/introduction-to-computer-vision.md)
 
 # TR
 
@@ -138,3 +144,11 @@
 
 - [Tekrarlayan Sinir Ağları (RNN)](./tr/deep-learning-specialization/sequence-models/recurrent-neural-networks.md)
 - [Doğal Dil İşleme ve Kelime Gömmeleri](./tr/deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
+
+# First Principles of Computer Vision
+
+- [İçerik](./tr/first-principles-of-computer-vision/README.md)
+
+## Giriş (Introduction)
+
+- [Bilgisayarlı Görmeye Giriş](./tr/first-principles-of-computer-vision/introduction-to-computer-vision.md)
