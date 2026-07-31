@@ -12,9 +12,7 @@
 - [Multiple Features](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/multiple-features.md)
 - [Feature Engineering and Polynomial Regression](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/feature-engineering-and-polynomial-regression.md)
 - [Classification with Logistic Regression](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/classification-with-logistic-regression.md)
-
 - [Overfitting and Regularization](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/overfitting-and-regularization.md)
-
 - [Scikit-learn: Practical Applications](./machine-learning-specialization/supervised-machine-learning-regression-and-classification/scikit-learn-practical-applications.md)
 
 ## 2. Advanced Learning Algorithms
@@ -24,17 +22,13 @@
 - [Neural Network Training and Activation Functions](./machine-learning-specialization/advanced-learning-algorithms/neural-network-training-and-activation-functions.md)
 - [Optimizers and Layer Types](./machine-learning-specialization/advanced-learning-algorithms/optimizers-and-layer-types.md)
 - [Model Evaluation, Selection, and Improvement](./machine-learning-specialization/advanced-learning-algorithms/model-evaluation-selection-and-improvement.md)
-
 - [Decision Trees](./machine-learning-specialization/advanced-learning-algorithms/decision-trees.md)
 
 ## 3. Unsupervised Learning, Recommenders, Reinforcement Learning
 
 - [K-means Clustering](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/k-means-clustering.md)
-
 - [Anomaly Detection](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/anomaly-detection.md)
-
 - [Recommender Systems](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/recommender-systems.md)
-
 - [Reinforcement Learning](./machine-learning-specialization/unsupervised-learning-recommenders-reinforcement-learning/reinforcement-learning.md)
 
 # Deep Learning Specialization
@@ -46,31 +40,24 @@
 ### Foundations of Convolutional Network Layers
 
 - [Computer Vision and Edge Detection](./deep-learning-specialization/convolutional-neural-networks/computer-vision-and-edge-detection.md)
-
 - [Convolutional Operations](./deep-learning-specialization/convolutional-neural-networks/convolutional-operations.md)
-
 - [CNN Architecture and Examples](./deep-learning-specialization/convolutional-neural-networks/cnn-architecture-and-examples.md)
 
 ### Deep Convolutional Models: Case Studies
 
 - [Classic Networks: LeNet-5, AlexNet, VGG](./deep-learning-specialization/convolutional-neural-networks/classic-networks-lenet-alexnet-vgg.md)
-
 - [Modern CNN Architectures: ResNet, Inception, MobileNet, EfficientNet](./deep-learning-specialization/convolutional-neural-networks/modern-cnn-architectures-resnet-inception-mobilenet-efficenet.md)
 
 ### Object Detection and Face Recognition
 
 - [Object Localization and Detection](./deep-learning-specialization/convolutional-neural-networks/object-localization-and-detection.md)
-
 - [Evaluation and Optimization: IoU, Non-max Suppression, Anchor Boxes](./deep-learning-specialization/convolutional-neural-networks/evaluation-and-optimization-iou-nms-anchor-boxes.md)
-
 - [Region Proposals and Semantic Segmentation: U-Net](./deep-learning-specialization/convolutional-neural-networks/region-proposals-and-semantic-segmentation-unet.md)
-
 - [Face Recognition and Neural Style Transfer](./deep-learning-specialization/convolutional-neural-networks/face-recognition-and-neural-style-transfer.md)
 
 ### Sequence Models
 
 - [Recurrent Neural Networks](./deep-learning-specialization/sequence-models/recurrent-neural-networks.md)
-
 - [Natural Language Models & Word Embeddings](./deep-learning-specialization/sequence-models/natural-language-processing-and-word-embeddings.md)
 
 # First Principles of Computer Vision
@@ -80,6 +67,14 @@
 ## Introduction
 
 - [Introduction to Computer Vision](./first-principles-of-computer-vision/introduction-to-computer-vision.md)
+
+## Imaging
+
+### Image Formation
+
+- [Pinhole Camera Model and Perspective Projection](./first-principles-of-computer-vision/imaging/image-formation/pinhole-and-perspective-projection.md)
+- [Lens Systems and Depth of Field](./first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.md)
+- [Advanced Optical Systems](./first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.md)
 
 # TR
 
@@ -152,3 +147,11 @@
 ## Giriş (Introduction)
 
 - [Bilgisayarlı Görmeye Giriş](./tr/first-principles-of-computer-vision/introduction-to-computer-vision.md)
+
+## Görüntüleme (Imaging)
+
+### Görüntü Oluşumu (Image Formation)
+
+- [İğne Deliği Kamera Modeli ve Perspektif İzdüşüm](./tr/first-principles-of-computer-vision/imaging/image-formation/pinhole-and-perspective-projection.md)
+- [Mercek Sistemleri ve Alan Derinliği](./tr/first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.md)
+- [Gelişmiş Optik Sistemler](./tr/first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.md)

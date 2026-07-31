@@ -449,6 +449,50 @@ function updateTOC(url, theme) {
               ),
             ],
             true
+          ),
+        ),
+        SubHeading(
+          "2.",
+          "",
+          "Imaging",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "2.1",
+                "",
+                "Image Formation",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.1.1",
+                      "/first-principles-of-computer-vision/imaging/image-formation/pinhole-and-perspective-projection.html",
+                      "Pinhole Camera Model and Perspective Projection",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.1.2",
+                      "/first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.html",
+                      "Lens Systems and Depth of Field",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.1.3",
+                      "/first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.html",
+                      "Advanced Optical Systems",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
           )
         ),
       ])}
@@ -783,6 +827,50 @@ function updateTOC(url, theme) {
                 "/tr/first-principles-of-computer-vision/introduction-to-computer-vision.html",
                 "Bilgisayarlı Görmeye Giriş",
                 theme
+              ),
+            ],
+            true
+          )
+        ),
+        SubHeading(
+          "2.",
+          "",
+          "Görüntüleme (Imaging)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "2.1",
+                "",
+                "Görüntü Oluşumu (Image Formation)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.1.1",
+                      "/tr/first-principles-of-computer-vision/imaging/image-formation/pinhole-and-perspective-projection.html",
+                      "İğne Deliği Kamera Modeli ve Perspektif İzdüşüm",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.1.2",
+                      "/tr/first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.html",
+                      "Mercek Sistemleri ve Alan Derinliği",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.1.3",
+                      "/tr/first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.html",
+                      "Gelişmiş Optik Sistemler",
+                      theme
+                    ),
+                  ],
+                  true
+                )
               ),
             ],
             true
