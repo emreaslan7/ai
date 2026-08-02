@@ -491,6 +491,37 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "2.2",
+                "",
+                "Image Sensing",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.2.1",
+                      "/first-principles-of-computer-vision/imaging/image-sensing/overview-history-and-sensor-types.html",
+                      "Overview, History, and Image Sensor Types",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.2.2",
+                      "/first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.html",
+                      "Resolution, Noise, Dynamic Range, and Color Sensing",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.2.3",
+                      "/first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.html",
+                      "Camera Response, HDR Imaging, and Nature's Sensors",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -866,6 +897,37 @@ function updateTOC(url, theme) {
                       "2.1.3",
                       "/tr/first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.html",
                       "Gelişmiş Optik Sistemler",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "2.2",
+                "",
+                "Görüntü Algılama (Image Sensing)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.2.1",
+                      "/tr/first-principles-of-computer-vision/imaging/image-sensing/overview-history-and-sensor-types.html",
+                      "Genel Bakış, Tarihçe ve Görüntü Sensör Türleri",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.2.2",
+                      "/tr/first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.html",
+                      "Çözünürlük, Gürültü, Dinamik Aralık ve Renk Algılama",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.2.3",
+                      "/tr/first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.html",
+                      "Kamera Yanıtı, HDR Görüntüleme ve Doğadaki Sensörler",
                       theme
                     ),
                   ],

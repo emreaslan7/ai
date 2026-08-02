@@ -76,6 +76,12 @@
 - [Lens Systems and Depth of Field](./first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.md)
 - [Advanced Optical Systems](./first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.md)
 
+### Image Sensing
+
+- [Overview, History, and Image Sensor Types](./first-principles-of-computer-vision/imaging/image-sensing/overview-history-and-sensor-types.md)
+- [Resolution, Noise, Dynamic Range, and Color Sensing](./first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.md)
+- [Camera Response, HDR Imaging, and Nature's Sensors](./first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -155,3 +161,9 @@
 - [İğne Deliği Kamera Modeli ve Perspektif İzdüşüm](./tr/first-principles-of-computer-vision/imaging/image-formation/pinhole-and-perspective-projection.md)
 - [Mercek Sistemleri ve Alan Derinliği](./tr/first-principles-of-computer-vision/imaging/image-formation/lenses-and-depth-of-field.md)
 - [Gelişmiş Optik Sistemler](./tr/first-principles-of-computer-vision/imaging/image-formation/advanced-optical-systems.md)
+
+### Görüntü Algılama (Image Sensing)
+
+- [Genel Bakış, Tarihçe ve Görüntü Sensör Türleri](./tr/first-principles-of-computer-vision/imaging/image-sensing/overview-history-and-sensor-types.md)
+- [Çözünürlük, Gürültü, Dinamik Aralık ve Renk Algılama](./tr/first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.md)
+- [Kamera Yanıtı, HDR Görüntüleme ve Doğadaki Sensörler](./tr/first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.md)
