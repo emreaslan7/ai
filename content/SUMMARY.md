@@ -82,6 +82,11 @@
 - [Resolution, Noise, Dynamic Range, and Color Sensing](./first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.md)
 - [Camera Response, HDR Imaging, and Nature's Sensors](./first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.md)
 
+### Binary Images
+
+- [Overview and Geometric Properties](./first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.md)
+- [Segmenting Binary Images and Iterative Modification](./first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -167,3 +172,8 @@
 - [Genel Bakış, Tarihçe ve Görüntü Sensör Türleri](./tr/first-principles-of-computer-vision/imaging/image-sensing/overview-history-and-sensor-types.md)
 - [Çözünürlük, Gürültü, Dinamik Aralık ve Renk Algılama](./tr/first-principles-of-computer-vision/imaging/image-sensing/resolution-noise-and-color-sensing.md)
 - [Kamera Yanıtı, HDR Görüntüleme ve Doğadaki Sensörler](./tr/first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.md)
+
+### İkili Görüntüler (Binary Images)
+
+- [Genel Bakış ve Geometrik Özellikler](./tr/first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.md)
+- [İkili Görüntü Segmentasyonu ve İteratif Değişiklikler](./tr/first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.md)

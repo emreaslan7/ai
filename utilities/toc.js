@@ -522,6 +522,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "2.3",
+                "",
+                "Binary Images",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.3.1",
+                      "/first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.html",
+                      "Overview and Geometric Properties",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.3.2",
+                      "/first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.html",
+                      "Segmenting Binary Images and Iterative Modification",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -928,6 +953,31 @@ function updateTOC(url, theme) {
                       "2.2.3",
                       "/tr/first-principles-of-computer-vision/imaging/image-sensing/camera-response-hdr-and-nature-sensors.html",
                       "Kamera Yanıtı, HDR Görüntüleme ve Doğadaki Sensörler",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "2.3",
+                "",
+                "İkili Görüntüler (Binary Images)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.3.1",
+                      "/tr/first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.html",
+                      "Genel Bakış ve Geometrik Özellikler",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.3.2",
+                      "/tr/first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.html",
+                      "İkili Görüntü Segmentasyonu ve İteratif Değişiklikler",
                       theme
                     ),
                   ],
