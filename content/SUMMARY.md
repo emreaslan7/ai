@@ -87,6 +87,12 @@
 - [Overview and Geometric Properties](./first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.md)
 - [Segmenting Binary Images and Iterative Modification](./first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.md)
 
+### Image Processing I
+
+- [Pixel Processing, LSIS, and Continuous Convolution](./first-principles-of-computer-vision/imaging/image-processing-1/pixel-processing-lsis-and-convolution.md)
+- [Linear and Non-Linear Image Filters](./first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.md)
+- [Template Matching](./first-principles-of-computer-vision/imaging/image-processing-1/template-matching.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -177,3 +183,10 @@
 
 - [Genel Bakış ve Geometrik Özellikler](./tr/first-principles-of-computer-vision/imaging/binary-images/overview-and-geometric-properties.md)
 - [İkili Görüntü Segmentasyonu ve İteratif Değişiklikler](./tr/first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.md)
+
+### Görüntü İşleme I (Image Processing I)
+
+- [Piksel İşleme, LSIS ve Sürekli Konvolüsyon](./tr/first-principles-of-computer-vision/imaging/image-processing-1/pixel-processing-lsis-and-convolution.md)
+- [Doğrusal ve Doğrusal Olmayan Görüntü Filtreleri](./tr/first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.md)
+- [Şablon Eşleme (Template Matching)](./tr/first-principles-of-computer-vision/imaging/image-processing-1/template-matching.md)
+

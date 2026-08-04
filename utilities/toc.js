@@ -547,6 +547,37 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "2.4",
+                "",
+                "Image Processing I",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.4.1",
+                      "/first-principles-of-computer-vision/imaging/image-processing-1/pixel-processing-lsis-and-convolution.html",
+                      "Pixel Processing, LSIS, and Continuous Convolution",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.4.2",
+                      "/first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.html",
+                      "Linear and Non-Linear Image Filters",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.4.3",
+                      "/first-principles-of-computer-vision/imaging/image-processing-1/template-matching.html",
+                      "Template Matching",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -978,6 +1009,37 @@ function updateTOC(url, theme) {
                       "2.3.2",
                       "/tr/first-principles-of-computer-vision/imaging/binary-images/segmenting-binary-images-and-iterative-modification.html",
                       "İkili Görüntü Segmentasyonu ve İteratif Değişiklikler",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "2.4",
+                "",
+                "Görüntü İşleme I (Image Processing I)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.4.1",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-1/pixel-processing-lsis-and-convolution.html",
+                      "Piksel İşleme, LSIS ve Sürekli Konvolüsyon",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.4.2",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.html",
+                      "Doğrusal ve Doğrusal Olmayan Görüntü Filtreleri",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.4.3",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-1/template-matching.html",
+                      "Şablon Eşleme (Template Matching)",
                       theme
                     ),
                   ],
