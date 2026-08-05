@@ -578,6 +578,37 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "2.5",
+                "",
+                "Image Processing II",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.5.1",
+                      "/first-principles-of-computer-vision/imaging/image-processing-2/overview-fourier-transform-and-convolution-theorem.html",
+                      "Overview, Fourier Transform, and Convolution Theorem",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.5.2",
+                      "/first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.html",
+                      "Filtering in Frequency Domain and Deconvolution",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.5.3",
+                      "/first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.html",
+                      "Sampling Theory and Aliasing",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1040,6 +1071,37 @@ function updateTOC(url, theme) {
                       "2.4.3",
                       "/tr/first-principles-of-computer-vision/imaging/image-processing-1/template-matching.html",
                       "Şablon Eşleme (Template Matching)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "2.5",
+                "",
+                "Görüntü İşleme II (Image Processing II)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "2.5.1",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-2/overview-fourier-transform-and-convolution-theorem.html",
+                      "Genel Bakış, Fourier Dönüşümü ve Konvolüsyon Teoremi",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.5.2",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.html",
+                      "Frekans Etki Alanında Filtreleme ve Dekonvolüsyon",
+                      theme
+                    ),
+                    SubHeading(
+                      "2.5.3",
+                      "/tr/first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.html",
+                      "Örnekleme Teorisi ve Aliasing",
                       theme
                     ),
                   ],

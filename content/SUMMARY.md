@@ -93,6 +93,13 @@
 - [Linear and Non-Linear Image Filters](./first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.md)
 - [Template Matching](./first-principles-of-computer-vision/imaging/image-processing-1/template-matching.md)
 
+### Image Processing II
+
+- [Overview, Fourier Transform, and Convolution Theorem](./first-principles-of-computer-vision/imaging/image-processing-2/overview-fourier-transform-and-convolution-theorem.md)
+- [Filtering in Frequency Domain and Deconvolution](./first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.md)
+- [Sampling Theory and Aliasing](./first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.md)
+
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -189,4 +196,11 @@
 - [Piksel İşleme, LSIS ve Sürekli Konvolüsyon](./tr/first-principles-of-computer-vision/imaging/image-processing-1/pixel-processing-lsis-and-convolution.md)
 - [Doğrusal ve Doğrusal Olmayan Görüntü Filtreleri](./tr/first-principles-of-computer-vision/imaging/image-processing-1/linear-and-non-linear-filters.md)
 - [Şablon Eşleme (Template Matching)](./tr/first-principles-of-computer-vision/imaging/image-processing-1/template-matching.md)
+
+### Görüntü İşleme II (Image Processing II)
+
+- [Genel Bakış, Fourier Dönüşümü ve Konvolüsyon Teoremi](./tr/first-principles-of-computer-vision/imaging/image-processing-2/overview-fourier-transform-and-convolution-theorem.md)
+- [Frekans Etki Alanında Filtreleme ve Dekonvolüsyon](./tr/first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.md)
+- [Örnekleme Teorisi ve Aliasing](./tr/first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.md)
+
 
