@@ -99,6 +99,13 @@
 - [Filtering in Frequency Domain and Deconvolution](./first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.md)
 - [Sampling Theory and Aliasing](./first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.md)
 
+## Features and Boundaries
+
+### Edge Detection
+
+- [Overview, Gradients, and Laplacian Edge Detection](./first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.md)
+- [Canny Edge Detector and Corner Detection](./first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.md)
+
 
 # TR
 
@@ -202,5 +209,12 @@
 - [Genel Bakış, Fourier Dönüşümü ve Konvolüsyon Teoremi](./tr/first-principles-of-computer-vision/imaging/image-processing-2/overview-fourier-transform-and-convolution-theorem.md)
 - [Frekans Etki Alanında Filtreleme ve Dekonvolüsyon](./tr/first-principles-of-computer-vision/imaging/image-processing-2/filtering-in-frequency-domain-and-deconvolution.md)
 - [Örnekleme Teorisi ve Aliasing](./tr/first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.md)
+
+## Özellikler ve Sınırlar (Features and Boundaries)
+
+### Kenar Tespiti (Edge Detection)
+
+- [Genel Bakış, Gradyanlar ve Laplacian ile Kenar Tespiti](./tr/first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.md)
+- [Canny Kenar Tespiti ve Köşe Tespiti](./tr/first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.md)
 
 

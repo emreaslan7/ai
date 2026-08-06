@@ -613,6 +613,44 @@ function updateTOC(url, theme) {
             true
           )
         ),
+        SubHeading(
+          "3.",
+          "",
+          "Features and Boundaries",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "3.1",
+                "",
+                "Edge Detection",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.1.1",
+                      "/first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.html",
+                      "Overview, Gradients, and Laplacian Edge Detection",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.1.2",
+                      "/first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.html",
+                      "Canny Edge Detector and Corner Detection",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
       ])}
     </div>
 
@@ -1102,6 +1140,44 @@ function updateTOC(url, theme) {
                       "2.5.3",
                       "/tr/first-principles-of-computer-vision/imaging/image-processing-2/sampling-theory-and-aliasing.html",
                       "Örnekleme Teorisi ve Aliasing",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+        SubHeading(
+          "3.",
+          "",
+          "Özellikler ve Sınırlar (Features and Boundaries)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "3.1",
+                "",
+                "Kenar Tespiti (Edge Detection)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.1.1",
+                      "/tr/first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.html",
+                      "Genel Bakış, Gradyanlar ve Laplacian ile Kenar Tespiti",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.1.2",
+                      "/tr/first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.html",
+                      "Canny Kenar Tespiti ve Köşe Tespiti",
                       theme
                     ),
                   ],
