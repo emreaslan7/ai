@@ -32,15 +32,11 @@ jobs:
       MDBOOK_VERSION: 0.5.2
     steps:
       - uses: actions/checkout@v4
-      - name: Install mdBook
-        run: |
-          curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
-          echo "$HOME/.cargo/bin" >> "$GITHUB_PATH"
-          rustup update
-          cargo install --version ${MDBOOK_VERSION} mdbook
-
-      - name: Install KaTeX preprocessor (0.10.0-alpha required for mdBook 0.5+)
-        run: cargo install mdbook-katex --version 0.10.0-alpha --locked
+      - name: Install mdbook
+        uses: extractions/setup-crate@v1
+        with:
+          owner: rust-lang
+          name: mdBook
 
       - name: Install Mermaid preprocessor
         uses: extractions/setup-crate@v1
@@ -58,7 +54,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with mdBook
-        run: mdbook build
+        run: |
+          mdbook build
+          echo "ai.emreaslan.dev" > ./book/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
