@@ -106,6 +106,12 @@
 - [Overview, Gradients, and Laplacian Edge Detection](./first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.md)
 - [Canny Edge Detector and Corner Detection](./first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.md)
 
+### Boundary Detection
+
+- [Overview, Fitting Lines and Curves, and Active Contours](./first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.md)
+- [Hough Transform and Generalized Hough Transform](./first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.md)
+
+
 
 # TR
 
@@ -216,5 +222,11 @@
 
 - [Genel Bakış, Gradyanlar ve Laplacian ile Kenar Tespiti](./tr/first-principles-of-computer-vision/features/edge-detection/overview-gradients-and-laplacian.md)
 - [Canny Kenar Tespiti ve Köşe Tespiti](./tr/first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.md)
+
+### Sınır Tespiti (Boundary Detection)
+
+- [Genel Bakış, Doğru ve Eğri Uydurma, Aktif Konturlar](./tr/first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.md)
+- [Hough Dönüşümü ve Genelleştirilmiş Hough Dönüşümü](./tr/first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.md)
+
 
 

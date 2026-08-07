@@ -647,6 +647,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "3.2",
+                "",
+                "Boundary Detection",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.2.1",
+                      "/first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.html",
+                      "Overview, Fitting Lines and Curves, and Active Contours",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.2.2",
+                      "/first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.html",
+                      "Hough Transform and Generalized Hough Transform",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1178,6 +1203,31 @@ function updateTOC(url, theme) {
                       "3.1.2",
                       "/tr/first-principles-of-computer-vision/features/edge-detection/canny-and-corner-detection.html",
                       "Canny Kenar Tespiti ve Köşe Tespiti",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "3.2",
+                "",
+                "Sınır Tespiti (Boundary Detection)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.2.1",
+                      "/tr/first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.html",
+                      "Genel Bakış, Doğru ve Eğri Uydurma, Aktif Konturlar",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.2.2",
+                      "/tr/first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.html",
+                      "Hough Dönüşümü ve Genelleştirilmiş Hough Dönüşümü",
                       theme
                     ),
                   ],
