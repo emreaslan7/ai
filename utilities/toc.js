@@ -33,15 +33,26 @@ function getThemeColors(theme) {
 
 function toggleVisibility(id) {
   const element = document.getElementById(id);
+  if (!element) return;
+
+  const iconSpan = document.getElementById(id + "-icon");
   const title = element.previousElementSibling;
 
   if (element.style.display === "none") {
     element.style.display = "block";
-    title.innerHTML = `▼ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    if (iconSpan) {
+      iconSpan.textContent = "▼";
+    } else if (title) {
+      title.innerHTML = `▼ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    }
     localStorage.setItem(id, "open"); // Durumu kaydet
   } else {
     element.style.display = "none";
-    title.innerHTML = `▶ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    if (iconSpan) {
+      iconSpan.textContent = "▶";
+    } else if (title) {
+      title.innerHTML = `▶ ${title.textContent.trim().replace(/^▶|^▼/, "")}`;
+    }
     localStorage.setItem(id, "closed"); // Durumu kaydet
   }
 }
@@ -61,6 +72,26 @@ function HeadingCollapsible(text, id, fontSize = "15px", fontWeight = "bold") {
     <div id="${id}" style="display: ${displayStyle}; padding-left: 15px;">
   `;
 }
+
+function SubHeadingCollapsible(
+  id,
+  number,
+  href,
+  text,
+  theme,
+  fontSize = "13px",
+  fontWeight = "bold",
+  sublist = ""
+) {
+  const isOpen = localStorage.getItem(id) === "open";
+  const displayStyle = isOpen ? "block" : "none";
+  const icon = isOpen ? "▼" : "▶";
+  const headingNumberSpan = createHeadingNumberSpan(number);
+  const link = href ? createLink(href, text, theme) : text;
+
+  return `<li style="margin: 7px 0px; font-size: ${fontSize}; list-style-type: none; padding-left: 0; font-weight: ${fontWeight};"><span style="cursor: pointer; user-select: none;" onclick="toggleVisibility('${id}')"><span id="${id}-icon">${icon}</span> ${headingNumberSpan}${link}</span><div id="${id}" style="display: ${displayStyle};">${sublist}</div></li>`;
+}
+
 
 function createHeadingNumberSpan(number) {
   if (!number) return "";
@@ -432,7 +463,8 @@ function updateTOC(url, theme) {
     ${HeadingCollapsible("First Principles of Computer Vision", "fpcv-specialization")} 
     ${SubHeading("", "/first-principles-of-computer-vision", "Content", theme)}
       ${SubHeadingList([
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-1",
           "1.",
           "",
           "Introduction",
@@ -449,9 +481,10 @@ function updateTOC(url, theme) {
               ),
             ],
             true
-          ),
+          )
         ),
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-2",
           "2.",
           "",
           "Imaging",
@@ -613,7 +646,8 @@ function updateTOC(url, theme) {
             true
           )
         ),
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-3",
           "3.",
           "",
           "Features and Boundaries",
@@ -685,6 +719,31 @@ function updateTOC(url, theme) {
                       "3.3.1",
                       "/first-principles-of-computer-vision/features/sift-detector/sift-detector.html",
                       "SIFT Detector and Descriptor",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "3.4",
+                "",
+                "Image Stitching",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.4.1",
+                      "/first-principles-of-computer-vision/features/image-stitching/overview-and-image-transformations.html",
+                      "Overview and Image Transformations",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.4.2",
+                      "/first-principles-of-computer-vision/features/image-stitching/homography-ransac-warping-and-blending.html",
+                      "Homography, RANSAC, Warping and Blending",
                       theme
                     ),
                   ],
@@ -1014,7 +1073,8 @@ function updateTOC(url, theme) {
     ${HeadingCollapsible("First Principles of Computer Vision", "fpcv-specialization-tr")} 
     ${SubHeading("", "/tr/first-principles-of-computer-vision", "İçerik", theme)}
       ${SubHeadingList([
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-tr-1",
           "1.",
           "",
           "Giriş (Introduction)",
@@ -1033,7 +1093,8 @@ function updateTOC(url, theme) {
             true
           )
         ),
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-tr-2",
           "2.",
           "",
           "Görüntüleme (Imaging)",
@@ -1195,7 +1256,8 @@ function updateTOC(url, theme) {
             true
           )
         ),
-        SubHeading(
+        SubHeadingCollapsible(
+          "fpcv-tr-3",
           "3.",
           "",
           "Özellikler ve Sınırlar (Features and Boundaries)",
@@ -1267,6 +1329,31 @@ function updateTOC(url, theme) {
                       "3.3.1",
                       "/tr/first-principles-of-computer-vision/features/sift-detector/sift-detector.html",
                       "SIFT Tespiti ve Tanımlayıcı (SIFT Detector and Descriptor)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "3.4",
+                "",
+                "Görüntü Birleştirme (Image Stitching)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.4.1",
+                      "/tr/first-principles-of-computer-vision/features/image-stitching/overview-and-image-transformations.html",
+                      "Genel Bakış ve Görüntü Dönüşümleri",
+                      theme
+                    ),
+                    SubHeading(
+                      "3.4.2",
+                      "/tr/first-principles-of-computer-vision/features/image-stitching/homography-ransac-warping-and-blending.html",
+                      "Homografi, RANSAC, Görüntü Eğme ve Harmanlama",
                       theme
                     ),
                   ],
