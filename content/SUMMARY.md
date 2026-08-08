@@ -111,6 +111,10 @@
 - [Overview, Fitting Lines and Curves, and Active Contours](./first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.md)
 - [Hough Transform and Generalized Hough Transform](./first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.md)
 
+### SIFT Detector
+
+- [SIFT Detector and Descriptor](./first-principles-of-computer-vision/features/sift-detector/sift-detector.md)
+
 
 
 # TR
@@ -227,6 +231,10 @@
 
 - [Genel Bakış, Doğru ve Eğri Uydurma, Aktif Konturlar](./tr/first-principles-of-computer-vision/features/boundary-detection/overview-fitting-lines-and-active-contours.md)
 - [Hough Dönüşümü ve Genelleştirilmiş Hough Dönüşümü](./tr/first-principles-of-computer-vision/features/boundary-detection/hough-transform-and-generalized-hough-transform.md)
+
+### SIFT Tespiti (SIFT Detector)
+
+- [SIFT Tespiti ve Tanımlayıcı (SIFT Detector and Descriptor)](./tr/first-principles-of-computer-vision/features/sift-detector/sift-detector.md)
 
 
 

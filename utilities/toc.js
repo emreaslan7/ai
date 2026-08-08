@@ -672,6 +672,26 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "3.3",
+                "",
+                "SIFT Detector",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.3.1",
+                      "/first-principles-of-computer-vision/features/sift-detector/sift-detector.html",
+                      "SIFT Detector and Descriptor",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+
             ],
             true
           )
@@ -1234,6 +1254,26 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "3.3",
+                "",
+                "SIFT Tespiti (SIFT Detector)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.3.1",
+                      "/tr/first-principles-of-computer-vision/features/sift-detector/sift-detector.html",
+                      "SIFT Tespiti ve Tanımlayıcı (SIFT Detector and Descriptor)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+
             ],
             true
           )
