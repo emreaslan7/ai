@@ -750,6 +750,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "3.5",
+                "",
+                "Face Detection",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.5.1",
+                      "/first-principles-of-computer-vision/features/face-detection/face-detection.html",
+                      "Face Detection",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
 
             ],
             true
@@ -1354,6 +1373,25 @@ function updateTOC(url, theme) {
                       "3.4.2",
                       "/tr/first-principles-of-computer-vision/features/image-stitching/homography-ransac-warping-and-blending.html",
                       "Homografi, RANSAC, Görüntü Eğme ve Harmanlama",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "3.5",
+                "",
+                "Yüz Tespiti (Face Detection)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "3.5.1",
+                      "/tr/first-principles-of-computer-vision/features/face-detection/face-detection.html",
+                      "Yüz Tespiti (Face Detection)",
                       theme
                     ),
                   ],

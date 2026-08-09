@@ -120,6 +120,9 @@
 - [Overview and Image Transformations](./first-principles-of-computer-vision/features/image-stitching/overview-and-image-transformations.md)
 - [Homography Estimation, RANSAC, Warping and Blending](./first-principles-of-computer-vision/features/image-stitching/homography-ransac-warping-and-blending.md)
 
+### Face Detection
+
+- [Face Detection](./first-principles-of-computer-vision/features/face-detection/face-detection.md)
 
 
 # TR
@@ -245,6 +248,10 @@
 
 - [Genel Bakış ve Görüntü Dönüşümleri](./tr/first-principles-of-computer-vision/features/image-stitching/overview-and-image-transformations.md)
 - [Homografi Hesabı, RANSAC, Görüntü Eğme ve Harmanlama](./tr/first-principles-of-computer-vision/features/image-stitching/homography-ransac-warping-and-blending.md)
+
+### Yüz Tespiti (Face Detection)
+
+- [Yüz Tespiti (Face Detection)](./tr/first-principles-of-computer-vision/features/face-detection/face-detection.md)
 
 
 
