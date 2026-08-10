@@ -774,6 +774,46 @@ function updateTOC(url, theme) {
             true
           )
         ),
+        SubHeadingCollapsible(
+          "fpcv-4",
+          "4.",
+          "",
+          "3D Reconstruction - Single Viewpoint",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "4.1",
+                "",
+                "Radiometry and Reflectance",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.1.1",
+                      "/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.html",
+                      "Overview, Radiometric Concepts, Radiance, and BRDF",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.1.2",
+                      "/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.html",
+                      "Reflectance Models, Rough Surfaces, and Dichromatic Model",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+
       ])}
     </div>
 
@@ -1403,6 +1443,46 @@ function updateTOC(url, theme) {
             true
           )
         ),
+        SubHeadingCollapsible(
+          "fpcv-tr-4",
+          "4.",
+          "",
+          "3D Yeniden Yapılandırma - Tek Bakış Açısı (3D Reconstruction - Single Viewpoint)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "4.1",
+                "",
+                "Radyometri ve Yansıma (Radiometry and Reflectance)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.1.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.html",
+                      "Genel Bakış, Radyometrik Kavramlar, Işınım ve BRDF",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.1.2",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.html",
+                      "Yansıma Modelleri, Pürüzlü Yüzeyler ve Dikromatik Model",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+
       ])}
     </div>
 

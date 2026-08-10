@@ -124,6 +124,13 @@
 
 - [Face Detection](./first-principles-of-computer-vision/features/face-detection/face-detection.md)
 
+## 3D Reconstruction - Single Viewpoint
+
+### Radiometry and Reflectance
+
+- [Overview, Radiometric Concepts, Radiance, and BRDF](./first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.md)
+- [Reflectance Models, Rough Surfaces, and Dichromatic Model](./first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.md)
+
 
 # TR
 
@@ -252,6 +259,13 @@
 ### Yüz Tespiti (Face Detection)
 
 - [Yüz Tespiti (Face Detection)](./tr/first-principles-of-computer-vision/features/face-detection/face-detection.md)
+
+## 3D Yeniden Yapılandırma - Tek Bakış Açısı (3D Reconstruction - Single Viewpoint)
+
+### Radyometri ve Yansıma (Radiometry and Reflectance)
+
+- [Genel Bakış, Radyometrik Kavramlar, Işınım ve BRDF](./tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.md)
+- [Yansıma Modelleri, Pürüzlü Yüzeyler ve Dikromatik Model](./tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.md)
 
 
 
