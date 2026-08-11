@@ -834,6 +834,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "4.3",
+                "",
+                "Shape from Shading",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.3.1",
+                      "/first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.html",
+                      "Overview, Human Perception, Stereographic Projection, SfS Algorithm, and Illusions",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1522,6 +1541,25 @@ function updateTOC(url, theme) {
                       "4.2.2",
                       "/tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.html",
                       "Kalibrasyon Tabanlı Fotometrik Stereo, Normalden Şekil Çıkarma ve İç Yansımalar",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "4.3",
+                "",
+                "Gölgelendirmeden Şekil Çıkarma (Shape from Shading)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.3.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.html",
+                      "Genel Bakış, İnsan Algısı, Stereografik İzdüşüm, SfS Algoritması ve İllüzyonlar",
                       theme
                     ),
                   ],

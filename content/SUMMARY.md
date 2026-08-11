@@ -136,6 +136,11 @@
 - [Overview, Gradient Space, Reflectance Map, and Lambertian Case](./first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.md)
 - [Calibration-Based Photometric Stereo, Shape from Normals, and Interreflections](./first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.md)
 
+### Shape from Shading
+
+- [Overview, Human Perception, Stereographic Projection, SfS Algorithm, and Illusions](./first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.md)
+
+
 
 # TR
 
@@ -276,6 +281,11 @@
 
 - [Genel Bakış, Gradyan Uzayı, Yansıtma Haritası ve Lambertian Durumu](./tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.md)
 - [Kalibrasyon Tabanlı Fotometrik Stereo, Normalden Şekil Çıkarma ve İç Yansımalar](./tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.md)
+
+### Gölgelendirmeden Şekil Çıkarma (Shape from Shading)
+
+- [Genel Bakış, İnsan Algısı, Stereografik İzdüşüm, SfS Algoritması ve İllüzyonlar](./tr/first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.md)
+
 
 
 
