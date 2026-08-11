@@ -809,6 +809,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "4.2",
+                "",
+                "Photometric Stereo",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.2.1",
+                      "/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.html",
+                      "Overview, Gradient Space, Reflectance Map, and Lambertian Case",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.2.2",
+                      "/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.html",
+                      "Calibration-Based Photometric Stereo, Shape from Normals, and Interreflections",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1472,6 +1497,31 @@ function updateTOC(url, theme) {
                       "4.1.2",
                       "/tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.html",
                       "Yansıma Modelleri, Pürüzlü Yüzeyler ve Dikromatik Model",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "4.2",
+                "",
+                "Fotometrik Stereo (Photometric Stereo)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.2.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.html",
+                      "Genel Bakış, Gradyan Uzayı, Yansıtma Haritası ve Lambertian Durumu",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.2.2",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.html",
+                      "Kalibrasyon Tabanlı Fotometrik Stereo, Normalden Şekil Çıkarma ve İç Yansımalar",
                       theme
                     ),
                   ],

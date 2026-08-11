@@ -131,6 +131,11 @@
 - [Overview, Radiometric Concepts, Radiance, and BRDF](./first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.md)
 - [Reflectance Models, Rough Surfaces, and Dichromatic Model](./first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.md)
 
+### Photometric Stereo
+
+- [Overview, Gradient Space, Reflectance Map, and Lambertian Case](./first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.md)
+- [Calibration-Based Photometric Stereo, Shape from Normals, and Interreflections](./first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.md)
+
 
 # TR
 
@@ -266,6 +271,11 @@
 
 - [Genel Bakış, Radyometrik Kavramlar, Işınım ve BRDF](./tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/overview-radiometric-concepts-and-brdf.md)
 - [Yansıma Modelleri, Pürüzlü Yüzeyler ve Dikromatik Model](./tr/first-principles-of-computer-vision/reconstruction-i/radiometry-and-reflectance/reflectance-models-rough-surfaces-and-dichromatic-model.md)
+
+### Fotometrik Stereo (Photometric Stereo)
+
+- [Genel Bakış, Gradyan Uzayı, Yansıtma Haritası ve Lambertian Durumu](./tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/overview-gradient-space-and-lambertian-case.md)
+- [Kalibrasyon Tabanlı Fotometrik Stereo, Normalden Şekil Çıkarma ve İç Yansımalar](./tr/first-principles-of-computer-vision/reconstruction-i/photometric-stereo/calibration-shape-from-normals-and-interreflections.md)
 
 
 
