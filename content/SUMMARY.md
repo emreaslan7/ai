@@ -140,6 +140,10 @@
 
 - [Overview, Human Perception, Stereographic Projection, SfS Algorithm, and Illusions](./first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.md)
 
+### Depth from Defocus
+
+- [Depth from Focus & Defocus](./first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.md)
+
 
 
 # TR
@@ -286,6 +290,6 @@
 
 - [Genel Bakış, İnsan Algısı, Stereografik İzdüşüm, SfS Algoritması ve İllüzyonlar](./tr/first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.md)
 
+### Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Defocus)
 
-
-
+- [Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Focus & Defocus)](./tr/first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.md)

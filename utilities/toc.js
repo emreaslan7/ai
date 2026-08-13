@@ -853,6 +853,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "4.4",
+                "",
+                "Depth from Defocus",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.4.1",
+                      "/first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.html",
+                      "Depth from Focus & Defocus",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1560,6 +1579,25 @@ function updateTOC(url, theme) {
                       "4.3.1",
                       "/tr/first-principles-of-computer-vision/reconstruction-i/shape-from-shading/shape-from-shading.html",
                       "Genel Bakış, İnsan Algısı, Stereografik İzdüşüm, SfS Algoritması ve İllüzyonlar",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "4.4",
+                "",
+                "Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Defocus)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.4.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.html",
+                      "Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Focus & Defocus)",
                       theme
                     ),
                   ],
