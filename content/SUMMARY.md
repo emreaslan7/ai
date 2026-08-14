@@ -144,6 +144,12 @@
 
 - [Depth from Focus & Defocus](./first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.md)
 
+### Active Illumination Methods
+
+- [Overview, Photometric Stereo Systems, and Structured Light Range Finding](./first-principles-of-computer-vision/reconstruction-i/active-illumination/overview-photometric-stereo-and-structured-light-range-finding.md)
+- [Phase Shifting Method, Structured Light Systems, and Time of Flight Method](./first-principles-of-computer-vision/reconstruction-i/active-illumination/phase-shifting-structured-light-and-time-of-flight.md)
+
+
 
 
 # TR
@@ -293,3 +299,9 @@
 ### Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Defocus)
 
 - [Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Focus & Defocus)](./tr/first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.md)
+
+### Aktif Aydınlatma Yöntemleri (Active Illumination Methods)
+
+- [Genel Bakış, Fotometrik Stereo Sistemleri ve Yapılandırılmış Işık ile Mesafe Ölçümü](./tr/first-principles-of-computer-vision/reconstruction-i/active-illumination/overview-photometric-stereo-and-structured-light-range-finding.md)
+- [Faz Kaydırma Yöntemi, Yapılandırılmış Işık Sistemleri ve Uçuş Süresi Yöntemi](./tr/first-principles-of-computer-vision/reconstruction-i/active-illumination/phase-shifting-structured-light-and-time-of-flight.md)
+

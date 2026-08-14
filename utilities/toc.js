@@ -872,6 +872,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "4.5",
+                "",
+                "Active Illumination Methods",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.5.1",
+                      "/first-principles-of-computer-vision/reconstruction-i/active-illumination/overview-photometric-stereo-and-structured-light-range-finding.html",
+                      "Overview, Photometric Stereo Systems, and Structured Light Range Finding",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.5.2",
+                      "/first-principles-of-computer-vision/reconstruction-i/active-illumination/phase-shifting-structured-light-and-time-of-flight.html",
+                      "Phase Shifting Method, Structured Light Systems, and Time of Flight Method",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1598,6 +1623,31 @@ function updateTOC(url, theme) {
                       "4.4.1",
                       "/tr/first-principles-of-computer-vision/reconstruction-i/depth-from-defocus/depth-from-defocus.html",
                       "Odaktan ve Odak Kusurundan Derinlik Çıkarma (Depth from Focus & Defocus)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "4.5",
+                "",
+                "Aktif Aydınlatma Yöntemleri (Active Illumination Methods)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "4.5.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/active-illumination/overview-photometric-stereo-and-structured-light-range-finding.html",
+                      "Genel Bakış, Fotometrik Stereo Sistemleri ve Yapılandırılmış Işık ile Mesafe Ölçümü",
+                      theme
+                    ),
+                    SubHeading(
+                      "4.5.2",
+                      "/tr/first-principles-of-computer-vision/reconstruction-i/active-illumination/phase-shifting-structured-light-and-time-of-flight.html",
+                      "Faz Kaydırma Yöntemi, Yapılandırılmış Işık Sistemleri ve Uçuş Süresi Yöntemi",
                       theme
                     ),
                   ],
