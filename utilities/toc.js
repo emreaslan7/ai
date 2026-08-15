@@ -901,7 +901,45 @@ function updateTOC(url, theme) {
             true
           )
         ),
-
+        SubHeadingCollapsible(
+          "fpcv-5",
+          "5.",
+          "",
+          "3D Reconstruction - Multiple Viewpoints",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "5.1",
+                "",
+                "Camera Calibration",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.1.1",
+                      "/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/camera-models-and-calibration.html",
+                      "Camera Models and Calibration",
+                      theme
+                    ),
+                    SubHeading(
+                      "5.1.2",
+                      "/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/simple-stereo.html",
+                      "Simple Stereo",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
       ])}
     </div>
 
@@ -1658,7 +1696,45 @@ function updateTOC(url, theme) {
             true
           )
         ),
-
+        SubHeadingCollapsible(
+          "fpcv-tr-5",
+          "5.",
+          "",
+          "3D Yeniden Yapılandırma - Çoklu Bakış Açısı (3D Reconstruction - Multiple Viewpoints)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "5.1",
+                "",
+                "Kamera Kalibrasyonu (Camera Calibration)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.1.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/camera-models-and-calibration.html",
+                      "Kamera Modelleri, Koordinat Sistemleri ve Kamera Kalibrasyonu",
+                      theme
+                    ),
+                    SubHeading(
+                      "5.1.2",
+                      "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/simple-stereo.html",
+                      "Basit Stereo (Simple Stereo)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
       ])}
     </div>
 
