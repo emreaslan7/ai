@@ -936,6 +936,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "5.2",
+                "",
+                "Uncalibrated Stereo",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.2.1",
+                      "/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/uncalibrated-stereo.html",
+                      "Uncalibrated Stereo Vision and Epipolar Geometry",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1725,6 +1744,25 @@ function updateTOC(url, theme) {
                       "5.1.2",
                       "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/simple-stereo.html",
                       "Basit Stereo (Simple Stereo)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "5.2",
+                "",
+                "Kalibre Edilmemiş Stereo (Uncalibrated Stereo)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.2.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/uncalibrated-stereo.html",
+                      "Kalibre Edilmemiş Stereo ve Doğada Stereo Görüş (Uncalibrated Stereo & Stereopsis)",
                       theme
                     ),
                   ],
