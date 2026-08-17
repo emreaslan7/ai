@@ -955,6 +955,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "5.3",
+                "",
+                "Optical Flow",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.3.1",
+                      "/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/optical-flow.html",
+                      "Optical Flow and Motion Analysis",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1763,6 +1782,25 @@ function updateTOC(url, theme) {
                       "5.2.1",
                       "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/uncalibrated-stereo.html",
                       "Kalibre Edilmemiş Stereo ve Doğada Stereo Görüş (Uncalibrated Stereo & Stereopsis)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "5.3",
+                "",
+                "Optik Akış (Optical Flow)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.3.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/optical-flow.html",
+                      "Optik Akış ve Görüntü Hareket Analizi (Optical Flow and Motion Analysis)",
                       theme
                     ),
                   ],
