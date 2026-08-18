@@ -974,6 +974,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "5.4",
+                "",
+                "Structure from Motion",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.4.1",
+                      "/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.html",
+                      "Structure from Motion and Tomasi-Kanade Factorization",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1801,6 +1820,25 @@ function updateTOC(url, theme) {
                       "5.3.1",
                       "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/optical-flow.html",
                       "Optik Akış ve Görüntü Hareket Analizi (Optical Flow and Motion Analysis)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "5.4",
+                "",
+                "Hareketten Yapı Çıkarma (Structure from Motion)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "5.4.1",
+                      "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.html",
+                      "Hareketten Yapı Çıkarma ve Tomasi-Kanade Faktörizasyonu (Structure from Motion & Factorization)",
                       theme
                     ),
                   ],

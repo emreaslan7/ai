@@ -164,6 +164,10 @@
 
 - [Optical Flow and Motion Analysis](./first-principles-of-computer-vision/reconstruction-ii/camera-calibration/optical-flow.md)
 
+### Structure from Motion
+
+- [Structure from Motion and Tomasi-Kanade Factorization](./first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -331,4 +335,8 @@
 ### Optik Akış (Optical Flow)
 
 - [Optik Akış ve Görüntü Hareket Analizi](./tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/optical-flow.md)
+
+### Hareketten Yapı Çıkarma (Structure from Motion)
+
+- [Hareketten Yapı Çıkarma ve Tomasi-Kanade Faktörizasyonu (Structure from Motion & Factorization)](./tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.md)
 
