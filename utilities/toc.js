@@ -997,6 +997,39 @@ function updateTOC(url, theme) {
             true
           )
         ),
+        SubHeadingCollapsible(
+          "fpcv-6",
+          "6.",
+          "",
+          "Perception",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "6.1",
+                "",
+                "Object Tracking",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.1.1",
+                      "/first-principles-of-computer-vision/perception/object-tracking/object-tracking.html",
+                      "Object Tracking & Background Subtraction",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
       ])}
     </div>
 
@@ -1839,6 +1872,39 @@ function updateTOC(url, theme) {
                       "5.4.1",
                       "/tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.html",
                       "Hareketten Yapı Çıkarma ve Tomasi-Kanade Faktörizasyonu (Structure from Motion & Factorization)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+            ],
+            true
+          )
+        ),
+        SubHeadingCollapsible(
+          "fpcv-6-tr",
+          "6.",
+          "",
+          "Algılama (Perception)",
+          theme,
+          "13px",
+          "bold",
+          SubHeadingList(
+            [
+              SubHeading(
+                "6.1",
+                "",
+                "Nesne Takibi (Object Tracking)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.1.1",
+                      "/tr/first-principles-of-computer-vision/perception/object-tracking/object-tracking.html",
+                      "Nesne Takibi ve Arka Plan Çıkarma (Object Tracking & Background Subtraction)",
                       theme
                     ),
                   ],

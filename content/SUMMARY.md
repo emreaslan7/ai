@@ -168,6 +168,12 @@
 
 - [Structure from Motion and Tomasi-Kanade Factorization](./first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.md)
 
+## Perception
+
+### Object Tracking
+
+- [Object Tracking & Background Subtraction](./first-principles-of-computer-vision/perception/object-tracking/object-tracking.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -339,4 +345,10 @@
 ### Hareketten Yapı Çıkarma (Structure from Motion)
 
 - [Hareketten Yapı Çıkarma ve Tomasi-Kanade Faktörizasyonu (Structure from Motion & Factorization)](./tr/first-principles-of-computer-vision/reconstruction-ii/camera-calibration/structure-from-motion.md)
+
+## Algılama (Perception)
+
+### Nesne Takibi (Object Tracking)
+
+- [Nesne Takibi ve Arka Plan Çıkarma Teknolojileri (Object Tracking & Background Subtraction)](./tr/first-principles-of-computer-vision/perception/object-tracking/object-tracking.md)
 
