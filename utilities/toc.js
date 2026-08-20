@@ -1026,6 +1026,25 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "6.2",
+                "",
+                "Image Segmentation",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.2.1",
+                      "/first-principles-of-computer-vision/perception/image-segmentation/image-segmentation.html",
+                      "Image Segmentation",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1905,6 +1924,25 @@ function updateTOC(url, theme) {
                       "6.1.1",
                       "/tr/first-principles-of-computer-vision/perception/object-tracking/object-tracking.html",
                       "Nesne Takibi ve Arka Plan Çıkarma (Object Tracking & Background Subtraction)",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "6.2",
+                "",
+                "Görüntü Bölütleme (Image Segmentation)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.2.1",
+                      "/tr/first-principles-of-computer-vision/perception/image-segmentation/image-segmentation.html",
+                      "Görüntü Bölütleme Teknolojileri ve Kümeleme Matematiği",
                       theme
                     ),
                   ],

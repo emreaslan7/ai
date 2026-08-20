@@ -174,6 +174,10 @@
 
 - [Object Tracking & Background Subtraction](./first-principles-of-computer-vision/perception/object-tracking/object-tracking.md)
 
+### Image Segmentation
+
+- [Image Segmentation](./first-principles-of-computer-vision/perception/image-segmentation/image-segmentation.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -351,4 +355,8 @@
 ### Nesne Takibi (Object Tracking)
 
 - [Nesne Takibi ve Arka Plan Çıkarma Teknolojileri (Object Tracking & Background Subtraction)](./tr/first-principles-of-computer-vision/perception/object-tracking/object-tracking.md)
+
+### Görüntü Bölütleme (Image Segmentation)
+
+- [Görüntü Bölütleme Teknolojileri ve Kümeleme Matematiği](./tr/first-principles-of-computer-vision/perception/image-segmentation/image-segmentation.md)
 
