@@ -1045,6 +1045,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "6.4",
+                "",
+                "Appearance Matching",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.4.1",
+                      "/first-principles-of-computer-vision/perception/appearance-matching/appearance-representation-and-pca.html",
+                      "Appearance Representation and PCA",
+                      theme
+                    ),
+                    SubHeading(
+                      "6.4.2",
+                      "/first-principles-of-computer-vision/perception/appearance-matching/svd-parametric-manifolds-and-appearance-matching.html",
+                      "SVD, Parametric Manifolds, and Appearance Matching",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1943,6 +1968,31 @@ function updateTOC(url, theme) {
                       "6.2.1",
                       "/tr/first-principles-of-computer-vision/perception/image-segmentation/image-segmentation.html",
                       "Görüntü Bölütleme Teknolojileri ve Kümeleme Matematiği",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "6.4",
+                "",
+                "Görünüm Eşleştirme (Appearance Matching)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.4.1",
+                      "/tr/first-principles-of-computer-vision/perception/appearance-matching/appearance-representation-and-pca.html",
+                      "Görünüm Tabanlı Temsil ve PCA Matematiği",
+                      theme
+                    ),
+                    SubHeading(
+                      "6.4.2",
+                      "/tr/first-principles-of-computer-vision/perception/appearance-matching/svd-parametric-manifolds-and-appearance-matching.html",
+                      "SVD Optimizasyonu, Parametrik Manifoldlar ve Görünüm Eşleştirme",
                       theme
                     ),
                   ],
