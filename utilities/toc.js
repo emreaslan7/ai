@@ -1070,6 +1070,31 @@ function updateTOC(url, theme) {
                   true
                 )
               ),
+              SubHeading(
+                "6.5",
+                "",
+                "Neural Networks",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.5.1",
+                      "/first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.html",
+                      "Perceptron and Activation Functions",
+                      theme
+                    ),
+                    SubHeading(
+                      "6.5.2",
+                      "/first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.html",
+                      "Multilayer Networks, Gradient Descent, and Backpropagation",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
             ],
             true
           )
@@ -1993,6 +2018,31 @@ function updateTOC(url, theme) {
                       "6.4.2",
                       "/tr/first-principles-of-computer-vision/perception/appearance-matching/svd-parametric-manifolds-and-appearance-matching.html",
                       "SVD Optimizasyonu, Parametrik Manifoldlar ve Görünüm Eşleştirme",
+                      theme
+                    ),
+                  ],
+                  true
+                )
+              ),
+              SubHeading(
+                "6.5",
+                "",
+                "Yapay Sinir Ağları (Neural Networks)",
+                theme,
+                "13px",
+                "bold",
+                SubHeadingList(
+                  [
+                    SubHeading(
+                      "6.5.1",
+                      "/tr/first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.html",
+                      "Perceptron ve Aktivasyon Fonksiyonları",
+                      theme
+                    ),
+                    SubHeading(
+                      "6.5.2",
+                      "/tr/first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.html",
+                      "Çok Katmanlı Ağlar, Gradyan Azalma ve Geriye Yayılım",
                       theme
                     ),
                   ],

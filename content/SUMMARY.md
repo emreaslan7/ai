@@ -183,6 +183,11 @@
 - [Appearance Representation and PCA Mathematics](./first-principles-of-computer-vision/perception/appearance-matching/appearance-representation-and-pca.md)
 - [SVD Optimization, Parametric Manifolds, and Appearance Matching](./first-principles-of-computer-vision/perception/appearance-matching/svd-parametric-manifolds-and-appearance-matching.md)
 
+### Neural Networks
+
+- [Perceptron and Activation Functions](./first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.md)
+- [Multilayer Networks, Gradient Descent, and Backpropagation](./first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -369,4 +374,9 @@
 
 - [Görünüm Tabanlı Temsil ve PCA Matematiği](./tr/first-principles-of-computer-vision/perception/appearance-matching/appearance-representation-and-pca.md)
 - [SVD Optimizasyonu, Parametrik Manifoldlar ve Görünüm Eşleştirme](./tr/first-principles-of-computer-vision/perception/appearance-matching/svd-parametric-manifolds-and-appearance-matching.md)
+
+### Yapay Sinir Ağları (Neural Networks)
+
+- [Perceptron ve Aktivasyon Fonksiyonları](./tr/first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.md)
+- [Çok Katmanlı Ağlar, Gradyan Azalma ve Geriye Yayılım](./tr/first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.md)
 
