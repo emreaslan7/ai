@@ -5,8 +5,8 @@
 </p>
 
 <p align="center" style="margin-top: 4vh;">
-  <a href="https://coursera.org/verify/specialization/INSNAWGL1UUU" target="_blank" style="font-size: 13px;">
-    🔗 Verify on Coursera ↗
+  <a href="https://coursera.org/share/1b06638694bbe68fba78a796cb3d5ae4" target="_blank" style="font-size: 13px;">
+    🔗 View Certificate ↗
   </a>
 </p>
 
