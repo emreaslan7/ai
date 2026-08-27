@@ -4,3 +4,10 @@ book_dev
 .hermes
 .opencode
 .agents
+
+# Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.jupyter/
+.jupyter_ystore.db
+.virtual_documents/

@@ -1102,6 +1102,32 @@ function updateTOC(url, theme) {
       ])}
     </div>
 
+    ${HeadingCollapsible("Deep Learning with PyTorch", "dlwpt-project")} 
+    ${SubHeading("", "/deep-learning-with-pytorch", "Content", theme)}
+    ${SubHeadingList([
+      SubHeadingCollapsible(
+        "dlwpt-1",
+        "1.",
+        "",
+        "Core PyTorch",
+        theme,
+        "13px",
+        "bold",
+        SubHeadingList(
+          [
+            SubHeading(
+              "1.1",
+              "/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.html",
+              "Introducing Deep Learning and the PyTorch Library",
+              theme
+            ),
+          ],
+          true
+        )
+      ),
+    ])}
+    </div>
+
     `;
 
   const tocContentTr = `
@@ -2054,6 +2080,32 @@ function updateTOC(url, theme) {
           )
         ),
       ])}
+    </div>
+
+    ${HeadingCollapsible("Deep Learning with PyTorch", "dlwpt-project-tr")} 
+    ${SubHeading("", "/tr/deep-learning-with-pytorch", "İçerik", theme)}
+    ${SubHeadingList([
+      SubHeadingCollapsible(
+        "dlwpt-1-tr",
+        "1.",
+        "",
+        "PyTorch'un Temelleri",
+        theme,
+        "13px",
+        "bold",
+        SubHeadingList(
+          [
+            SubHeading(
+              "1.1",
+              "/tr/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.html",
+              "Derin Öğrenmeye Giriş ve PyTorch Kütüphanesi",
+              theme
+            ),
+          ],
+          true
+        )
+      ),
+    ])}
     </div>
 
     `;

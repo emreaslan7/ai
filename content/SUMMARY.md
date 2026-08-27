@@ -188,6 +188,14 @@
 - [Perceptron and Activation Functions](./first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.md)
 - [Multilayer Networks, Gradient Descent, and Backpropagation](./first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.md)
 
+# Deep Learning with PyTorch
+
+- [Content](./deep-learning-with-pytorch/README.md)
+
+## Part 1: Core PyTorch
+
+- [Introducing Deep Learning and the PyTorch Library](./deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -379,4 +387,12 @@
 
 - [Perceptron ve Aktivasyon Fonksiyonları](./tr/first-principles-of-computer-vision/perception/neural-networks/perceptron-and-activation-functions.md)
 - [Çok Katmanlı Ağlar, Gradyan Azalma ve Geriye Yayılım](./tr/first-principles-of-computer-vision/perception/neural-networks/multilayer-neural-networks-and-backpropagation.md)
+
+# Deep Learning with PyTorch
+
+- [İçerik](./tr/deep-learning-with-pytorch/README.md)
+
+## 1. PyTorch'un Temelleri
+
+- [Derin Öğrenmeye Giriş ve PyTorch Kütüphanesi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
 
