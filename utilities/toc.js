@@ -1121,6 +1121,12 @@ function updateTOC(url, theme) {
               "Introducing Deep Learning and the PyTorch Library",
               theme
             ),
+            SubHeading(
+              "1.2",
+              "/deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.html",
+              "Pretrained Networks and the Model Zoo",
+              theme
+            ),
           ],
           true
         )
@@ -2099,6 +2105,12 @@ function updateTOC(url, theme) {
               "1.1",
               "/tr/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.html",
               "Derin Öğrenmeye Giriş ve PyTorch Kütüphanesi",
+              theme
+            ),
+            SubHeading(
+              "1.2",
+              "/tr/deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.html",
+              "Önceden Eğitilmiş Ağlar ve Model Zoo",
               theme
             ),
           ],

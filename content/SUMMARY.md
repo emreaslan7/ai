@@ -195,6 +195,7 @@
 ## Part 1: Core PyTorch
 
 - [Introducing Deep Learning and the PyTorch Library](./deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
+- [Pretrained Networks and the Model Zoo](./deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.md)
 
 # TR
 
@@ -395,4 +396,5 @@
 ## 1. PyTorch'un Temelleri
 
 - [Derin Öğrenmeye Giriş ve PyTorch Kütüphanesi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
+- [Önceden Eğitilmiş Ağlar ve Model Zoo](./tr/deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.md)
 
