@@ -7,7 +7,7 @@
 A **Convolutional Neural Network (CNN)** is typically composed of three types of layers:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-01.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-01.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Convolutional layers:** Apply filters to extract spatial features.
@@ -43,7 +43,7 @@ $$
 Input: $5 \times 5$ grayscale image with $3 \times 3$ filter:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-02.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-02.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
 </div>
 
 As the filter slides across the input, it detects vertical and horizontal edges by producing high activation in regions with strong center transitions.
@@ -65,7 +65,7 @@ To reduce the spatial dimensions (height and width) of the feature maps, thereby
 **Max Pooling:**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-03.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-03.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
 </div>
 
 Selects the maximum value in each region.
@@ -73,7 +73,7 @@ Selects the maximum value in each region.
 **Average Pooling:**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-04.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-04.gif" style="display:flex; justify-content: center; width: 300px;"alt=""/>
 </div>
 
 Takes the average of values in each region.
@@ -85,7 +85,7 @@ Takes the average of values in each region.
 To connect every neuron in one layer to every neuron in the next layer, performing the final classification or regression.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-05.png" style="display:flex; justify-content: center; width: 500px;"alt=""/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-05.png" style="display:flex; justify-content: center; width: 500px;"alt=""/>
 </div>
 
 **How it works:**
@@ -150,7 +150,7 @@ Each neuron in a layer is connected only to a small region of the previous layer
 ## 3. CNN Example (Comprehensive Network)
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/cnn-architecture-and-examples-06.webp" style="display:flex; justify-content: center; width: 750px;"alt=""/>
+    <img src="./../../img/deep-learning-specialization/cnn-architecture-and-examples-06.webp" style="display:flex; justify-content: center; width: 750px;"alt=""/>
 </div>
 
 <br/>

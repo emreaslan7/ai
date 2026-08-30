@@ -35,7 +35,7 @@ This is known as **One-Shot Learning**.
 **Problem Setup**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - Instead of learning to classify, the model learns **similarity** between pairs of images.
@@ -62,7 +62,7 @@ d(x_1, x_2) = \|f(x_1) - f(x_2)\|_2^2
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 <br/>
@@ -84,7 +84,7 @@ Triplet Loss is a powerful loss function for learning **embeddings**. It relies 
 - **Negative (N)**: Image of a different identity
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 We want:
@@ -149,7 +149,7 @@ Neural Style Transfer is the task of synthesizing an image that:
 Leverage a **pre-trained ConvNet** (like VGG19) to extract content and style representations.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-04.webp" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-04.webp" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 Let:
@@ -171,7 +171,7 @@ $$
 Deep ConvNets learn hierarchical representations:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-05.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-05.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 - Early layers: edges, colors, textures
@@ -247,7 +247,7 @@ $$
 Neural style transfer principles can be applied to **audio** signals:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - 1D convolution over waveform
@@ -258,7 +258,7 @@ Neural style transfer principles can be applied to **audio** signals:
 Applied to **volumetric data** such as:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-07.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/face-recognition-and-neural-style-transfer-07.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - 3D MRI scans

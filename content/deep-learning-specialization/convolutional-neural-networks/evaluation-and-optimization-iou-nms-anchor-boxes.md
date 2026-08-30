@@ -7,7 +7,7 @@
 Intersection over Union (IoU) is a metric used to evaluate the accuracy of an object detector on a particular dataset. It measures the overlap between two bounding boxes:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-01.jpg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-01.jpg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - The predicted bounding box
@@ -72,7 +72,7 @@ $$
 Object detectors often output **multiple overlapping boxes** for a single object. NMS filters out redundant boxes by keeping the one with the highest confidence score.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-02.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-02.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 <br/>
@@ -118,7 +118,7 @@ Anchor boxes (also called prior boxes) are predefined bounding boxes with differ
 Without anchor boxes, a single grid cell could detect only one object. But real-world scenes often contain overlapping or closely spaced objects.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/evalation-and-optimization-iou-nonmax-supperession-anchor-boxes-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 <br/>

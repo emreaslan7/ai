@@ -13,7 +13,7 @@
 **Object localization** is the task of identifying the presence of an object in an image and determining its position using a bounding box.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 It’s one step more complex than image classification, which only tells **what** is in the image, not **where** it is.
@@ -37,7 +37,7 @@ Where:
 If you're using a neural network for localization, the output vector might be:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 $$
@@ -80,7 +80,7 @@ $$
 **Landmark detection** (also called keypoint detection) involves detecting specific key locations on an object. Unlike bounding boxes, keypoints give **finer-grained localization**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 **Example**
@@ -168,7 +168,7 @@ Where:
 The **sliding window** technique is a classic method in computer vision used for object detection. The core idea is to take a fixed-size rectangular window and slide it across the input image, systematically checking each region to see whether it contains the object of interest.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-05.gif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-05.gif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 At each window position, the cropped image region is passed to a classifier (e.g., SVM, logistic regression, or a small CNN) to determine whether it contains an object. This window "slides" over the image both horizontally and vertically, often with some stride value, producing many cropped regions.
@@ -212,7 +212,7 @@ Instead of running the classifier separately on each window, we can:
 Then, we apply **1x1 convolutions** or **fully connected layers converted into convolutions** over the feature map to produce dense predictions for object presence.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 **Fully Connected Layer to Convolution**
@@ -237,7 +237,7 @@ This end-to-end architecture enables extremely fast inference and is designed fo
 At a high level, YOLO divides the input image into a fixed-size grid and makes predictions for each grid cell. Let’s go through each part of the architecture:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/object-localization-and-detection-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/object-localization-and-detection-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 **1. Image Grid Division**

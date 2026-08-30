@@ -5,7 +5,7 @@
 ## Padding
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-01.gif" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-01.gif" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 ### Why Padding is Needed
@@ -26,7 +26,7 @@ Where:
 ##### Example
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-03.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-03.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 In this image:
@@ -61,7 +61,7 @@ Where:
 ##### Example
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 In this image:
@@ -106,7 +106,7 @@ Imagine scanning a photo with a magnifying glass: without padding, you can’t e
 Stride is the number of pixels the filter moves at each step.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-04.jpeg" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-04.jpeg" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Stride = 1:** Normal convolution (moves 1 pixel at a time)
@@ -142,13 +142,13 @@ If stride = 2, the filter skips every alternate pixel, effectively reducing the 
 ### From 2D to 3D
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-05.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-05.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 In RGB images, we have 3 channels: Red, Green, and Blue. Thus, a convolutional layer operates over 3D volumes.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-07.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-07.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 ### Input Dimensions:
@@ -182,7 +182,7 @@ $$
 Let’s say you have a (6, 6, 3) image, and you apply 2 filters of size (3, 3, 3):
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/convolution-operations-06.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/convolution-operations-06.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - Output shape: (4, 4, 2) (assuming valid padding, stride=1)

@@ -11,7 +11,7 @@
 As neural networks became deeper, researchers observed a counterintuitive phenomenon: **deeper networks often performed worse during training and testing** compared to shallower ones. This degradation was not due to overfitting but rather an optimization issue.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 This problem is called the **degradation problem**. It shows that simply stacking more layers doesn't guarantee better accuracy — instead, it often leads to higher training error. This contradicts our expectations, since deeper models should be able to represent more complex functions.
@@ -39,7 +39,7 @@ where $ F(x, \{W_i\}) $ is the output from a few stacked layers (e.g., 2 Conv-BN
 Here's the basic structure of a **Residual Block**:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - If the input and output dimensions differ, a **1x1 convolution** is used to match dimensions before addition.
@@ -105,7 +105,7 @@ In 2014, the "Network in Network" architecture introduced the idea of using **1x
 - Though the spatial dimension ($1x1$) seems trivial, it processes **channel-wise** information and mixes features across depth.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 Let’s assume an input of shape $ H \times W \times C\_{in}$. Applying $ N $ 1x1 filters produces an output of shape $ H \times W \times N $.
@@ -159,7 +159,7 @@ Applying multiple large filters in parallel increases computation exponentially.
 The **GoogLeNet (Inception-v1)** architecture introduced the Inception module to allow **multi-scale feature extraction** while keeping the computation affordable.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 ### Structure of an Inception Block:
@@ -188,7 +188,7 @@ Each Inception block has multiple branches:
 Assume an input of size $ 28 \times 28 \times 192 $. After passing through an Inception module, we may get something like:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - 1x1 branch → 64 channels
@@ -265,7 +265,7 @@ Given an input of size $ H \times W \times D\_{in} $, applying $ N $ filters of 
    $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 ✅ **Total Cost**:
@@ -283,7 +283,7 @@ which is **~9x less** than standard convolution when $ K = 3 $.
 MobileNetV1 is built by stacking **depthwise separable convolutions** instead of regular ones. It also introduces:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Width Multiplier (α)**: Shrinks the number of channels (e.g., α=0.75 reduces model size).
@@ -306,7 +306,7 @@ Introduced in 2019 by Google AI, **EfficientNet** pushes the boundary of model p
 You can make a CNN more powerful by:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="./../../img/deep-learning-specialization/modern-cnn-architectures-resnet-inception-mobilenet-efficenet-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - Increasing **depth** (more layers)
