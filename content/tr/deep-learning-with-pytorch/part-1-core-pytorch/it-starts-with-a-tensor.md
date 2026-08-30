@@ -287,32 +287,14 @@ print(f"Yayınlama sonucu değerleri:\n{broadcasted_sum}")
 
 ---
 
-## 5. İsimlendirilmiş Tensörler (Named Tensors)
+## 5. İsimlendirilmiş Tensörler ve Modern Boyut Yönetimi (`einops`)
 
-4D veya 5D tensörlerin kullanıldığı üretim boru hatlarında (örneğin `[Batch, Channel, Depth, Height, Width]`), konumsal tam sayılarla indeksleme yapmak (örneğin `x[:, 2, :, :]`) eksenlerin karışmasına ve sessiz hatalara yol açabilir. PyTorch, boyutlara açık dizge etiketleri atamaya izin veren **İsimlendirilmiş Tensörler (*Named Tensors*)** yapısını sunar.
+4D veya 5D tensörlerin kullanıldığı üretim boru hatlarında (örneğin Bilgisayarlı Görüde `[Batch, Channel, Height, Width]` veya Transformer'larda `[Batch, Sequence, Heads, HeadDim]`), konumsal tam sayılarla indeksleme yapmak (örneğin `x.transpose(1, 2)`) eksenlerin karışmasına ve sessiz hatalara yol açabilir.
 
-```mermaid
-flowchart TD
-    subgraph Positional["1. Konumsal İndeksleme (Hataya Açık)"]
-        P["img[0, 1, :, :] -> Belirsizlik: Hangi eksen kanal, hangisi zaman, hangisi yığın?"]
-    end
-
-    subgraph Named["2. İsimlendirilmiş Boyutlar (Açık ve Tip Güvenli)"]
-        N["images.names = ('batch', 'channels', 'rows', 'cols')
-reordered = images.align_to('batch', 'rows', 'cols', 'channels')
-Tip denetleyici anlamsal boyut eşleşmesini derleme zamanında doğrular"]
-    end
-
-    Positional -->|Açık İsim Etiketleriyle Yeniden Yapılandırma| Named
-
-    style Positional fill:#1a1a2e,stroke:#e94560,color:#fff
-    style Named fill:#16213e,stroke:#4cc9f0,color:#fff
-```
-
-RGB görüntülerden oluşan bir isimlendirilmiş tensör tanımlayalım ve eksenleri isimleri üzerinden yeniden düzenleyelim:
+PyTorch, boyutlara açık dizge etiketleri atamaya izin veren **İsimlendirilmiş Tensörler (*Named Tensors*)** yapısını deneysel bir özellik olarak sunmuştur:
 
 ```python
-# Açık boyut isimleriyle 4D tensör oluşturma
+# Açık boyut isimleriyle 4D tensör oluşturma (Deneysel PyTorch API)
 images = torch.zeros(2, 3, 28, 28, names=('batch', 'channels', 'rows', 'cols'))
 print(f"İsimlendirilmiş Tensör boyutları: {images.names}")
 
@@ -322,9 +304,56 @@ print(f"Yeniden sıralanmış tensör boyutları: {reordered_images.names}")
 print(f"Yeniden sıralanmış tensör şekli: {reordered_images.shape}")
 ```
 
+### 5.1 Modern Endüstri Standardı: `einops`
+
+PyTorch'un yerel isimlendirilmiş tensörleri güçlü bir konsept sunsa da deneysel aşamada kalmış ve sınırlı operatör desteği nedeniyle geniş çapta benimsenmemiştir. Modern derin öğrenmede (PyTorch 2.x+) ve günümüz Vision Transformer / LLM kod tabanlarında boyut manipülasyonunun fiili endüstri standardı **`einops`** kütüphanesidir (`from einops import rearrange, reduce, repeat`).
+
+`einops`, tensör boyutlarını açıkça belirten ve yeniden düzenleyen bildirimsel (*declarative*) bir sözdizimi sunar:
+
+```mermaid
+flowchart TD
+    subgraph Positional["1. Konumsal Permütasyon (Hataya Açık)"]
+        direction TB
+        P["img.permute(0, 2, 3, 1)<br/>• NCHW ve NHWC sıralamasında sessiz hatalar<br/>• Dikkat mekanizmalarında okunması zor"]
+    end
+
+    subgraph NamedNative["2. PyTorch İsimlendirilmiş Tensörler (Deneysel)"]
+        direction TB
+        N["img.align_to('batch', 'rows', 'cols', 'channels')<br/>• Açık boyut etiketleri<br/>• PyTorch 2.x'te sınırlı operatör desteği"]
+    end
+
+    subgraph EinopsModern["3. Modern Endüstri Standardı: einops (Üretim Standardı)"]
+        direction TB
+        E["rearrange(imgs, 'b c h w -> b h w c')<br/>• Bildirimsel ve kendini belgeleyen sözdizimi<br/>• ViT, Diffusion ve LLM modellerinde standart"]
+    end
+
+    Positional --> NamedNative --> EinopsModern
+
+    style Positional fill:#1a1a2e,stroke:#e94560,color:#fff
+    style NamedNative fill:#16213e,stroke:#4cc9f0,color:#fff
+    style EinopsModern fill:#0f3460,stroke:#52b788,color:#fff
+```
+
+`einops` ile tensör boyutlarını yeniden düzenleyelim:
+
+```python
+# %pip install einops
+import torch
+from einops import rearrange
+
+# 1. Tensörü oluştur (NCHW)
+imgs = torch.randn(2, 3, 28, 28)
+
+# 2. Önce isimleri belirt, sonra hedef sıralamaya çevir (NCHW -> NHWC)
+imgs_reordered = rearrange(imgs, 'batch channels rows cols -> batch rows cols channels')
+
+print("Orijinal Şekil :", imgs.shape)          # torch.Size([2, 3, 28, 28])
+print("Yeniden Sıralı :", imgs_reordered.shape)  # torch.Size([2, 28, 28, 3])
+```
+
 ---
 
-## 6. Tensör Veri Tipleri (`dtype`)
+## 6. Tensör Veri Tipleri (`dtype`) (`dtype`)
 
 Bir tensörün sayısal temsili **`dtype`** (veri tipi) ile belirlenir. Doğru veri tipini seçmek; matematiksel hassasiyet, bellek tüketimi ve GPU işlem hızı arasındaki dengeyi kurmak açısından kritiktir.
 
@@ -496,36 +525,47 @@ flowchart TD
   </div>
 </figure>
 
-### 8.1 1D Fiziksel Storage'ı İnceleme
+### 8.1 1D Fiziksel Storage'ı İnceleme (PyTorch 2.x'te `UntypedStorage`)
 
 2D bir tensörün temelindeki 1D storage alanına `.untyped_storage()` ile erişelim:
 
 ```python
 # (3, 2) boyutunda 2D tensör oluşturma
 points = torch.tensor([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
-print(f"Tensör points (3x2):\n{points}")
+print(f"Tensör points (3x2):
+{points}")
 
 # Fiziksel 1D depolama alanına erişim
 points_storage = points.untyped_storage()
-print(f"Fiziksel 1D Storage boyutu: {len(points_storage)} bayt / eleman")
-print(f"Storage ham içeriği: {[points_storage[i] for i in range(len(points_storage))]}")
+print(f"Fiziksel 1D Storage boyutu: {len(points_storage)} bayt")
+print(f"Storage ham bayt içeriği: {[points_storage[i] for i in range(len(points_storage))]}")
 ```
+
+> [!NOTE]
+> **PyTorch 2.x `UntypedStorage` Mimarisi:**  
+> Eski PyTorch sürümlerinde `points.storage()` tipi olan bir depolama (örneğin `FloatStorage`) döndürürdü. Modern PyTorch 2.x ile gelen `untyped_storage()` doğrudan ham bayt dizisi (`raw bytes / uint8`) tutar. Bu nedenle `len(points_storage)` değeri eleman sayısını değil, **toplam bayt sayısını** ($6 \text{ float} \times 4 \text{ bayt} = 24 \text{ bayt}$) verir.
 
 ### 8.2 Storage'ı Değiştirmek Tüm Görünümleri Etkiler
 
-Birden fazla tensör görünümü tam olarak aynı fiziksel storage buffer'ına işaret edebileceğinden, storage üzerinde veya bir görünüm üzerinden yapılan değişiklik o belleği paylaşan diğer tüm tensörlerde anında görülür:
+Birden fazla tensör görünümü tam olarak aynı fiziksel storage buffer'ına işaret edebileceğinden, storage üzerinde veya bir görünüm üzerinden yapılan değişiklik o belleği paylaşan diğer tüm tensörlerde anında görülür.
+
+Modern PyTorch'ta `UntypedStorage` doğrudan ham bayt tuttuğu için doğrudan depolama indeksine float ataması yapılamaz ($0 \dots 255$ arası bir tamsayı/bayt beklenir). Tensör görünümü üzerinden yapılan atamalar ise storage'daki float bitlerini günceller ve tüm görünümlere anında yansır:
 
 ```python
-# Storage'ın ilk değerini doğrudan değiştirme
-points_storage[0] = 99.0
+# 1. Depolama baytını doğrudan değiştirme (PyTorch 2.x'te 0-255 arası int bayt olmalıdır)
+points_storage[0] = 99
+
+# 2. Veya tensör görünümü üzerinden kayan noktalı (float) değiştirme
+points[0, 0] = 99.0
 
 # 2D tensör görünümü bu değişikliği anında yansıtır
-print(f"Storage değiştikten sonra points tensörü:\n{points}")
+print(f"Storage değiştikten sonra points tensörü:
+{points}")
 ```
 
 ---
 
-## 9. Stride Matematiği ve Bellek Bitişikliği
+## 9. Stride Matematiği ve Bellek Bitişikliği ve Bellek Bitişikliği
 
 PyTorch, çok boyutlu bir koordinatı $(i\_0, i\_1, \dots, i\_{n-1})$ tek boyutlu düz storage indeksine nasıl dönüştürür? Bunun için **adım (stride) doğrusal haritalama denklemini** hesaplar:
 

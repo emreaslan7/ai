@@ -287,30 +287,14 @@ print(f"Broadcasted result values:\n{broadcasted_sum}")
 
 ---
 
-## 5. Named Tensors
+## 5. Named Tensors and Modern Dimension Manipulation (`einops`)
 
-In production deep learning pipelines with 4D or 5D tensors (e.g. `[Batch, Channel, Depth, Height, Width]`), indexing by positional integers (such as `x[:, 2, :, :]`) frequently causes subtle transposition bugs. PyTorch provides **Named Tensors**, allowing dimensions to be tagged with explicit string identifiers.
+In production deep learning pipelines with 4D or 5D tensors (e.g. `[Batch, Channel, Height, Width]` in Computer Vision or `[Batch, Sequence, Heads, HeadDim]` in Transformers), indexing by positional integers (such as `x.transpose(1, 2)`) frequently causes subtle transposition bugs.
 
-```mermaid
-flowchart TD
-    subgraph Positional["1. Positional Indexing (Error-Prone)"]
-        P["img[0, 1, :, :] -> Ambiguity: Which axis is channel vs. time vs. batch?"]
-    end
-
-    subgraph Named["2. Named Dimensions (Self-Documenting & Type-Safe)"]
-        N["images.names = ('batch', 'channels', 'rows', 'cols')\nreordered = images.align_to('batch', 'rows', 'cols', 'channels')\nType checker verifies semantic alignment compile-time"]
-    end
-
-    Positional -->|Refactored with Explicit Name Tags| Named
-
-    style Positional fill:#1a1a2e,stroke:#e94560,color:#fff
-    style Named fill:#16213e,stroke:#4cc9f0,color:#fff
-```
-
-Let us construct a named tensor representing a batch of RGB images, verify its dimension tags, and reorder dimensions semantically:
+PyTorch introduced **Named Tensors** as an experimental feature allowing dimensions to be tagged with explicit string identifiers:
 
 ```python
-# Create a 4D tensor with explicit dimension names
+# Create a 4D tensor with explicit dimension names (Experimental PyTorch API)
 images = torch.zeros(2, 3, 28, 28, names=('batch', 'channels', 'rows', 'cols'))
 print(f"Named Tensor dimensions: {images.names}")
 
@@ -318,6 +302,53 @@ print(f"Named Tensor dimensions: {images.names}")
 reordered_images = images.align_to('batch', 'rows', 'cols', 'channels')
 print(f"Reordered tensor dimensions: {reordered_images.names}")
 print(f"Reordered tensor shape: {reordered_images.shape}")
+```
+
+### 5.1 The Modern Industry Standard: `einops`
+
+While native Named Tensors provided a compelling concept, they remained experimental with limited PyTorch operator support. In modern deep learning (PyTorch 2.x+) and production Vision Transformer / LLM codebases, the undisputed industry standard for dimension manipulation is **`einops`** (`from einops import rearrange, reduce, repeat`).
+
+`einops` provides expressive, declarative, and self-documenting tensor transformations across PyTorch, JAX, and TensorFlow:
+
+```mermaid
+flowchart TD
+    subgraph Positional["1. Positional Permutations (Error-Prone)"]
+        direction TB
+        P["img.permute(0, 2, 3, 1)<br/>• Silent bugs if tensor is NCHW vs NHWC<br/>• Unreadable in multi-head attention"]
+    end
+
+    subgraph NamedNative["2. PyTorch Named Tensors (Experimental)"]
+        direction TB
+        N["img.align_to('batch', 'rows', 'cols', 'channels')<br/>• Explicit dimension tags<br/>• Limited operator support in PyTorch 2.x"]
+    end
+
+    subgraph EinopsModern["3. Modern Industry Standard: einops (Production)"]
+        direction TB
+        E["rearrange(imgs, 'b c h w -> b h w c')<br/>• Declarative & self-documenting syntax<br/>• Standard in ViTs, Diffusion Models & LLMs"]
+    end
+
+    Positional --> NamedNative --> EinopsModern
+
+    style Positional fill:#1a1a2e,stroke:#e94560,color:#fff
+    style NamedNative fill:#16213e,stroke:#4cc9f0,color:#fff
+    style EinopsModern fill:#0f3460,stroke:#52b788,color:#fff
+```
+
+Let us demonstrate dimension rearrangement using `einops`:
+
+```python
+# %pip install einops
+import torch
+from einops import rearrange
+
+# 1. Construct input tensor in NCHW format
+imgs = torch.randn(2, 3, 28, 28)
+
+# 2. Declare dimension names and transform to target layout (NCHW -> NHWC)
+imgs_reordered = rearrange(imgs, 'batch channels rows cols -> batch rows cols channels')
+
+print("Original Shape :", imgs.shape)          # torch.Size([2, 3, 28, 28])
+print("Reordered Shape:", imgs_reordered.shape)  # torch.Size([2, 28, 28, 3])
 ```
 
 ---
@@ -494,31 +525,42 @@ flowchart TD
   </div>
 </figure>
 
-### 8.1 Inspecting the Underlying 1D Storage
+### 8.1 Inspecting the Underlying 1D Storage (`UntypedStorage` in PyTorch 2.x)
 
 Let us inspect the storage buffer of a 2D tensor using `.untyped_storage()`:
 
 ```python
 # Construct a 2D tensor of shape (3, 2)
 points = torch.tensor([[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]])
-print(f"Tensor points (3x2):\n{points}")
+print(f"Tensor points (3x2):
+{points}")
 
 # Access the physical 1D storage
 points_storage = points.untyped_storage()
-print(f"Physical 1D Storage size: {len(points_storage)} elements / bytes")
-print(f"Storage raw contents: {[points_storage[i] for i in range(len(points_storage))]}")
+print(f"Physical 1D Storage byte size: {len(points_storage)} bytes")
+print(f"Storage raw byte contents: {[points_storage[i] for i in range(len(points_storage))]}")
 ```
+
+> [!NOTE]
+> **PyTorch 2.x `UntypedStorage` Architecture:**  
+> In older PyTorch versions, `points.storage()` returned a type-aware storage (such as `FloatStorage`). In modern PyTorch 2.x+, `.untyped_storage()` manages raw binary bytes (`uint8`). Consequently, `len(points_storage)` returns the **total number of bytes** ($6 \text{ float32 elements} \times 4 \text{ bytes} = 24 \text{ bytes}$), not the logical element count.
 
 ### 8.2 Modifying Storage Mutates All Views
 
-Because multiple tensor views can point to the exact same physical storage buffer, mutating an element via one tensor view or directly in storage immediately changes the values observed by all other views sharing that storage:
+Because multiple tensor views point to the exact same physical storage buffer, mutating values through one view or directly in storage immediately alters all other views sharing that storage.
+
+When indexing `UntypedStorage` directly, values must be assigned as integer bytes ($0 \dots 255$ `int`). Alternatively, mutating via any logical tensor view updates the float representation across all sharing views:
 
 ```python
-# Mutate the first value in storage directly
-points_storage[0] = 99.0
+# 1. Mutating the underlying storage byte directly (must be an integer byte 0-255 in PyTorch 2.x)
+points_storage[0] = 99
 
-# The 2D tensor view immediately reflects the mutation
-print(f"Points tensor after modifying underlying storage:\n{points}")
+# 2. Or mutating via a tensor view (floating-point mutation)
+points[0, 0] = 99.0
+
+# The 2D tensor view and all shared views reflect the change immediately
+print(f"Points tensor after mutation:
+{points}")
 ```
 
 ---
