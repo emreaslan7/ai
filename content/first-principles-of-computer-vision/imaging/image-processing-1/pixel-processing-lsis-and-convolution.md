@@ -69,7 +69,7 @@ $$g(x,y) = 255 - f(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-01.png" alt="Darken, Lighten, and Invert Transformation Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-01.png" alt="Darken, Lighten, and Invert Transformation Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Outputs of Darken (f - 128), Lighten (f + 128), and Image Invert (255 - f) transformations</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$g(x,y) = 0.3 \cdot R(x,y) + 0.6 \cdot G(x,y) + 0.1 \cdot B(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-02.png" alt="Low Contrast, High Contrast, and Grayscale Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-02.png" alt="Low Contrast, High Contrast, and Grayscale Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Low Contrast (f/2), High Contrast with Saturation (f * 2), and Grayscale Conversion</em></figcaption>
   </div>
 </figure>
@@ -107,7 +107,7 @@ $$g(x,y) = 0.3 \cdot R(x,y) + 0.6 \cdot G(x,y) + 0.1 \cdot B(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-03.png" alt="LSIS Basic System Block Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-03.png" alt="LSIS Basic System Block Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Linear Shift-Invariant System (LSIS) basic input-output block diagram</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$\text{LSIS}(\alpha f_1(x) + \beta f_2(x)) = \alpha \cdot g_1(x) + \beta \cdot 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-04.png" alt="LSIS Linearity Axiom" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-04.png" alt="LSIS Linearity Axiom" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>LSIS linearity principle: Preservation of superposition and scaling</em></figcaption>
   </div>
 </figure>
@@ -135,7 +135,7 @@ $$\text{LSIS}(f(x - a)) = g(x - a)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-05.png" alt="LSIS Shift Invariance Axiom" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-05.png" alt="LSIS Shift Invariance Axiom" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>LSIS shift invariance: Spatial shift by a in the input induces identical shift by a in the output</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ An ideal lens system provides a clear physical example of an LSIS:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-06.png" alt="Continuous Convolution Definition and Signals" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-06.png" alt="Continuous Convolution Definition and Signals" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Continuous 1D convolution integral definition and signal plots for f(x) and h(x)</em></figcaption>
   </div>
 </figure>
@@ -267,7 +267,7 @@ Because optical lenses form a 2D LSIS, the human eye behaves as a 2D LSIS.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-07.png" alt="Human Eye Point Spread Function (PSF)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-07.png" alt="Human Eye Point Spread Function (PSF)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Human eye Point Spread Function (PSF) measured via distant star point impulse</em></figcaption>
   </div>
 </figure>

@@ -6,7 +6,7 @@ In computer vision, depth and shape recovery methods are generally divided into 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-01.png" alt="Shallow Depth of Field Illustration" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-01.png" alt="Shallow Depth of Field Illustration" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: In a shot with shallow depth of field, only objects on the focus plane appear sharp, while objects in front or behind blur due to optical defocus.</em></figcaption>
   </div>
 </figure>
@@ -21,7 +21,7 @@ However, estimating local blur amount from a single image is mathematically an *
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-15.png" alt="Image Patches and PSF Analysis" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-15.png" alt="Image Patches and PSF Analysis" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Defocus blur level and corresponding Point Spread Functions (PSFs) across different regions of a captured scene.</em></figcaption>
   </div>
 </figure>
@@ -45,7 +45,7 @@ $$\frac{1}{f} = \frac{1}{u} + \frac{1}{v}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-02.png" alt="Gaussian Lens Law Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-02.png" alt="Gaussian Lens Law Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Optical diagram of the Gaussian Lens Law.</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ If the sensor (image plane) is positioned at distance $s$ instead of the ideal f
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-03.png" alt="Blur Circle Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-03.png" alt="Blur Circle Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Geometric relationship between blur circle diameter ($b$) and sensor position ($s$).</em></figcaption>
   </div>
 </figure>
@@ -70,7 +70,7 @@ This equation demonstrates two physical ways to control defocus blur amount:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-18.png" alt="Methods to Change Blur Amount" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-18.png" alt="Methods to Change Blur Amount" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Method 1: Changing lens aperture diameter ($D$); Method 2: Translating sensor position ($s$).</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ The normalization factor $\frac{4}{\pi b^2}$ enforces conservation of optical en
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-04.png" alt="Pillbox PSF Model" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-04.png" alt="Pillbox PSF Model" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Ideal Pillbox (Disk) Point Spread Function (PSF) model.</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ $$h_{\text{Gaussian}}(x, y) = \frac{1}{2\pi \sigma^2} e^{-\frac{x^2+y^2}{2\sigma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-05.png" alt="Gaussian PSF Model" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-05.png" alt="Gaussian PSF Model" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Practical Gaussian Point Spread Function (PSF) model ($\sigma \approx b/2$).</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ $$g(x, y) = f(x, y) * h(x, y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-06.png" alt="Spatial Convolution Model" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-06.png" alt="Spatial Convolution Model" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Spatial domain convolution model: Sharp image $f_0(x,y)$ convolved with PSF $h(x,y)$ yields blurred image $f(x,y)$.</em></figcaption>
   </div>
 </figure>
@@ -128,7 +128,7 @@ $$G(u, v) = F(u, v) \cdot H(u, v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-07.png" alt="Defocus in Frequency Domain" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-07.png" alt="Defocus in Frequency Domain" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: 1D Fourier slice showing that defocus acts as a Low-Pass Filter in frequency domain.</em></figcaption>
   </div>
 </figure>
@@ -145,7 +145,7 @@ Optically, defocus acts as a **Low-Pass Filter**. It preserves low-frequency mac
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-08.png" alt="DFF Focal Stack Sampling" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-08.png" alt="DFF Focal Stack Sampling" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Sampling a focal stack across sensor positions ($s = 50.95 \dots 51.85\text{ mm}$), finding best focus slice ($s = 51.25\text{ mm}$), and computing object depth ($o$).</em></figcaption>
   </div>
 </figure>
@@ -172,7 +172,7 @@ $$M(x, y) = \sum_{i=x-K}^{x+K} \sum_{j=y-K}^{y+K} \nabla_M^2 I(i, j)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-09.png" alt="Focus Measure vs Sensor Location Plot" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-09.png" alt="Focus Measure vs Sensor Location Plot" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Focus Measure score $M(x,y)$ plotted against sensor location ($s$) for scene points A and B at different depths.</em></figcaption>
   </div>
 </figure>
@@ -185,7 +185,7 @@ Assigning depth directly to discrete focal stack layer indices causes depth reso
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-11.png" alt="Continuous Focus Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-11.png" alt="Continuous Focus Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Fitting a continuous Gaussian curve around discrete focus measure samples to find true focus position $\bar{s}$.</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ $$M(s) = M_p e^{-\frac{(s - \bar{s})^2}{2\sigma_m^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-12.png" alt="Gaussian Curve Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-12.png" alt="Gaussian Curve Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Gaussian Interpolation parameters: known discrete measurements ($M_{s_i}, s_i$) and unknowns ($M_p, \bar{s}, \sigma_M$).</em></figcaption>
   </div>
 </figure>
@@ -213,7 +213,7 @@ Substituting continuous $\bar{s}$ into the Gaussian lens law produces smooth, hi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-13.png" alt="Gaussian Interpolation Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-13.png" alt="Gaussian Interpolation Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: 3D reconstruction of a sphere: Without Gaussian interpolation (discrete steps) vs With Gaussian interpolation (smooth continuous surface).</em></figcaption>
   </div>
 </figure>
@@ -222,7 +222,7 @@ DFF is extensively applied in microscopy and industrial quality inspection where
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-14.png" alt="DFF Microscopy Applications" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-14.png" alt="DFF Microscopy Applications" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: DFF micro-scale reconstructions: Silicon wafer micro-structures ($13\ \mu\text{m}$ height) and Leaf stomata ($30\ \mu\text{m}$ height).</em></figcaption>
   </div>
 </figure>
@@ -237,7 +237,7 @@ While DFF offers high accuracy, collecting tens of images is impractical for rea
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-16.png" alt="DFD with Different Apertures" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-16.png" alt="DFD with Different Apertures" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Capturing two images with different aperture diameters ($D_1, D_2$) produces distinct PSF sizes ($\sigma_1, \sigma_2$).</em></figcaption>
   </div>
 </figure>
@@ -252,7 +252,7 @@ $$\frac{\sigma_1}{\sigma_2} = \frac{D_1}{D_2} \implies \sigma_2 = \sigma_1 \frac
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-17.png" alt="DFD System Equations" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-17.png" alt="DFD System Equations" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: DFD system equations in spatial and Fourier domains.</em></figcaption>
   </div>
 </figure>
@@ -315,7 +315,7 @@ Since DFF and DFD rely on high-frequency surface detail, smooth textureless surf
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-19.png" alt="Nayar Active DFD System Hardware" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/depth-from-defocus-19.png" alt="Nayar Active DFD System Hardware" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Nayar's real-time active DFD hardware architecture featuring dual sensors and pattern projection.</em></figcaption>
   </div>
 </figure>

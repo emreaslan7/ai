@@ -19,7 +19,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-01.png" alt="Sürekli Sinyal ve Dijital Örneklenmiş Sinyal" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-01.png" alt="Sürekli Sinyal ve Dijital Örneklenmiş Sinyal" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sürekli uzamsal sinyal $f(x)$ ve ayrık delta darbeleriyle örneklenmiş dijital sinyal $f_s(x)$</em></figcaption>
   </div>
 </figure>
@@ -31,7 +31,7 @@ Eğer yüksek frekanslı (hızlı salınım yapan) sürekli bir sinüs dalgasın
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-02.png" alt="Yetersiz Örnekleme ve Aliasing Oluşumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-02.png" alt="Yetersiz Örnekleme ve Aliasing Oluşumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Düşük ve yüksek frekanslı sinyallerin örneklenmesi: Yüksek frekansta yetersiz örnekleme sahte düz/düşük frekanslı sinyal üretir (Aliasing).</em></figcaption>
   </div>
 </figure>
@@ -41,7 +41,7 @@ Görüntülerde aliasing kendisini **Moiré Desenleri** (örneğin bir tuğla du
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-03.png" alt="Tuğla Duvarda Moiré Desenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-03.png" alt="Tuğla Duvarda Moiré Desenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kusursuz örneklenmiş görüntü (solda) ile yetersiz örnekleme sonucu oluşan Moiré dalgaları (sağda)</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ Sürekli bir $f(x)$ sinyalini $x_0$ aralıklarıyla uzamsal olarak örneklemek, 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-04.png" alt="Shah Fonksiyonu ile Örnekleme Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-04.png" alt="Shah Fonksiyonu ile Örnekleme Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sürekli sinyal $f(x)$ ile Shah fonksiyonunun $s(x)$ çarpımı sonucu örneklenmiş sinyal $f_s(x) = f(x)s(x)$</em></figcaption>
   </div>
 </figure>
@@ -72,7 +72,7 @@ $$\mathcal{F}\{s(x)\} = S(u) = \frac{1}{x_0} \sum_{n=-\infty}^{\infty} \delta\le
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-05.png" alt="Shah Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-05.png" alt="Shah Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal düzlemdeki Shah fonksiyonu $s(x)$ ($x_0$ aralıklı) ve Fourier düzlemindeki $S(u)$ ($1/x_0$ aralıklı) ikilisi</em></figcaption>
   </div>
 </figure>
@@ -86,7 +86,7 @@ $$F_s(u) = F(u) * \left[ \frac{1}{x_0} \sum_{n=-\infty}^{\infty} \delta\left(u -
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-06.png" alt="Frekansta Konvolüsyon ve Spektrum Kopyalanması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-06.png" alt="Frekansta Konvolüsyon ve Spektrum Kopyalanması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Bant sınırlı spektrum $F(u)$ ile darbe dizisi $S(u)$ konvolüsyonu ($F_s(u) = F(u) * S(u)$)</em></figcaption>
   </div>
 </figure>
@@ -121,7 +121,7 @@ $$u_{\max} \le \frac{1}{2 x_0} \quad \iff \quad \frac{1}{x_0} \ge 2 u_{\max}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-07.png" alt="Nyquist Koşulunda Çakışmayan Spektrumlar" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-07.png" alt="Nyquist Koşulunda Çakışmayan Spektrumlar" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>$u_{\max} \le \frac{1}{2x_0}$ sağlandığında spektrum kopyaları ($F_s(u)$) aralarında boşluk bırakarak çakışmadan dizilir.</em></figcaption>
   </div>
 </figure>
@@ -131,7 +131,7 @@ Eğer örnekleme sıklığı yetersizse ($u_{\max} > \frac{1}{2x_0}$), $\frac{1}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-08.png" alt="Nyquist İhlalinde Spektral Örtüşme Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-08.png" alt="Nyquist İhlalinde Spektral Örtüşme Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>$u_{\max} > \frac{1}{2x_0}$ durumunda spektrumların üst üste binerek orijinal frekans bilgisini bozması (Aliasing)</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ $$F(u) = F_s(u) \cdot C(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-09.png" alt="Kutu Pencere Filtresi ile Sinyal Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-09.png" alt="Kutu Pencere Filtresi ile Sinyal Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Merkez spektrumun kutu filtresi $C(u)$ ile süzülüp Ters Fourier Dönüşümü ($\text{IFT}$) ile orijinal $f(x)$ sinyalinin elde edilişi</em></figcaption>
   </div>
 </figure>
@@ -171,7 +171,7 @@ Gerçek dünyadaki fiziksel sahneler (keskin kenarlar, duvar kaplamaları) sonsu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-10.png" alt="Doğal Sahnelerin Spektrumu ve Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-10.png" alt="Doğal Sahnelerin Spektrumu ve Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Doğal sahnelerin genlik spektrumu ve kamera sensörünün Nyquist sınırını aşan yüksek frekansların oluşturduğu Moiré desenleri</em></figcaption>
   </div>
 </figure>
@@ -182,7 +182,7 @@ Kameralar ve görüntüleme sistemleri aliasing bozulmalarını engellemek için
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-11.png" alt="Kamera Sensörlerinde Anti-Aliasing Stratejileri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-11.png" alt="Kamera Sensörlerinde Anti-Aliasing Stratejileri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sensör seviyesinde iki anti-aliasing stratejisi: Alan entegrasyonlu piksel hücreleri (solda) ve Optik Alçak Geçiren Filtre / OLPF (sağda)</em></figcaption>
   </div>
 </figure>

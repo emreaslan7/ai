@@ -72,7 +72,7 @@ The orientation and spatial distribution of structures in an image map directly 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-01.png" alt="Horizontal Cosine Waves Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-01.png" alt="Horizontal Cosine Waves Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Horizontal cosine waves ($f, g$) and their sum ($f+g$) generating discrete spectral spots</em></figcaption>
   </div>
 </figure>
@@ -81,7 +81,7 @@ The orientation and spatial distribution of structures in an image map directly 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-02.png" alt="Slit and Circular Disk Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-02.png" alt="Slit and Circular Disk Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Slanted rectangular slit (perpendicular frequency lines) and circular disk (rotationally symmetric spectrum)</em></figcaption>
   </div>
 </figure>
@@ -90,7 +90,7 @@ The orientation and spatial distribution of structures in an image map directly 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-03.png" alt="Rubik's Cube and Mandrill Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-03.png" alt="Rubik's Cube and Mandrill Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Rubik's Cube (dominant edge frequency rays) and Mandrill (complex texture spectral cloud)</em></figcaption>
   </div>
 </figure>
@@ -99,7 +99,7 @@ The orientation and spatial distribution of structures in an image map directly 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-04.png" alt="Cameraman and Random Noise Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-04.png" alt="Cameraman and Random Noise Spectrum" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Cameraman image (dominant tripod rays) and Random Noise (uniform white noise distribution)</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$H_{\text{ILPF}}(u,v) = \begin{cases} 1 & \text{if } D(u,v) \le D_0 \\ 0 & \tex
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-05.png" alt="Rubik's Cube Low-Pass Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-05.png" alt="Rubik's Cube Low-Pass Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Low-Pass Filter (LPF) applied to Rubik's Cube with circular frequency cutoff disk</em></figcaption>
   </div>
 </figure>
@@ -141,7 +141,7 @@ $$H_{\text{ILPF}}(u,v) = \begin{cases} 1 & \text{if } D(u,v) \le D_0 \\ 0 & \tex
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-06.png" alt="Small Radius LPF Heavy Blur" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-06.png" alt="Small Radius LPF Heavy Blur" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Severe blurring resulting from a small LPF cutoff radius (narrow frequency window)</em></figcaption>
   </div>
 </figure>
@@ -157,7 +157,7 @@ $$H_{\text{IHPF}}(u,v) = 1 - H_{\text{ILPF}}(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-07.png" alt="Rubik's Cube High-Pass Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-07.png" alt="Rubik's Cube High-Pass Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>High-Pass Filter (HPF) applied to Rubik's Cube yielding an edge/contour map</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ $$H_{\text{IHPF}}(u,v) = 1 - H_{\text{ILPF}}(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-08.png" alt="Large Radius HPF Fine Edge Map" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-08.png" alt="Large Radius HPF Fine Edge Map" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Increasing HPF cutoff radius (large central blocking disk) extracts ultra-fine edge lines</em></figcaption>
   </div>
 </figure>
@@ -180,7 +180,7 @@ By the Convolution Theorem, multiplying by a Gaussian in the frequency domain is
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-09.png" alt="Gaussian Smoothing Convolution Theorem" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-09.png" alt="Gaussian Smoothing Convolution Theorem" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Equivalence between spatial Gaussian convolution ($f * n_\sigma$) and frequency Gaussian multiplication ($F \cdot N_\sigma$)</em></figcaption>
   </div>
 </figure>
@@ -189,7 +189,7 @@ By the Convolution Theorem, multiplying by a Gaussian in the frequency domain is
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-10.png" alt="Wider Gaussian Mask Inverse Scaling" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-10.png" alt="Wider Gaussian Mask Inverse Scaling" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Wider spatial Gaussian mask producing a narrower frequency Gaussian filter and heavier blur</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ While the magnitude spectrum $|F(u,v)|$ indicates *how much* energy exists at ea
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-11.png" alt="Oppenheim Lim Curtis Phase Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-11.png" alt="Oppenheim Lim Curtis Phase Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Phase vs. magnitude experiment on Marilyn Monroe and Albert Einstein: Preserving phase maintains recognizable identity.</em></figcaption>
   </div>
 </figure>
@@ -236,7 +236,7 @@ Developed by Aude Oliva (2006), **Hybrid Images** exploit human visual perceptio
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-12.png" alt="Oliva Hybrid Image Construction" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-12.png" alt="Oliva Hybrid Image Construction" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Hybrid Image construction: Low-pass Marilyn Monroe + High-pass Albert Einstein = Hybrid Image</em></figcaption>
   </div>
 </figure>
@@ -277,7 +277,7 @@ $$g(x,y) = f(x,y) * h(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-13.png" alt="Blur Degradation Model" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-13.png" alt="Blur Degradation Model" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Blur degradation model: Scene ($f$) * Camera shake PSF ($h$) = Motion blurred image ($g$)</em></figcaption>
   </div>
 </figure>
@@ -295,14 +295,14 @@ Taking the Inverse Fourier Transform $\text{IFT}\{F'(u,v)\}$ recovers $f(x,y)$ p
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-14.png" alt="Simple Deconvolution Step 1 Frequency Division" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-14.png" alt="Simple Deconvolution Step 1 Frequency Division" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Simple deconvolution Step 1 in noise-free environment: Frequency spectrum division ($F' = G / H$)</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-15.png" alt="Simple Deconvolution Step 2 Inverse FT" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-15.png" alt="Simple Deconvolution Step 2 Inverse FT" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Simple deconvolution Step 2 in noise-free environment: Computing IFT of $F'$ to recover unblurred scene ($f'$)</em></figcaption>
   </div>
 </figure>
@@ -358,7 +358,7 @@ $$F'(u,v) = \frac{G(u,v)}{H(u,v)} \cdot \left[ \frac{|H(u,v)|^2}{|H(u,v)|^2 + \l
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-16.png" alt="Wiener Deconvolution Noisy Blurred Image Recovery" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-16.png" alt="Wiener Deconvolution Noisy Blurred Image Recovery" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Restoration of noisy blurred image using Wiener Deconvolution with constant parameter $\lambda = 0.002$</em></figcaption>
   </div>
 </figure>

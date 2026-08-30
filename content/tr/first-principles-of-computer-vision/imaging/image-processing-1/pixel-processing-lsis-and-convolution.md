@@ -69,7 +69,7 @@ $$g(x,y) = 255 - f(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-01.png" alt="Koyulaştırma, Aydınlatma ve Negatif Dönüşüm Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-01.png" alt="Koyulaştırma, Aydınlatma ve Negatif Dönüşüm Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Koyulaştırma (f - 128), Aydınlatma (f + 128) ve Görüntü Negatifi (255 - f) dönüşümlerinin görsel çıktıları</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$g(x,y) = 0.3 \cdot R(x,y) + 0.6 \cdot G(x,y) + 0.1 \cdot B(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-02.png" alt="Düşük Kontrast, Yüksek Kontrast ve Gri Tonlama Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-02.png" alt="Düşük Kontrast, Yüksek Kontrast ve Gri Tonlama Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Düşük Kontrast (f/2), Yüksek Kontrast ve Doygunluk (f * 2) ile Gri Tonlama Dönüşümü</em></figcaption>
   </div>
 </figure>
@@ -107,7 +107,7 @@ $$g(x,y) = 0.3 \cdot R(x,y) + 0.6 \cdot G(x,y) + 0.1 \cdot B(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-03.png" alt="LSIS Temel Sistem Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-03.png" alt="LSIS Temel Sistem Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Doğrusal Ötelemeyle Değişmez Sistem (LSIS) temel girdi-çıktı blok şeması</em></figcaption>
   </div>
 </figure>
@@ -125,7 +125,7 @@ $$\text{LSIS}(\alpha f_1(x) + \beta f_2(x)) = \alpha \cdot g_1(x) + \beta \cdot 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-04.png" alt="LSIS Doğrusallık İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-04.png" alt="LSIS Doğrusallık İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>LSIS doğrusallık ilkesi: Süperpozisyon ve ölçekleme prensibinin korunması</em></figcaption>
   </div>
 </figure>
@@ -137,7 +137,7 @@ $$\text{LSIS}(f(x - a)) = g(x - a)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-05.png" alt="LSIS Ötelemeyle Değişmezlik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-05.png" alt="LSIS Ötelemeyle Değişmezlik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Girdi sinyalindeki a kadar uzamsal ötelemenin çıktıda da a kadar kayma yapması</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ $$\text{LSIS}(f(x - a)) = g(x - a)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-06.png" alt="Sürekli Konvolüsyon Tanımı ve Sinyaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-06.png" alt="Sürekli Konvolüsyon Tanımı ve Sinyaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sürekli uzayda f(x) ve h(x) fonksiyonlarının konvolüsyon integrali tanımı ve sinyal grafiği</em></figcaption>
   </div>
 </figure>
@@ -274,7 +274,7 @@ Lensler doğrusal ve ötelemeyle değişmez olduklarından, insan gözü de 2D b
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-07.png" alt="İnsan Gözünün Nokta Yayılım Fonksiyonu (PSF)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/pixel-processing-lsis-and-convolution-07.png" alt="İnsan Gözünün Nokta Yayılım Fonksiyonu (PSF)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzaktaki yıldız uyarımı ile ölçülen insan gözü Nokta Yayılım Fonksiyonu (PSF) grafiği</em></figcaption>
   </div>
 </figure>

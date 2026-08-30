@@ -49,7 +49,7 @@ Komşuluğun matematiksel tanımı topolojik tutarlılık açısından son derec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-01.png" alt="4-Komşuluk vs 8-Komşuluk Izgarası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-01.png" alt="4-Komşuluk vs 8-Komşuluk Izgarası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>4-Komşuluk (4-C) ve 8-Komşuluk (8-C) Piksel Komşuluk Tanımları</em></figcaption>
   </div>
 </figure>
@@ -63,7 +63,7 @@ Ancak bu iki tanım da geometrideki **Jordan Eğri Teoremini** açıkça ihlal e
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-02.png" alt="Jordan Eğri Teoremi İhlali" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-02.png" alt="Jordan Eğri Teoremi İhlali" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kare Piksel Izgarasında Jordan Eğri Teoremi İhlali (4-C Döngüsüz Delik vs 8-C Sızdıran Arka Plan)</em></figcaption>
   </div>
 </figure>
@@ -74,7 +74,7 @@ Bu geometrik paradoks, komşuluk tanımına yapay bir asimetri kazandırılarak 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-03.png" alt="Asimetrik 6-Komşuluk Konfigürasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-03.png" alt="Asimetrik 6-Komşuluk Konfigürasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Asimetrik 6-Komşuluk (6-C) Konfigürasyonları ve Jordan Paradoksunun İki Doğru Parçasına Ayrılması</em></figcaption>
   </div>
 </figure>
@@ -83,7 +83,7 @@ Bu asimetrik yaklaşım, kare ızgaraya sahip görüntü sensörlerinin **hekzag
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-04.png" alt="Kare Izgaranın Altıgen Izgara Davranışı Göstermesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-04.png" alt="Kare Izgaranın Altıgen Izgara Davranışı Göstermesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Asimetrik 6-Komşuluğun Kare Piksel Izgarasını Altıgen Izgara Gibi Davrandırması</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ Euler sayısının en önemli özelliklerinden biri **toplanabilirliktir (additi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-05.png" alt="Euler Sayısı Hesaplama Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-05.png" alt="Euler Sayısı Hesaplama Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İkili Metin Üzerinde Euler Sayısı Hesaplama Örneği ($E = B - H$) ve Toplanabilirlik Özelliği Şeması</em></figcaption>
   </div>
 </figure>
@@ -194,7 +194,7 @@ Bu 16 algoritmanın ikisi hayati öneme sahiptir:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-06.png" alt="Kelebeğin İskelet Çıkarma İşlemi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-06.png" alt="Kelebeğin İskelet Çıkarma İşlemi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kelebek Silüeti Üzerinde Euler Sayısı Korunarak (Algoritma 4) Yapılan İskelet Çıkarma (Thinning) İşlemi</em></figcaption>
   </div>
 </figure>

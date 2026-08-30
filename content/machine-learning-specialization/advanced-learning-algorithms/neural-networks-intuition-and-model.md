@@ -15,7 +15,7 @@ Artificial neural networks (ANNs) are designed based on the biological structure
 Each biological neuron consists of several key components:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Dendrites**: Receive input signals from other neurons.
@@ -28,7 +28,7 @@ Each biological neuron consists of several key components:
 In artificial neural networks:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Neurons** function as computational units.
@@ -52,7 +52,7 @@ Consider an online clothing store that wants to predict whether a new T-shirt wi
 These inputs are fed into the first layer of the network, which extracts meaningful features. A possible **hidden layer structure** could be:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-03.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 1. **Hidden Layer 1**: Contains a few activations functions like: _affordability_ , _awareness_, _perceived quality_.
@@ -71,8 +71,8 @@ Face recognition is a real-world example where neural networks excel. Let's cons
 1. **Input Layer**: An image of a face is converted into pixel values (e.g., a 100x100 grayscale image would be represented as a vector of 10,000 pixel values).
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-04.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-05.png" style="display:flex; justify-content: center; width: 150px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-04.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-05.png" style="display:flex; justify-content: center; width: 150px;"alt="regression-example"/>
 </div>
 
 2. **First Hidden Layer**: Detects basic edges and corners in the image by applying simple filters.
@@ -80,7 +80,7 @@ Face recognition is a real-world example where neural networks excel. Let's cons
 4. **Third Hidden Layer**: Recognizes entire facial structures and relationships between features.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 5. **Output Layer**: Determines whether the face matches a known identity by producing a probability score.
@@ -143,7 +143,7 @@ Now, let's consider a neural network with two hidden layers.
 #### Network Structure
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Input Layer**: 3 input values $X = [x_1, x_2, x_3]$
@@ -248,7 +248,7 @@ This demonstrates how a multi-layer neural network processes information in a hi
 ### Handwritten Digit Recognition Using Two Layers
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-networks-intuition-and-model-08.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-networks-intuition-and-model-08.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 A classic application of neural networks is handwritten digit recognition. Let's consider recognizing the digit '1' from an 8x8 pixel grid using a simple neural network with two layers.

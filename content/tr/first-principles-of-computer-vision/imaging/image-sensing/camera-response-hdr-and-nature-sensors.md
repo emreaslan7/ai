@@ -39,7 +39,7 @@ $$M = f(B)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-01.png" alt="Doğrusal Olmayan Kamera Yanıt Fonksiyonlarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-01.png" alt="Doğrusal Olmayan Kamera Yanıt Fonksiyonlarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Farklı tüketici ve profesyonel görüntüleme sensörleri için gama eğrileri olarak adlandırılan doğrusal olmayan kamera yanıt fonksiyonlarının karşılaştırılması.</em></figcaption>
   </div>
 </figure>
@@ -76,7 +76,7 @@ $$B = f^{-1}(M)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-02.png" alt="Macbeth Kartı ile Radyometrik Kalibrasyon Süreci" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-02.png" alt="Macbeth Kartı ile Radyometrik Kalibrasyon Süreci" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kamera yanıtını doğrusallaştırmak için ölçülen piksel değerlerini Macbeth kartının bilinen yüzey yansıtıcılık değerleriyle eşleyen radyometrik kalibrasyon süreci.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$M_i = \min(e_i \cdot P,\ 255)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-03.png" alt="Çoklu Pozlama Basamaklama Dizisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-03.png" alt="Çoklu Pozlama Basamaklama Dizisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Çoklu pozlama basamaklaması, yüksek dinamik aralıklı bir sahnenin hem parlak hem de gölge bölgelerindeki ayrıntıları kaydetmek için farklı pozlama sürelerinde çekilen bir dizi görüntüyü birleştirir.</em></figcaption>
   </div>
 </figure>
@@ -140,7 +140,7 @@ Bir ton eşleme algoritması, bu 10-bitlik yüksek sadakatli çıktıyı tekrar 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-04.png" alt="Birleşik Yanıt ve Tone-Mapped HDR Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-04.png" alt="Birleşik Yanıt ve Tone-Mapped HDR Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Basamaklanmış pozlamaların birleşik yanıtı, ayrıntıları korurken dinamik aralığı standart ekranlar için sıkıştıran tone-mapping işleminden geçmiş yüksek dinamik aralıklı bir görüntü üretir.</em></figcaption>
   </div>
 </figure>
@@ -161,7 +161,7 @@ Hareketli nesnelerin HDR görüntülerini hayalet görüntü oluşmadan yakalama
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-05.png" alt="Karma Piksel Mimarisi ile Tek Çekim HDR" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-05.png" alt="Karma Piksel Mimarisi ile Tek Çekim HDR" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Karma piksel mimarisi, tek bir pozlamada yüksek dinamik aralıklı veri yakalamak için değişen duyarlıklara veya pozlama sürelerine sahip komşu foto-dedektör alanlarını kullanır.</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-06.png" alt="Yılan Yıldızı Kalsitik Mikromerceklerinin Taramalı Elektron Mikroskobu Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-06.png" alt="Yılan Yıldızı Kalsitik Mikromerceklerinin Taramalı Elektron Mikroskobu Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Yılan yıldızının tüm gövdesini kaplayan ve dağıtılmış, esnek bir göz gibi işlev gören kalsitik mikromercek dizisini gösteren taramalı elektron mikroskobu (SEM) görüntüsü.</em></figcaption>
   </div>
 </figure>

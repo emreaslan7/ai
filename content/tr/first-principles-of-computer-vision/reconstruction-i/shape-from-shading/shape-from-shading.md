@@ -8,7 +8,7 @@ Bilgisayarlı görünün en köklü problemlerinden biri olan **Gölgelendirmede
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-02.png" alt="Gölgelendirmeden 3B Şekil Çıkarma Örnek Sahneleri" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-02.png" alt="Gölgelendirmeden 3B Şekil Çıkarma Örnek Sahneleri" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Tek bir gölgeli görüntüden 3B yüzey geometrisi çıkarımı yapılan klasik örnek nesneler (Vazo, Stanford Tavşanı, David Büstü).</em></figcaption>
   </div>
 </figure>
@@ -46,7 +46,7 @@ Sahnede yer alan homojen bir malzemenin yansıtma özelliklerini (BRDF), ışık
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-01.png" alt="Yansıtma Haritası ve Eş-parlaklık Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-01.png" alt="Yansıtma Haritası ve Eş-parlaklık Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Ölçülen piksel parlaklığı I(x,y) için Yansıtma Haritası R(p,q) üzerinde aynı parlaklığı üreten sonsuz sayıda normal adayı içeren Eş-parlaklık Eğrisi (Iso-brightness contour).</em></figcaption>
   </div>
 </figure>
@@ -94,7 +94,7 @@ Güneş ve gökyüzü gibi doğal ışık kaynaklarının her zaman yukarıda bu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-03.png" alt="Light from Above Bias Tümsek ve Çukur Algısı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-03.png" alt="Light from Above Bias Tümsek ve Çukur Algısı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Işığın yukarıdan geldiği varsayımı. Üstü parlak/altı gölgeli nesneler dışbükey (tümsek), altı parlak/üstü gölgeli nesneler içbükey (çukur) olarak algılanır.</em></figcaption>
   </div>
 </figure>
@@ -104,7 +104,7 @@ Güneş ve gökyüzü gibi doğal ışık kaynaklarının her zaman yukarıda bu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-04.png" alt="Mound in a Crater Döndürme İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-04.png" alt="Mound in a Crater Döndürme İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: Tepe üzerindeki krater (Crater on a Mound) görüntüsü 180° döndürüldüğünde beyin ışığın yönünü değiştirmek yerine algıyı krater içindeki tümseğe (Mound in a Crater) dönüştürür.</em></figcaption>
   </div>
 </figure>
@@ -115,7 +115,7 @@ Eğer gölgelendirme yatay doğrultudaysa (ışık tam sağdan veya soldan geliy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-05.png" alt="Yandan Aydınlatma Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-05.png" alt="Yandan Aydınlatma Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Yandan gelen aydınlatmada insan beyninin dikey ışık önceliği kalmaz; nesnelerin tümsek mi yoksa çukur mu olduğu belirsizleşir.</em></figcaption>
   </div>
 </figure>
@@ -126,21 +126,21 @@ Eğer gölgelendirme yatay doğrultudaysa (ışık tam sağdan veya soldan geliy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-06.png" alt="Üniform Küresel Aydınlatma Tutarlılığı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-06.png" alt="Üniform Küresel Aydınlatma Tutarlılığı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: İki paralel şerit üzerinde ters gradyanlar. Beyin tekil küresel ışık kaynağı varsayımıyla iki şeridi zıt yüzey eğimleri olarak algılar.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-08.png" alt="İkili Gölgelendirmeli Daireler Dizilimi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-08.png" alt="İkili Gölgelendirmeli Daireler Dizilimi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Keskin ikili (binary) gölgelendirmeye sahip daireler dizilimi. Işık yönüne bağlı gruplama algısı.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-09.png" alt="Gradyanlı Gölgelendirilmiş Daireler Dizilimi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-09.png" alt="Gradyanlı Gölgelendirilmiş Daireler Dizilimi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Pürüzsüz gradyanlı daireler dizilimi. Beyin ışığı yukarıdan kabul ederek zıt gradyanlı daireleri otomatik olarak içbükey ve dışbükey gruplarına ayırır.</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ Aynı gölgelendirme desenine sahip iki şerit, sadece dış sınırlarının ke
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-07.png" alt="Sınır Çizgilerinin Şekil Algısındaki Rolü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-07.png" alt="Sınır Çizgilerinin Şekil Algısındaki Rolü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Aynı iç gölgelendirmeye sahip şeritlerin dış sınır kesimleri değiştirildiğinde (kemerli vs. sinüzoidal), 3B yüzey formu algısı kökten değişir.</em></figcaption>
   </div>
 </figure>
@@ -167,7 +167,7 @@ Aynı gölgelendirme desenine sahip iki şerit, sadece dış sınırlarının ke
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-10.png" alt="Oyuk Maske Hollow Mask İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-10.png" alt="Oyuk Maske Hollow Mask İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: Oyuk Maske İllüzyonu. 1: Dışbükey yüz, 2: İçbükey maske önden görünümü (dışbükey olarak algılanır), 3: Profil görünümü (gerçek içbükey yapıyı gösterir). Beyin bilinen yüz şeklini korumak için ışık varsayımını çiğner.</em></figcaption>
   </div>
 </figure>
@@ -218,7 +218,7 @@ $$f = \frac{2p}{1 + \sqrt{p^2 + q^2 + 1}}, \quad g = \frac{2q}{1 + \sqrt{p^2 + q
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-11.png" alt="pq uzayı ile fg stereografik izdüşüm uzayının karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-11.png" alt="pq uzayı ile fg stereografik izdüşüm uzayının karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Sol: pq gradyan uzayı (θ=90° sınırında sonsuza gider). Sağ: Güney Kutbundan ([0,0,-1]ᵀ) z=1 düzlemine fg stereografik izdüşümü.</em></figcaption>
   </div>
 </figure>
@@ -231,7 +231,7 @@ $$\text{Maksimum Sınır:} \quad f^2 + g^2 \leq 4$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-12.png" alt="fg Uzayında Yarıçapı 2 Olan Sınırlı Daire" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-12.png" alt="fg Uzayında Yarıçapı 2 Olan Sınırlı Daire" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: Stereografik izdüşüm ile üst yarımküredeki tüm normaller z=1 düzleminde f²+g² ≤ 4 dairesine haritalanır. (1,0,0) normali (2,0), (0,1,0) normali (0,2) noktasına denk gelir.</em></figcaption>
   </div>
 </figure>
@@ -246,7 +246,7 @@ $$\text{Maksimum Sınır:} \quad f^2 + g^2 \leq 4$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-13.png" alt="Yüzey Normali ve Işık Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-13.png" alt="Yüzey Normali ve Işık Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: Yüzey normali N, bakış yönü v = (0,0,1), ışık yönü s ve temsil n ≡ (p,q) ≡ (f,g).</em></figcaption>
   </div>
 </figure>
@@ -296,7 +296,7 @@ $$\mathbf{n} = \mathbf{e} \times \mathbf{v}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-14.png" alt="Kapanma Sınırında Occluding Boundary Yüzey Normali Hesabı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-14.png" alt="Kapanma Sınırında Occluding Boundary Yüzey Normali Hesabı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: Kapanma sınırında (Occluding boundary) yüzey normali n, bakış yönü v ve kenar vektörü e'ye diktir. Dirichlet sınır koşulu n = e × v ile kesin olarak bulunur.</em></figcaption>
   </div>
 </figure>
@@ -337,7 +337,7 @@ Sınır piksellerindeki değerler sabit tutularak, iç pikseller $[0, 0]^T$ değ
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-15.png" alt="Ikeuchi-Horn Algoritması ile Elde Edilen 3B Yüzey Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-15.png" alt="Ikeuchi-Horn Algoritması ile Elde Edilen 3B Yüzey Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Ikeuchi-Horn Shape from Shading algoritması sonucu elde edilen 3B yüzey derinlik ağları (Vazo ve Beethoven Büstü rekonstrüksiyon sonuçları).</em></figcaption>
   </div>
 </figure>
@@ -360,7 +360,7 @@ Edward Adelson tarafından tasarlanan bu ünlü illüzyonda, gölgenin altında 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/shape-from-shading-16.png" alt="Adelson Checker Shadow Satranç Tahtası Gölgesi İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-16.png" alt="Adelson Checker Shadow Satranç Tahtası Gölgesi İllüzyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 16: Adelson Checker Shadow İllüzyonu (1995). Sol: Gölge altındaki B karesi A'dan daha açık görünür. Sağ: İzole edildiklerinde A ve B karelerinin mutlak piksel parlaklıklarının birebir aynı olduğu ortaya çıkar.</em></figcaption>
   </div>
 </figure>

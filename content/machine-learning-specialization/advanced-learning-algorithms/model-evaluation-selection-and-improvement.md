@@ -76,7 +76,7 @@ The test set is used only once, after model training and hyperparameter tuning, 
 Cross-validation is a technique to make better use of available data and improve model selection. Instead of relying on a single validation set, we divide the dataset into multiple subsets and perform training and validation multiple times. The most common approach is **k-fold cross-validation**, which works as follows:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 1. The dataset is divided into **k** equal-sized folds.
@@ -106,7 +106,7 @@ $$
 A well-performing model should generalize well, meaning it captures the essential patterns in the data without memorizing noise. Let's break this down using the equation.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 | **Issue**                       | **Description**                                                    | **Effects**                                                                                                 | **Impact of More Data**                                    |
@@ -138,7 +138,7 @@ where:
 **Effect of Regularization**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - If $ \lambda $ is too **low**, the model can overfit ($ w $ values become large).
@@ -155,7 +155,7 @@ where:
 A baseline model helps measure improvement. Common baselines include:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-04.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-04.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - Random classifiers (for classification tasks)
@@ -174,7 +174,7 @@ A model must outperform the baseline to be considered useful.
 Machine learning development follows an iterative cycle:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-05.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-05.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 1. Train a baseline model.
@@ -200,7 +200,7 @@ One of the most effective ways to improve a model’s generalization ability is 
 1. **Image Data Augmentation** (Used in deep learning for computer vision tasks):
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-06.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-06.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
     </div>
 
    - **Rotation:** Rotating images by small degrees to simulate different perspectives.
@@ -229,7 +229,7 @@ One of the most effective ways to improve a model’s generalization ability is 
 2. **Text Data Augmentation** (Used in NLP models):
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-07.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-07.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
     </div>
 
    - **Synonym Replacement:** Replacing words with their synonyms.
@@ -252,7 +252,7 @@ One of the most effective ways to improve a model’s generalization ability is 
 3. **Time-Series Data Augmentation** (Used in financial data, speech processing):
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
     </div>
 
    - **Time Warping:** Stretching or compressing time series data.
@@ -270,7 +270,7 @@ Data Synthesis involves generating entirely new data points that mimic real-worl
 1. **Generative Adversarial Networks** (GANs)
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-09.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-09.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
     </div>
 
    - GANs can generate realistic-looking images, text, or audio by learning the underlying distribution of the dataset.
@@ -304,7 +304,7 @@ Data Synthesis involves generating entirely new data points that mimic real-worl
 3. **Synthetic Minority Over-sampling** (SMOTE)
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-10.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-10.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
     </div>
 
    - Used in imbalanced datasets to generate synthetic minority class examples.
@@ -321,7 +321,7 @@ Data Synthesis involves generating entirely new data points that mimic real-worl
 4. Simulation-Based Synthesis
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-11.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-11.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
     </div>
 
    - Used in robotics, healthcare, and autonomous driving where real-world data collection is expensive or dangerous.
@@ -344,7 +344,7 @@ Data Synthesis involves generating entirely new data points that mimic real-worl
 Transfer learning leverages pre-trained models:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-12.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-12.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **Feature extraction:** Use pre-trained model layers as feature extractors.
@@ -364,7 +364,7 @@ In imbalanced datasets, accuracy alone is often misleading. For example, if a da
 ### Precision, Recall, and F1-Score
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-13.avif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/model-evaluation-selection-and-improvement-13.avif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **Precision ($P$)**: Measures how many of the predicted positives are actually correct.

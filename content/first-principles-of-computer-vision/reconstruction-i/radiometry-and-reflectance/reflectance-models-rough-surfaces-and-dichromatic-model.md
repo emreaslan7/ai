@@ -11,14 +11,14 @@ Reflection processes in nature are explained primarily by the combination of two
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-01.png" alt="Physical mechanisms of specular and diffuse reflection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-01.png" alt="Physical mechanisms of specular and diffuse reflection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Physical mechanisms of Surface (Specular) and Body (Diffuse) reflection processes.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-02.png" alt="Real world material reflection examples" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-02.png" alt="Real world material reflection examples" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Real-world materials showcasing Body (clay pot), Surface (chrome sphere), and Hybrid (varnished wood, paint can) reflection.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ $$L = \frac{\rho_d}{\pi} E = \frac{\rho_d}{\pi} \frac{J}{r^2} (\mathbf{n} \cdot 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-03.png" alt="Lambertian surface scattering variation with incidence angle" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-03.png" alt="Lambertian surface scattering variation with incidence angle" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Hemispherical scattering on a Lambertian surface varying with light incidence angle (n · s).</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ where the denominator term serves as a normalization factor to satisfy energy co
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-04.png" alt="Comparison of Lambertian sphere vs ideal specular sphere rendering" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-04.png" alt="Comparison of Lambertian sphere vs ideal specular sphere rendering" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Rendered sphere comparison: Lambertian sphere with smooth shading (top) vs. Ideal Specular sphere with a single bright mirror highlight q (bottom).</em></figcaption>
   </div>
 </figure>
@@ -81,14 +81,14 @@ Real-world surfaces are not perfectly smooth. At the pixel micro-scale, a surfac
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-05.png" alt="Microfacet geometry under pixel view" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-05.png" alt="Microfacet geometry under pixel view" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Microscopic microfacet geometry underlying a macro surface patch viewed by a camera pixel.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-06.png" alt="Gaussian microfacet distribution under increasing roughness" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-06.png" alt="Gaussian microfacet distribution under increasing roughness" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Microfacet distribution variation as Gaussian roughness parameter σ increases (0, 0.1, 0.3, 0.6).</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ $$f_{\text{Torrance-Sparrow}} = \frac{\rho_s}{(\mathbf{n} \cdot \mathbf{s})(\mat
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-07.png" alt="Specular lobe broadening with increasing roughness in Torrance-Sparrow model" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-07.png" alt="Specular lobe broadening with increasing roughness in Torrance-Sparrow model" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Broadening of a sharp mirror point into a specular lobe/highlight as roughness σ increases in the Torrance-Sparrow model.</em></figcaption>
   </div>
 </figure>
@@ -126,7 +126,7 @@ As roughness ($\sigma$) increases, a point specular reflection spreads out into 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-08.png" alt="Real world highlight blurring with increasing surface roughness" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-08.png" alt="Real world highlight blurring with increasing surface roughness" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Progression of real-world environment reflections from sharp mirror reflections to blurry highlights under increasing surface roughness.</em></figcaption>
   </div>
 </figure>
@@ -137,7 +137,7 @@ Assuming each microfacet is an ideal Lambertian diffuse surface, the model reduc
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-09.png" alt="Oren-Nayar diffuse rough sphere rendering across roughness values" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-09.png" alt="Oren-Nayar diffuse rough sphere rendering across roughness values" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Prevention of rapid limb darkening on spherical objects as roughness σ increases in the Oren-Nayar model.</em></figcaption>
   </div>
 </figure>
@@ -146,7 +146,7 @@ However, as roughness ($\sigma$) increases, rapid brightness drop-off near objec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-10.png" alt="Full Moon flat disc phenomenon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-10.png" alt="Full Moon flat disc phenomenon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Physical explanation of the Full Moon phenomenon: Extremely rough dust layers make the Moon appear as a flat disc of uniform brightness rather than a shaded sphere.</em></figcaption>
   </div>
 </figure>
@@ -161,7 +161,7 @@ Proposed by Shafer (1985), the Dichromatic Model accounts for light-material col
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-11.png" alt="Dichromatic spectral reflection components" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-11.png" alt="Dichromatic spectral reflection components" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Body (Diffuse: Light x Object color) and Surface (Specular: Light color) spectral reflection components in the Dichromatic Model.</em></figcaption>
   </div>
 </figure>
@@ -179,7 +179,7 @@ $$\mathbf{C} = m_b \mathbf{C}_b + m_s \mathbf{C}_s$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-12.png" alt="Dichromatic plane in RGB color space" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-12.png" alt="Dichromatic plane in RGB color space" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: The Dichromatic Plane spanned by Cb and Cs vectors in RGB color space.</em></figcaption>
   </div>
 </figure>
@@ -190,7 +190,7 @@ For an object composed of a single homogeneous material, all pixel color values 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-13.png" alt="Skewed-T color distribution in RGB color histogram" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-13.png" alt="Skewed-T color distribution in RGB color histogram" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Skewed-T distribution in RGB histogram for a sphere illuminated by blue light.</em></figcaption>
   </div>
 </figure>
@@ -199,7 +199,7 @@ Mapping pixels in color space forms a characteristic **"Skewed-T" distribution**
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-14.png" alt="Plastic cups experiment under yellow light" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-14.png" alt="Plastic cups experiment under yellow light" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Real-world experiment with plastic cups under yellow light showing dichromatic plane clusters in RGB space.</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ By analyzing this Skewed-T geometry in RGB space, algorithms developed by Klinke
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-15.png" alt="Klinker highlight separation algorithm results" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-15.png" alt="Klinker highlight separation algorithm results" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Klinker algorithm separation results: Original input (top-left), RGB histogram (top-right), pure diffuse shading (bottom-left), and pure specular highlights (bottom-right).</em></figcaption>
   </div>
 </figure>

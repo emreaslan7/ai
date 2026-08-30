@@ -51,7 +51,7 @@ During the 18th century, optomechanical designs prioritized artist ergonomics:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-01.png" alt="18th Century Box Camera Obscura" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-01.png" alt="18th Century Box Camera Obscura" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>18th Century Box Camera Obscura: An optomechanical design using a 45-degree folding mirror to project images onto tracing paper.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ The most profound cultural leap in imaging occurred in the 1830s with Louis Dagu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-02.png" alt="Louis Daguerre - Still Life (1837)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-02.png" alt="Louis Daguerre - Still Life (1837)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Louis Daguerre - Still Life (1837): One of the earliest permanent chemical photographic captures in human history.</em></figcaption>
   </div>
 </figure>
@@ -80,7 +80,7 @@ Capturing the full visible spectrum required sophisticated multi-layer chemistry
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-03.png" alt="Louis Ducos du Hauron - View of Angoulême (1877/1887)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-03.png" alt="Louis Ducos du Hauron - View of Angoulême (1877/1887)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Louis Ducos du Hauron - View of Angoulême (1877/1887): Early color landscape photograph captured with multi-layer RGB emulsions.</em></figcaption>
   </div>
 </figure>
@@ -89,7 +89,7 @@ By the 1920s, consumer cameras like the Ernemann camera entered mass production 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-04.png" alt="Ernemann Folding Plate Camera" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-04.png" alt="Ernemann Folding Plate Camera" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ernemann Folding Plate Camera: Iconic 1920s consumer camera advertised with "What you can see, you can photograph."</em></figcaption>
   </div>
 </figure>
@@ -110,7 +110,7 @@ The late 20th and early 21st centuries saw the integration of camera modules int
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-05.png" alt="Apple iPhone 1 (2007) Rear View" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-05.png" alt="Apple iPhone 1 (2007) Rear View" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Apple iPhone 1 (2007) Rear View: The milestone of mobile camera miniaturization that catalyzed modern computer vision.</em></figcaption>
   </div>
 </figure>
@@ -159,7 +159,7 @@ The fundamental mechanism of digital image sensing relies on the optoelectronic 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-06.png" alt="Silicon Photo-Conversion Physics Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-06.png" alt="Silicon Photo-Conversion Physics Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Silicon Photo-Conversion Physics: Photon striking silicon atom, exciting a valence electron and creating an electron-hole pair.</em></figcaption>
   </div>
 </figure>
@@ -231,7 +231,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-07.png" alt="CCD Bucket Brigade Readout Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-07.png" alt="CCD Bucket Brigade Readout Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>CCD Charge Transfer "Bucket Brigade": Row-by-row vertical shift and horizontal transfer into a single corner readout amplifier.</em></figcaption>
   </div>
 </figure>
@@ -269,7 +269,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-08.png" alt="CMOS Active-Pixel Readout Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-08.png" alt="CMOS Active-Pixel Readout Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>CMOS Active-Pixel Readout: Dedicated on-pixel charge-to-voltage amplifier circuit with direct column bus-line random access.</em></figcaption>
   </div>
 </figure>
@@ -305,7 +305,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-09.png" alt="3D Microlens and Filter Array Model" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-09.png" alt="3D Microlens and Filter Array Model" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>3D Microlens and Filter Array Model: Organic light-gathering microlenses, Bayer RGB color filters, and silicon photodiode wells.</em></figcaption>
   </div>
 </figure>
@@ -317,7 +317,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-10.png" alt="Image Sensor SEM Cross-Section Micrograph" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-10.png" alt="Image Sensor SEM Cross-Section Micrograph" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Image Sensor SEM Cross-Section: Scanning Electron Microscopy micrograph revealing the 9.6-micrometer stacked layer structure.</em></figcaption>
   </div>
 </figure>

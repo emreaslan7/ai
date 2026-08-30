@@ -39,7 +39,7 @@ $$M = f(B)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-01.png" alt="Comparison of Non-Linear Camera Response Functions" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-01.png" alt="Comparison of Non-Linear Camera Response Functions" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>A comparison of non-linear camera response functions, often referred to as gamma curves, for various consumer and professional imaging sensors.</em></figcaption>
   </div>
 </figure>
@@ -76,7 +76,7 @@ $$B = f^{-1}(M)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-02.png" alt="Radiometric Calibration Process using Macbeth Chart" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-02.png" alt="Radiometric Calibration Process using Macbeth Chart" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>The radiometric calibration process maps measured pixel values to known surface reflectance values of a Macbeth chart to linearize the camera's response.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$M_i = \min(e_i \cdot P,\ 255)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-03.png" alt="Multi-Exposure Bracketing Sequence" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-03.png" alt="Multi-Exposure Bracketing Sequence" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Multi-exposure bracketing captures a sequence of images at different exposure times to record details in both the highlight and shadow regions of a high dynamic range scene.</em></figcaption>
   </div>
 </figure>
@@ -140,7 +140,7 @@ A tone mapping algorithm compresses this high-fidelity 10-bit output back down t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-04.png" alt="Aggregate Response and Tone-Mapped HDR Image" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-04.png" alt="Aggregate Response and Tone-Mapped HDR Image" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>The aggregate response of bracketed exposures produces a high dynamic range image that is tone-mapped to compress the dynamic range for standard displays while preserving details.</em></figcaption>
   </div>
 </figure>
@@ -161,7 +161,7 @@ To capture HDR images of moving objects without ghosting, the entire dynamic ran
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-05.png" alt="Assorted Pixel Single-Shot HDR Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-05.png" alt="Assorted Pixel Single-Shot HDR Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>The assorted pixel architecture utilizes adjacent photodetecting sites with varying sensitivities or exposure times to capture high dynamic range data in a single shot.</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-06.png" alt="Scanning Electron Microscopy of Brittle Star Calcitic Microlenses" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-response-hdr-and-nature-sensors-06.png" alt="Scanning Electron Microscopy of Brittle Star Calcitic Microlenses" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>A scanning electron microscope image showing the array of calcitic microlenses covering the body of the brittle star, functioning as a distributed, flexible eye.</em></figcaption>
   </div>
 </figure>

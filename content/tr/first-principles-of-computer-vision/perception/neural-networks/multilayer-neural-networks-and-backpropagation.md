@@ -53,7 +53,7 @@ Tipik bir Çok Katmanlı Yapay Sinir Ağı üç ana katman hiyerarşisinden olu�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-01.png" alt="Çok Katmanlı Yapay Sinir Ağı Mimarisi ve Sigmoid Nöronları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-01.png" alt="Çok Katmanlı Yapay Sinir Ağı Mimarisi ve Sigmoid Nöronları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Çok Katmanlı Yapay Sinir Ağı Anatomisi: Girdi Katmanı (Layer 1), Gizli Katmanlar (Layer 2 & 3) ve Çıktı Katmanı (Layer 4). İlgili katmandaki bağlantı ağırlıkları $w_{jk}^{(l)}$ ve sapma parametreleri $b_j^{(l)}$ ile temsil edilir.</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ Bilgisayarlı görü literatüründe standart referans olarak kabul edilen Micha
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-02.png" alt="MNIST El Yazısı Rakam Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-02.png" alt="MNIST El Yazısı Rakam Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: MNIST Veri Kümesi: Farklı el yazısı stillerinde yazılmış $28 \times 28$ boyutlu segmentlenmiş onluk taban rakam görüntüleri.</em></figcaption>
   </div>
 </figure>
@@ -77,7 +77,7 @@ Bilgisayarlı görü literatüründe standart referans olarak kabul edilen Micha
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-03.png" alt="Nielsen MNIST Ağ Mimarisi ve %95 Doğruluk" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-03.png" alt="Nielsen MNIST Ağ Mimarisi ve %95 Doğruluk" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Nielsen MNIST Karar Ağı: Girdi olarak verilen '6' rakamı için çıktı katmanındaki 6. nöronun $a_6 \approx 1$, diğer nöronların $a_j \approx 0$ aktivasyonu üreterek %95 doğruluk sağlaması.</em></figcaption>
   </div>
 </figure>
@@ -108,7 +108,7 @@ Eğitim setindeki her $x$ görüntüsü için bir gerçek hedef sınıf etiketi 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-04.png" alt="MNIST Eğitim Verisi ve Hedef Aktivasyon Vektörleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-04.png" alt="MNIST Eğitim Verisi ve Hedef Aktivasyon Vektörleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Hedef Aktivasyonlar (Ground Truth): MNIST eğitim setindeki görüntüler ve bunlara karşılık gelen one-hot hedef vektörleri $\hat{\mathbf{a}}(x)$.</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ Eğitilmemiş ağ rastgele ağırlıklarla çalıştırıldığında çıktılar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-05.png" alt="Rastgele Başlatılan Ağın Hatalı Aktivasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-05.png" alt="Rastgele Başlatılan Ağın Hatalı Aktivasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Rastgele Başlatma Durumu: Girdi olarak gelen '5' rakamı için ağın ürettiği tahmin vektörü $\mathbf{a} = [0.3, 0.5, 0.0, 0.1, 0.8, 0.3, 0.5, 0.2, 0.7, 0.1]^T$ hedef $[0,0,0,0,0,1,0,0,0,0]^T$ vektöründen uzaktır.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$C(\mathbf{w}, \mathbf{b}) = \frac{1}{n} \sum_{x} C_x(\mathbf{w}, \mathbf{b})$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-07.png" alt="Tekil ve Genel Ortalama Maliyet Formülasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-07.png" alt="Tekil ve Genel Ortalama Maliyet Formülasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Maliyet Hesabı: Tekil örnek için hata $C_x = 2.27$ ve tüm veri seti üzerindeki ortalama maliyet formülasyonu. Maliyet ne kadar düşükse, sınıflandırma o kadar başarılıdır.</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-06.png" alt="Eğitim Döngüsü Akış Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-06.png" alt="Eğitim Döngüsü Akış Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Kapalı Çevrim Eğitim Döngüsü: Eğitim verisi $\to$ Ağ Aktivasyonları $\to$ Maliyet Hesabı $\to$ Parametre Güncellemesi.</em></figcaption>
   </div>
 </figure>
@@ -166,14 +166,14 @@ Amacımız, 23.860 boyutlu parametre uzayında tanımlı $C(\mathbf{w}, \mathbf{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-09.png" alt="3B Hata Yüzeyi ve Minimum Maliyet Noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-09.png" alt="3B Hata Yüzeyi ve Minimum Maliyet Noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Çok Boyutlu Hata Yüzeyi: Rastgele başlangıç maliyeti noktasından en çukur minimum maliyet noktasına doğru parametre kaydırma hedefi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-11.png" alt="Sisli Dağ Yamacı Analojisi" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-11.png" alt="Sisli Dağ Yamacı Analojisi" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Sisli Dağ Yamacı Sezgisi: Dağın zirvesinde yoğun sis altında kalan bir dağcının, vadiyi göremese bile ayaklarının altındaki en dik eğimi hissederek adım adım vadi tabanına inmesi.</em></figcaption>
   </div>
 </figure>
@@ -199,14 +199,14 @@ Maliyet değişimi **kesinlikle negatif** olur; yani her adımda maliyet daima a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-10.png" alt="Gradyan Azalma Vektörel İspatı ve Güncelleme Kuralı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-10.png" alt="Gradyan Azalma Vektörel İspatı ve Güncelleme Kuralı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Gradyan Azalma Matematiksel İspatı: $\Delta \mathbf{v} = -\eta \nabla C \implies \Delta C = -\eta \|\nabla C\|^2$. Her optimizasyon adımında parametreler gradyanın tersi yönünde güncellenir.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-08.png" alt="Gradyan Azalma ile Kapalı Çevrim Parametre Güncellemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-08.png" alt="Gradyan Azalma ile Kapalı Çevrim Parametre Güncellemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Gradyan İnişi Kapalı Çevrim Pipeline'ı: Hata hesaplandıktan sonra Gradient Descent motoru ağırlık ve sapmaları sürekli günceller.</em></figcaption>
   </div>
 </figure>
@@ -223,7 +223,7 @@ Gradyan azalmayı uygulayabilmek için her iterasyonda $23.860$ adet kısmi tür
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-12.png" alt="Sonlu Farklar Hesaplama Karmaşıklığı Krizi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-12.png" alt="Sonlu Farklar Hesaplama Karmaşıklığı Krizi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Brute-Force Hesaplama Yükü: 23.860 parametre için her gradyan adımında 23.861 tam maliyet hesabı gereklidir.</em></figcaption>
   </div>
 </figure>
@@ -255,7 +255,7 @@ Geriye yayılım, kalkülüste yer alan diferansiyel zincir kuralına dayanır. 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-13.png" alt="Çıkış Katmanında Zincir Kuralı Analitik İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-13.png" alt="Çıkış Katmanında Zincir Kuralı Analitik İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Zincir Kuralı Bağıntı Hattı: Maliyet $C_x \to$ Aktivasyon $a_1^{(4)} \to$ Net Girdi $z_1^{(4)} \to$ Ağırlık $w_{11}^{(4)}$.</em></figcaption>
   </div>
 </figure>
@@ -292,7 +292,7 @@ $$\frac{\partial C_x}{\partial b_j^{(l)}} = \delta_j^{(l)}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-14.png" alt="Yerel Gradyan Formülasyonu ve Tüm Katmanlara Genelleme" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-14.png" alt="Yerel Gradyan Formülasyonu ve Tüm Katmanlara Genelleme" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Geriye Yayılım Formülasyonu: Ağdaki herhangi bir katmandaki ($l$) herhangi bir ağırlık ve sapma türevi, o katmanın yerel gradyanı $\delta_j^{(l)}$ ve bir önceki katmanın aktivasyonu $a_k^{(l-1)}$ cinsinden hesaplanır.</em></figcaption>
   </div>
 </figure>
@@ -341,7 +341,7 @@ Eğitilmiş 30 gizli nöronlu MLP ağı; eğik, deforme veya alışılmadık el 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-15.png" alt="Eğitilmiş Ağın MNIST Test Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-15.png" alt="Eğitilmiş Ağın MNIST Test Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Sınıflandırma Sonuçları: Farklı el yazısı karakterleri için ağın ürettiği aktivasyon vektörleri ve doğru etiket tahminleri (7, 2, 5, 8).</em></figcaption>
   </div>
 </figure>
@@ -357,7 +357,7 @@ Klasik bilgisayarlı görüde Sobel, Gaussian veya Gabor gibi filtreler uzmanlar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-16.png" alt="LeCun Evrişimli Sinir Ağı Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-16.png" alt="LeCun Evrişimli Sinir Ağı Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Evrişimli Sinir Ağı (CNN) Mimarisi: Evrişim Katmanı (öğrenilen çekirdekler $k_1 \dots k_5$), Alt Örnekleme (Subsampling/Pooling) ve Tam Bağlı Sınıflandırma Katmanı [LeCun et al. 1998].</em></figcaption>
   </div>
 </figure>
@@ -370,7 +370,7 @@ Derin ağlar, karmaşık görüntülerden tek bir sınıf yerine onlarca anlamsa
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-17.png" alt="Clarifai Otomatik Fotoğraf Etiketleme" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-17.png" alt="Clarifai Otomatik Fotoğraf Etiketleme" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Otomatik Fotoğraf Etiketleme: Bir yemek fotoğrafından çıkarılan anlamsal etiketler ('food', 'dinner', 'meat', 'chicken', 'sauce', 'restaurant' vb.) [Clarifai.com].</em></figcaption>
   </div>
 </figure>

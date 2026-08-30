@@ -12,7 +12,7 @@ Output from edge detection algorithms consists of discrete, disconnected pixels,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-01.png" alt="Boundary Detection Pipeline on Antique Vase" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-01.png" alt="Boundary Detection Pipeline on Antique Vase" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Full boundary processing pipeline on an antique vase: input image, edge detection, thresholding, morphological filtering (shrink & expand), thinning, and final continuous boundary detection.</em></figcaption>
   </div>
 </figure>
@@ -69,7 +69,7 @@ The standard formulation minimizes the average squared vertical distance from ea
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-02.png" alt="Vertical Distance Line Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-02.png" alt="Vertical Distance Line Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Least squares line fitting: vertical distance $|y_i - mx_i - c|$ from point $(x_i, y_i)$ to line $y = mx + c$.</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ Vertical distance minimization fails completely when edge points form a near-ver
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-03.png" alt="Vertical Line Failure Mode" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-03.png" alt="Vertical Line Failure Mode" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Vertical line failure: minimizing vertical distance on vertically aligned points fits a completely wrong horizontal line.</em></figcaption>
   </div>
 </figure>
@@ -118,7 +118,7 @@ $$x \sin\theta - y \cos\theta + \rho = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-05.png" alt="Line Normal Parametrization" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-05.png" alt="Line Normal Parametrization" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Normal form parameterization ($\theta, \rho$), where $\theta$ is the normal angle and $\rho$ is the perpendicular distance to the origin.</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ When boundaries exhibit curvature, higher-order polynomial models such as cubic 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-04.png" alt="Polynomial Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-04.png" alt="Polynomial Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Fitting a parametric polynomial curve $y = f(x)$ to a set of 2D coordinates.</em></figcaption>
   </div>
 </figure>
@@ -198,7 +198,7 @@ The matrix $X^+ = (X^T X)^{-1} X^T$ is the **Moore-Penrose Pseudo-Inverse**. Thi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-06.png" alt="Deformable Boundaries Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-06.png" alt="Deformable Boundaries Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Examples of deformable boundaries: lip contours deforming during speech (top) and vehicle outlines changing across viewpoints (bottom).</em></figcaption>
   </div>
 </figure>
@@ -211,14 +211,14 @@ $$v_i = (x_i, y_i) \quad \text{for} \quad i = 0, 1, 2, \dots, N-1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-08.png" alt="Contour Representation" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-08.png" alt="Contour Representation" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Discrete representation of a closed contour using control points $v_i = (x_i, y_i)$.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-07.png" alt="Initial Contour around Quarter Coin" style="display:flex; border-radius: 5px; justify-content: center; width: 360px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-07.png" alt="Initial Contour around Quarter Coin" style="display:flex; border-radius: 5px; justify-content: center; width: 360px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Initialized control points roughly sketched around a US quarter coin.</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ Internal bending energy prevents the contour from developing severe kinks, tangl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-09.png" alt="Physical Intuition of Internal Energy" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-09.png" alt="Physical Intuition of Internal Energy" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Physical intuition of internal energies: elasticity acts like a contracting rubber band, while smoothness behaves like a flexible metal strip.</em></figcaption>
   </div>
 </figure>
@@ -260,7 +260,7 @@ External forces pull the contour toward high-gradient image edges using squared 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-10.png" alt="Blurred Gradient Magnitude Potential Field" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-10.png" alt="Blurred Gradient Magnitude Potential Field" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: External image energy: initial contour (left), raw gradient magnitude $\|\nabla I\|^2$ (center), and Gaussian-blurred potential field $\|\nabla G_\sigma * I\|^2$ creating a wide region of attraction (right).</em></figcaption>
   </div>
 </figure>
@@ -287,7 +287,7 @@ Minimizing total energy is commonly implemented using a fast, practical **Greedy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-12.png" alt="Greedy Algorithm Local Window Search" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-12.png" alt="Greedy Algorithm Local Window Search" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Local neighborhood search windows $W$ evaluated for each control point (red dots) during greedy energy minimization.</em></figcaption>
   </div>
 </figure>
@@ -299,7 +299,7 @@ Minimizing total energy is commonly implemented using a fast, practical **Greedy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-13.png" alt="Failure without Uniform Resampling" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-13.png" alt="Failure without Uniform Resampling" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Contour failure mode when uniform re-sampling is omitted, causing vertex clustering and self-intersection loops.</em></figcaption>
   </div>
 </figure>
@@ -314,7 +314,7 @@ The elasticity coefficient $\alpha$ controls how strongly the snake contracts.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-11.png" alt="Effect of Alpha Parameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-11.png" alt="Effect of Alpha Parameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Effect of $\alpha$ on two adjacent coins: large $\alpha$ forces the contour into narrow concave gaps like a tight rubber band (left), while small $\alpha$ maintains a relaxed outer boundary (right).</em></figcaption>
   </div>
 </figure>

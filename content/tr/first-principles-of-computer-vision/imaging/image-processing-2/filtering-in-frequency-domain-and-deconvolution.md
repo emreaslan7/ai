@@ -72,7 +72,7 @@ Görüntüdeki nesnelerin yönelimi ve uzamsal yapıları frekans spektrumunda d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-01.png" alt="Yatay Kosinüs Dalgalarının Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-01.png" alt="Yatay Kosinüs Dalgalarının Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Yatay kosinüs dalgaları ($f, g$) ile toplamlarının ($f+g$) spektrumda oluşturduğu frekans noktaları</em></figcaption>
   </div>
 </figure>
@@ -81,7 +81,7 @@ Görüntüdeki nesnelerin yönelimi ve uzamsal yapıları frekans spektrumunda d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-02.png" alt="Yarık ve Dairesel Diskin Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-02.png" alt="Yarık ve Dairesel Diskin Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Eğik dikdörtgen yarık (dik frekans çizgileri) ve dairesel disk (dairesel simetrik spektrum) örnekleri</em></figcaption>
   </div>
 </figure>
@@ -90,7 +90,7 @@ Görüntüdeki nesnelerin yönelimi ve uzamsal yapıları frekans spektrumunda d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-03.png" alt="Rubik Küpü ve Mandrill Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-03.png" alt="Rubik Küpü ve Mandrill Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Rubik Küpü (dominant kenar frekans ışınları) ve Mandrill (karmaşık dokusal frekans bulutu)</em></figcaption>
   </div>
 </figure>
@@ -99,7 +99,7 @@ Görüntüdeki nesnelerin yönelimi ve uzamsal yapıları frekans spektrumunda d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-04.png" alt="Cameraman ve Rastgele Gürültü Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-04.png" alt="Cameraman ve Rastgele Gürültü Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Cameraman görüntüsü (baskın üçayak frekans çizgileri) ve Rastgele Gürültü (tüm spektruma yayılan gürültü)</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$H_{\text{ILPF}}(u,v) = \begin{cases} 1 & \text{eğer } D(u,v) \le D_0 \\ 0 & \
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-05.png" alt="Rubik Küpü Düşük Geçiren Filtre" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-05.png" alt="Rubik Küpü Düşük Geçiren Filtre" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Rubik Küpü üzerinde Düşük Geçiren Filtre (LPF) uygulaması ve frekanstaki dairesel kesme disk alanı</em></figcaption>
   </div>
 </figure>
@@ -141,7 +141,7 @@ $$H_{\text{ILPF}}(u,v) = \begin{cases} 1 & \text{eğer } D(u,v) \le D_0 \\ 0 & \
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-06.png" alt="Küçük Yarıçaplı LPF Ağır Bulanıklaştırma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-06.png" alt="Küçük Yarıçaplı LPF Ağır Bulanıklaştırma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>LPF yarıçapı küçültüldüğünde (dar dairesel pencere) görüntünün ağır şekilde bulanıklaşması</em></figcaption>
   </div>
 </figure>
@@ -157,7 +157,7 @@ $$H_{\text{IHPF}}(u,v) = 1 - H_{\text{ILPF}}(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-07.png" alt="Rubik Küpü Yüksek Geçiren Filtre" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-07.png" alt="Rubik Küpü Yüksek Geçiren Filtre" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Rubik Küpü üzerinde Yüksek Geçiren Filtre (HPF) uygulaması ve elde edilen kenar haritası</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ $$H_{\text{IHPF}}(u,v) = 1 - H_{\text{ILPF}}(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-08.png" alt="Geniş Yarıçaplı HPF Keskin Kenar Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-08.png" alt="Geniş Yarıçaplı HPF Keskin Kenar Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>HPF kesme yarıçapı büyütüldüğünde (geniş merkez engelleme diski) daha ince ve keskin kenar hatlarının elde edilmesi</em></figcaption>
   </div>
 </figure>
@@ -180,7 +180,7 @@ Konvolüsyon teoremi gereği, frekansta Gauss eğrisiyle çarpmak uzamsal düzle
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-09.png" alt="Gauss Pürüzsüzleştirmesi Konvolüsyon Teoremi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-09.png" alt="Gauss Pürüzsüzleştirmesi Konvolüsyon Teoremi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal Gauss konvolüsyonu ($f * n_\sigma$) ile frekansta Gauss çarpımının ($F \cdot N_\sigma$) eşdeğerliği</em></figcaption>
   </div>
 </figure>
@@ -189,7 +189,7 @@ Konvolüsyon teoremi gereği, frekansta Gauss eğrisiyle çarpmak uzamsal düzle
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-10.png" alt="Genişletilmiş Gauss Maskesi Ters Ölçekleme" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-10.png" alt="Genişletilmiş Gauss Maskesi Ters Ölçekleme" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Geniş uzamsal Gauss maskesinin frekansta dar bir Gauss filtresi üreterek daha ağır bulanıklık sağlaması</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ Genlik spektrumu $|F(u,v)|$ her bir frekansta *ne kadar* enerji bulunduğunu gö
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-11.png" alt="Oppenheim Lim Curtis Evre Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-11.png" alt="Oppenheim Lim Curtis Evre Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Marilyn Monroe ve Albert Einstein üzerinde evre vs genlik deneyi: Evre korunduğunda nesne kimliği tanınabilir kalır.</em></figcaption>
   </div>
 </figure>
@@ -236,7 +236,7 @@ Aude Oliva (2006) tarafından geliştirilen **Hibrit Görüntüler**, insan göz
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-12.png" alt="Oliva Hibrit Görüntü Tasarımı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-12.png" alt="Oliva Hibrit Görüntü Tasarımı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Hibrit Görüntü inşası: Düşük frekanslı Marilyn Monroe + Yüksek frekanslı Albert Einstein = Hibrit Görüntü</em></figcaption>
   </div>
 </figure>
@@ -277,7 +277,7 @@ $$g(x,y) = f(x,y) * h(x,y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-13.png" alt="Bulanıklık Bozulma Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-13.png" alt="Bulanıklık Bozulma Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Bulanıklık bozulma modeli: Sahne ($f$) * Kamera sarsıntısı PSF ($h$) = Bulanık görüntü ($g$)</em></figcaption>
   </div>
 </figure>
@@ -295,14 +295,14 @@ Ters Fourier Dönüşümü $\text{IFT}\{F'(u,v)\}$ alındığında ideal sahne $
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-14.png" alt="Ters Filtreleme Adım 1 Frekansta Bölüm" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-14.png" alt="Ters Filtreleme Adım 1 Frekansta Bölüm" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gürültüsüz ortamda basit dekonvolüsyon Adım 1: Frekans spektrumlarının bölümü ($F' = G / H$)</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-15.png" alt="Ters Filtreleme Adım 2 Ters FT" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-15.png" alt="Ters Filtreleme Adım 2 Ters FT" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gürültüsüz ortamda basit dekonvolüsyon Adım 2: Ters FT ile net sahnenin ($f'$) kusursuz geri elde edilişi</em></figcaption>
   </div>
 </figure>
@@ -358,7 +358,7 @@ $$F'(u,v) = \frac{G(u,v)}{H(u,v)} \cdot \left[ \frac{|H(u,v)|^2}{|H(u,v)|^2 + \l
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-16.png" alt="Wiener Filtresi ile Gürültülü Bulanık Görüntü Restorasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/filtering-in-frequency-domain-and-deconvolution-16.png" alt="Wiener Filtresi ile Gürültülü Bulanık Görüntü Restorasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Wiener Dekonvolüsyonu ($\lambda = 0.002$) ile gürültülü ve bulanık görüntünün keskin ve temiz biçimde kurtarılması</em></figcaption>
   </div>
 </figure>

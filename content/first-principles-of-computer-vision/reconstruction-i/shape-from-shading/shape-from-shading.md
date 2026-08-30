@@ -8,7 +8,7 @@ One of the most fundamental problems in computer vision, **Shape from Shading (S
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-02.png" alt="Single-image 3D Shape Reconstruction Sample Scenes" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-02.png" alt="Single-image 3D Shape Reconstruction Sample Scenes" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Classic benchmark objects (Vase, Stanford Bunny, David Bust) used for 3D surface shape recovery from a single shaded image.</em></figcaption>
   </div>
 </figure>
@@ -46,7 +46,7 @@ Assume we fully know the reflectance properties (BRDF) of a homogeneous material
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-01.png" alt="Reflectance Map and Iso-brightness Contour" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-01.png" alt="Reflectance Map and Iso-brightness Contour" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: For a measured pixel intensity I(x,y), the Reflectance Map R(p,q) yields a continuous iso-brightness contour containing infinite candidate surface normal orientations.</em></figcaption>
   </div>
 </figure>
@@ -94,7 +94,7 @@ Derived from natural light sources (the sun and sky) always residing overhead, t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-03.png" alt="Light from Above Bias Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-03.png" alt="Light from Above Bias Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Light-from-Above bias. Top-bright/bottom-shaded shapes are perceived as convex (bumps), whereas bottom-bright/top-shaded shapes are perceived as concave (holes).</em></figcaption>
   </div>
 </figure>
@@ -104,7 +104,7 @@ Derived from natural light sources (the sun and sky) always residing overhead, t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-04.png" alt="Crater on a Mound Rotation Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-04.png" alt="Crater on a Mound Rotation Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Rotating a "Crater on a Mound" by 180° leads the human visual system to re-interpret depth into a "Mound in a Crater" to conform with overhead illumination.</em></figcaption>
   </div>
 </figure>
@@ -115,7 +115,7 @@ When shading is oriented horizontally (light coming directly from left or right)
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-05.png" alt="Sideways Illumination Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-05.png" alt="Sideways Illumination Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Sideways illumination removes vertical visual priors, creating bistable ambiguity between convex and concave surface interpretations.</em></figcaption>
   </div>
 </figure>
@@ -126,21 +126,21 @@ The human visual system assumes a single global light source illuminates all obj
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-06.png" alt="Global Illumination Consistency" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-06.png" alt="Global Illumination Consistency" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Opposite gradients across parallel strips. The brain enforces global lighting consistency, interpreting strips as alternating surface slopes.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-08.png" alt="Binary Shaded Circles Array" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-08.png" alt="Binary Shaded Circles Array" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Binary half-shaded circles array demonstrating perceptual grouping governed by lighting direction.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-09.png" alt="Smooth Gradient Shaded Circles Array" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-09.png" alt="Smooth Gradient Shaded Circles Array" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Smoothly shaded circles array. The brain automatically groups opposite gradient circles into convex vs. concave regions under overhead light assumptions.</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ Two strips sharing identical internal shading patterns can be perceived complete
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-07.png" alt="Role of Boundary Geometry in Shape Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-07.png" alt="Role of Boundary Geometry in Shape Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Changing outer boundary cutouts (arched vs. sinusoidal) alters 3D shape perception for identical internal shading patterns.</em></figcaption>
   </div>
 </figure>
@@ -167,7 +167,7 @@ When encountering familiar structures, the human brain can override the "light f
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-10.png" alt="Hollow-Mask Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-10.png" alt="Hollow-Mask Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Hollow-Mask Illusion. 1: Convex face, 2: Concave face mask front view (perceived as convex), 3: Side profile (revealing true hollow mask structure). Prior facial shape knowledge overrides light direction assumptions.</em></figcaption>
   </div>
 </figure>
@@ -218,7 +218,7 @@ $$f = \frac{2p}{1 + \sqrt{p^2 + q^2 + 1}}, \quad g = \frac{2q}{1 + \sqrt{p^2 + q
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-11.png" alt="Comparison between pq space and fg stereographic projection space" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-11.png" alt="Comparison between pq space and fg stereographic projection space" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Left: pq gradient space (unbounded at θ=90°). Right: Stereographic projection from South Pole ([0,0,-1]ᵀ) onto the plane z=1 into fg space.</em></figcaption>
   </div>
 </figure>
@@ -231,7 +231,7 @@ $$\text{Maximum Bound:} \quad f^2 + g^2 \leq 4$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-12.png" alt="Bounded Circle of Radius 2 in fg Space" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-12.png" alt="Bounded Circle of Radius 2 in fg Space" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Stereographic projection bounds all upper hemisphere surface normals strictly within a circle of radius 2 (f²+g² ≤ 4) on plane z=1. Normal (1,0,0) maps to (2,0) and (0,1,0) maps to (0,2).</em></figcaption>
   </div>
 </figure>
@@ -246,7 +246,7 @@ Developed by **Ikeuchi and Horn (1981)**, the numerical Shape from Shading algor
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-13.png" alt="Surface Normal Geometry Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-13.png" alt="Surface Normal Geometry Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Surface geometry diagram showing normal N, view direction v = (0,0,1), light vector s, and normal representations n ≡ (p,q) ≡ (f,g).</em></figcaption>
   </div>
 </figure>
@@ -296,7 +296,7 @@ $$\mathbf{n} = \mathbf{e} \times \mathbf{v}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-14.png" alt="Occluding Boundary Normal Computation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-14.png" alt="Occluding Boundary Normal Computation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: At the occluding boundary, surface normal n is orthogonal to view vector v and boundary tangent e. Dirichlet boundary condition is solved directly as n = e × v.</em></figcaption>
   </div>
 </figure>
@@ -337,7 +337,7 @@ Holding boundary pixels fixed, internal pixels start at $[0, 0]^T$ and iterate u
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-15.png" alt="Ikeuchi-Horn Algorithm 3D Surface Reconstruction Results" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-15.png" alt="Ikeuchi-Horn Algorithm 3D Surface Reconstruction Results" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Reconstructed 3D surface meshes output by the Ikeuchi-Horn Shape from Shading algorithm (Vase and Beethoven Bust reconstruction results).</em></figcaption>
   </div>
 </figure>
@@ -360,7 +360,7 @@ Created by Edward Adelson, this illusion places square "B" under a cylinder's sh
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/shape-from-shading-16.png" alt="Adelson Checker Shadow Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/shape-from-shading-16.png" alt="Adelson Checker Shadow Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Adelson Checker Shadow Illusion (1995). Left: Square B under shadow appears much lighter than square A. Right: Isolating squares A and B reveals identical raw pixel luminance.</em></figcaption>
   </div>
 </figure>

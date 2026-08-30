@@ -1,6 +1,6 @@
 <p align="center" style="margin-top: 5vh">
   <a href="./deep-learning-specialization/README.md">
-    <img src="./img/certificates/deep-learning-certificate.png" alt="Deep Learning Specialization Certificate" style="width: 80%; max-width: 700px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+    <img src="img/certificates/deep-learning-certificate.png" alt="Deep Learning Specialization Certificate" style="width: 80%; max-width: 700px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
   </a>
 </p>
 

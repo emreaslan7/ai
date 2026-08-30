@@ -8,7 +8,7 @@ In traditional computer vision approaches, **binary segmentation** and **geometr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-01.png" alt="Simple Template vs Complex 2D Appearance Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-01.png" alt="Simple Template vs Complex 2D Appearance Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: (Left) Isolated single template cover. (Right) Complex real-world 2D scene containing overlapping and rotated CD covers.</em></figcaption>
   </div>
 </figure>
@@ -28,14 +28,14 @@ If one attempts to use classic **template matching** or **normalized cross-corre
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-02.png" alt="Appearance under Rotation and Illumination Changes" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-02.png" alt="Appearance under Rotation and Illumination Changes" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Upright object orientation (left) versus rotated and re-illuminated orientation (right). Direct local patch pixel values cannot be matched.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-03.png" alt="Comparison of Zoomed-in Pixel Patches" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-03.png" alt="Comparison of Zoomed-in Pixel Patches" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Zoomed-in local pixel patch. When an object rotates, the spatial arrangement of the pixel matrix changes completely, causing pixel-wise differencing to fail.</em></figcaption>
   </div>
 </figure>
@@ -57,7 +57,7 @@ An **interest point** in an image is a local region that possesses the richest v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-04.png" alt="Homogeneous and Flat Texture Patches" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-04.png" alt="Homogeneous and Flat Texture Patches" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Flat and homogeneous texture patches (wood grain / flat surface). Lacking gradient variance, they cannot serve as interest points.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ An **interest point** in an image is a local region that possesses the richest v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-05.png" alt="Edge Detection and the Aperture Problem" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-05.png" alt="Edge Detection and the Aperture Problem" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Sliding ambiguity along straight edges (Aperture Problem). Moving the window along the edge line leaves local pixel values unchanged, preventing precise spatial localization.</em></figcaption>
   </div>
 </figure>
@@ -78,7 +78,7 @@ An **interest point** in an image is a local region that possesses the richest v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-06.png" alt="Corner and Blob Patch Analysis" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-06.png" alt="Corner and Blob Patch Analysis" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Comparison of corner and blob patches against flat regions. Blob patches provide both well-defined spatial localization and a well-scaled appearance window.</em></figcaption>
   </div>
 </figure>
@@ -97,7 +97,7 @@ $$G(x, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{x^2}{2\sigma^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-07.png" alt="1D Signal Gaussian Smoothing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-07.png" alt="1D Signal Gaussian Smoothing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: (Top to bottom) Noisy step edge signal $f$, Gaussian kernel $n_\sigma$, and smoothed signal $n_\sigma * f$.</em></figcaption>
   </div>
 </figure>
@@ -106,7 +106,7 @@ Convolving the signal with the first derivative of a Gaussian ($\frac{d}{dx} G_\
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-08.png" alt="Gaussian First Derivative Response" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-08.png" alt="Gaussian First Derivative Response" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: 1st derivative of Gaussian $\nabla(n_\sigma)$ filter response, forming a peak amplitude precisely over the edge.</em></figcaption>
   </div>
 </figure>
@@ -115,14 +115,14 @@ Applying the second derivative of a Gaussian ($\frac{d^2}{dx^2} G_\sigma$ / Inve
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-09.png" alt="Gaussian Second Derivative Zero-Crossing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-09.png" alt="Gaussian Second Derivative Zero-Crossing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: 2nd derivative of Gaussian $\nabla^2(n_\sigma)$ filter and its convolution result, demonstrating a zero-crossing centered over the edge transition.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-10.png" alt="Examples of 1D Blob Structures" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-10.png" alt="Examples of 1D Blob Structures" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Typical 1D blob-like signal structures (pulses, troughs, bumps).</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$S(x, \sigma) = f(x) * G(x, \sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-11.png" alt="Filter Responses on Blobs of Different Widths" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-11.png" alt="Filter Responses on Blobs of Different Widths" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Blobs of different widths ($A, B, C$) evaluated under Gaussian smoothing and second derivatives. Without normalization, response amplitudes decay at higher scales.</em></figcaption>
   </div>
 </figure>
@@ -146,14 +146,14 @@ $$\text{NLoG}_{1D} = \sigma^2 \frac{d^2 G_\sigma}{dx^2} * f(x)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-12.png" alt="Characteristic Scale and Local Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-12.png" alt="Characteristic Scale and Local Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: $\sigma^2$-normalized NLoG response forming a maximum extremum at the exact spatial center of each blob.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-13.png" alt="Relationship between Blob Size and Characteristic Scale" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-13.png" alt="Relationship between Blob Size and Characteristic Scale" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Characteristic Scale ($\sigma^*$): Maximum response is achieved at $\sigma_1$ for Blob $A$, $2\sigma_1$ for Blob $B$, and $3\sigma_1$ for Blob $C$.</em></figcaption>
   </div>
 </figure>
@@ -176,7 +176,7 @@ $$\text{NLoG}_{2D}(x, y, \sigma) = -\frac{1}{2\pi\sigma^2} \left( 2 - \frac{x^2 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-14.png" alt="2D Filter Operators: Laplacian, Gaussian, LoG, NLoG" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-14.png" alt="2D Filter Operators: Laplacian, Gaussian, LoG, NLoG" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: 3D surface plots of 2D filter operators: Laplacian ($\nabla^2$), Gaussian ($n_\sigma$), LoG ($\nabla^2 n_\sigma$), and Normalized NLoG ($\sigma^2 \nabla^2 n_\sigma$).</em></figcaption>
   </div>
 </figure>
@@ -189,21 +189,21 @@ Local extrema points $(x^*, y^*, \sigma^*)$ extracted within this 3D volume repr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-15.png" alt="Scale-Space Volume Visualization" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-15.png" alt="Scale-Space Volume Visualization" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Scale-Space representation $S(x,y,\sigma_0) \dots S(x,y,\sigma_3)$ on the falling man image. Increasing $\sigma$ reduces resolution and smoothes out fine details.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-16.png" alt="Characteristic Scale Peak on Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-16.png" alt="Characteristic Scale Peak on Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: NLoG response across scale at the eye region. A prominent peak occurs at scale $\sigma_1$, identifying its Characteristic Scale (Lindeberg 1994).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-17.png" alt="No Extremum on Flat Homogeneous Region" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-17.png" alt="No Extremum on Flat Homogeneous Region" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: NLoG response across scale on a flat background point. Lacking a strong extremum, no blob is detected.</em></figcaption>
   </div>
 </figure>
@@ -232,7 +232,7 @@ $$G(x,y,k\sigma) - G(x,y,\sigma) \approx (k-1) \cdot \left[ \sigma^2 \nabla^2 G 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-18.png" alt="Comparison between NLoG and DoG Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-18.png" alt="Comparison between NLoG and DoG Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Close mathematical alignment between the exact scale-normalized Laplacian (NLoG) curve and the Difference of Gaussians (DoG) approximation ($DoG \approx (s-1)\text{NLoG}$).</em></figcaption>
   </div>
 </figure>
@@ -241,7 +241,7 @@ By simply taking pixel-wise differences between adjacent Gaussian-blurred images
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-19.png" alt="Building the DoG Scale-Space Pyramid" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-19.png" alt="Building the DoG Scale-Space Pyramid" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 19: Input image $I(x,y)$ passed through Gaussian scale-space, followed by adjacent scale subtractions to build the DoG volume (Lowe 2004).</em></figcaption>
   </div>
 </figure>
@@ -256,7 +256,7 @@ To detect stable keypoints in the DoG volume:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-20.png" alt="3D Local Extremum Search in 26 Neighborhood" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-20.png" alt="3D Local Extremum Search in 26 Neighborhood" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 20: 3D local extremum check comparing a central pixel against 26 neighbors in a $3 \times 3 \times 3$ scale-space grid.</em></figcaption>
   </div>
 </figure>
@@ -265,14 +265,14 @@ To detect stable keypoints in the DoG volume:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-21.png" alt="Selection of Stable SIFT Keypoints" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-21.png" alt="Selection of Stable SIFT Keypoints" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 21: Removal of weak extrema and edge responses, leaving stable SIFT keypoint circles with scale-dependent radii (Lowe 2004).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-22.png" alt="Detected SIFT Keypoints on God of War Cover" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-22.png" alt="Detected SIFT Keypoints on God of War Cover" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 22: SIFT keypoints visualized as scale-proportional circles ($r \propto \sigma^*$) on a PS2 game cover.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ Changes in camera distance alter object magnification, causing DoG peak extrema 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-23.png" alt="Ratio of Blob Sizes via Characteristic Scale" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-23.png" alt="Ratio of Blob Sizes via Characteristic Scale" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 23: Characteristic scale ratio ($\frac{\sigma_1^*}{\sigma_2^*}$) directly measures the relative scale difference between observations (Mikolajczyk 2001).</em></figcaption>
   </div>
 </figure>
@@ -303,14 +303,14 @@ $$m(x,y) = \sqrt{I_x^2 + I_y^2} \quad \text{and} \quad \theta(x,y) = \tan^{-1}\l
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-24.png" alt="Principal Orientation Histogram Calculation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-24.png" alt="Principal Orientation Histogram Calculation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 24: (Left) Image gradient orientation vectors in normalized window. (Right) 36-bin orientation histogram and peak selection.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-25.png" alt="Principal Orientation Alignment on Rotated CD Cover" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-25.png" alt="Principal Orientation Alignment on Rotated CD Cover" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 25: Orientation assignment on a rotated CD cover, enabling patch re-orientation to a canonical upright view.</em></figcaption>
   </div>
 </figure>
@@ -344,7 +344,7 @@ Once scale and orientation effects are normalized, a compact and distinctive loc
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-26.png" alt="SIFT Descriptor Construction" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-26.png" alt="SIFT Descriptor Construction" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 26: SIFT Descriptor creation: Oriented patch divided into spatial sub-grids, generating local orientation histograms concatenated into a 128D vector.</em></figcaption>
   </div>
 </figure>
@@ -370,42 +370,42 @@ Once scale and orientation effects are normalized, a compact and distinctive loc
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-27.png" alt="SIFT Matching across Scale Changes" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-27.png" alt="SIFT Matching across Scale Changes" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 27: SIFT matches established across large scale changes (Donnie Darko DVD and God of War covers).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-28.png" alt="SIFT Matching under Rotation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-28.png" alt="SIFT Matching under Rotation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 28: Robust SIFT matches under $45^\circ$, $90^\circ$, and inverted $180^\circ$ CD cover rotations.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-29.png" alt="SIFT Matching under Clutter and Occlusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-29.png" alt="SIFT Matching under Clutter and Occlusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 29: Successful object retrieval in cluttered, partially occluded CD pile scenes using SIFT.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-30.png" alt="Mountain Landscape SIFT Point Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-30.png" alt="Mountain Landscape SIFT Point Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 30: Automatic keypoint correspondence matching across two mountain landscape photos (Autostitch).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-31.png" alt="Image Warping and Panorama Stitching" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-31.png" alt="Image Warping and Panorama Stitching" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 31: Geometric image warping and seamless panorama stitching using matched SIFT points.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-32.png" alt="Large Scale Photo Collage Creation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-32.png" alt="Large Scale Photo Collage Creation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 32: Large indoor/outdoor collage synthesized from 30 window photos via SIFT matching (Nomura 2007).</em></figcaption>
   </div>
 </figure>
@@ -416,7 +416,7 @@ While SIFT produces hundreds of stable matches for 2D planar surfaces undergoing
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-33.png" alt="3D Viewpoint Breakdown in SIFT" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/sift-detector-33.png" alt="3D Viewpoint Breakdown in SIFT" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 33: Sensitivity of SIFT to 3D viewpoint changes: $0^\circ$ change (100% matching), $30^\circ$ change (sharp drop in matches), $90^\circ$ change (complete breakdown of matching).</em></figcaption>
   </div>
 </figure>

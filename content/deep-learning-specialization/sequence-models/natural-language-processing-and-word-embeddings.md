@@ -11,7 +11,7 @@ In Natural Language Processing (NLP), word representation refers to how words ar
 This image shown one-hot embedding example.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-01.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-01.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ```
@@ -22,7 +22,7 @@ One-hot representation of "apple": [0, 0, 1]
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-04.webp" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-04.webp" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 This representation doesn't capture the relationship between "banana" and "apple" or that both are fruit. Hence, we need better methods like **word embeddings**.
@@ -34,7 +34,7 @@ This representation doesn't capture the relationship between "banana" and "apple
 Word embeddings are dense vector representations of words in a continuous vector space, where semantically similar words are mapped closer together.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-02.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-02.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 **Example:**
@@ -43,7 +43,7 @@ A 3D visualization might show vectors such that:
 - vector("king") - vector("man") + vector("woman") ≈ vector("queen")
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-03.webp" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-03.webp" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 This arithmetic reflects the semantic relationship between the words, allowing machines to understand analogies.
@@ -55,7 +55,7 @@ This arithmetic reflects the semantic relationship between the words, allowing m
 Word embeddings exhibit fascinating properties:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-05.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-05.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **Semantic similarity:** Similar words have vectors close to each other (e.g., "good" and "great").
@@ -80,7 +80,7 @@ embedding_vector = E[i]
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 This matrix is updated during training so that embeddings capture task-specific information.
@@ -105,7 +105,7 @@ Word2Vec is a popular unsupervised model for learning word embeddings. It has tw
 Word2Vec comes in two main model architectures:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-07.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-07.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 1. **Continuous Bag of Words (CBOW)**:
@@ -249,7 +249,7 @@ Where:
 GloVe (Global Vectors for Word Representation) is an alternative to Word2Vec. It constructs a co-occurrence matrix `X` and models the relationships between words based on their global co-occurrence statistics.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/natural-language-processing-and-word-embeddings-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 **Cost function:**

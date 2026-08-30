@@ -65,7 +65,7 @@ Matematiksel sistemi kurabilmek için sahnedeki belirgin noktaların tüm video 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-01.png" alt="Öznitelik Tespiti ve Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-01.png" alt="Öznitelik Tespiti ve Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Video kareleri üzerinde Harris/SIFT öznitelik noktalarının tespiti ve optik akış / şablon eşleştirme ile video boyunca takibi.</em></figcaption>
   </div>
 </figure>
@@ -80,7 +80,7 @@ Tomasi-Kanade algoritması, perspektif projeksiyonun doğrusal olmayan (non-line
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-02.png" alt="Ortografik Projeksiyon Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-02.png" alt="Ortografik Projeksiyon Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: N adet 3B sahne noktasının ($P_p$) F adet video karesine paralel ışınlarla ortografik izdüşümü.</em></figcaption>
   </div>
 </figure>
@@ -106,7 +106,7 @@ Kamera koordinat sisteminin orijinini kameranın optik merkezine ($C$) yerleşti
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-03.png" alt="Kamera Koordinatlarında Ortografik İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-03.png" alt="Kamera Koordinatlarında Ortografik İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Kamera koordinat çerçevesinde 3B $P$ noktasının konum vektörü $\mathbf{x}_c$ ve görüntü düzlemindeki $(u, v)$ izdüşümü.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ Sahnede rastgele seçilmiş sabit bir dünya koordinat sistemi ($\mathcal{W}$) v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-04.png" alt="Dünya Koordinat Sistemi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-04.png" alt="Dünya Koordinat Sistemi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: Sabit dünya koordinat sistemi $\mathcal{W}$ orijini $O$, sahne noktası $P = \mathbf{x}_w$, kamera merkezi $C = \mathbf{c}_w$ ve bağıl vektör $\mathbf{x}_c = \mathbf{x}_w - \mathbf{c}_w$.</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ Burada:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-05.png" alt="Çoklu Kare SfM Kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-05.png" alt="Çoklu Kare SfM Kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: $F$ adet video karesinde bilinmeyen kamera konumları $\{C_f\}$, bilinmeyen kamera yönelimleri $\{(\mathbf{i}_f, \mathbf{j}_f)\}$ ve bilinmeyen 3B sahne noktaları $\{P_p\}$.</em></figcaption>
   </div>
 </figure>
@@ -168,7 +168,7 @@ Dünya koordinat sisteminin orijini tamamen bizim seçimimize bağlıdır. Matem
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-06.png" alt="Merkezleme Hilesi ve 3B Centroid" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-06.png" alt="Merkezleme Hilesi ve 3B Centroid" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Dünya koordinat sisteminin orijininin taranan 3B noktaların ağırlık merkezine ($\bar{P}$) yerleştirilmesi.</em></figcaption>
   </div>
 </figure>
@@ -205,7 +205,7 @@ Tüm video karelerindeki ($F$ adet) ve tüm takip edilen noktalardaki ($N$ adet)
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-07.png" alt="Gözlem Matrisi Formülasyonu W = M * S" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-07.png" alt="Gözlem Matrisi Formülasyonu W = M * S" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Merkezden arındırılmış koordinatların Gözlem Matrisi ($W_{2F \times N}$), Kamera Hareket Matrisi ($M_{2F \times 3}$) ve Sahne Yapı Matrisi ($S_{3 \times N}$) çarpımı olarak matris formülasyonu.</em></figcaption>
   </div>
 </figure>
@@ -267,7 +267,7 @@ Bir vektör kümesinde hiçbir vektör, diğer vektörlerin doğrusal bir kombin
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-08.png" alt="Doğrusal Bağımsızlık Kavramı" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-08.png" alt="Doğrusal Bağımsızlık Kavramı" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: 2B uzayda $\{\mathbf{i}, \mathbf{j}\}$ doğrusal bağımsız bir taban oluştururken, 2B düzleme eklenen 3. veya 4. herhangi bir vektör ($\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3$) mutlaka doğrusal bağımlı hale gelir.</em></figcaption>
   </div>
 </figure>
@@ -283,7 +283,7 @@ Bir $m \times n$ boyutundaki $A$ matrisi için:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-09.png" alt="Matris Rankı ve Boyutsal Sınır" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-09.png" alt="Matris Rankı ve Boyutsal Sınır" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Bir $m \times n$ matris için sütun rankı satır rankına daima eşittir ve boyutların minimumunu aşamaz: $\text{Rank}(A) \leq \min(m, n)$.</em></figcaption>
   </div>
 </figure>
@@ -305,7 +305,7 @@ Tüm kolon vektörleri ($\mathbf{a}, \mathbf{b}, \mathbf{c}$) 3B uzayda aynı te
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-10.png" alt="Rank 1 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-10.png" alt="Rank 1 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: $\text{Rank}(A) = 1$: Kolon vektörleri tek bir doğru üzerindedir (1D alt uzay).</em></figcaption>
   </div>
 </figure>
@@ -315,7 +315,7 @@ Kolon vektörleri 3B uzayda tek bir doğruya sığmaz, ancak hepsi ortak bir 2B 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-11.png" alt="Rank 2 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-11.png" alt="Rank 2 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: $\text{Rank}(A) = 2$: Kolon vektörleri ortak bir 2B düzlem oluşturur (2D alt uzay).</em></figcaption>
   </div>
 </figure>
@@ -325,7 +325,7 @@ Kolon vektörleri 3B uzayı tam olarak gerer (tüm hacmi doldurur) ve tam rankl�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-12.png" alt="Rank 3 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-12.png" alt="Rank 3 Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: $\text{Rank}(A) = 3$: Kolon vektörleri tam 3B hacim gerer (tam rank).</em></figcaption>
   </div>
 </figure>
@@ -367,7 +367,7 @@ $$W = U \cdot \Sigma \cdot V^T$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-13.png" alt="Gözlem Matrisinin SVD Ayrışımı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-13.png" alt="Gözlem Matrisinin SVD Ayrışımı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: $W_{2F \times N}$ matrisinin $U_{2F \times 2F}$, $\Sigma_{2F \times N}$ ve $V^T_{N \times N}$ matrislerine SVD ayrışımı.</em></figcaption>
   </div>
 </figure>
@@ -387,7 +387,7 @@ Ancak gerçek ölçümlerde piksel gürültüsü ve takip hataları nedeniyle $\
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-14.png" alt="SVD Rank-3 Blok Bölümlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-14.png" alt="SVD Rank-3 Blok Bölümlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: SVD matrislerinin blok bölümlemesi: Anlamlı ilk 3 bileşen ($U_1, \Sigma_1, V_1^T$) ve gürültüyü temsil eden atılan parçalar ($U_2, V_2^T$).</em></figcaption>
   </div>
 </figure>
@@ -467,7 +467,7 @@ Tomasi ve Kanade'nin (1992) orijinal çalışmasında, bir oyuncak ev modeli dö
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-15.png" alt="Tomasi-Kanade Oyuncak Ev Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-15.png" alt="Tomasi-Kanade Oyuncak Ev Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Orijinal Tomasi-Kanade deneyi: Giriş video dizisi (Input Image Sequence) ve algoritma ile kurtarılan 3B nokta bulutu yapısı (Estimated 3D Points).</em></figcaption>
   </div>
 </figure>
@@ -496,7 +496,7 @@ Tomasi-Kanade faktörizasyonu sadece seyrek (sparse) nokta bulutu çıkarmakla k
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-16.png" alt="Bina Rekonstrüksiyonu ve Doku Kaplama" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-16.png" alt="Bina Rekonstrüksiyonu ve Doku Kaplama" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 16: Gerçek bir bina cephesinden alınan video dizisi (Input Image Sequence), takip edilen öznitelikler (Tracked Features) ve faktörizasyon ile elde edilen dokulu 3B rekonstrüksiyon (3D Reconstruction).</em></figcaption>
   </div>
 </figure>
@@ -511,7 +511,7 @@ Orijinal Tomasi-Kanade algoritması bilgisayarlı görünün temel taşıdır. G
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/structure-from-motion-17.png" alt="Modern SfM ile Heykel Yüzeyi Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-17.png" alt="Modern SfM ile Heykel Yüzeyi Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 17: Tarihi bir taş kabartma videosundan (Input Video) modern Structure from Motion algoritmalarıyla elde edilen yüksek çözünürlüklü 3B yüzey geometrisi (Computed Structure).</em></figcaption>
   </div>
 </figure>

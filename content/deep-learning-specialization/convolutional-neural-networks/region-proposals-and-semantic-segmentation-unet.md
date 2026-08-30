@@ -11,7 +11,7 @@ Traditional object detectors like sliding windows are computationally expensive 
 ### Selective Search
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 - Group similar pixels into **superpixels**
@@ -93,7 +93,7 @@ U-Net is a fully convolutional network that consists of:
 - An **expanding path** to enable precise localization (upsampling)
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet-02.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet-02.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 U-Net was originally designed for **biomedical image segmentation** but is now used in many fields.
@@ -121,7 +121,7 @@ Skip connections pass high-resolution features from encoder to decoder, enabling
 ## U-Net Architecture (Full Design)
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet-03.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/region-proposal-and-semantic-segmentation-unet-03.png" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 ### Structure Overview

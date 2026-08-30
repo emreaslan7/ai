@@ -19,7 +19,7 @@ Linear regression is simple yet powerful for many real-world applications. Some 
 Consider predicting house prices based on the size of the house (in square meters). A simple linear relationship can be assumed: larger houses tend to have higher prices. This assumption is the foundation of our linear regression model.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ## 2. Mathematical Representation
@@ -128,7 +128,7 @@ plt.show()
 ```
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ### 3.6 Interpretation of the Regression Line
@@ -154,7 +154,7 @@ where:
 - $ y_i $ is the actual price.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Any dashed line indicates an error. In the formula above, we calculated the sum of these, namely $J(\theta)$.
@@ -173,7 +173,7 @@ To illustrate how the cost function behaves, let's assume that $\theta_1 = 0$, m
 | 4        | 8        |
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Since we assume $\theta_1 = 0$, our hypothesis function simplifies to: $$h_{\theta}(x) = \theta_0 \cdot x $$
@@ -187,7 +187,7 @@ For $\theta_0 = 1$, the predicted values are:
 $$ h_θ(x) = 1 \cdot x = [1, 2, 3, 4] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 The error values:
@@ -197,7 +197,7 @@ $$ \text{error} = h_θ(x) - y = [1 - 2, 2 - 4, 3 - 6, 4 - 8] = [-1, -2, -3, -4] 
 Computing the cost function:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-06.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-06.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 $$ J(\theta*0 = 1) = \frac{1}{2m} \sum (h*{\theta}(x_i) - y_i)^2 $$
@@ -211,7 +211,7 @@ For $\theta_0 = 1.5$, the predicted values are:
 $$ h_θ(x) = 1.5 \cdot x = [1.5, 3, 4.5, 6] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 The error values:
@@ -221,7 +221,7 @@ $$ \text{error} = [1.5 - 2, 3 - 4, 4.5 - 6, 6 - 8] = [-0.5, -1, -1.5, -2] $$
 Computing the cost function:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-08.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-08.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 $$ J(1.5) = \frac{1}{8} ((-0.5)^2 + (-1)^2 + (-1.5)^2 + (-2)^2) $$
@@ -235,7 +235,7 @@ For $\theta_0 = 2$, the predicted values match the actual values:
 $$ h_θ(x) = 2 \cdot x = [2, 4, 6, 8] $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 The error values:
@@ -245,7 +245,7 @@ $$ \text{error} = [2 - 2, 4 - 4, 6 - 6, 8 - 8] = [0, 0, 0, 0] $$
 Computing the cost function:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-10.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-10.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 $$ J(2) = \frac{1}{8} ((0)^2 + (0)^2 + (0)^2 + (0)^2) = 0 $$

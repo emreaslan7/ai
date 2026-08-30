@@ -10,7 +10,7 @@ Consider a calibrated camera observing a 2D pixel coordinate $(u, v)$ on the ima
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-01.png" alt="Backward Projection Ambiguity and Outgoing Ray" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-01.png" alt="Backward Projection Ambiguity and Outgoing Ray" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Backward projection ambiguity: Projecting a single pixel $(u,v)$ back into 3D space produces an outgoing ray extending infinitely into the scene.</em></figcaption>
   </div>
 </figure>
@@ -28,7 +28,7 @@ The pixel $(u,v)$ specifies an outgoing 3D ray originating from the optical cent
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-02.png" alt="3D-to-2D Forward Projection vs 2D-to-3D Backward Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-02.png" alt="3D-to-2D Forward Projection vs 2D-to-3D Backward Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Comparison between 3D-to-2D point projection equations and 2D-to-3D backward ray equations.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ A **Simple Stereo System** consists of two identical cameras placed with paralle
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-03.png" alt="Simple Stereo Camera Geometry and Baseline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-03.png" alt="Simple Stereo Camera Geometry and Baseline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Simple stereo geometry: Left camera at origin $(0,0,0)$, right camera at $(b,0,0)$. Intersecting rays from both cameras determine the 3D scene point $(x,y,z)$.</em></figcaption>
   </div>
 </figure>
@@ -71,7 +71,7 @@ In physical hardware, simple stereo systems are built by mounting two identical 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-04.png" alt="Physical Dual-Lens Stereo Camera Example" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-04.png" alt="Physical Dual-Lens Stereo Camera Example" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Physical stereo camera (Fujifilm 3D HD camera with 75mm fixed baseline).</em></figcaption>
   </div>
 </figure>
@@ -84,7 +84,7 @@ $$v_l = v_r$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-05.png" alt="Left/Right Camera Images and Ground Truth Disparity Map" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-05.png" alt="Left/Right Camera Images and Ground Truth Disparity Map" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Left and right camera images, ground truth disparity map, and vertical scanline equality ($v_l = v_r$).</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ $$\text{Right Camera:} \quad u_r = f_x \frac{x - b}{z} + o_x \quad \text{and} \q
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-06.png" alt="Stereo Matching along Search Scan Line" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-06.png" alt="Stereo Matching along Search Scan Line" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Searching for template window $T$ along horizontal scanline $L$, defining disparity ($d = u_l - u_r$) and depth ($z = \frac{b f_x}{d}$).</em></figcaption>
   </div>
 </figure>
@@ -152,7 +152,7 @@ To match pixels along the horizontal scanline, a template window ($W$) is shifte
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-08.png" alt="Window Size Trade-off" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-08.png" alt="Window Size Trade-off" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Window size trade-off: Small windows ($5 \times 5$) are sensitive to noise; large windows ($30 \times 30$) produce smooth disparity but blur depth boundaries.</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ Three main physical scenarios degrade stereo matching performance:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-07.png" alt="Textureless Surfaces, Repetitive Texture, and Foreshortening" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-07.png" alt="Textureless Surfaces, Repetitive Texture, and Foreshortening" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Physical challenges in stereo matching: Textureless/repetitive surfaces and foreshortening effects on slanted surfaces.</em></figcaption>
   </div>
 </figure>
@@ -177,7 +177,7 @@ Three main physical scenarios degrade stereo matching performance:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-09.png" alt="Comparison of Stereo Matching Algorithms" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/simple-stereo-09.png" alt="Comparison of Stereo Matching Algorithms" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Comparison of stereo matching algorithms: Standard SSD, Adaptive Windowing, and State-of-the-Art global optimization.</em></figcaption>
   </div>
 </figure>

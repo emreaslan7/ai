@@ -41,7 +41,7 @@ Many income datasets have a right-skewed distribution where most values are low,
 $$X' = \log(X)$$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/feature-engineering-and-polynomial-regression-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/feature-engineering-and-polynomial-regression-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 ### **2. Polynomial Features**
@@ -168,7 +168,7 @@ For instance:
 This quadratic term helps model the curved price trend more accurately.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/feature-engineering-and-polynomial-regression-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/feature-engineering-and-polynomial-regression-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ## Mathematical Representation and Implementation

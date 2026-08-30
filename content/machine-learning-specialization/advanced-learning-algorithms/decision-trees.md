@@ -107,7 +107,7 @@ where:
 - $ p_1 $ and $ p_2 $ are the proportions of each class in the set $ S $.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Entropy = 0**: The node is pure (all samples belong to one class).
@@ -145,7 +145,7 @@ graph TD;
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **Gini = 0**: The node is completely pure.
@@ -198,7 +198,7 @@ where:
 Consider a dataset with the following samples:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 1. Compute initial entropy:
@@ -206,7 +206,7 @@ Consider a dataset with the following samples:
    - 5 `Cat` labels and 5 `Dog` labels.
 
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-03.png" style="display:flex; justify-content: center; width: 200px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-03.png" style="display:flex; justify-content: center; width: 200px;"alt="regression-example"/>
     </div>
 
    - $ p_1 = \frac{5}{10} $, $ \quad p_2 = \frac{5}{10} $.
@@ -258,7 +258,7 @@ Consider a dataset with the following samples:
 <br/>
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-05.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-05.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
 </div>
 
 Since the highest Information Gain is $0.28$ (Ear Shape), splitting on either of these features is optimal.
@@ -275,7 +275,7 @@ Since the highest Information Gain is $0.28$ (Ear Shape), splitting on either of
 When working with continuous features, decision trees can still be used effectively to predict outcomes, just like with categorical features.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-06.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 The key difference is that instead of using categorical values for splitting, decision trees for continuous features will determine optimal cutoffs or thresholds in the data. This allows the algorithm to make predictions for continuous target variables based on continuous input features.
@@ -376,7 +376,7 @@ Regression trees are used when the target variable is continuous rather than cat
 **How Regression Trees Work**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-07.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-07.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 1. **Splitting the Data:** The algorithm finds the best feature and threshold to split the data by minimizing variance.
@@ -552,7 +552,7 @@ Notice that in each bootstrap sample, some samples appear multiple times while o
 #### Random Forest Algorithm
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Random Forest is an ensemble learning method that builds multiple decision trees and merges them to achieve better performance. It is based on the concept of **bagging (Bootstrap Aggregating)**, which helps reduce overfitting and improve accuracy.
@@ -668,7 +668,7 @@ graph TD;
 XGBoost (Extreme Gradient Boosting) is a powerful and efficient implementation of gradient boosting that is widely used in machine learning competitions and real-world applications due to its high performance and scalability.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/decision-trees-08.ppm" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/decision-trees-08.ppm" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 XGBoost builds an ensemble of decision trees sequentially, where each tree corrects the errors of the previous ones. The algorithm optimizes a loss function using gradient descent, allowing it to minimize errors effectively.

@@ -13,7 +13,7 @@ The mathematical and optical process enabling this transition is called **Camera
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-01.png" alt="World, Camera, and Image Coordinate Frames" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-01.png" alt="World, Camera, and Image Coordinate Frames" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Transformation from 3D world coordinate frame ($\mathcal{W}$) to camera frame ($\mathcal{C}$) and perspective projection geometry onto 2D image plane.</em></figcaption>
   </div>
 </figure>
@@ -79,7 +79,7 @@ A digital image sensor (CCD/CMOS) discretizes the continuous image plane into pi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-02.png" alt="Mapping from Image Plane to Sensor" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-02.png" alt="Mapping from Image Plane to Sensor" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Mapping from millimetric image plane ($x_i, y_i$) to digital pixel sensor ($u, v$) with pixel densities $m_x, m_y$.</em></figcaption>
   </div>
 </figure>
@@ -88,7 +88,7 @@ Furthermore, the **Principal Point** $(o_x, o_y)$, where the optical axis pierce
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-03.png" alt="Principal Point Offset and Top-Left Origin" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-03.png" alt="Principal Point Offset and Top-Left Origin" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Top-left origin convention on digital image sensor and Principal Point offset ($o_x, o_y$) where optical axis intersects sensor.</em></figcaption>
   </div>
 </figure>
@@ -115,7 +115,7 @@ The 2D pixel coordinate $(u, v)$ is elevated to a homogeneous vector $[\tilde{u}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-04.png" alt="2D Homogeneous Coordinate Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-04.png" alt="2D Homogeneous Coordinate Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: 2D Homogeneous coordinate space: Ray $[\tilde{u}, \tilde{v}, \tilde{w}]^T$ intersecting plane $\tilde{w}=1$ at Euclidean coordinates ($u = \tilde{u}/\tilde{w}, v = \tilde{v}/\tilde{w}$).</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ Similarly, the 3D scene point is represented as a 4D homogeneous vector $[x_c, y
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-05.png" alt="3D Homogeneous Coordinates" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-05.png" alt="3D Homogeneous Coordinates" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Elevation of 3D Euclidean coordinates to 4D homogeneous vector $[\tilde{x}, \tilde{y}, \tilde{z}, \tilde{w}]^T$.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ This elevation transforms perspective division into a linear matrix multiplicati
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-06.png" alt="Homogeneous Camera Projection Matrix Form" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-06.png" alt="Homogeneous Camera Projection Matrix Form" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Matrix multiplication form of the linear camera model in homogeneous coordinates.</em></figcaption>
   </div>
 </figure>
@@ -156,7 +156,7 @@ where $K$ is the $3 \times 3$ **Calibration Matrix**:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-07.png" alt="Calibration Matrix K and Intrinsic Matrix Mint" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-07.png" alt="Calibration Matrix K and Intrinsic Matrix Mint" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Upper-right triangular $3 \times 3$ Calibration Matrix ($K$) and $3 \times 4$ Intrinsic Matrix ($M_{int} = [K \mid \mathbf{0}]$).</em></figcaption>
   </div>
 </figure>
@@ -171,7 +171,7 @@ The extrinsic matrix maps a point $\mathbf{X}_w = [x_w, y_w, z_w]^T$ from the wo
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-08.png" alt="Extrinsic Parameters Position and Rotation" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-08.png" alt="Extrinsic Parameters Position and Rotation" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Extrinsic parameters: Camera position $\mathbf{c}_w$ and orthonormal Rotation Matrix ($R$) in the world coordinate frame.</em></figcaption>
   </div>
 </figure>
@@ -186,14 +186,14 @@ Multiplying the intrinsic and extrinsic matrices sequentially yields the $3 \tim
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-09.png" alt="Forward Imaging Transformation Chain" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-09.png" alt="Forward Imaging Transformation Chain" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Two-step transformation chain ($M_{ext}$ for World->Camera, $M_{int}$ for Camera->Pixel) mapping 3D world points to pixels.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-10.png" alt="Combining Intrinsic and Extrinsic Matrices into P" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-10.png" alt="Combining Intrinsic and Extrinsic Matrices into P" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Combining intrinsic and extrinsic matrices to construct the general $3 \times 4$ Projection Matrix $P = M_{int} M_{ext}$.</em></figcaption>
   </div>
 </figure>
@@ -222,7 +222,7 @@ The objective of camera calibration is to determine the 12 unknown parameters ($
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-11.png" alt="Calibration Cube and Point Correspondences" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-11.png" alt="Calibration Cube and Point Correspondences" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Point correspondences established between known 3D world points $\mathbf{X}_w$ on a calibration cube and observed 2D pixel projections $\mathbf{u}$.</em></figcaption>
   </div>
 </figure>
@@ -246,7 +246,7 @@ For $i = 1, \dots, n$ points on a calibration object, known 3D world coordinates
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-12.png" alt="Establishing DLT Rational Equations" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-12.png" alt="Establishing DLT Rational Equations" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Establishing rational equations for the unknown Projection Matrix parameters ($p_{11} \dots p_{34}$) using known 3D and 2D coordinates.</em></figcaption>
   </div>
 </figure>
@@ -265,7 +265,7 @@ Stacking these equations for all $n$ calibration points ($n \ge 6$) forms a $2n 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-13.png" alt="System Matrix A * p = 0" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-13.png" alt="System Matrix A * p = 0" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Stacking all point correspondences to construct the homogeneous linear system matrix $A$ of size $2n \times 12$ and unknown vector $\mathbf{p}$ ($A \mathbf{p} = \mathbf{0}$).</em></figcaption>
   </div>
 </figure>
@@ -278,7 +278,7 @@ Because homogeneous coordinates operate up to an arbitrary scale factor ($\lambd
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-14.png" alt="Scale Ambiguity in Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-14.png" alt="Scale Ambiguity in Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Scale ambiguity in perspective projection: Scaling scene size and distance by scale factor $k$ ($Scale = k_1$ vs $Scale = k_2$) produces identical 2D pixel projections.</em></figcaption>
   </div>
 </figure>
@@ -326,7 +326,7 @@ Real lens systems exhibit non-linear departures from the ideal pinhole model. Wh
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-15.png" alt="Radial and Tangential Lens Distortions" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/camera-models-and-calibration-15.png" alt="Radial and Tangential Lens Distortions" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Non-linear optical lens distortions: Radial Distortion (left) and Tangential Distortion (right).</em></figcaption>
   </div>
 </figure>

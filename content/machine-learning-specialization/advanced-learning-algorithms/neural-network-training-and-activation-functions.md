@@ -9,7 +9,7 @@
 Binary crossentropy is commonly used for binary classification problems. It measures the difference between the predicted probability $ \hat{y} $ and the true label $ y $ as follows:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 $$
@@ -36,7 +36,7 @@ print("Binary Crossentropy Loss:", loss.numpy())
 For regression problems, MSE calculates the average squared differences between actual and predicted values:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-02.avif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-02.avif" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 $$
@@ -115,7 +115,7 @@ Each loss function serves a different purpose and is chosen based on the nature 
 An **epoch** represents one complete pass of the entire training dataset through the neural network. During each epoch, the model updates its weights based on the error calculated from the loss function.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-09.jpeg" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-09.jpeg" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 - If we train for **one epoch**, the model sees each training sample **exactly once**.
@@ -126,7 +126,7 @@ An **epoch** represents one complete pass of the entire training dataset through
 **Choosing the Number of Epochs**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-08.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-08.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 - **Too Few Epochs** → The model may **underfit**, meaning it has not learned enough patterns from the data.
@@ -148,7 +148,7 @@ model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_
 Instead of feeding the entire dataset into the model at once, training is performed in smaller subsets called **batches**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Key Concepts:**
@@ -234,7 +234,7 @@ If we do not apply non-linearity, no matter how many layers we stack, the final 
 $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-03.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-03.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 - **Range:** (0, 1)
@@ -247,7 +247,7 @@ $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 $$ f(x) = \max(0, x) $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-04.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-04.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
 </div>
 
 - **Range:** [0, ∞)
@@ -260,7 +260,7 @@ $$ f(x) = \max(0, x) $$
 $$ f(x) = \max(0.01x, x) $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-06.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-06.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
 </div>
 
 - **Range:** (-∞, ∞)
@@ -273,7 +273,7 @@ $$ f(x) = \max(0.01x, x) $$
 $$ \sigma(x*i) = \frac{e^{x_i}}{\sum*{j} e^{x_j}} $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-05.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-05.webp" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Used in:** Multi-class classification (output layer).
@@ -285,7 +285,7 @@ $$ \sigma(x*i) = \frac{e^{x_i}}{\sum*{j} e^{x_j}} $$
 $$ f(x) = x $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/neural-network-training-and-activation-functions-07.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/neural-network-training-and-activation-functions-07.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
 </div>
 
 - **Used in:** Regression problems (output layer).

@@ -43,7 +43,7 @@ Bu iki tepe noktası arasında kalan en çukur bölge **vadi (valley)** noktası
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-01.png" alt="Eşikleme ve Parlaklık Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-01.png" alt="Eşikleme ve Parlaklık Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gri Seviyeli Görüntü, Parlaklık Histogramı ve İdeal Eşik (T) Seçimi ile İkili Görüntüye Geçiş</em></figcaption>
   </div>
 </figure>
@@ -59,7 +59,7 @@ Ancak doğrudan üstten aydınlatmalı sistemlerde 3D nesnelerin gölgeleri, par
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-02.png" alt="Ön Aydınlatma vs. Arkadan Aydınlatma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-02.png" alt="Ön Aydınlatma vs. Arkadan Aydınlatma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Normal Üstten Aydınlatma ile Arkadan Aydınlatma (Backlighting) Karşılaştırması</em></figcaption>
   </div>
 </figure>
@@ -104,7 +104,7 @@ $$\bar{y} = \frac{1}{A} \iint y \cdot b(x,y) \, dx \, dy$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-04.png" alt="Alan Merkezi ve Kütle Merkezi Analojisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-04.png" alt="Alan Merkezi ve Kütle Merkezi Analojisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Alan Merkezi (Centroid) ve Mekanikteki Kütle Merkezi Analojisi</em></figcaption>
   </div>
 </figure>
@@ -234,7 +234,7 @@ Bu oran $$ aralığındadır:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-03.png" alt="Farklı Nesnelerde Geometrik Özelliklerin Gösterimi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-03.png" alt="Farklı Nesnelerde Geometrik Özelliklerin Gösterimi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Farklı Nesnelerde Geometrik Özelliklerin Gösterimi (İkili Görüntü, Yönelim Ekseni ve Yuvarlaklık Değerleri)</em></figcaption>
   </div>
 </figure>
@@ -255,7 +255,7 @@ Gerçek dünyada görüntüler ayrık (*discrete*) piksellerden oluşur. $b_{ij}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-05.png" alt="Ayrık Piksel Izgarası ve Koordinat Sistemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-05.png" alt="Ayrık Piksel Izgarası ve Koordinat Sistemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ayrık (Discrete) İkili Görüntülerde Piksel Izgarası ve Koordinat Sistemi</em></figcaption>
   </div>
 </figure>

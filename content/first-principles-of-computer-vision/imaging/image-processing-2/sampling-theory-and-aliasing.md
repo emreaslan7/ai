@@ -19,7 +19,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-01.png" alt="Continuous Signal vs Sampled Digital Signal" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-01.png" alt="Continuous Signal vs Sampled Digital Signal" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Continuous spatial signal $f(x)$ vs. digital signal $f_s(x)$ sampled via discrete delta impulses</em></figcaption>
   </div>
 </figure>
@@ -31,7 +31,7 @@ If a high-frequency continuous signal (a fast-oscillating sinusoid) is sampled t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-02.png" alt="Under-Sampling and Aliasing Creation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-02.png" alt="Under-Sampling and Aliasing Creation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sampling low vs. high frequency signals: Under-sampling high frequencies generates spurious low frequencies (Aliasing).</em></figcaption>
   </div>
 </figure>
@@ -41,7 +41,7 @@ In digital photography and computer vision, aliasing manifests visually as **Moi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-03.png" alt="Moiré Patterns on Brick Wall" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-03.png" alt="Moiré Patterns on Brick Wall" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Well-sampled image (left) vs. under-sampled image exhibiting wavy Moiré pattern artifacts (right)</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ Mathematically, sampling a continuous 1D signal $f(x)$ at regular spatial interv
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-04.png" alt="Sampling Model using Shah Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-04.png" alt="Sampling Model using Shah Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Continuous signal $f(x)$ multiplied by Shah function $s(x)$ yielding sampled signal $f_s(x) = f(x)s(x)$</em></figcaption>
   </div>
 </figure>
@@ -72,7 +72,7 @@ $$\mathcal{F}\{s(x)\} = S(u) = \frac{1}{x_0} \sum_{n=-\infty}^{\infty} \delta\le
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-05.png" alt="Fourier Transform of Shah Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-05.png" alt="Fourier Transform of Shah Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial Shah function $s(x)$ (spacing $x_0$) and its frequency counterpart $S(u)$ (spacing $1/x_0$)</em></figcaption>
   </div>
 </figure>
@@ -86,7 +86,7 @@ $$F_s(u) = F(u) * \left[ \frac{1}{x_0} \sum_{n=-\infty}^{\infty} \delta\left(u -
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-06.png" alt="Frequency Convolution and Spectrum Replication" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-06.png" alt="Frequency Convolution and Spectrum Replication" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Convolution of band-limited spectrum $F(u)$ with impulse train $S(u)$ ($F_s(u) = F(u) * S(u)$)</em></figcaption>
   </div>
 </figure>
@@ -121,7 +121,7 @@ $$u_{\max} \le \frac{1}{2 x_0} \quad \iff \quad \frac{1}{x_0} \ge 2 u_{\max}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-07.png" alt="Non-Overlapping Spectra under Nyquist Condition" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-07.png" alt="Non-Overlapping Spectra under Nyquist Condition" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>When $u_{\max} \le \frac{1}{2x_0}$, spectral replicas ($F_s(u)$) repeat without overlapping.</em></figcaption>
   </div>
 </figure>
@@ -131,7 +131,7 @@ If sampling is inadequate ($u_{\max} > \frac{1}{2x_0}$), adjacent spectral repli
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-08.png" alt="Spectral Overlapping Aliasing on Nyquist Violation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-08.png" alt="Spectral Overlapping Aliasing on Nyquist Violation" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>When $u_{\max} > \frac{1}{2x_0}$, adjacent spectra overlap, corrupting original frequency content (Aliasing).</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ $$F(u) = F_s(u) \cdot C(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-09.png" alt="Signal Reconstruction via Boxcar Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-09.png" alt="Signal Reconstruction via Boxcar Filter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Isolating the central spectrum via boxcar filter $C(u)$ and computing IFT to recover continuous signal $f(x)$</em></figcaption>
   </div>
 </figure>
@@ -171,7 +171,7 @@ Real-world optical scenes contain sharp boundaries and fine textures with infini
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-10.png" alt="Natural Scene Spectrum and Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-10.png" alt="Natural Scene Spectrum and Aliasing" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Natural scene power spectrum and Moiré pattern artifacts caused by frequencies exceeding sensor Nyquist limit</em></figcaption>
   </div>
 </figure>
@@ -182,7 +182,7 @@ Digital camera systems employ two hardware strategies to prevent aliasing:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-11.png" alt="Anti-Aliasing Strategies in Camera Sensors" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/sampling-theory-and-aliasing-11.png" alt="Anti-Aliasing Strategies in Camera Sensors" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Two sensor anti-aliasing strategies: Area-integrating pixel photodiode cells (left) and Optical Low-Pass Filter / OLPF (right)</em></figcaption>
   </div>
 </figure>

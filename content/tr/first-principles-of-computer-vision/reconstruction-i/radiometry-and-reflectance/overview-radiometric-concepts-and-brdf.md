@@ -8,7 +8,7 @@ Bilgisayarlı görünün en temel fiziksel sorularından biri şudur: **Görünt
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-01.png" alt="Bilgisayarlı görü görüntü alma kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-01.png" alt="Bilgisayarlı görü görüntü alma kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Bilgisayarlı görü görüntü alma kurulumu: Aydınlatma sahneyi aydınlatır, yansıyan ışık kameraya ulaşarak Görsel Sistemi besler.</em></figcaption>
   </div>
 </figure>
@@ -21,7 +21,7 @@ Bir pikselin parlaklık değerini belirleyen ve süreci karmaşıklaştıran ü�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-02.png" alt="Piksel parlaklığını belirleyen temel fiziksel faktörler" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-02.png" alt="Piksel parlaklığını belirleyen temel fiziksel faktörler" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Piksel parlaklığını belirleyen temel fiziksel faktörler: Aydınlatma, yüzey normali n ve gözlemci konumu.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ $$d\theta = \frac{dl}{r}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-03.png" alt="2 boyutlu açı radyan tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-03.png" alt="2 boyutlu açı radyan tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: 2 boyutlu açının (radyan) daire üzerindeki geometrik tanımı.</em></figcaption>
   </div>
 </figure>
@@ -79,7 +79,7 @@ $$d\omega = \frac{dA'}{r^2} = \frac{dA \cos\theta}{r^2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-04.png" alt="3 boyutlu uzay açı ve izdüşüm alanı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-04.png" alt="3 boyutlu uzay açı ve izdüşüm alanı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: 3 boyutlu uzay açının ($d\omega$) ve izdüşüm alanının ($dA'$) konik uzay geometrisi.</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$\Phi = \frac{dQ}{dt}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-05.png" alt="Noktasal kaynaktan yayılan radiant flux" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-05.png" alt="Noktasal kaynaktan yayılan radiant flux" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Noktasal $J$ kaynağından $d\omega$ uzay açısı boyunca yayılan radiant flux $d\Phi$.</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$L = \frac{d^2\Phi}{d\omega \cdot \cos\theta_r \, dA}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-06.png" alt="Yüzey parlaklığı surface radiance tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-06.png" alt="Yüzey parlaklığı surface radiance tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Yüzey parlaklığının ($L$) birim izdüşüm alanı ve birim uzay açı başına tanımı.</em></figcaption>
   </div>
 </figure>
@@ -147,7 +147,7 @@ Bilgisayarlı görünün en temel fiziksel ilişkilerinden biri, sahnedeki bir n
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-07.png" alt="Scene radiance ve image irradiance optik geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-07.png" alt="Scene radiance ve image irradiance optik geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Tek mercekli kamera modelinde görüntü pikselleri ve sahne yamalarının uzay açı ilişkisi.</em></figcaption>
   </div>
 </figure>
@@ -177,7 +177,7 @@ $$d\omega_l = \frac{\frac{\pi d^2}{4} \cos\alpha}{(z / \cos\alpha)^2} = \frac{\p
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-08.png" alt="Mercek çapının kapladığı uzay açı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-08.png" alt="Mercek çapının kapladığı uzay açı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Sahne noktasından bakıldığında mercek çapı d'nin kapladığı uzay açı dωL.</em></figcaption>
   </div>
 </figure>
@@ -219,14 +219,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-09.png" alt="Görüntü parlaklığının derinlikten bağımsızlığı" style="display:flex; border-radius: 5px; justify-content: center; width: 280px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-09.png" alt="Görüntü parlaklığının derinlikten bağımsızlığı" style="display:flex; border-radius: 5px; justify-content: center; width: 280px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Görüntü parlaklığının derinlikten bağımsızlığı: Mesafe arttıkça görülen alan z^2 ile genişler, mercek uzay açısı 1/z^2 ile küçülür.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-10.png" alt="Uçtan uca radyometrik zincir özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-10.png" alt="Uçtan uca radyometrik zincir özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: Uçtan uca radyometrik akış: Işık Kaynağı → Surface Irradiance → Scene Radiance L → Kamera → Image Irradiance E.</em></figcaption>
   </div>
 </figure>
@@ -239,7 +239,7 @@ Yüzeylerin üzerlerine düşen ışığı yansıtma kapasitesi, malzemenin atom
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-11.png" alt="BRDF 4 boyutlu açısal geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-11.png" alt="BRDF 4 boyutlu açısal geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: BRDF fonksiyonunun küresel zenith (θ) ve azimuth (φ) açıları cinsinden 4 boyutlu geometrisi.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ BRDF fonksiyonu üç kritik fiziksel kısıta uyar:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-12.png" alt="İzotropik ve Anizotropik BRDF karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-12.png" alt="İzotropik ve Anizotropik BRDF karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: İzotropik BRDF (sol) ile anizotropik BRDF (sağ) yüzey yansımalarının görsel karşılaştırması.</em></figcaption>
   </div>
 </figure>

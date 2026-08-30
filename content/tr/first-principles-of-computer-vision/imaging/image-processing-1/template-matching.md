@@ -42,7 +42,7 @@ $$E[i,j] = \sum_{m}\sum_{n} f^2[m,n] + \sum_{m}\sum_{n} T^2[m-i, n-j] - 2 \sum_{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/template-matching-01.png" alt="Şablon Eşleme ve SSD Hata Metriği Açılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/template-matching-01.png" alt="Şablon Eşleme ve SSD Hata Metriği Açılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İskambil kartında şablon arama ve SSD denkleminin çapraz korelasyon terimine açılımı</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$R_C > R_B > R_A$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/template-matching-02.png" alt="Çapraz Korelasyon Parlaklık Duyarlılığı Hatalı Eşleşmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/template-matching-02.png" alt="Çapraz Korelasyon Parlaklık Duyarlılığı Hatalı Eşleşmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Doğrudan çapraz korelasyonda parlak C bölgesinin hatalı bir şekilde en yüksek skoru üretmesi</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ $$R_{\text{NCC}}[i,j] = \frac{\sum_{m} \sum_{n} f[m,n] \cdot T[m-i, n-j]}{\sqrt{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/template-matching-03.png" alt="Normalize Çapraz Korelasyon Formülü ve Papaz Yüzü Eşleşmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/template-matching-03.png" alt="Normalize Çapraz Korelasyon Formülü ve Papaz Yüzü Eşleşmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>NCC formülü ile enerji normalizasyonu ve maça papazı yüzünün doğru haritalanması</em></figcaption>
   </div>
 </figure>

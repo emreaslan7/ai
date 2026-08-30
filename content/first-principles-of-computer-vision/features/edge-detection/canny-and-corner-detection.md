@@ -82,7 +82,7 @@ The standard deviation $\sigma$ of the Gaussian filter acts as a scale-space par
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-01.png" alt="Canny Edge Detection at Different Gaussian Scale Values" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-01.png" alt="Canny Edge Detection at Different Gaussian Scale Values" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Canny edge detection on Lena image across scale parameters σ = 1, σ = 2, and σ = 4 showing structural scale selection.</em></figcaption>
   </div>
 </figure>
@@ -101,7 +101,7 @@ Corners are exceptionally valuable features for camera calibration, 3D reconstru
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-02.png" alt="Ewald Hering Illusion Parallel Lines Intersecting Rays" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-02.png" alt="Ewald Hering Illusion Parallel Lines Intersecting Rays" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ewald Hering illusion (1861): human visual perception of straight parallel lines is distorted by intersecting orientation background rays.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ Local image patches are classified into three fundamental geometric categories b
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-03.png" alt="Categorization of Image Regions: Flat, Edge, Corner" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-03.png" alt="Categorization of Image Regions: Flat, Edge, Corner" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Basic image patch categories: Flat Region (homogeneous intensity), Edge Region (1D gradient), Corner Region (2D gradient).</em></figcaption>
   </div>
 </figure>
@@ -139,7 +139,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-04.png" alt="Image Regions Decomposed into Partial Derivatives Ix and Iy" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-04.png" alt="Image Regions Decomposed into Partial Derivatives Ix and Iy" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Decomposition of Flat, Edge, and Corner regions into intensity I and partial gradient maps Ix = ∂I/∂x and Iy = ∂I/∂y.</em></figcaption>
   </div>
 </figure>
@@ -178,7 +178,7 @@ The Second Moment Matrix $M$ summarizes the local gradient distribution inside t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-05.png" alt="Scatter Plots of Gradient Distributions Ix vs Iy" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-05.png" alt="Scatter Plots of Gradient Distributions Ix vs Iy" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Scatter plots of (Ix, Iy) gradient distributions: Flat region (cluster at origin), Edge region (line distribution along normal), Corner region (broad multidirectional distribution).</em></figcaption>
   </div>
 </figure>
@@ -189,7 +189,7 @@ Let $\lambda_1$ and $\lambda_2$ be the two eigenvalues of matrix $M$. These eige
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-06.png" alt="Covariance Ellipses and Eigenvalues Lambda 1 and Lambda 2" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-06.png" alt="Covariance Ellipses and Eigenvalues Lambda 1 and Lambda 2" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Covariance ellipses formed by eigenvalues λ1 and λ2 representing semi-major and semi-minor axes for Flat, Edge, and Corner patches.</em></figcaption>
   </div>
 </figure>
@@ -199,7 +199,7 @@ Let $\lambda_1$ and $\lambda_2$ be the two eigenvalues of matrix $M$. These eige
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-07.png" alt="Moments of Inertia Interpretation of Eigenvalues" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-07.png" alt="Moments of Inertia Interpretation of Eigenvalues" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Physical moment of inertia interpretation: λ1 = Emax (semi-major axis) and λ2 = Emin (semi-minor axis).</em></figcaption>
   </div>
 </figure>
@@ -208,7 +208,7 @@ Let $\lambda_1$ and $\lambda_2$ be the two eigenvalues of matrix $M$. These eige
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-08.png" alt="Eigenvalues Region Classification Summary" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-08.png" alt="Eigenvalues Region Classification Summary" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Region classification summary: Flat (λ1 ~ λ2 small), Edge (λ1 >> λ2), Corner (λ1 ~ λ2 both large).</em></figcaption>
   </div>
 </figure>
@@ -237,7 +237,7 @@ Where $k$ is an empirical tunable constant, typically set within $0.04 \le k \le
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-09.png" alt="Harris Corner Response Feature Space Partitioning" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-09.png" alt="Harris Corner Response Feature Space Partitioning" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Partitioning of the (λ1, λ2) feature space using Harris response function R = det(M) - k(trace(M))² for threshold R > T.</em></figcaption>
   </div>
 </figure>
@@ -277,14 +277,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-10.png" alt="Harris Corner Detection on BBC Logo" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-10.png" alt="Harris Corner Detection on BBC Logo" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Harris corner response map R and thresholded corner points R > T on the BBC logo image.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-11.png" alt="Harris Corner Detection Pipeline on Circuit Board Image" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/canny-and-corner-detection-11.png" alt="Harris Corner Detection Pipeline on Circuit Board Image" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Complete Harris corner detection pipeline on a microcircuit image: raw image, response map R, thresholding (R > 5.1×10⁷), and final detected corners.</em></figcaption>
   </div>
 </figure>

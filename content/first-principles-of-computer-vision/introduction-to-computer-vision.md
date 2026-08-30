@@ -7,7 +7,7 @@
 Computer vision is not merely a subset of artificial intelligence; it is a profound multidisciplinary engineering and scientific enterprise. It bridges the physical world and symbolic understanding, drawing upon optics, signal processing, electrical engineering, and computer science.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/first-principles-of-computer-vision/introduction-to-computer-vision-01.png" style="display:flex; justify-content: center; width: 600px;"alt="Vision pipeline: light source, scene, camera, and Vision Software generating scene description"/>
+    <img src="../img/first-principles-of-computer-vision/introduction-to-computer-vision-01.png" style="display:flex; justify-content: center; width: 600px;"alt="Vision pipeline: light source, scene, camera, and Vision Software generating scene description"/>
 </div>
 <p style="text-align: center; font-size: 14px; color: #888; margin-top: -10px;"><i>Vision pipeline: light source → scene → camera → Vision Software produces a scene description</i></p>
 
@@ -15,11 +15,11 @@ The fundamental challenge lies in transforming raw numerical arrays—pixel data
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 10px; gap: 20px; flex-wrap: wrap;">
     <div style="text-align: center;">
-        <img src="../../../img/first-principles-of-computer-vision/introduction-to-computer-vision-02.png" style="width: 300px;"alt="Black-and-white photo of two children showering — raw visual input"/>
+        <img src="../img/first-principles-of-computer-vision/introduction-to-computer-vision-02.png" style="width: 300px;"alt="Black-and-white photo of two children showering — raw visual input"/>
         <p style="font-size: 13px; color: #888; margin-top: 4px;"><i>Raw visual input: two children showering</i></p>
     </div>
     <div style="text-align: center;">
-        <img src="../../../img/first-principles-of-computer-vision/introduction-to-computer-vision-03.png" style="width: 320px;"alt="Numerical pixel matrix representation of the same photo"/>
+        <img src="../img/first-principles-of-computer-vision/introduction-to-computer-vision-03.png" style="width: 320px;"alt="Numerical pixel matrix representation of the same photo"/>
         <p style="font-size: 13px; color: #888; margin-top: 4px;"><i>Same scene as a numerical pixel matrix</i></p>
     </div>
 </div>
@@ -70,7 +70,7 @@ flowchart LR
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/first-principles-of-computer-vision/introduction-to-computer-vision-04.png" style="display:flex; justify-content: center; width: 100%; max-width: 900px;"alt="Detailed brain anatomy: eye signals through LGN to visual cortex (V1, V2, MT/V5, V8)"/>
+    <img src="../img/first-principles-of-computer-vision/introduction-to-computer-vision-04.png" style="display:flex; justify-content: center; width: 100%; max-width: 900px;"alt="Detailed brain anatomy: eye signals through LGN to visual cortex (V1, V2, MT/V5, V8)"/>
 </div>
 <p style="text-align: center; font-size: 14px; color: #888; margin-top: -10px;"><i>Biological vision pathway: retina → LGN → visual cortex (V1, V2, MT/V5, V8)</i></p>
 
@@ -87,7 +87,7 @@ Human vision is more fallible than it appears, often relying on internal assumpt
 **Example — Dongary Wave Illusion:** The static leaf pattern below appears to shimmer or move due to involuntary micro-saccades of the eye.
 
 <div style="text-align: center;margin-bottom: 20px;">
-    <img src="../../../img/first-principles-of-computer-vision/introduction-to-computer-vision-05.png" style="width: 400px;"alt="Leaf illusion — static leaves appearing to move due to involuntary eye movements"/>
+    <img src="../img/first-principles-of-computer-vision/introduction-to-computer-vision-05.png" style="width: 400px;"alt="Leaf illusion — static leaves appearing to move due to involuntary eye movements"/>
     <p style="font-size: 13px; color: #888; margin-top: 4px;"><i>Static leaf pattern that produces a perception of motion — the Dongary Wave illusion</i></p>
 </div>
 

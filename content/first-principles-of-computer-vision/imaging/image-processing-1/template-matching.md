@@ -42,7 +42,7 @@ $$E[i,j] = \sum_{m}\sum_{n} f^2[m,n] + \sum_{m}\sum_{n} T^2[m-i, n-j] - 2 \sum_{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/template-matching-01.png" alt="Template Matching and SSD Error Expansion" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/template-matching-01.png" alt="Template Matching and SSD Error Expansion" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Template matching on playing card and expansion of SSD equation into Cross-Correlation term</em></figcaption>
   </div>
 </figure>
@@ -130,7 +130,7 @@ $$R_C > R_B > R_A$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/template-matching-02.png" alt="Unnormalized Cross-Correlation Failure on Bright Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/template-matching-02.png" alt="Unnormalized Cross-Correlation Failure on Bright Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>False positive produced by unnormalized cross-correlation ranking bright Region C above true match Region A</em></figcaption>
   </div>
 </figure>
@@ -147,7 +147,7 @@ $$R_{\text{NCC}}[i,j] = \frac{\sum_{m} \sum_{n} f[m,n] \cdot T[m-i, n-j]}{\sqrt{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/template-matching-03.png" alt="Normalized Cross-Correlation Formula and King Face Match Heatmap" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/template-matching-03.png" alt="Normalized Cross-Correlation Formula and King Face Match Heatmap" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Energy normalization via NCC formula and spatial response peak pinpointing King face location</em></figcaption>
   </div>
 </figure>

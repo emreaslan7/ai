@@ -52,7 +52,7 @@ Where:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-01.png" alt="Singular Value Decomposition (SVD) Factorization" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-01.png" alt="Singular Value Decomposition (SVD) Factorization" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Singular Value Decomposition (SVD): $A = U \Sigma V^T$ factorization with diagonal singular values matrix $\Sigma$.</em></figcaption>
   </div>
 </figure>
@@ -97,7 +97,7 @@ Due to substantial correlation (visual redundancy) across neighboring turntable 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-02.png" alt="Eigenvectors and Decaying Eigenvalues" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-02.png" alt="Eigenvectors and Decaying Eigenvalues" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Appearance eigenspace: 1) Mean image and sequential eigenvectors (1st, 2nd, 3rd, 10th, 20th, 40th, 50th); 2) Steeply decaying eigenvalue curve $\lambda_k$.</em></figcaption>
   </div>
 </figure>
@@ -108,7 +108,7 @@ $$\text{Find smallest } K \text{ such that:} \quad \frac{\sum_{i=1}^{K} \lambda_
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-03.png" alt="Energy Conservation Criterion for K Selection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-03.png" alt="Energy Conservation Criterion for K Selection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Energy Conservation Criterion: Identifying the smallest $K$ retaining $\ge 95\%$ of cumulative variance.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$\boldsymbol{\omega} = \begin{bmatrix} \omega_1 \\ \omega_2 \\ \vdots \\ \omega
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-04.png" alt="Visual Appearance Function and Extrinsic Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-04.png" alt="Visual Appearance Function and Extrinsic Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Visual Appearance Function: Intrinsic properties (shape, BRDF) and extrinsic parameter vector $\boldsymbol{\omega}$ (pose, lighting).</em></figcaption>
   </div>
 </figure>
@@ -136,7 +136,7 @@ This transforms an entire 40,000-pixel image into a single coordinate point $\ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-05.png" alt="Eigenspace Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-05.png" alt="Eigenspace Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Eigenspace Projection: High-dimensional image vectors mapped to discrete points $\mathbf{p}(\boldsymbol{\omega})$ in low-dimensional eigenspace.</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ Because sample images are recorded at discrete intervals (e.g., every $5^\circ$ 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-07.png" alt="Continuous Appearance Manifolds" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-07.png" alt="Continuous Appearance Manifolds" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Continuous Appearance Manifolds: Closed 3D manifold surfaces parameterized by pose angle $\theta_1$ and lighting direction $\theta_2$ for different objects (duck, bird, hen, dog).</em></figcaption>
   </div>
 </figure>
@@ -207,7 +207,7 @@ If $d^{(r)} \le T$, identity is classified as $r$. The optimal continuous parame
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-08.png" alt="Columbia COIL-100 Database and Real-Time Recognition" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-08.png" alt="Columbia COIL-100 Database and Real-Time Recognition" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Columbia COIL-100 Database: Real-time recognition and continuous pose estimation (Pose = 334°) of a toy car among 100 objects.</em></figcaption>
   </div>
 </figure>
@@ -220,7 +220,7 @@ $$d^2 = \|\mathbf{p}_1 - \mathbf{p}_2\|^2 = \left\| \sum_{k=1}^{K} p_k^{(1)} \ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-06.png" alt="Equivalence of Eigenspace Distance and SSD" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-06.png" alt="Equivalence of Eigenspace Distance and SSD" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Distance preservation: Squared $L_2$ distance in $K$-D eigenspace ($d^2 = \|\mathbf{p}_1 - \mathbf{p}_2\|^2$) closely approximates pixel-level SSD.</em></figcaption>
   </div>
 </figure>
@@ -242,7 +242,7 @@ $$\text{Face Image} \approx \mathbf{c} + w_1 \mathbf{e}_1 + w_2 \mathbf{e}_2 + \
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-10.png" alt="Eigenfaces Architecture for Face Recognition" style="display:flex; border-radius: 5px; justify-content: center; width: 780px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-10.png" alt="Eigenfaces Architecture for Face Recognition" style="display:flex; border-radius: 5px; justify-content: center; width: 780px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Eigenfaces (Turk & Pentland, 1991): Training faces, derived eigenfaces, and projecting a test face into subspace coordinates for recognition.</em></figcaption>
   </div>
 </figure>
@@ -255,7 +255,7 @@ In automated manufacturing (e.g., *peg-in-hole* insertion), a camera mounted on 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-09.png" alt="Visual Servoing and Robot Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
+    <img src="../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-09.png" alt="Visual Servoing and Robot Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Visual Servoing: Sensor and light mounted on robot gripper for closed-loop visual positioning and trajectory tracking.</em></figcaption>
   </div>
 </figure>

@@ -51,7 +51,7 @@ Konseptin Batı'da, özellikle sanatçılar arasında yaygınlaşması 16. yüzy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-01.png" alt="18. Yüzyıl Aynalı/Mercekli Box Camera Obscura" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-01.png" alt="18. Yüzyıl Aynalı/Mercekli Box Camera Obscura" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>18. Yüzyıl Aynalı/Mercekli Box Camera Obscura: Merceğin oluşturduğu görüntüyü 45 derecelik bir ayna ile yatay buzlu cama katlayarak ressamların çizimini kolaylaştıran optomekanik kutu tasarımı.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ Görüntülemedeki en köklü kültürel sıçrama 1830'larda Louis Daguerre'in 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-02.png" alt="Louis Daguerre - Still Life (1837)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-02.png" alt="Louis Daguerre - Still Life (1837)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Louis Daguerre - Still Life (1837): Daguerreotype kamera ile çekilen ve insanlık tarihinin ilk kalıcı kimyasal film görüntülerinden biri olan alçı büst ve obje natürmortu.</em></figcaption>
   </div>
 </figure>
@@ -80,7 +80,7 @@ Tüm görünür spektrumu yakalamak daha karmaşık bir emülsiyon kimyası gere
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-03.png" alt="Louis Ducos du Hauron - Angoulême Manzarası (1877/1887)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-03.png" alt="Louis Ducos du Hauron - Angoulême Manzarası (1877/1887)" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Louis Ducos du Hauron - Angoulême Manzarası (1877/1887): Üç renkli (kırmızı, yeşil, mavi) emülsiyon ve boya bağlayıcı katmanlarla çekilen ilk renkli manzara fotoğrafı.</em></figcaption>
   </div>
 </figure>
@@ -89,7 +89,7 @@ Tüm görünür spektrumu yakalamak daha karmaşık bir emülsiyon kimyası gere
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-04.png" alt="Ernemann Katlanabilir Plaka Film Kamerası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-04.png" alt="Ernemann Katlanabilir Plaka Film Kamerası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ernemann Katlanabilir Plaka Film Kamerası: 1920'lerde mass-market tüketici fotoğrafçılığını başlatan ve "Gördüğünü fotoğraflayabilirsin" reklamıyla sunulan ikonik cihaz.</em></figcaption>
   </div>
 </figure>
@@ -110,7 +110,7 @@ Kimyasal film görsel kültürü devrimcileştirmiş olsa da, tek kullanımlık 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-05.png" alt="Apple iPhone 1 (2007) Arka Gövde Görseli" style="display:flex; border-radius: 5px; justify-content: center; width: 200px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-05.png" alt="Apple iPhone 1 (2007) Arka Gövde Görseli" style="display:flex; border-radius: 5px; justify-content: center; width: 200px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Apple iPhone 1 (2007) Arka Gövde Görseli: Tüketici elektroniğinde kamera minyatürleşmesinin miladı sayılan ve bilgisayarlı görünün gelişimini tetikleyen ilk iPhone tasarımı.</em></figcaption>
   </div>
 </figure>
@@ -159,7 +159,7 @@ Dijital görüntü algılamanın temel mekanizması, kristal silisyumun ($\text{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-06.png" alt="Silisyum Foto-Konversiyon Fiziği Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-06.png" alt="Silisyum Foto-Konversiyon Fiziği Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Silisyum Foto-Konversiyon Fiziği Şeması: Gelen fotonun silikon atomuna çarparak valans elektronunu iletim bandına uyarmasını ve elektron-delik çifti (electron-hole pair) oluşturmasını gösteren şema.</em></figcaption>
   </div>
 </figure>
@@ -231,7 +231,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-07.png" alt="CCD Satır Kaydırma Bucket Brigade Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-07.png" alt="CCD Satır Kaydırma Bucket Brigade Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>CCD Satır Kaydırma "Bucket Brigade" Şeması: Potansiyel kuyulardaki elektron paketlerinin elektrot elektrik alanları yardımıyla satır satır aşağı, ardından yatay olarak köşedeki amplifikatöre aktarım şeması.</em></figcaption>
   </div>
 </figure>
@@ -269,7 +269,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-08.png" alt="CMOS Aktif Piksel Okuma Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-08.png" alt="CMOS Aktif Piksel Okuma Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>CMOS Aktif Piksel Okuma Şeması: Her pikselin yanında kendi elektron-voltaj dönüştürücü devresinin bulunduğu ve veri yolu (bus lines) ile adrese dayalı doğrudan piksel okuma tasarımı.</em></figcaption>
   </div>
 </figure>
@@ -305,7 +305,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-09.png" alt="Mikromercek ve Filtre Dizilimi 3D Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-09.png" alt="Mikromercek ve Filtre Dizilimi 3D Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Mikromercek ve Filtre Dizilimi 3D Modeli: Silikon taban üzerindeki fotodiyotların üzerine yerleştirilen Bayer filtre mozaiği ve en üstteki organik ışık toplama mikromerceklerinin (microlenses) 3D kesiti.</em></figcaption>
   </div>
 </figure>
@@ -317,7 +317,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-10.png" alt="Görüntü Sensörü SEM Enine Kesit Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-history-and-sensor-types-10.png" alt="Görüntü Sensörü SEM Enine Kesit Görüntüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görüntü Sensörü SEM Enine Kesit Görüntüsü: Taramalı Elektron Mikroskobu (SEM) ile çekilen; mikromercek, renk filtresi, metal yollar ve silikon tabakanın toplam 9.6 mikrometre kalınlığını gösteren gerçek nanoyapı görüntüsü.</em></figcaption>
   </div>
 </figure>

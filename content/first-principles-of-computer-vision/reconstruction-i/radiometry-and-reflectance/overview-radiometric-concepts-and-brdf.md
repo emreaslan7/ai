@@ -8,7 +8,7 @@ One of the most fundamental physical questions in computer vision is: **What doe
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-01.png" alt="Computer vision image formation pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-01.png" alt="Computer vision image formation pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Computer vision image acquisition pipeline: Illumination illuminates the scene, reflected light enters the camera, feeding the Vision System.</em></figcaption>
   </div>
 </figure>
@@ -21,7 +21,7 @@ Three main physical factors determine the intensity value of a pixel and make th
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-02.png" alt="Key factors determining pixel intensity" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-02.png" alt="Key factors determining pixel intensity" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Key physical factors determining pixel brightness: Illumination, surface normal n, and observer position.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ $$d\theta = \frac{dl}{r}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-03.png" alt="2D angle definition in radians" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-03.png" alt="2D angle definition in radians" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Geometric definition of a 2D angle (in radians) on a circle.</em></figcaption>
   </div>
 </figure>
@@ -79,7 +79,7 @@ $$d\omega = \frac{dA'}{r^2} = \frac{dA \cos\theta}{r^2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-04.png" alt="3D solid angle and foreshortened area" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-04.png" alt="3D solid angle and foreshortened area" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Conical spatial geometry of 3D solid angle (dω) and foreshortened area (dA').</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$\Phi = \frac{dQ}{dt}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-05.png" alt="Radiant flux emitted from point source" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-05.png" alt="Radiant flux emitted from point source" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Radiant flux dΦ emitted from point light source J through solid angle dω.</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$L = \frac{d^2\Phi}{d\omega \cdot \cos\theta_r \, dA}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-06.png" alt="Surface radiance definition" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-06.png" alt="Surface radiance definition" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Definition of surface radiance (L) per unit foreshortened area and per unit solid angle.</em></figcaption>
   </div>
 </figure>
@@ -147,7 +147,7 @@ One of the fundamental physical formulations in computer vision links the scene 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-07.png" alt="Scene radiance and image irradiance optics geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-07.png" alt="Scene radiance and image irradiance optics geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Solid angle relationship between image pixels and scene surface patches in a thin-lens camera model.</em></figcaption>
   </div>
 </figure>
@@ -177,7 +177,7 @@ $$d\omega_l = \frac{\frac{\pi d^2}{4} \cos\alpha}{(z / \cos\alpha)^2} = \frac{\p
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-08.png" alt="Solid angle subtended by lens diameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-08.png" alt="Solid angle subtended by lens diameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Solid angle dωL subtended by lens diameter d as seen from a scene point.</em></figcaption>
   </div>
 </figure>
@@ -219,14 +219,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-09.png" alt="Depth independence of image irradiance" style="display:flex; border-radius: 5px; justify-content: center; width: 280px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-09.png" alt="Depth independence of image irradiance" style="display:flex; border-radius: 5px; justify-content: center; width: 280px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Depth independence of image irradiance: Increased distance enlarges viewed scene area as z^2 while lens solid angle shrinks as 1/z^2.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-10.png" alt="Complete radiometric pipeline summary" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-10.png" alt="Complete radiometric pipeline summary" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Complete radiometric pipeline flow: Light source → Surface Irradiance → Scene Radiance L → Camera → Image Irradiance E.</em></figcaption>
   </div>
 </figure>
@@ -239,7 +239,7 @@ The manner in which a surface reflects incoming light depends on atomic and stru
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-11.png" alt="BRDF 4D angular geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-11.png" alt="BRDF 4D angular geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: 4D geometry of the BRDF function specified by spherical zenith (θ) and azimuth (φ) angles.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ The BRDF function satisfies three key physical principles:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-12.png" alt="Comparison of isotropic vs anisotropic BRDF" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-radiometric-concepts-and-brdf-12.png" alt="Comparison of isotropic vs anisotropic BRDF" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Visual comparison of isotropic BRDF (left) and anisotropic BRDF (right) rendered spheres.</em></figcaption>
   </div>
 </figure>

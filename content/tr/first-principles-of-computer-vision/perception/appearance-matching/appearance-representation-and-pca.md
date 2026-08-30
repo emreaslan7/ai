@@ -34,7 +34,7 @@ Bu yaklaşımın temel amacı, yüksek boyutlu piksel uzayındaki (örneğin $20
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-05.png" alt="Giriş Görüntüsü ve Çoklu Nesne Görünüm Şablonları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-05.png" alt="Giriş Görüntüsü ve Çoklu Nesne Görünüm Şablonları" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Görünüm Tabanlı Tanıma Problemi: Bilinmeyen bir giriş görüntüsü (Input Image) ve veritabanında farklı nesnelere ait çoklu açı/ışık şablonları (Object Image Sets).</em></figcaption>
   </div>
 </figure>
@@ -57,7 +57,7 @@ Burada $r, s, t$ parametreleri gerçel sayılardır. Bu üslerin değiştirilmes
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-01.png" alt="Voxel ve Analitik Süperkuadrik Temsilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-01.png" alt="Voxel ve Analitik Süperkuadrik Temsilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Explicit 3B Geometrik Modeller: Sol: Voxel temsili (ejderha modeli); Sağ: Analitik süperkuadrik ailesi ($|x|^r + |y|^s + |z|^t = 1$).</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ Burada $r, s, t$ parametreleri gerçel sayılardır. Bu üslerin değiştirilmes
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-02.png" alt="Yapıcı Katı Geometrisi Boole Operasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-02.png" alt="Yapıcı Katı Geometrisi Boole Operasyonları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Constructive Solid Geometry (CSG) Operasyonları: Bir küp ve küre arasındaki Birleşim (Union), Fark (Difference) ve Kesişim (Intersection) işlemleri.</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ Makinelere nesne görünümünü öğretme felsefesi, insan görsel sisteminin d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-03.png" alt="İnsan Görsel Algısında Nesne Görünümünün İncelenmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-03.png" alt="İnsan Görsel Algısında Nesne Görünümünün İncelenmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: İnsan Algısının Taklidi: Nesnenin elde farklı yönelimlerde ve açılarda döndürülerek incelenmesi.</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ Bu süreci sistematik ve otomatik hale getirmek için kontrollü bir laboratuvar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-04.png" alt="Döner Tabla ve Robotik Işık Kaynağı Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-04.png" alt="Döner Tabla ve Robotik Işık Kaynağı Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Görünüm Veri Toplama Düzeneği: Döner tabla (Pose $\omega_1$), robot kola bağlı ışık kaynağı (Lighting $\omega_2$) ve sabit kamera.</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ Bu normalizasyon sayesinde tüm görüntü vektörleri yüksek boyutlu uzayda bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-08.png" alt="2B Görüntünün 1B Vektöre Dönüştürülmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-08.png" alt="2B Görüntünün 1B Vektöre Dönüştürülmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Görüntü Vektörizasyonu: $P \times Q = N$ boyutlu 2B görüntünün $N \times 1$ boyutlu tekil bir $\mathbf{f}'$ özellik vektörüne dönüştürülmesi.</em></figcaption>
   </div>
 </figure>
@@ -168,7 +168,7 @@ $$\mathbf{i}_1 = \begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}, \quad \mat
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-09.png" alt="N-Boyutlu Piksel Uzayında Görüntü Noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-09.png" alt="N-Boyutlu Piksel Uzayında Görüntü Noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: $N$-Boyutlu Piksel Uzayı: Standart ortonormal baz $\{\mathbf{i}_1, \dots, \mathbf{i}_N\}$ ve uzayda tek bir nokta olarak temsil edilen $\mathbf{f}'$ imaj vektörü.</em></figcaption>
   </div>
 </figure>
@@ -181,7 +181,7 @@ $$\text{SSD} = \sum_{p=1}^P \sum_{q=1}^Q \left( I_1[p,q] - I_2[p,q] \right)^2 \e
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-10.png" alt="SSD ile N-B Öklid Mesafesi Eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-10.png" alt="SSD ile N-B Öklid Mesafesi Eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: İki görüntü arasındaki piksel tabanlı SSD korelasyonunun, $N$-boyutlu uzaydaki Öklid mesafesi karesine ($d^2 = \|\mathbf{f}'_1 - \mathbf{f}'_2\|^2$) denkliği.</em></figcaption>
   </div>
 </figure>
@@ -192,7 +192,7 @@ Tipik bir $200 \times 200$ piksellik görüntü dahi $N = 40.000$ boyutlu akıl 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-07.png" alt="Tekil Nesne Şablon Eşleme Zorluğu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-07.png" alt="Tekil Nesne Şablon Eşleme Zorluğu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Yüksek Boyutlu Şablon Eşleme Zorluğu: Giriş görüntüsünün veritabanındaki her bir discrete şablonla tek tek $N$-boyutta karşılaştırılması sürdürülemez bir maliyet getirir.</em></figcaption>
   </div>
 </figure>
@@ -201,7 +201,7 @@ Ancak döner tablada sıralı olarak kaydedilen görüntüler incelendiğinde ç
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-06.png" alt="Açısal Görüntü Korelasyonu ve Redundancy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-06.png" alt="Açısal Görüntü Korelasyonu ve Redundancy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Görsel Korelasyon ve Fazlalık: Duruş açısı değiştikçe nesne piksellerinin ani sıçramalar yapmaması, veri noktalarının uzayda düşük boyutlu bir yapıda toplandığını gösterir.</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ Bu yüksek korelasyon; $40.000$ boyutlu uzaydaki veri noktalarının rastgele sa
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-11.png" alt="N-Boyutlu Uzayda K-Boyutlu Alt Uzay" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-11.png" alt="N-Boyutlu Uzayda K-Boyutlu Alt Uzay" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: $N$-Boyutlu uzayda $M$ adet görüntü noktasının kümelenmesi ve bu veriyi temsil eden $K$-boyutlu $\{\mathbf{e}_1, \dots, \mathbf{e}_K\}$ ortonormal alt uzayı ($K \ll N$).</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ Bu merkezleme işlemi sayesinde tüm varyasyon ve istatistiksel saçılım oriji
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-12.png" alt="1. Temel Bileşen ve İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-12.png" alt="1. Temel Bileşen ve İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Birinci Temel Bileşen $\mathbf{e}_1$: Maksimum varyans doğrultusu ve $\mathbf{f}$ imajının bu eksene tek bir skaler izdüşümü ($p = \mathbf{e}_1 \cdot \mathbf{f}$).</em></figcaption>
   </div>
 </figure>
@@ -310,7 +310,7 @@ $$\text{Var}(p) = \lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-13.png" alt="2. Temel Bileşen ve İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-13.png" alt="2. Temel Bileşen ve İzdüşüm" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: İkinci Temel Bileşen $\mathbf{e}_2$: $\mathbf{e}_1$'e dik doğrultuda maksimum varyans ve görüntünün 2B koordinat vektörü $\mathbf{p} = [p_1, p_2]^T$.</em></figcaption>
   </div>
 </figure>
@@ -321,7 +321,7 @@ $$E = \begin{bmatrix} \mathbf{e}_1 & \mathbf{e}_2 & \dots & \mathbf{e}_K \end{bm
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-14.png" alt="K-Boyutlu Temel Bileşen Projeksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-14.png" alt="K-Boyutlu Temel Bileşen Projeksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: $K$-Boyutlu Temel Bileşen Temsili: $N$-boyutlu devasa bir $\mathbf{f}$ imaj vektörünün $K \times 1$ boyutlu kompakt bir $\mathbf{p}$ koordinat vektörüne izdüşürülmesi.</em></figcaption>
   </div>
 </figure>
@@ -342,7 +342,7 @@ $$\mathbf{f}' \approx \mathbf{c} + \sum_{k=1}^K p_k \mathbf{e}_k$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-15.png" alt="İleri ve Geri Projeksiyon Matematiği" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-15.png" alt="İleri ve Geri Projeksiyon Matematiği" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: İleri (Forward) ve Geri (Back) Projeksiyon: Lineer alt uzayda kodlama ($\mathbf{p} = E^T \mathbf{f}$) ve geri çatma ($\mathbf{f} \approx \sum_{k=1}^K p_k \mathbf{e}_k$).</em></figcaption>
   </div>
 </figure>

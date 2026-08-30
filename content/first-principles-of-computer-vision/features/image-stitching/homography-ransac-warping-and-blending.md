@@ -10,7 +10,7 @@ When a camera rotates around its optical center to capture images from different
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-01.png" alt="Image Planes Captured from Shared Projection Center" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-01.png" alt="Image Planes Captured from Shared Projection Center" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Image planes (Π₁, Π₂, Π₃) captured by rotating around a pinhole and their homographic projections onto common reference plane (Πₚ).</em></figcaption>
   </div>
 </figure>
@@ -35,7 +35,7 @@ $$\begin{bmatrix} \tilde{x}_d \\ \tilde{y}_d \\ \tilde{z}_d \end{bmatrix} = \beg
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-02.png" alt="Homography Point Correspondence Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-02.png" alt="Homography Point Correspondence Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Homography mapping between corresponding point p⛶ in Source Image and p_d in Destination Image.</em></figcaption>
   </div>
 </figure>
@@ -64,7 +64,7 @@ where $h = [h_{11}, h_{12}, h_{13}, h_{21}, h_{22}, h_{23}, h_{31}, h_{32}, h_{3
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-03.png" alt="Matrix A Stacking and Constrained Least Squares Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-03.png" alt="Matrix A Stacking and Constrained Least Squares Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Stacking N point correspondences into 2N x 9 matrix A and constrained least-squares formulation ||h||² = 1.</em></figcaption>
   </div>
 </figure>
@@ -93,7 +93,7 @@ Feature detectors like SIFT identify matches based purely on local descriptor si
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-04.png" alt="Inliers vs Outliers in Feature Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-04.png" alt="Inliers vs Outliers in Feature Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Genuine point matches (Inliers - Green lines) versus false matches (Outliers - Red lines) across images.</em></figcaption>
   </div>
 </figure>
@@ -120,14 +120,14 @@ RANSAC execution steps for homography estimation:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-05.png" alt="Least Squares Fitting vs RANSAC First Iteration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-05.png" alt="Least Squares Fitting vs RANSAC First Iteration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Standard Least Squares fitting (severely biased by outliers, Inliers: 2) vs. RANSAC Iteration 1 (Inliers: 4).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-06.png" alt="RANSAC Winning Consensus Iteration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-06.png" alt="RANSAC Winning Consensus Iteration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: RANSAC Iteration i - Achieving maximum consensus (Inliers: 20) once the optimal model is sampled.</em></figcaption>
   </div>
 </figure>
@@ -142,7 +142,7 @@ After computing homography $H$, geometric warping and photometric blending opera
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-07.png" alt="Image Warping Fundamental Concept" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-07.png" alt="Image Warping Fundamental Concept" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Image Warping: Bending input image f(x,y) onto target plane g(x,y) via coordinate operator T(x,y).</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ In forward warping, transformation $H$ is applied to each pixel coordinate $(x_s
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-08.png" alt="Forward Warping and Grid Holes" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-08.png" alt="Forward Warping and Grid Holes" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Forward Warping: Source pixels map to non-integer destination grid locations, leaving unassigned black holes.</em></figcaption>
   </div>
 </figure>
@@ -173,21 +173,21 @@ To eliminate hole artifacts, backward warping is performed:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-09.png" alt="Backward Warping Scheme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-09.png" alt="Backward Warping Scheme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Backward Warping: Mapping from output pixel back to source image via H⁻¹ and sampling color via interpolation.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-10.png" alt="Multiple Image Bounding Box Calculation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-10.png" alt="Multiple Image Bounding Box Calculation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Computing output canvas bounding box by projecting image corners onto common reference plane.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-11.png" alt="Inverse Homography Fetching from Source Images" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-11.png" alt="Inverse Homography Fetching from Source Images" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Inverse Homographies (H₁₂, H₃₂) sampling pixel data from original source images into reference canvas.</em></figcaption>
   </div>
 </figure>
@@ -205,7 +205,7 @@ Even when images are aligned with geometric precision, directly overlaying them 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-12.png" alt="Direct Image Overlay Hard Seam Formation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-12.png" alt="Direct Image Overlay Hard Seam Formation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Direct overlay of images (Hard overlay / step-function weights w₁, w₂) producing sharp visible seams.</em></figcaption>
   </div>
 </figure>
@@ -224,7 +224,7 @@ $$I_{\text{blend}} = \frac{w_1 I_1 + w_2 I_2}{w_1 + w_2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-13.png" alt="Weighted Blending Linear Ramps" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-13.png" alt="Weighted Blending Linear Ramps" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Smooth ramp weight functions (w₁, w₂) and weighted blending equation formulation.</em></figcaption>
   </div>
 </figure>
@@ -238,21 +238,21 @@ Optimal blending weights are computed using the **Distance Transform** (e.g., MA
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-14.png" alt="Distance Transform Weighting Maps" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-14.png" alt="Distance Transform Weighting Maps" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Alpha weight maps (w₁, w₂, w₃) generated via Distance Transform for Images 1, 2, and 3.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-15.png" alt="Raw Overlay vs Distance Transform Blended Panorama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-15.png" alt="Raw Overlay vs Distance Transform Blended Panorama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: (Top) Raw overlay with visible exposure boundary steps vs. (Bottom) Distance transform blended seamless panorama.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-16.png" alt="Multi-Image Panoramic Mosaic Alignment" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-16.png" alt="Multi-Image Panoramic Mosaic Alignment" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Panoramic mosaic generated from 6 source images via pairwise homographies, backward warping, and distance blending.</em></figcaption>
   </div>
 </figure>

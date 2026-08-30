@@ -66,7 +66,7 @@ To establish correspondences across the entire video sequence:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-01.png" alt="Feature Point Detection and Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-01.png" alt="Feature Point Detection and Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Feature point detection (Harris/SIFT corners) and sequential tracking across video frames using optical flow.</em></figcaption>
   </div>
 </figure>
@@ -81,7 +81,7 @@ To convert the non-linear perspective projection into a tractable linear formula
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-02.png" alt="Orthographic Camera Projection Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-02.png" alt="Orthographic Camera Projection Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Orthographic projection of N 3D scene points ($P_p$) onto F video frames via parallel projection rays.</em></figcaption>
   </div>
 </figure>
@@ -107,7 +107,7 @@ Let the origin of the camera coordinate frame be located at the camera center $C
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-03.png" alt="Orthographic Projection in Camera Frame" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-03.png" alt="Orthographic Projection in Camera Frame" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Geometry of orthographic projection in the camera reference frame: scene point P, relative position vector $\mathbf{x}_c$, and projected pixel coordinates $(u, v)$.</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ Now consider a fixed world coordinate frame ($\mathcal{W}$) with an arbitrary or
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-04.png" alt="World Coordinate Frame Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-04.png" alt="World Coordinate Frame Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: World coordinate frame $\mathcal{W}$ with origin O, scene point $P = \mathbf{x}_w$, camera center $C = \mathbf{c}_w$, and relative displacement $\mathbf{x}_c = \mathbf{x}_w - \mathbf{c}_w$.</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ Here:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-05.png" alt="Multi-Frame SfM Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-05.png" alt="Multi-Frame SfM Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Multi-frame SfM formulation showing unknown camera positions $\{C_f\}$, unknown camera orientations $\{(\mathbf{i}_f, \mathbf{j}_f)\}$, and unknown 3D scene points $\{P_p\}$.</em></figcaption>
   </div>
 </figure>
@@ -164,7 +164,7 @@ Since the world coordinate origin can be placed anywhere without loss of general
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-06.png" alt="The Centering Trick and 3D Centroid" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-06.png" alt="The Centering Trick and 3D Centroid" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Placing the origin of the world coordinate system at the 3D centroid ($\bar{P}$) of all scene points.</em></figcaption>
   </div>
 </figure>
@@ -201,7 +201,7 @@ Collecting all centered coordinates across all $F$ frames and all $N$ points int
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-07.png" alt="Observation Matrix Factorization W = M * S" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-07.png" alt="Observation Matrix Factorization W = M * S" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Matrix equation $W_{2F \times N} = M_{2F \times 3} \cdot S_{3 \times N}$ relating Centroid-Subtracted Feature Points ($W$), Camera Motion ($M$), and Scene Structure ($S$).</em></figcaption>
   </div>
 </figure>
@@ -261,7 +261,7 @@ A set of vectors is **linearly independent** if no vector in the set can be writ
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-08.png" alt="Linear Independence Concept in 2D" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-08.png" alt="Linear Independence Concept in 2D" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: In 2D space, $\{\mathbf{i}, \mathbf{j}\}$ forms a linearly independent basis, whereas adding any third vector ($\mathbf{v}_1$) creates linear dependence.</em></figcaption>
   </div>
 </figure>
@@ -277,7 +277,7 @@ For an $m \times n$ matrix $A$:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-09.png" alt="Matrix Rank Bounds" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-09.png" alt="Matrix Rank Bounds" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Column rank always equals row rank, bounded by $\text{Rank}(A) \leq \min(m, n)$.</em></figcaption>
   </div>
 </figure>
@@ -299,7 +299,7 @@ All column vectors are collinear (scalar multiples of one another), spanning onl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-10.png" alt="Rank 1 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-10.png" alt="Rank 1 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: $\text{Rank}(A) = 1$: Columns are collinear, spanning a 1D line.</em></figcaption>
   </div>
 </figure>
@@ -309,7 +309,7 @@ Column vectors are coplanar, spanning a 2D plane:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-11.png" alt="Rank 2 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-11.png" alt="Rank 2 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: $\text{Rank}(A) = 2$: Columns lie on a common 2D plane.</em></figcaption>
   </div>
 </figure>
@@ -319,7 +319,7 @@ Column vectors span the entire 3D volume (full rank):
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-12.png" alt="Rank 3 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-12.png" alt="Rank 3 Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: $\text{Rank}(A) = 3$: Columns are linearly independent and span full 3D space.</em></figcaption>
   </div>
 </figure>
@@ -361,7 +361,7 @@ $$W = U \cdot \Sigma \cdot V^T$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-13.png" alt="SVD of the Observation Matrix" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-13.png" alt="SVD of the Observation Matrix" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: SVD decomposition of $W_{2F \times N}$ into orthonormal $U_{2F \times 2F}$, diagonal $\Sigma_{2F \times N}$, and orthonormal $V^T_{N \times N}$.</em></figcaption>
   </div>
 </figure>
@@ -381,7 +381,7 @@ In real-world data, tracking noise causes $\sigma_4, \sigma_5, \dots$ to be smal
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-14.png" alt="SVD Block Partitioning and Truncation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-14.png" alt="SVD Block Partitioning and Truncation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: SVD block partitioning showing the dominant rank-3 components ($U_1, \Sigma_1, V_1^T$) and discarded noise components ($U_2, V_2^T$).</em></figcaption>
   </div>
 </figure>
@@ -459,7 +459,7 @@ In their original 1992 experiments, Tomasi and Kanade validated the algorithm on
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-15.png" alt="Tomasi-Kanade Toy House Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-15.png" alt="Tomasi-Kanade Toy House Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: The classic Tomasi-Kanade experiment: Input image sequence of a toy house and the computed 3D point cloud structure.</em></figcaption>
   </div>
 </figure>
@@ -488,7 +488,7 @@ While basic factorization produces a sparse point cloud, triangulating tracked f
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-16.png" alt="Dense House Reconstruction with Texture Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-16.png" alt="Dense House Reconstruction with Texture Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Full architectural reconstruction: Input image sequence, tracked feature points, and textured 3D mesh surface.</em></figcaption>
   </div>
 </figure>
@@ -503,7 +503,7 @@ The Tomasi-Kanade framework inspired several modern paradigms:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/structure-from-motion-17.png" alt="High-Resolution 3D Surface Reconstruction" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/structure-from-motion-17.png" alt="High-Resolution 3D Surface Reconstruction" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Modern Structure from Motion application: High-resolution 3D surface model computed from handheld video of an archaeological stone relief (Medusa).</em></figcaption>
   </div>
 </figure>

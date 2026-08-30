@@ -18,7 +18,7 @@ Before establishing the general theory of segmentation, two classic, primitive a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-01.png" alt="Histogram Thresholding" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-01.png" alt="Histogram Thresholding" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Histogram Thresholding: 1) Grayscale image $g(x,y)$ and threshold $T$ identified from the histogram valley; 2) The resulting segmented binary image $b(x,y)$.</em></figcaption>
   </div>
 </figure>
@@ -27,7 +27,7 @@ Before establishing the general theory of segmentation, two classic, primitive a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-02.png" alt="Active Contours / Snakes" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-02.png" alt="Active Contours / Snakes" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Active Contours (Snakes): Elastic contour initialized around a coin snapping to the boundary via gradient forces.</em></figcaption>
   </div>
 </figure>
@@ -41,7 +41,7 @@ When attempting to perform general segmentation on natural scenes, we encounter 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-10.png" alt="Subjectivity in Human Image Segmentation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-10.png" alt="Subjectivity in Human Image Segmentation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Subjective nature of segmentation (Martin et al., 2001): Given the same input image, different human subjects (User 1, User 2, User 3) produce substantially different segmentation boundaries.</em></figcaption>
   </div>
 </figure>
@@ -74,7 +74,7 @@ The most influential psychological framework explaining how the human visual sys
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-03.png" alt="Gestalt Psychology - Holistic Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-03.png" alt="Gestalt Psychology - Holistic Perception" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Gestalt Psychology: "We perceive objects in their entirety before their individual parts."</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ Objects and elements that are spatially closer to one another are automatically 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-04.png" alt="Gestalt Proximity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-04.png" alt="Gestalt Proximity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Principle of Proximity: Closer objects are grouped together into clusters.</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ Visual elements that share similar appearance features (brightness, color, scale
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-05.png" alt="Gestalt Similarity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-05.png" alt="Gestalt Similarity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Principle of Similarity: Similar objects (in lightness, color, size, or orientation) are grouped together.</em></figcaption>
   </div>
 </figure>
@@ -111,7 +111,7 @@ Even if visual elements are spatially separated, elements that move in the same 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-06.png" alt="Gestalt Common Fate Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-06.png" alt="Gestalt Common Fate Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Principle of Common Fate: Objects with similar motion or synchronous change in appearance are grouped together.</em></figcaption>
   </div>
 </figure>
@@ -122,7 +122,7 @@ Elements enclosed within bounded regions (ellipses/boxes) or physically linked b
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-07.png" alt="Gestalt Connectedness and Common Region" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-07.png" alt="Gestalt Connectedness and Common Region" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Common Region & Connectedness: Connected or bounded objects are grouped together.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ Visual features lying on a smooth, continuous geometric curve are perceived as a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-08.png" alt="Gestalt Continuity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-08.png" alt="Gestalt Continuity Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Principle of Continuity: Features on a continuous curve ($A-X-B$) are grouped together and distinguished from branching paths ($C-X$).</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ Parallel and symmetrical structures (translation or reflection symmetry) produce
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-09.png" alt="Gestalt Symmetry Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-09.png" alt="Gestalt Symmetry Principle" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Principle of Symmetry: Parallel and symmetrical features are naturally grouped together.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ This vector maps each pixel as a discrete point in a high-dimensional **Euclidea
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-11.png" alt="Pixel Feature Space and Euclidean Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-11.png" alt="Pixel Feature Space and Euclidean Mapping" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Euclidean Feature Space: Pixels of the Mandrill image mapped to 3D RGB color distribution with feature vector $\mathbf{f} = [R, G, B, x, y, d, \dots]^T$.</em></figcaption>
   </div>
 </figure>
@@ -184,7 +184,7 @@ According to this metric: **the smaller the distance in feature space, the great
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-12.png" alt="Segmentation as Clustering" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-12.png" alt="Segmentation as Clustering" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Segmentation as Clustering: Clusters in RGB feature space mapped back to color-coded segmented image regions.</em></figcaption>
   </div>
 </figure>
@@ -222,14 +222,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-13.png" alt="k-Means Initialization Step" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-13.png" alt="k-Means Initialization Step" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: k-Means Step 1: Initial random generation of $k=3$ cluster centroids in feature space.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-14.png" alt="k-Means Iteration and Convergence" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-14.png" alt="k-Means Iteration and Convergence" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: k-Means Steps 2, 3, and 4: Voronoi partition assignment, centroid shifting, and iteration until convergence.</em></figcaption>
   </div>
 </figure>
@@ -248,7 +248,7 @@ The choice of $k$ dictates the granularity of segmentation:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-15.png" alt="k-Means Clustering Results for k=2 vs k=8" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-15.png" alt="k-Means Clustering Results for k=2 vs k=8" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Mandrill segmentation in $\{R,G,B\}$-space: Left: $k=2$ (binary quantization); Right: $k=8$ (rich multi-region detail).</em></figcaption>
   </div>
 </figure>
@@ -260,7 +260,7 @@ The choice of $k$ dictates the granularity of segmentation:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-16.png" alt="k-Means RGB vs RGB-XY Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-16.png" alt="k-Means RGB vs RGB-XY Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Peppers image ($k=16$): Left: $\{R,G,B\}$-space (disjoint regions merged); Right: $\{R,G,B,x,y\}$-space (spatially coherent, contiguous segments).</em></figcaption>
   </div>
 </figure>
@@ -287,7 +287,7 @@ The distribution of pixels in feature space is modeled as a smooth continuous **
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-17.png" alt="Mean-Shift Density Surface and Hill-Climbing" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-17.png" alt="Mean-Shift Density Surface and Hill-Climbing" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Mean-Shift Principle: Feature distribution converted into a continuous density surface; pixels ascend to local modes that define cluster centers.</em></figcaption>
   </div>
 </figure>
@@ -306,14 +306,14 @@ Given $N$ points and a circular/spherical analysis window of radius $W$ (**bandw
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-18.png" alt="Centroid Computation and Mean Shift Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-18.png" alt="Centroid Computation and Mean Shift Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Mean-Shift Window: Centroid calculation within window of size $W$ and shifting along the Mean Shift Vector.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-19.png" alt="Mode Convergence and Cluster Labeling" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-19.png" alt="Mode Convergence and Cluster Labeling" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 19: Mode Convergence: Pixels reaching the same mode are assigned to the identical cluster segment.</em></figcaption>
   </div>
 </figure>
@@ -324,14 +324,14 @@ Given $N$ points and a circular/spherical analysis window of radius $W$ (**bandw
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-20.png" alt="k-Means vs Mean-Shift on Complex Distributions" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-20.png" alt="k-Means vs Mean-Shift on Complex Distributions" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 20: Complex distribution comparison: Left: Original data with outliers; Middle: k-Means ($k=3$) failure; Right: Mean-Shift success in identifying true non-convex structures.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-21.png" alt="Peppers Image: k-Means vs Mean-Shift" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-21.png" alt="Peppers Image: k-Means vs Mean-Shift" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 21: Natural image comparison: k-Means ($k=16$) fractures the background into artificial Voronoi cells; Mean-Shift ($W=21$) preserves clean, holistic object boundaries.</em></figcaption>
   </div>
 </figure>
@@ -356,7 +356,7 @@ An image is represented as a weighted undirected graph $G = (V, E)$:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-22.png" alt="Images as Graphs" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-22.png" alt="Images as Graphs" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 22: Image as a Graph: Pixels as vertices $V$, edges $E$, and edge weights representing affinity $w(i,j)$.</em></figcaption>
   </div>
 </figure>
@@ -380,7 +380,7 @@ $$\text{cut}(V\_A, V\_B) = \sum\_{u \in V\_A, \, v \in V\_B} w(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-23.png" alt="Graph Cut and Cost of Cut" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-23.png" alt="Graph Cut and Cost of Cut" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 23: Graph Partitioning: Graph cut $C=(V_A, V_B)$ and cost calculation $\text{cut}(V_A, V_B) = \sum w(u,v)$.</em></figcaption>
   </div>
 </figure>
@@ -419,7 +419,7 @@ $$\text{NCut}(V\_A, V\_B) = \frac{\text{cut}(V\_A, V\_B)}{\text{assoc}(V\_A, V)}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-24.png" alt="Normalized Cut Results on Natural Images" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/image-segmentation-24.png" alt="Normalized Cut Results on Natural Images" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 24: Normalized Cut results (Shi & Malik, 2000): Spectral graph segmentation on natural portraits and complex scenes using $\{Brightness, Location\}$ features.</em></figcaption>
   </div>
 </figure>

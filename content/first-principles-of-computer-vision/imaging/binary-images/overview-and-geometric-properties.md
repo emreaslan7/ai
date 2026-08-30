@@ -43,7 +43,7 @@ The deepest point between these two peaks is called the **valley**. Selecting th
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-01.png" alt="Thresholding and Brightness Histogram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-01.png" alt="Thresholding and Brightness Histogram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Grayscale Image, Brightness Histogram, and Optimum Threshold (T) Selection</em></figcaption>
   </div>
 </figure>
@@ -59,7 +59,7 @@ However, under direct top-down illumination, shadows, specularities, surface tex
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-02.png" alt="Frontlighting vs Backlighting Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-02.png" alt="Frontlighting vs Backlighting Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Overhead Illumination (Frontlighting) vs. Backlighting Comparison</em></figcaption>
   </div>
 </figure>
@@ -104,7 +104,7 @@ $$\bar{y} = \frac{1}{A} \iint y \cdot b(x,y) \, dx \, dy$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-04.png" alt="Center of Area and Mass Analogy" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-04.png" alt="Center of Area and Mass Analogy" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Area (Zeroth Moment) and Center of Area (First Moment / Centroid) in Continuous Domain</em></figcaption>
   </div>
 </figure>
@@ -234,7 +234,7 @@ This ratio ranges in $$:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-03.png" alt="Geometric Features Across Shapes" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-03.png" alt="Geometric Features Across Shapes" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Binary Images, Orientation Axis, and Roundedness Values for Various Geometries</em></figcaption>
   </div>
 </figure>
@@ -255,7 +255,7 @@ In digital systems, images consist of discrete pixels, where $b_{ij} \in \{0, 1\
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-05.png" alt="Discrete Pixel Grid and Coordinate System" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-and-geometric-properties-05.png" alt="Discrete Pixel Grid and Coordinate System" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Discrete Binary Pixel Grid Representation and Coordinate System</em></figcaption>
   </div>
 </figure>

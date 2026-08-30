@@ -27,7 +27,7 @@ Fotometrik stereo, kameranın ve nesnenin konumunu tamamen sabit tutup, ışık 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-01.png" alt="Fotometrik Stereo Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-01.png" alt="Fotometrik Stereo Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Sabit kamera ve yüzey normali n olan nesneyi farklı s1, s2, s3 yönlerinden aydınlatan temel fotometrik stereo düzeneği.</em></figcaption>
   </div>
 </figure>
@@ -41,14 +41,14 @@ Geleneksel fotometrik stereoda nesnenin yansıtma özellikleri (BRDF) önceden t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-02.png" alt="Difüzör Perde Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-02.png" alt="Difüzör Perde Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Fotometrik örnekleme için etrafı dağıtıcı difüzör perde ve LED kaynaklarıyla çevrilmiş küresel düzenek [Nayar 1989].</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-03.png" alt="Fotometrik Örnekleme Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-03.png" alt="Fotometrik Örnekleme Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Fotometrik örnekleme sonuçları: Metalik nesne, hesaplanan yüzey normalleri ve ayrıştırılmış difüz/speküler yansıma haritaları.</em></figcaption>
   </div>
 </figure>
@@ -62,14 +62,14 @@ Fotometrik örnekleme felsefesi, Paul Debevec ve ekibi tarafından sinema ve bil
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-04.png" alt="Debevec Light Stage Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-04.png" alt="Debevec Light Stage Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Paul Debevec tarafından geliştirilen, aktörün yüz performansını farklı aydınlatma açıları altında saniyede binlerce kareyle yakalayan küresel Light Stage kafesi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-05.png" alt="Light Stage Çıktıları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-05.png" alt="Light Stage Çıktıları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Light Stage verisinden elde edilen yüksek çözünürlüklü yüzey normalleri (sol) ve hedef ortama kusursuz relighting uygulaması (sağ).</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-06.png" alt="Nokta Tabanlı Nirengi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-06.png" alt="Nokta Tabanlı Nirengi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Nokta tabanlı mesafe ölçümü geometrisi: Kamera bakış ışını ile lazer işaretçi ışınının 3B uzayda kesiştirilmesi.</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-07.png" alt="Arka Plan Çıkarma Süreci" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-07.png" alt="Arka Plan Çıkarma Süreci" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Arka plan çıkarma süreci: Lazerli I_P ve lazersiz I_B görüntülerin çıkarılmasıyla nokta merkezinin tespit edilmesi.</em></figcaption>
   </div>
 </figure>
@@ -124,14 +124,14 @@ Burada $f$ mercek odak uzaklığıdır.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-08.png" alt="Çizgi Tarama Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-08.png" alt="Çizgi Tarama Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Çizgi tarama geometrisi: Kamera bakış ışını ile projektörün Ax + By + Cz + D = 0 ışık düzleminin kesişimi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-09.png" alt="Çizgi Tarama Kamera vs Projektör Görünümü" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-09.png" alt="Çizgi Tarama Kamera vs Projektör Görünümü" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Çizgi tarama örneği: Kamerada nesne üzerinde kıvrılan çizgi ile projektör tarafındaki düz ışık katmanı.</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ Tüm çizgileri aynı anda tek bir karede yansıtıp süreyi milisaniyelere indi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-10.png" alt="Çoklu Çizgi Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-10.png" alt="Çoklu Çizgi Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Karmaşık nesnelerde çoklu çizgiler aynı anda yansıtıldığında ortaya çıkan eşleştirme ve sıralama belirsizliği.</em></figcaption>
   </div>
 </figure>
@@ -162,14 +162,14 @@ Birden fazla çizgiyi karıştırmadan tek seferde çözebilmek için uzamsal-za
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-11.png" alt="Uzamsal-Zamansal Kodlama Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-11.png" alt="Uzamsal-Zamansal Kodlama Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Uzamsal-zamansal ikili kodlama tablosu: n görüntü ile 2^n - 1 şeridin benzersiz kod sözcükleriyle etiketlenmesi [Posdamer 1981].</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-12.png" alt="Ardışık İkili Şerit Yansıtma ve 3B Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-12.png" alt="Ardışık İkili Şerit Yansıtma ve 3B Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Nesne üzerine sırayla yansıtılan ikili şerit desenleri ve elde edilen 3B yeniden yapılandırma sonucu.</em></figcaption>
   </div>
 </figure>
@@ -182,7 +182,7 @@ Genel kural olarak, $n$ adet görüntü çekilerek $2^n - 1$ adet şerit kodlana
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-13.png" alt="İkili Kodlama Eşikleme Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-13.png" alt="İkili Kodlama Eşikleme Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Standart ikili kodlamada optik ışık sızması nedeniyle sınır piksellerinde yaşanan eşikleme belirsizliği.</em></figcaption>
   </div>
 </figure>
@@ -191,7 +191,7 @@ Genel kural olarak, $n$ adet görüntü çekilerek $2^n - 1$ adet şerit kodlana
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-14.png" alt="Gray Kod Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-14.png" alt="Gray Kod Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Standart binary kodun Gray koduna dönüştürülmesi ile komşu şeritler arası bit değişiminin 1'e indirilmesi.</em></figcaption>
   </div>
 </figure>
@@ -202,7 +202,7 @@ Sadece açık/kapalı (binary) durumları yerine, $k$ adet farklı parlaklık se
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-15.png" alt="Kodlama Sistemleri Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-15.png" alt="Kodlama Sistemleri Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Kodlama altyapılarının karşılaştırılması: Binary (k=2), Ternary (k=3) ve genel k-li sistemler.</em></figcaption>
   </div>
 </figure>
@@ -211,7 +211,7 @@ Sadece açık/kapalı (binary) durumları yerine, $k$ adet farklı parlaklık se
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-16.png" alt="Renkli Ternary Yansıtma" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-16.png" alt="Renkli Ternary Yansıtma" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: RGB renk kodlu ternary yapılandırılmış ışık: 7 şeridin sadece 2 karede Kırmızı, Yeşil ve Mavi ile kodlanması.</em></figcaption>
   </div>
 </figure>
@@ -220,7 +220,7 @@ Sadece açık/kapalı (binary) durumları yerine, $k$ adet farklı parlaklık se
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-17.png" alt="Renkli Kodlamanın Limitleri" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-17.png" alt="Renkli Kodlamanın Limitleri" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Renkli kodlamanın fiziksel sınırları: Nesne renkleri nedeniyle ışığın soğurulması (yansıma olmaması) ve renk karışması.</em></figcaption>
   </div>
 </figure>

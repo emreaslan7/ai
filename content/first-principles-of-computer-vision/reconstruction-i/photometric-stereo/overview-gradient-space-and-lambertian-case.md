@@ -8,7 +8,7 @@ Interpreting the three-dimensional world from a single two-dimensional image (su
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-01.png" alt="Photometric Stereo image acquisition setup and intensity equation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-01.png" alt="Photometric Stereo image acquisition setup and intensity equation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Photometric Stereo acquisition setup and pixel intensity equation I = F(Source, Normal n, Reflectance).</em></figcaption>
   </div>
 </figure>
@@ -71,7 +71,7 @@ $$\mathbf{n} = \frac{\mathbf{N}}{|\mathbf{N}|} = \frac{1}{\sqrt{p^2 + q^2 + 1}} 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-02.png" alt="Gradient space parameterization on z = 1 projection plane" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-02.png" alt="Gradient space parameterization on z = 1 projection plane" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Gradient space parameterization on the z = 1 projection plane showing N(p, q, 1) and S(ps, qs, 1).</em></figcaption>
   </div>
 </figure>
@@ -81,7 +81,7 @@ Imagine a plane parallel to the image plane located at distance $z = 1$. Extendi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-03.png" alt="Surface normal N(p, q, 1) under distant light source and camera direction" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-03.png" alt="Surface normal N(p, q, 1) under distant light source and camera direction" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Surface normal N(p, q, 1) under distant light source s and camera viewing direction v = (0,0,1).</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ For an ideal matte (Lambertian) surface with normalized radiometric factors, bri
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-04.png" alt="Diffuse reflection behavior on Lambertian surface" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-04.png" alt="Diffuse reflection behavior on Lambertian surface" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Diffuse reflection behavior on ideal matte (Lambertian) surfaces across incident angles (Example: Clay pot).</em></figcaption>
   </div>
 </figure>
@@ -109,7 +109,7 @@ $$I = \cos\theta_i = \mathbf{n} \cdot \mathbf{s}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-05.png" alt="Incident angle θi between light s and normal n" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-05.png" alt="Incident angle θi between light s and normal n" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Incident angle θi between light source vector s and surface normal n under camera view v = (0,0,1).</em></figcaption>
   </div>
 </figure>
@@ -120,7 +120,7 @@ $$R(p, q) = \frac{p p_s + q q_s + 1}{\sqrt{p^2 + q^2 + 1} \sqrt{p_s^2 + q_s^2 + 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-06.png" alt="Reflectance map R(p,q) in gradient space" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-06.png" alt="Reflectance map R(p,q) in gradient space" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Reflectance map R(p,q) in gradient space with peak brightness at (ps, qs).</em></figcaption>
   </div>
 </figure>
@@ -131,7 +131,7 @@ Geometric loci on the reflectance map that produce identical intensity values ($
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-07.png" alt="Conic section formed on z = 1 plane" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-07.png" alt="Conic section formed on z = 1 plane" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Conic section (iso-brightness contour) formed on the z = 1 plane by surface normals sharing constant angle with light source.</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ $$p p_s + q q_s + 1 = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-08.png" alt="Iso-brightness level contours and terminator line" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-08.png" alt="Iso-brightness level contours and terminator line" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Iso-brightness contours (0.1 to 1.0) and the θi = 90° terminator line on the reflectance map.</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ A single intensity measurement at a pixel restricts $(p,q)$ to one of these cont
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-09.png" alt="Single image pixel intensity mapping to iso-brightness contour" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-09.png" alt="Single image pixel intensity mapping to iso-brightness contour" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Mapping of a single pixel measurement on image I to an iso-brightness contour, demonstrating single-image ambiguity.</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ Photometric Stereo resolves this infinite set of candidate orientations by inter
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-10.png" alt="Surface point illuminated by three light sources" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-10.png" alt="Surface point illuminated by three light sources" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Surface point illuminated sequentially by three distinct light sources (s1, s2, s3).</em></figcaption>
   </div>
 </figure>
@@ -194,7 +194,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-11.png" alt="Iso-brightness contour under light s1" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-11.png" alt="Iso-brightness contour under light s1" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Iso-brightness contour I1 = 0.9 on R1(p,q) under light s1 yielding infinitely many candidate normals.</em></figcaption>
   </div>
 </figure>
@@ -203,7 +203,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-12.png" alt="Intersection of R1 and R2 contours under two light sources" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-12.png" alt="Intersection of R1 and R2 contours under two light sources" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Intersection of R1 and R2 contours under two light sources (s1, s2) reducing candidate normals to two points.</em></figcaption>
   </div>
 </figure>
@@ -264,14 +264,14 @@ $$\text{Unit Surface Normal } (\mathbf{n}) = \frac{\mathbf{N}}{|\mathbf{N}|}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-16.png" alt="Photometric stereo reconstruction of sphere with 4 albedo quadrants" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-16.png" alt="Photometric stereo reconstruction of sphere with 4 albedo quadrants" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Photometric Stereo results for a sphere with four albedo quadrants: 5 input images, estimated surface normal needle map, and estimated albedo map.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-17.png" alt="Photometric stereo reconstruction of face mask" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-17.png" alt="Photometric stereo reconstruction of face mask" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Photometric Stereo applied to a two-tone face mask: input images, needle map (normals), and recovered albedo map.</em></figcaption>
   </div>
 </figure>
@@ -282,7 +282,7 @@ If light vectors are coplanar, matrix $S$ becomes singular ($\det(S) = 0$), rend
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-13.png" alt="Coplanar light sources condition" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-13.png" alt="Coplanar light sources condition" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Coplanar light sources singularity: All light vectors s1, s2, s3 and origin lie on a single plane (det(S) = 0).</em></figcaption>
   </div>
 </figure>
@@ -291,7 +291,7 @@ For example, when using sunlight variations throughout the day for outdoor photo
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-14.png" alt="Solar path along equatorial plane during equinox" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-14.png" alt="Solar path along equatorial plane during equinox" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Equinox singularity: Solar path along the equatorial plane causes all light vectors throughout the day to remain coplanar.</em></figcaption>
   </div>
 </figure>
@@ -312,7 +312,7 @@ Multiple point lights or broad area light sources operating simultaneously (excl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-15.png" alt="Equivalence of multiple point lights and area source to single effective light" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-15.png" alt="Equivalence of multiple point lights and area source to single effective light" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Equivalence of multiple point lights (1) or extended area light source (2) to a single effective light source si.</em></figcaption>
   </div>
 </figure>

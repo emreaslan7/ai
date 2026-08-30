@@ -29,7 +29,7 @@ Consider a polynomial regression model. If we fit a high-degree polynomial to da
 #### **Visualization of Overfitting**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/overfitting-and-regularization-01.png" style="display:flex; justify-content: center; width: 700px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/overfitting-and-regularization-01.png" style="display:flex; justify-content: center; width: 700px;" alt="Overfitting example"/>
 </div>
 
 - **Left (Underfitting):** The model is too simple and cannot capture the trend.
@@ -48,7 +48,7 @@ Overfitting occurs when a model **learns noise instead of the underlying pattern
 ### **1. Collecting More Data**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/overfitting-and-regularization-02.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/overfitting-and-regularization-02.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 - More training data helps the model **capture real patterns rather than memorizing noise**.
@@ -58,7 +58,7 @@ Overfitting occurs when a model **learns noise instead of the underlying pattern
 ### **2. Feature Selection & Engineering**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/overfitting-and-regularization-03.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/overfitting-and-regularization-03.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 - Removing irrelevant or redundant features reduces **model complexity**.
@@ -68,7 +68,7 @@ Overfitting occurs when a model **learns noise instead of the underlying pattern
 ### **3. Cross-Validation**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/overfitting-and-regularization-04.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/overfitting-and-regularization-04.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 - **k-fold cross-validation** ensures that the model performs well on different data splits.
@@ -136,7 +136,7 @@ Regularization **controls model complexity** by restricting parameter values:
 #### **Visualization of Regularization Effects**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/overfitting-and-regularization-05.png" style="display:flex; justify-content: center; width: 700px;" alt="Effect of Regularization"/>
+    <img src="../../img/machine-learning-specialization/overfitting-and-regularization-05.png" style="display:flex; justify-content: center; width: 700px;" alt="Effect of Regularization"/>
 </div>
 
 - **Left (No Regularization):** The model overfits training data.

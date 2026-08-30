@@ -10,7 +10,7 @@ $$g[i,j] = f[i,j] * h[i,j] = \sum_{m} \sum_{n} f[m,n] \, h[i - m, j - n]$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-01.png" alt="Discrete 2D Convolution Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-01.png" alt="Discrete 2D Convolution Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Discrete 2D convolution formula, filter kernel definition, and f, h, g grid matrices</em></figcaption>
   </div>
 </figure>
@@ -46,7 +46,7 @@ Executing discrete 2D convolution follows 5 programmatic steps:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-02.png" alt="Border Problem Overhanging Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 250px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-02.png" alt="Border Problem Overhanging Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 250px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Border problem where the filter kernel hangs over image spatial boundaries</em></figcaption>
   </div>
 </figure>
@@ -86,7 +86,7 @@ $$g[i,j] = f[i,j] * \delta[i,j] = f[i,j]$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-03.png" alt="Impulse Filter Example" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-03.png" alt="Impulse Filter Example" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Identity output produced by convolving an image with an Impulse Filter</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ $$h = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix} \implies
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-04.png" alt="Shift Filter Example" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-04.png" alt="Shift Filter Example" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial image shifting produced by an offset Shift Filter kernel</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-05.png" alt="Unnormalized Box Filter Saturation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-05.png" alt="Unnormalized Box Filter Saturation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Total white saturation artifact caused by applying an unnormalized 5x5 box filter</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-06.png" alt="Normalized Box Filter Smoothed Output" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-06.png" alt="Normalized Box Filter Smoothed Output" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Clean smoothed output obtained using a normalized 5x5 box filter</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-07.png" alt="21x21 Box Filter Blocky Artifacts" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-07.png" alt="21x21 Box Filter Blocky Artifacts" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Rectangular blocky artifacts produced by a large 21x21 box filter</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-08.png" alt="21x21 Circular Gaussian Filter Natural Smoothing" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-08.png" alt="21x21 Circular Gaussian Filter Natural Smoothing" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Natural smooth blurring without blocky artifacts achieved via a 21x21 circular Gaussian (Fuzzy) filter</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ $$K \approx 2\pi\sigma \quad (\text{or } K \approx 6\sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-09.png" alt="Gaussian Sigma Comparison sigma=4 vs sigma=16" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-09.png" alt="Gaussian Sigma Comparison sigma=4 vs sigma=16" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Comparison of Gaussian smoothing width for standard deviations sigma=4 vs sigma=16</em></figcaption>
   </div>
 </figure>
@@ -178,7 +178,7 @@ $$K \approx 2\pi\sigma \quad (\text{or } K \approx 6\sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-10.png" alt="2D Gaussian Kernel 1D+1D Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-10.png" alt="2D Gaussian Kernel 1D+1D Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Decomposition of a 2D KxK Gaussian matrix into 1D vertical Kx1 and 1D horizontal 1xK vectors</em></figcaption>
   </div>
 </figure>
@@ -253,7 +253,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-11.png" alt="Gaussian Filter Failure on Salt and Pepper Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-11.png" alt="Gaussian Filter Failure on Salt and Pepper Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Failure of linear Gaussian filtering to eliminate salt and pepper noise, resulting in smeared noise spots</em></figcaption>
   </div>
 </figure>
@@ -263,7 +263,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-12.png" alt="Median Filter Clean Removal of Salt and Pepper Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-12.png" alt="Median Filter Clean Removal of Salt and Pepper Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Complete noise removal without edge degradation using a Median Filter (K=3)</em></figcaption>
   </div>
 </figure>
@@ -278,7 +278,7 @@ The **Bilateral Filter** is an edge-preserving non-linear filter that smooths no
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-13.png" alt="Standard Gaussian Filter Blurring Edges" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-13.png" alt="Standard Gaussian Filter Blurring Edges" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Standard Gaussian filter blurring flat regions together with sharp edge details like the number 10</em></figcaption>
   </div>
 </figure>
@@ -296,7 +296,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-14.png" alt="Bilateral Filter Preserving Edges" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-14.png" alt="Bilateral Filter Preserving Edges" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Edge-preserving smoothing using a Bilateral Filter, preserving sharp boundaries and number 10 text</em></figcaption>
   </div>
 </figure>
@@ -308,7 +308,7 @@ $$g[i,j] = \frac{1}{W[i,j]} \sum_{m} \sum_{n} f[i-m, j-n] \cdot G_s[m,n] \cdot G
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-15.png" alt="Bilateral Filter 3D Surface Diagram and Dual Gaussian Product" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-15.png" alt="Bilateral Filter 3D Surface Diagram and Dual Gaussian Product" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>3D surface representation of Bilateral Filtering combining Spatial Gaussian (Gs) and Range Gaussian (Gr)</em></figcaption>
   </div>
 </figure>
@@ -342,7 +342,7 @@ When the kernel centers near a step edge:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-16.png" alt="Portrait Photo Comparison Original vs Gaussian vs Bilateral" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-16.png" alt="Portrait Photo Comparison Original vs Gaussian vs Bilateral" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Portrait photo comparison: Original vs Gaussian (sigma_s=2) vs Bilateral (sigma_s=2, sigma_r=10) filtering</em></figcaption>
   </div>
 </figure>

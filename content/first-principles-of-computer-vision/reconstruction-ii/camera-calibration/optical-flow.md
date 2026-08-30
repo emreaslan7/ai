@@ -17,7 +17,7 @@ When analyzing dynamic scenes captured across consecutive video frames ($t$ and 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-02.png" alt="Image Sequence and Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-02.png" alt="Image Sequence and Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Optical flow vectors representing the apparent motion of brightness patterns between two consecutive frames. Ideally, Optical Flow = Motion Field.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ Consider a standard pinhole camera coordinate frame centered at the optical cent
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-01.png" alt="Motion Field Geometry and Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-01.png" alt="Motion Field Geometry and Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Pinhole camera geometry showing the relationship between 3D scene point velocity (v0) and projected image point velocity (vi).</em></figcaption>
   </div>
 </figure>
@@ -84,7 +84,7 @@ While we want optical flow to equal the true motion field, optical reflection la
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-03.png" alt="Spinning Sphere vs Moving Light Source" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-03.png" alt="Spinning Sphere vs Moving Light Source" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Left: Spinning smooth sphere (Motion field exists, but no optical flow). Right: Stationary sphere with moving light source (No motion field, but optical flow exists).</em></figcaption>
   </div>
 </figure>
@@ -103,7 +103,7 @@ While we want optical flow to equal the true motion field, optical reflection la
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-04.png" alt="Barber Pole Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-04.png" alt="Barber Pole Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Barber Pole Illusion: Physical motion field is horizontal, whereas perceived optical flow is strictly vertical.</em></figcaption>
   </div>
 </figure>
@@ -116,7 +116,7 @@ The human visual cortex (particularly area MT / V5) interprets temporal brightne
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-05.png" alt="Donguri Wave Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-05.png" alt="Donguri Wave Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Donguri Wave Illusion: A completely static 2D image produces perceived wavy motion when viewing the asymmetric leaf brightness gradients during involuntary eye movements.</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ Given two consecutive video frames ($t$ and $t + \delta t$), we seek to compute 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-06.png" alt="Optical Flow Pixel Displacement" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-06.png" alt="Optical Flow Pixel Displacement" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Pixel coordinate displacement from (x, y) at time t to (x + dx, y + dy) at time t + dt.</em></figcaption>
   </div>
 </figure>
@@ -143,7 +143,7 @@ The mathematical formulation rests on two core assumptions:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-07.png" alt="Brightness Constancy Assumption" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-07.png" alt="Brightness Constancy Assumption" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Assumption 1: Brightness Constancy — The intensity of an image point remains invariant over small temporal increments dt.</em></figcaption>
   </div>
 </figure>
@@ -184,7 +184,7 @@ The gradients $I_x, I_y, I_t$ are evaluated numerically from consecutive image f
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-08.png" alt="Spatio-Temporal Finite Differences Cube" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-08.png" alt="Spatio-Temporal Finite Differences Cube" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: 2x2x2 spatio-temporal pixel neighborhood used for symmetric finite difference gradient estimation.</em></figcaption>
   </div>
 </figure>
@@ -201,7 +201,7 @@ The constraint $I_x u + I_y v + I_t = 0$ defines a straight **constraint line** 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-09.png" alt="Constraint Line in Velocity Space" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-09.png" alt="Constraint Line in Velocity Space" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Constraint line in u-v velocity space with normal flow component (un) and parallel flow component (up).</em></figcaption>
   </div>
 </figure>
@@ -219,8 +219,8 @@ $$\mathbf{u} = \mathbf{u}_n + \mathbf{u}_p$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-10.png" alt="Actual Motion of an Edge" style="display:flex; border-radius: 5px; justify-content: center; width: 320px; margin-right: 15px;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-11.png" alt="Aperture Problem Normal Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-10.png" alt="Actual Motion of an Edge" style="display:flex; border-radius: 5px; justify-content: center; width: 320px; margin-right: 15px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-11.png" alt="Aperture Problem Normal Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figures 10 & 11: The Aperture Problem: Left: True 2D motion of an edge. Right: Viewed through a small circular aperture, only normal motion perpendicular to the edge is detectable; parallel motion is invisible.</em></figcaption>
   </div>
 </figure>
@@ -258,7 +258,7 @@ $$A \mathbf{u} = \mathbf{b}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-12.png" alt="Lucas-Kanade Matrix System" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-12.png" alt="Lucas-Kanade Matrix System" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Overdetermined linear system A u = b for an n x n local patch.</em></figcaption>
   </div>
 </figure>
@@ -286,21 +286,21 @@ For $(A^T A)^{-1}$ to exist stably without numerical noise amplification, $M = A
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-13.png" alt="Conditioning Textureless Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-13.png" alt="Conditioning Textureless Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Textureless Flat Region (Sky): lambda1 ~ lambda2 ~ 0 (Singular / poorly conditioned matrix).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-14.png" alt="Conditioning Edge Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-14.png" alt="Conditioning Edge Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Edge Region (Roofline): lambda1 >> lambda2 ~ 0 (Aperture problem; only normal flow resolvable).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-15.png" alt="Conditioning Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-15.png" alt="Conditioning Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Textured Region (Flowerbed / Corner): lambda1, lambda2 both large (Well-conditioned; full 2D flow resolved accurately).</em></figcaption>
   </div>
 </figure>
@@ -321,7 +321,7 @@ To overcome this limitation, a multi-scale **Gaussian Resolution Pyramid** and *
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-16.png" alt="Resolution Pyramid Multi-Scale Hierarchy" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-16.png" alt="Resolution Pyramid Multi-Scale Hierarchy" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Resolution Pyramid: Large macroscopic displacements at full resolution become sub-pixel motions at the coarsest pyramid level.</em></figcaption>
   </div>
 </figure>
@@ -338,7 +338,7 @@ To overcome this limitation, a multi-scale **Gaussian Resolution Pyramid** and *
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-17.png" alt="Coarse-to-Fine Architecture with Warping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-17.png" alt="Coarse-to-Fine Architecture with Warping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Coarse-to-fine iterative warping pipeline across multi-scale resolution pyramid levels (Bouguet 2000).</em></figcaption>
   </div>
 </figure>
@@ -373,7 +373,7 @@ Optical flow can also be approached through direct window-based correlation / te
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-18.png" alt="Template Matching for Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-18.png" alt="Template Matching for Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Template matching for motion estimation: Template window T in frame t searched within window S in frame t+dt.</em></figcaption>
   </div>
 </figure>
@@ -395,7 +395,7 @@ Every standard optical computer mouse houses a high-speed embedded computer visi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-19.png" alt="Optical Mouse Internal Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-19.png" alt="Optical Mouse Internal Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 19: Optical mouse internal architecture: LED, lens, microscopic CMOS sensor array, and embedded DSP microprocessor.</em></figcaption>
   </div>
 </figure>
@@ -412,7 +412,7 @@ Stationary highway cameras utilize calibrated optical flow for automated velocit
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-20.png" alt="Traffic Monitoring and Vehicle Velocity Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-20.png" alt="Traffic Monitoring and Vehicle Velocity Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 20: Real-time traffic speed estimation (in mph / km/h) derived from optical flow vectors projected onto calibrated road planes.</em></figcaption>
   </div>
 </figure>
@@ -429,7 +429,7 @@ Smartphones and action cameras apply optical flow to eliminate unwanted handheld
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-21.png" alt="Captured Video vs Stabilized Video" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/optical-flow-21.png" alt="Captured Video vs Stabilized Video" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 21: Raw handheld video (left) versus stabilized output (right) after compensating for dominant background optical flow.</em></figcaption>
   </div>
 </figure>

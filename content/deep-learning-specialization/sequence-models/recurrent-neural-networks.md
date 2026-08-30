@@ -7,7 +7,7 @@
 Sequence models are used when the input and/or output is sequential. For example:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-01.jpg" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-01.jpg" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 They model dependencies over time or sequence positions, which standard feedforward neural networks cannot do efficiently.
@@ -34,7 +34,7 @@ RNNs share parameters across time, allowing generalization to different sequence
 To train RNNs, we use backpropagation through time (BPTT):
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-02.jpg" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-02.jpg" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 - Unroll the RNN for $T$ steps
@@ -54,7 +54,7 @@ Language models predict the next word given a sequence:
 - $P(y^{(t)} | y^{(1)}, ..., y^{(t-1)})$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 Training: minimize cross-entropy loss between predicted and actual next words.
@@ -66,7 +66,7 @@ Training: minimize cross-entropy loss between predicted and actual next words.
 - Continue until <END> or max length
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 Sampling temperature can control randomness:
@@ -109,7 +109,7 @@ GRUs are designed to solve this by introducing gating mechanisms that control wh
 GRU introduces gates to control information flow:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-05.jpg" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-05.jpg" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 A GRU has two main gates:
@@ -186,7 +186,7 @@ This gating mechanism allows the model to **retain relevant information over lon
 Let’s break down an LSTM cell computation for a single time step $ t $. Let:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-08.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - $ x^{\langle t \rangle} $: input at time $ t $
@@ -256,7 +256,7 @@ Suppose we want to predict the next word in a sentence. Let’s compare:
 <br/>
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 LSTMs are widely used in natural language processing, speech recognition, time series forecasting, and anywhere **long-term memory** is crucial.
@@ -275,7 +275,7 @@ In a standard RNN, information flows in a single direction — typically from pa
 A Bidirectional RNN processes the input sequence in both directions with two separate hidden layers:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/deep-learning-specialization/recurrent-neural-networks-06.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/recurrent-neural-networks-06.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - One moves **forward** through time (from $x_1$ to $x_T$)

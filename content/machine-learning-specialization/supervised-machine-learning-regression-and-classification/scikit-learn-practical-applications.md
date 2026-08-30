@@ -222,7 +222,7 @@ print(f"R-squared Score: {r2:.2f}")
 Finally, let's plot the data and the regression line.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-01.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-01.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 ```python
@@ -320,7 +320,7 @@ print(f"Model equation: y = {theta0:.2f} + {theta1:.2f}*x1 + {theta2:.2f}*x2")
 Since we have two independent variables ($x_1$ and $x_2$), we can plot the regression plane in **3D space**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-02.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-02.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 ```python
@@ -411,7 +411,7 @@ plt.show()
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-03.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-03.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 - We create 100 random points between -3 and 3.
@@ -473,7 +473,7 @@ plt.show()
 Now, let's compare Polynomial Regression with a simple Linear Regression model.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-04.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-04.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 ```python
@@ -599,7 +599,7 @@ plot_decision_boundary(model, X, y)
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-05.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-05.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 This plot shows **how the model separates spam and non-spam emails** using our two features.
@@ -659,7 +659,7 @@ Each student has:
 - Study Hours (non-negative)
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-06.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-06.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 We set `random_state = 457897` to ensure reproducibility.
@@ -712,7 +712,7 @@ model.fit(X_train, y_train)
 ### Step 5: Visualizing Decision Boundaries
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/scikit-learn-practical-applications-07.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
+    <img src="../../img/machine-learning-specialization/scikit-learn-practical-applications-07.png" style="display:flex; justify-content: center; width: 400px;" alt="Overfitting example"/>
 </div>
 
 ```python

@@ -17,7 +17,7 @@ Kesikli (*discrete*) şeritler yerine, sahneye parlaklığı sürekli (*continuo
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-01.png" alt="Yoğunluk Oranı Metodu Işık Desenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-01.png" alt="Yoğunluk Oranı Metodu Işık Desenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Doğrusal rampa deseni L1 ve sabit parlaklıklı L2 desenlerinin projeksiyonu [Carrihill 1985].</em></figcaption>
   </div>
 </figure>
@@ -28,7 +28,7 @@ $$\frac{I_1}{I_2} = \frac{\rho \cdot L_1}{\rho \cdot L_2} = \frac{L_1}{L_2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-02.png" alt="Yoğunluk Oranı Normalizasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-02.png" alt="Yoğunluk Oranı Normalizasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: I1/I2 oranı alınarak yüzey yansıtma katsayısının (albedo) yok edilmesi ve projektör x_p koordinatının elde edilmesi.</em></figcaption>
   </div>
 </figure>
@@ -47,7 +47,7 @@ $$I_1(x_c, y_c) = \rho a + \rho b + \rho b \cos\left( \frac{2\pi x_p}{P} \right)
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-03.png" alt="Sinüzoidal Kosinüs Dalga Yansıtma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-03.png" alt="Sinüzoidal Kosinüs Dalga Yansıtma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Sahneye yansıtılan ilk referans kosinüs dalgası L1 [Wust 1991].</em></figcaption>
   </div>
 </figure>
@@ -59,7 +59,7 @@ Bu denklemde çözmemiz gereken üç bilinmeyen mevcuttur: $\rho a$ (ortam katk�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-04.png" alt="Faz Kaydırma -120 Derece" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-04.png" alt="Faz Kaydırma -120 Derece" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Fazı -120° (-2π/3) kaydırılmış ikinci kosinüs deseni L2.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ Bu denklemde çözmemiz gereken üç bilinmeyen mevcuttur: $\rho a$ (ortam katk�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-05.png" alt="Faz Kaydırma +120 Derece" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-05.png" alt="Faz Kaydırma +120 Derece" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Fazı +120° (+2π/3) kaydırılmış üçüncü kosinüs deseni L3.</em></figcaption>
   </div>
 </figure>
@@ -79,7 +79,7 @@ $$x_p = \frac{P}{2\pi} \tan^{-1}\left( \sqrt{3} \frac{I_2 - I_3}{2I_1 - I_2 - I_
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-06.png" alt="Faz Kaydırma Çözüm Denklemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-06.png" alt="Faz Kaydırma Çözüm Denklemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Çekilen 3 faz kaydırmalı görüntüden projektör x_p kolon koordinatını hesaplayan trigonometrik denklem.</em></figcaption>
   </div>
 </figure>
@@ -97,7 +97,7 @@ Bu hesaplanan $x_p$ kolon düzlemi ile kameranın bakış ışını kesiştirile
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-08.png" alt="Dijital Michelangelo Projesi Davut Heykeli Taraması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-08.png" alt="Dijital Michelangelo Projesi Davut Heykeli Taraması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Dijital Michelangelo Projesi: Davut heykelinin 1/4 mm çözünürlükte elde edilen 3B dijital ikizi [Levoy 2000].</em></figcaption>
   </div>
 </figure>
@@ -106,7 +106,7 @@ Bu hesaplanan $x_p$ kolon düzlemi ile kameranın bakış ışını kesiştirile
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-09.png" alt="Büyük Buddha Projesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-09.png" alt="Büyük Buddha Projesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Büyük Buddha Projesi: Nara'daki dev heykel ve oluşturulan 3B dijital modeli [Ikeuchi 2007].</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ Yapılandırılmış ışık teknolojisinin fiziksel sınırlamalar gereği çar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-10.png" alt="Yapılandırılmış Işık İçin Zorlu Yüzeyler" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-10.png" alt="Yapılandırılmış Işık İçin Zorlu Yüzeyler" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Yapılandırılmış ışık sistemlerinin başarısız olduğu ortamlar: Yüzey altı saçılması (mermer), katılımcı ortamlar (su altı), aynasal metal, şeffaf cam ve saç telleri.</em></figcaption>
   </div>
 </figure>
@@ -134,7 +134,7 @@ Aşağıdaki tablo, incelenen tüm yapılandırılmış ışık yöntemlerinin g
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-07.png" alt="Yapılandırılmış Işık Yöntemleri Karşılaştırma Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-07.png" alt="Yapılandırılmış Işık Yöntemleri Karşılaştırma Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Yapılandırılmış ışık yöntemlerinin gerektirdiği kare sayılarını karşılaştıran özet tablo.</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ Uçuş Süresi (ToF) yöntemi, nirengi geometrisine ihtiyaç duymadan, doğrudan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-11.png" alt="Doğada Echolocation" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-11.png" alt="Doğada Echolocation" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Uçuş süresi prensibinin doğadaki kökeni: Yarasalarda, yunuslarda ve denizaltılarda ses dalgalarıyla echolocation.</em></figcaption>
   </div>
 </figure>
@@ -160,7 +160,7 @@ Uçuş Süresi (ToF) yöntemi, nirengi geometrisine ihtiyaç duymadan, doğrudan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-12.png" alt="Galileo'nun Işık Hızı Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-12.png" alt="Galileo'nun Işık Hızı Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Galileo'nun 1600'lerde iki tepe arasında ışık hızını ölçmeye çalıştığı ilk deney düzeneği.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ Uçuş Süresi (ToF) yöntemi, nirengi geometrisine ihtiyaç duymadan, doğrudan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-13.png" alt="Fizeau'nun Çark Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-13.png" alt="Fizeau'nun Çark Deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Fizeau'nun 1849 yılında dönen dişli çark mekanizmasıyla 8633 metre mesafede ışık hızını ölçtüğü deney.</em></figcaption>
   </div>
 </figure>
@@ -181,7 +181,7 @@ Uçuş Süresi (ToF) yöntemi, nirengi geometrisine ihtiyaç duymadan, doğrudan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-14.png" alt="Nabız Modülasyonu ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-14.png" alt="Nabız Modülasyonu ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Nabız modülasyonu (Flash ToF): Işık darbesinin gidiş-dönüş gecikme süresinin nanosaniye kronometreyle ölçülmesi.</em></figcaption>
   </div>
 </figure>
@@ -194,7 +194,7 @@ Yansıtılan dalga ile geri dönen dalga arasındaki faz kayması ($\varphi$) do
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-15.png" alt="Kesintisiz Modülasyon Faz ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-15.png" alt="Kesintisiz Modülasyon Faz ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Kesintisiz modülasyon ToF: Yansıtılan ve geri dönen sinüzoidal ışık dalgaları arasındaki faz farkı φ.</em></figcaption>
   </div>
 </figure>
@@ -211,7 +211,7 @@ $$S_{ref} = \cos(\omega t - \delta)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-16.png" alt="Korelasyon Tabanlı Faz Ölçüm Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-16.png" alt="Korelasyon Tabanlı Faz Ölçüm Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Korelasyon tabanlı faz ölçümü parametreleri: Ortam ışığı O, albedo A, faz kayması φ ve referans fazı δ.</em></figcaption>
   </div>
 </figure>
@@ -233,7 +233,7 @@ $$d = c \frac{\varphi}{4\pi f}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-17.png" alt="Otonom Araç LiDAR Nokta Bulutu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-17.png" alt="Otonom Araç LiDAR Nokta Bulutu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Otonom araçlarda taramalı LiDAR / ToF sensörleri kullanılarak oluşturulan 3B nokta bulutu haritası.</em></figcaption>
   </div>
 </figure>

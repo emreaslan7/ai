@@ -13,7 +13,7 @@ Bu geçişi sağlayan matematiksel ve optik süreç **Kamera Kalibrasyonu (Camer
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-01.png" alt="Dünya, Kamera ve Görüntü Koordinat Sistemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-01.png" alt="Dünya, Kamera ve Görüntü Koordinat Sistemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: 3B Dünya koordinat sisteminden ($\mathcal{W}$) kamera koordinat sistemine ($\mathcal{C}$) koordinat dönüşümü ve iğne deliği merceğinden 2B görüntü düzlemine perspektif izdüşüm geometrisi.</em></figcaption>
   </div>
 </figure>
@@ -79,7 +79,7 @@ Dijital görüntü sensörü (CCD/CMOS), milimetrik görüntü düzlemini piksel
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-02.png" alt="Milimetrik Düzlemden Dijital Piksel Sensörüne Haritalama" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-02.png" alt="Milimetrik Düzlemden Dijital Piksel Sensörüne Haritalama" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Milimetrik görüntü düzleminden ($x_i, y_i$) dijital piksel sensörüne ($u, v$) geçiş ve $m_x, m_y$ piksel yoğunlukları ile ölçekleme.</em></figcaption>
   </div>
 </figure>
@@ -88,7 +88,7 @@ Ayrıca, optik eksenin sensörü tam olarak deldiği **Asal Nokta (Principal Poi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-03.png" alt="Asal Nokta Kayması ve Sol-Üst Orijin Konvansiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-03.png" alt="Asal Nokta Kayması ve Sol-Üst Orijin Konvansiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Sensör indeksleme kolaylığı için orijinin sol-üst köşeye taşınması ve optik eksenin sensörü deldiği Asal Nokta (Principal Point - $o_x, o_y$) kayması.</em></figcaption>
   </div>
 </figure>
@@ -115,7 +115,7 @@ Yukarıdaki denklemlerde paydada yer alan derinlik bileşeni $z_c$ nedeniyle sis
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-04.png" alt="2B Homojen Koordinat Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-04.png" alt="2B Homojen Koordinat Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: 2B Homojen koordinat uzayı: $[\tilde{u}, \tilde{v}, \tilde{w}]^T$ uzayındaki bir L doğrusunun $\tilde{w}=1$ izdüşüm düzlemini kestiği nokta Öklid koordinatlarını ($u = \tilde{u}/\tilde{w}, v = \tilde{v}/\tilde{w}$) verir.</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ Benzer şekilde 3B sahne noktası da $[x_c, y_c, z_c, 1]^T$ homojen vektörüne 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-05.png" alt="3B Homojen Koordinat Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-05.png" alt="3B Homojen Koordinat Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: 3B Öklid koordinatlarının homojenizasyon ile 4 bileşenli $[\tilde{x}, \tilde{y}, \tilde{z}, \tilde{w}]^T$ vektörüne genişletilmesi.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ Bu yükseltme sayesinde perspektif bölme işlemi doğrusal bir matris çarpım�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-06.png" alt="Homojen Kamera İzdüşüm Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-06.png" alt="Homojen Kamera İzdüşüm Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Doğrusal kamera modelinin 3x4 boyutlu matris çarpımı cinsinden homojen ifadesi.</em></figcaption>
   </div>
 </figure>
@@ -156,7 +156,7 @@ Burada $K$, $3 \times 3$ boyutundaki **Kalibrasyon Matrisidir (Calibration Matri
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-07.png" alt="Kalibrasyon Matrisi ve İçsel Matris Yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-07.png" alt="Kalibrasyon Matrisi ve İçsel Matris Yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Kalibrasyon matrisi K'nın sağ-üst üçgen (Upper Right Triangular) yapısı ve İçsel Matris $M_{int} = [K \mid \mathbf{0}]$ tanımı.</em></figcaption>
   </div>
 </figure>
@@ -171,7 +171,7 @@ Dünya koordinat sistemindeki ($\mathcal{W}$) bir $\mathbf{X}_w = [x_w, y_w, z_w
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-08.png" alt="Dışsal Parametreler Rotasyon ve Öteleme" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-08.png" alt="Dışsal Parametreler Rotasyon ve Öteleme" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Dışsal Parametreler: Kameranın dünya sistemindeki konumu $\mathbf{c}_w$ ve eksen yönelimlerini belirten ortonormal Rotasyon Matrisi $R$.</em></figcaption>
   </div>
 </figure>
@@ -186,14 +186,14 @@ Rotasyon matrisi $R$ **ortonormal** bir matristir; yani satır ve sütunları bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-09.png" alt="Uçtan Uca İleri Görüntüleme Dönüşüm Zinciri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-09.png" alt="Uçtan Uca İleri Görüntüleme Dönüşüm Zinciri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Dünya koordinatlarından piksel koordinatlarına iki adımlı dönüşüm zinciri ($M_{ext}$ ile Dünya->Kamera, $M_{int}$ ile Kamera->Piksel).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-10.png" alt="Genel Projeksiyon Matrisi P = Mint * Mext" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-10.png" alt="Genel Projeksiyon Matrisi P = Mint * Mext" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: İçsel ve dışsal dönüşümlerin birleşimiyle tek adımda haritalama sağlayan 3x4 Projeksiyon Matrisi $P = M_{int} M_{ext}$.</em></figcaption>
   </div>
 </figure>
@@ -222,7 +222,7 @@ Kamera kalibrasyonunun amacı, Projeksiyon Matrisi $P$'nin içerdiği 12 adet bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-11.png" alt="Kalibrasyon Küpü ve Nokta Eşleşmeleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-11.png" alt="Kalibrasyon Küpü ve Nokta Eşleşmeleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Geometrisi bilinen kalibrasyon nesnesi (3B küp) üzerindeki dünya noktaları $\mathbf{X}_w$ ile görüntüdeki 2B piksel karşılıkları $\mathbf{u}$ arasındaki eşleşmeler.</em></figcaption>
   </div>
 </figure>
@@ -246,7 +246,7 @@ Kalibrasyon nesnesi üzerindeki $i = 1, \dots, n$ adet noktanın 3B dünya koord
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-12.png" alt="DLT Rasyonel Denklemlerinin Kurulması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-12.png" alt="DLT Rasyonel Denklemlerinin Kurulması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: Bilinen 3B nokta ve 2B piksel koordinatları kullanılarak $P$ matrisinin elemanları cinsinden kesirli projeksiyon eşitliklerinin yazılması.</em></figcaption>
   </div>
 </figure>
@@ -265,7 +265,7 @@ Küp üzerindeki $n$ adet noktanın tamamı ($n \ge 6$) için bu denklemler üst
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-13.png" alt="A * p = 0 Homojen Denklem Sistemi Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-13.png" alt="A * p = 0 Homojen Denklem Sistemi Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: Tum nokta eslesmelerinin üst üste dizilmesiyle elde edilen $2n \times 12$ boyutlu bilinen $A$ matrisi ve bilinmeyen $\mathbf{p}$ vektörü ($A \mathbf{p} = \mathbf{0}$).</em></figcaption>
   </div>
 </figure>
@@ -278,7 +278,7 @@ Projeksiyon matrisi homojen koordinatlarla çalıştığı için sadece bir öl�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-14.png" alt="Perspektif İzdüşümde Ölçek Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-14.png" alt="Perspektif İzdüşümde Ölçek Belirsizliği" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: Perspektif izdüşümde ölçek serbestliği: Sahne boyutunu ve mesafeyi aynı $k$ çarpanıyla ölçeklemek ($Scale = k_1$ vs $Scale = k_2$) piksel izdüşümünü tamamen aynı tutar.</em></figcaption>
   </div>
 </figure>
@@ -326,7 +326,7 @@ Gerçek mercek sistemleri iğne deliği kamera modelinden sapmalar gösterir. Pr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-15.png" alt="Radyal ve Teğetsel Mercek Bozunmaları" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/camera-models-and-calibration-15.png" alt="Radyal ve Teğetsel Mercek Bozunmaları" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Mercek kusurlarından kaynaklanan optik bozunma türleri: Radyal Bozunma (Radial Distortion) ve Teğetsel Bozunma (Tangential Distortion).</em></figcaption>
   </div>
 </figure>

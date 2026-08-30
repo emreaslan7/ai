@@ -6,7 +6,7 @@ Bilgisayarlı görüde (computer vision) derinlik ve şekil çıkarma yöntemler
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-01.png" alt="Sığ Alan Derinliği İllüstrasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-01.png" alt="Sığ Alan Derinliği İllüstrasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Sığ alan derinliğine sahip bir çekimde yalnızca odak düzlemindeki nesne net görünürken, önündeki ve arkasındaki nesneler odak kusuru (defocus) nedeniyle bulanıklaşır.</em></figcaption>
   </div>
 </figure>
@@ -21,7 +21,7 @@ Ancak, tek bir görüntü üzerinden yerel bulanıklık miktarını tahmin etmek
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-15.png" alt="Görüntü Yamaları ve PSF Analizi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-15.png" alt="Görüntü Yamaları ve PSF Analizi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Yakalanan görüntü üzerindeki farklı bölgelerin odak kusuru miktarı ve bunlara karşılık gelen Nokta Yayılım Fonksiyonları (PSF).</em></figcaption>
   </div>
 </figure>
@@ -45,7 +45,7 @@ $$\frac{1}{f} = \frac{1}{u} + \frac{1}{v}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-02.png" alt="Gauss İnce Mercek Yasası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-02.png" alt="Gauss İnce Mercek Yasası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Gauss İnce Mercek Yasası (Gaussian Lens Law) optik diyagramı.</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ Eğer görüntüyü kaydeden sensör (görüntü düzlemi) tam olarak $v$ konumu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-03.png" alt="Bulanıklık Çemberi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-03.png" alt="Bulanıklık Çemberi Geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Bulanıklık Çemberi çapı ($b$) ve sensör konumu ($s$) arasındaki geometrik bağıntı.</em></figcaption>
   </div>
 </figure>
@@ -70,7 +70,7 @@ Bu denklem, odak kusurunu (bulanıklık miktarını) kontrol etmenin iki fizikse
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-18.png" alt="Bulanıklık Değiştirme Yöntemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-18.png" alt="Bulanıklık Değiştirme Yöntemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Yöntem 1: Diyafram açıklığını ($D$) değiştirmek; Yöntem 2: Sensör konumunu ($s$) değiştirmek.</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ Buradaki $\frac{4}{\pi b^2}$ katsayısı, lensten toplanan toplam ışık enerji
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-04.png" alt="Pillbox PSF Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-04.png" alt="Pillbox PSF Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: İdeal Pillbox (Disk) Nokta Yayılım Fonksiyonu (PSF) modeli.</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ $$h_{\text{Gaussian}}(x, y) = \frac{1}{2\pi \sigma^2} e^{-\frac{x^2+y^2}{2\sigma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-05.png" alt="Gauss PSF Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-05.png" alt="Gauss PSF Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Pratik Gauss Nokta Yayılım Fonksiyonu (PSF) modeli ($\sigma \approx b/2$).</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ $$g(x, y) = f(x, y) * h(x, y)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-06.png" alt="Uzamsal Konvolüsyon Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-06.png" alt="Uzamsal Konvolüsyon Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Uzamsal düzlemde konvolüsyon modeli: Net görüntü $f_0(x,y)$ ile PSF $h(x,y)$ konvolüsyonu sonucunda bulanık görüntü $f(x,y)$ oluşur.</em></figcaption>
   </div>
 </figure>
@@ -128,7 +128,7 @@ $$G(u, v) = F(u, v) \cdot H(u, v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-07.png" alt="Fourier Düzleminde Odak Kusuru" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-07.png" alt="Fourier Düzleminde Odak Kusuru" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Frekans düzleminde 1D Fourier kesiti: Odak kusuru yüksek frekansları sönümleyen bir Alçak Geçiren Filtre (Low-Pass Filter) gibi davranır.</em></figcaption>
   </div>
 </figure>
@@ -145,7 +145,7 @@ Fiziksel olarak odak kusuru, görüntüye uygulanan kusursuz bir **Alçak Geçir
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-08.png" alt="DFF Focal Stack Örneklemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-08.png" alt="DFF Focal Stack Örneklemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Farklı sensör konumlarında ($s = 50.95 \dots 51.85\text{ mm}$) çekilen odak yığınında en keskin görüntünün ($s = 51.25\text{ mm}$) seçilmesi ve derinliğin ($o$) hesaplanması.</em></figcaption>
   </div>
 </figure>
@@ -172,7 +172,7 @@ $$M(x, y) = \sum_{i=x-K}^{x+K} \sum_{j=y-K}^{y+K} \nabla_M^2 I(i, j)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-09.png" alt="Farklı Noktalar İçin Odak Skoru Grafiği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-09.png" alt="Farklı Noktalar İçin Odak Skoru Grafiği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Sahnedeki farklı derinliklerde yer alan A ve B noktaları için sensör konumuna ($s$) bağlı Odak Ölçüm Skoru $M(x,y)$ değişimi.</em></figcaption>
   </div>
 </figure>
@@ -185,7 +185,7 @@ Eğer derinlik doğrudan en yüksek $M(x,y)$ skoruna sahip görüntü katmanına
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-11.png" alt="Sürekli Odak Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-11.png" alt="Sürekli Odak Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Ayrık örneklenmiş odak ölçümlerinin tepe noktası etrafındaki sürekli Gauss dağılımı ve gerçek odak konumu $\bar{s}$.</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ $$M(s) = M_p e^{-\frac{(s - \bar{s})^2}{2\sigma_m^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-12.png" alt="Gauss Eğrisi Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-12.png" alt="Gauss Eğrisi Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Gauss İnterpolasyonu parametreleri: Bilinen örnekler ($M_{s_i}, s_i$) ve bilinmeyenler ($M_p, \bar{s}, \sigma_M$).</em></figcaption>
   </div>
 </figure>
@@ -213,7 +213,7 @@ Bu hesaplanan kesin $\bar{s}$ değeri Gauss ince mercek yasasına yerleştiriler
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-13.png" alt="Gauss İnterpolasyonu Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-13.png" alt="Gauss İnterpolasyonu Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Metal küre yüzeyi: Gauss İnterpolasyonu olmadan (basamaklı yapay yüzey) ve Gauss İnterpolasyonu ile (pürüzsüz 3B rekonstrüksiyon).</em></figcaption>
   </div>
 </figure>
@@ -222,7 +222,7 @@ DFF yöntemi özellikle dar alan derinlikli objektiflere sahip mikroskopi ve end
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-14.png" alt="DFF Mikroskopi Uygulamaları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-14.png" alt="DFF Mikroskopi Uygulamaları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: DFF mikroskopi uygulamaları: Silikon Wafer üzerindeki mikro yapılar (13 mikron yükseklik) ve Yaprak Gözenekleri (30 mikron yükseklik).</em></figcaption>
   </div>
 </figure>
@@ -237,7 +237,7 @@ DFF yöntemi yüksek hassasiyet sunsa da, onlarca görüntü toplama gereksinimi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-16.png" alt="Farklı Açıklıklarda DFD" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-16.png" alt="Farklı Açıklıklarda DFD" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: İki farklı diyafram açıklığı ($D_1, D_2$) ile elde edilen farklı genişlikteki PSF'ler ($\sigma_1, \sigma_2$).</em></figcaption>
   </div>
 </figure>
@@ -252,7 +252,7 @@ $$\frac{\sigma_1}{\sigma_2} = \frac{D_1}{D_2} \implies \sigma_2 = \sigma_1 \frac
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-17.png" alt="DFD Sistem Denklemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-17.png" alt="DFD Sistem Denklemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: DFD denklem sistemi: 3 bilinmeyen ve 3 bağımsız denklem (Uzamsal ve Fourier düzleminde).</em></figcaption>
   </div>
 </figure>
@@ -315,7 +315,7 @@ DFF ve DFD yöntemleri yüksek frekanslı dokuların analizine dayandığından,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/depth-from-defocus-19.png" alt="Nayar Aktif DFD Donanım Kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/depth-from-defocus-19.png" alt="Nayar Aktif DFD Donanım Kurulumu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: Nayar'ın çift sensörlü ve aktif aydınlatma desenli gerçek zamanlı DFD donanım kurulumu.</em></figcaption>
   </div>
 </figure>

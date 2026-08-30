@@ -51,7 +51,7 @@ $$P(k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-01.png" alt="Photon Noise Poisson Distribution Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-01.png" alt="Photon Noise Poisson Distribution Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Photon Noise Poisson Distribution Curves: Probability distributions $P(k)$ for varying mean photon arrival rates $\lambda$.</em></figcaption>
   </div>
 </figure>
@@ -89,7 +89,7 @@ where:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-02.png" alt="Readout Electronic Noise Gaussian Distribution" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-02.png" alt="Readout Electronic Noise Gaussian Distribution" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Readout Electronic Noise Gaussian Distribution: Symmetric Gaussian distribution curve representing sensor pre-amplification noise.</em></figcaption>
   </div>
 </figure>
@@ -107,7 +107,7 @@ $$\sigma^2_q = \frac{\Delta^2}{12}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-03.png" alt="Quantization Noise Step Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-03.png" alt="Quantization Noise Step Function" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Quantization Noise Step Function: Uniform error rounding distribution between $-\Delta/2$ and $+\Delta/2$ during ADC conversion.</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ Even when the camera lens is covered by a light-tight lens cap, thermal energy w
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-04.png" alt="Dark Current Thermal Noise and Fixed Pattern Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-04.png" alt="Dark Current Thermal Noise and Fixed Pattern Noise" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Dark Current Thermal Noise and Fixed Pattern Noise: Thermal electron accumulation over integration time and spatial FPN pixel variations.</em></figcaption>
   </div>
 </figure>
@@ -173,7 +173,7 @@ The ratio of generated electron flux to incident photon flux as a function of wa
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-05.png" alt="Silicon Quantum Efficiency q(λ) Curve" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-05.png" alt="Silicon Quantum Efficiency q(λ) Curve" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Silicon Quantum Efficiency $q(\lambda)$ Curve: Spectral response curve of silicon showing 1.0 peak at 1000 nm and drop-off below 400 nm.</em></figcaption>
   </div>
 </figure>
@@ -190,7 +190,7 @@ $$I = \int_{0}^{\infty} q(\lambda) p(\lambda) \, d\lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-06.png" alt="Visible Wavelength Spectrum Gradient" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-06.png" alt="Visible Wavelength Spectrum Gradient" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Visible Wavelength Spectrum Gradient: Continuous spectrum from 400 nm (violet) to 700 nm (red) bounded by UV and IR regions.</em></figcaption>
   </div>
 </figure>
@@ -256,7 +256,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-07.png" alt="Spatial Distribution of Rods and Cones on the Retina" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-07.png" alt="Spatial Distribution of Rods and Cones on the Retina" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial Distribution of Rods and Cones on the Retina: High concentration of cones at the fovea (0°) and rod density peaking in the periphery.</em></figcaption>
   </div>
 </figure>
@@ -279,7 +279,7 @@ $$B = \int_{0}^{\infty} h_B(\lambda) p(\lambda) \, d\lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-08.png" alt="Human Tristimulus Sensitivity Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-08.png" alt="Human Tristimulus Sensitivity Curves" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Human Tristimulus Sensitivity Curves: L-cone (red), M-cone (green), and S-cone (blue) spectral response functions $h_R(\lambda), h_G(\lambda), h_B(\lambda)$.</em></figcaption>
   </div>
 </figure>
@@ -292,7 +292,7 @@ Because the human brain receives only these three integrated scalar values ($R, 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-09.png" alt="The Metamerism Phenomenon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-09.png" alt="The Metamerism Phenomenon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>The Metamerism Phenomenon: Three physically distinct spectral power distributions $p_1(\lambda), p_2(\lambda), p_3(\lambda)$ integrating to identical tristimulus values.</em></figcaption>
   </div>
 </figure>
@@ -309,7 +309,7 @@ In his seminal color mixture experiment, Thomas Young demonstrated that projecti
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-10.png" alt="Dichroic Prism Color Separation System" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-10.png" alt="Dichroic Prism Color Separation System" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Dichroic Prism Color Separation System: Internal interference coatings splitting white light into Red, Green, and Blue channels for 3-CCD capture.</em></figcaption>
   </div>
 </figure>
@@ -335,7 +335,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-11.png" alt="Bayer Pattern Mosaic and Demosaicing Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-11.png" alt="Bayer Pattern Mosaic and Demosaicing Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Bayer Pattern Mosaic and Demosaicing Pipeline: RGGB color filter mosaic, raw single-channel image, pixel interpolation, and final reconstructed RGB image.</em></figcaption>
   </div>
 </figure>

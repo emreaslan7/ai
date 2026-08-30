@@ -5,7 +5,7 @@
 ## What is Clustering?
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 Clustering is an unsupervised learning technique used to group data points into distinct clusters based on their similarities. Unlike supervised learning, clustering does not rely on labeled data but instead identifies underlying structures within a dataset.
@@ -16,7 +16,7 @@ Clustering is an unsupervised learning technique used to group data points into 
 - **Anomaly Detection:** Detecting fraudulent activities in financial transactions.
 - **Image Segmentation:** Partitioning an image into meaningful regions.
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-06.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
     </div>
 - **Document Categorization:** Grouping documents with similar topics.
 - **Genomics:** Identifying gene expression patterns and categorizing biological data.
@@ -29,7 +29,7 @@ K-Means is one of the most widely used clustering algorithms due to its simplici
 ### Key Intuition:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 1. Data points within the same cluster should be as similar as possible.
@@ -43,7 +43,7 @@ The K-Means algorithm follows these steps:
 
 1.  **Initialize K cluster centroids** randomly or using a specific method (e.g., K-Means++).
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-<img src="../../../img/machine-learning-specialization/k-means-clustering-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+<img src="../../img/machine-learning-specialization/k-means-clustering-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 2.  **Assign each data point** to the nearest centroid using Euclidean distance:
@@ -51,7 +51,7 @@ The K-Means algorithm follows these steps:
     d(x, c) = \sqrt{(x_1 - c_1)^2 + (x_2 - c_2)^2 + \dots + (x_n - c_n)^2}
     $$
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-04.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-04.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
      </div>
 3.  **Update centroids** by computing the mean of all points assigned to each cluster:
     $$
@@ -59,7 +59,7 @@ The K-Means algorithm follows these steps:
     $$
     where $ N_k $ is the number of points in cluster $ k $.
      <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-     <img src="../../../img/machine-learning-specialization/k-means-clustering-05.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+     <img src="../../img/machine-learning-specialization/k-means-clustering-05.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
      </div>
 4.  **Repeat** until centroids stabilize (do not change significantly between iterations).
 
@@ -120,7 +120,7 @@ plt.show()
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-07.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-07.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 ## Choosing the Number of Clusters
@@ -132,7 +132,7 @@ Selecting the appropriate number of clusters (K) is crucial for obtaining meanin
 The Elbow Method is a widely used heuristic for selecting K by analyzing the Within-Cluster Sum of Squares (WCSS), also known as inertia.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-08.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-08.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 **Steps:**
@@ -155,7 +155,7 @@ The Silhouette Score measures how well-defined the clusters are by computing how
 - **-1:** Data point is incorrectly clustered.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/k-means-clustering-09.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/k-means-clustering-09.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 **Steps:**

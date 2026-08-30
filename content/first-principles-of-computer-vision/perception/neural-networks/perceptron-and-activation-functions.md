@@ -17,7 +17,7 @@ In computer vision, many tasks such as edge detection, camera calibration, stere
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-01.png" alt="Visual Variations and Classical Classifiers" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-01.png" alt="Visual Variations and Classical Classifiers" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: High Visual Diversity: Complex appearance distributions across faces and objects demand learning-based paradigms beyond rigid linear templates (SVM, PCA, etc.).</em></figcaption>
   </div>
 </figure>
@@ -44,7 +44,7 @@ The human brain processes these complex non-linear visual mappings in fractions 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-02.png" alt="Human Brain and Biological Neural Network" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-02.png" alt="Human Brain and Biological Neural Network" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Biological Computing Scale: The human brain structure comprising 100 billion neurons and 100 trillion synaptic connections.</em></figcaption>
   </div>
 </figure>
@@ -58,7 +58,7 @@ The principal anatomical building blocks of a biological neuron include:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-03.png" alt="Biological Neuron Anatomy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-03.png" alt="Biological Neuron Anatomy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Biological Neuron Anatomy: Dendrites (inputs), Cell Nucleus/Soma (summation/integration), Axon (signal transmission), and Synaptic Terminals (output junctions).</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ A perceptron takes $d$ independent inputs $x_1, x_2, \dots, x_d$. Each input is 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-04.png" alt="Perceptron Mathematical Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-04.png" alt="Perceptron Mathematical Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Perceptron Computational Unit: Weighted sum of inputs plus bias passed through a thresholding step function.</em></figcaption>
   </div>
 </figure>
@@ -118,7 +118,7 @@ $$a = f(z) = \begin{cases} 1, & \text{if } z > 0 \quad (\mathbf{w}^T \mathbf{x} 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-05.png" alt="Heaviside Step Activation Function" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-05.png" alt="Heaviside Step Activation Function" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Step (Heaviside) Activation Function: Produces $0$ for $z \leq 0$ and $1$ for $z > 0$.</em></figcaption>
   </div>
 </figure>
@@ -136,7 +136,7 @@ Let the decision depend on three binary conditions:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-06.png" alt="Movie Decision Model" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-06.png" alt="Movie Decision Model" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Priority Decision Modeling: If good weather is an absolute requirement, $w_1 = 4, w_2 = 2, w_3 = 2$, and $b = -5$.</em></figcaption>
   </div>
 </figure>
@@ -168,7 +168,7 @@ $$-2x_1 - 2x_2 + 3 = 0 \implies x_2 = -x_1 + 1.5$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-07.png" alt="Decision Boundary and 2D Linear Separability" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-07.png" alt="Decision Boundary and 2D Linear Separability" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: 2D Linear Classifier Geometry: The line $-2x_1 - 2x_2 + 3 = 0$ bisects the plane into two half-spaces ($z > 0 \implies a=1$ and $z \leq 0 \implies a=0$).</em></figcaption>
   </div>
 </figure>
@@ -240,7 +240,7 @@ To isolate points inside a closed convex polygonal region in 2D space:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-11.png" alt="Multi-Layer Perceptron Complex Decision Region" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-11.png" alt="Multi-Layer Perceptron Complex Decision Region" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Complex Decision Boundary with Multi-Layer Network: Four linear boundaries combine in a second layer to isolate an interior convex polygonal region.</em></figcaption>
   </div>
 </figure>
@@ -263,7 +263,7 @@ Consider a 2-input perceptron with $w_1 = -2, w_2 = -2$, and $b = 3$:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-08.png" alt="Perceptron and NAND Gate Equivalence" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-08.png" alt="Perceptron and NAND Gate Equivalence" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Perceptron as a NAND Gate: Truth table and digital schematic equivalence.</em></figcaption>
   </div>
 </figure>
@@ -273,7 +273,7 @@ In digital logic design, the **NAND** gate is a **Universal Logic Gate**. Any co
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-09.png" alt="Universal Logic Gates Built from NAND" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-09.png" alt="Universal Logic Gates Built from NAND" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Universality of NAND: Constructing NOT, AND, OR, and NOR gates using only NAND logic.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ Because a single perceptron replicates a NAND gate:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-10.png" alt="1-Bit Adder Circuit and Equivalent Perceptron Network" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-10.png" alt="1-Bit Adder Circuit and Equivalent Perceptron Network" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Digital Circuit to Perceptron Network: Equivalence between a standard 1-bit adder circuit and its layered perceptron implementation.</em></figcaption>
   </div>
 </figure>
@@ -297,7 +297,7 @@ Although perceptron networks possess theoretical computational universality, tra
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-12.png" alt="Multilayer Neural Network Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-12.png" alt="Multilayer Neural Network Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Multilayer Network Architecture: Input Layer (Layer 1), Hidden Layers (Layer 2 & 3), and Output Layer (Layer 4), with weight indices $w_{jk}^{(l)}$ and bias indices $b_j^{(l)}$.</em></figcaption>
   </div>
 </figure>
@@ -323,7 +323,7 @@ In step-activated perceptrons, this differential feedback is destroyed:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-13.png" alt="Training Crisis with Step Activation Function" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-13.png" alt="Training Crisis with Step Activation Function" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Step Function Training Crisis: A parameter shift $\Delta w$ changes internal sum $\Delta z$ but yields $\Delta a = 0$, completely halting derivative-based learning.</em></figcaption>
   </div>
 </figure>
@@ -339,7 +339,7 @@ $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-14.png" alt="Sigmoid Neuron and Smooth Output Transitions" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-14.png" alt="Sigmoid Neuron and Smooth Output Transitions" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Sigmoid Neuron: Small perturbations in weights and biases produce predictable, smooth continuous shifts in output activation ($\Delta a$).</em></figcaption>
   </div>
 </figure>

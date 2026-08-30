@@ -12,7 +12,7 @@ Kalibre edilmiş (basit) stereo sistemlerinde kameralar sabitlenmiştir, optik e
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-01.png" alt="Kalibre Edilmiş Stereo Sistem Özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-01.png" alt="Kalibre Edilmiş Stereo Sistem Özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Kalibre edilmiş (basit) stereo sistem kısıtları: Kameralar dikey doğrultuda hizalıdır, optik eksenleri paraleldir ve baz çizgisi (b) sabittir.</em></figcaption>
   </div>
 </figure>
@@ -53,7 +53,7 @@ Kalibre edilmemiş stereo probleminde temel amaç, bilinmeyen bir mekansal iliş
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-02.png" alt="Kalibre Edilmemiş İki Kamera İle Görüntü Alma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-02.png" alt="Kalibre Edilmemiş İki Kamera İle Görüntü Alma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Kalibre edilmemiş stereo problemi: Rastgele pozlanmış sol ve sağ kameraların uzaydaki bağımsız duruşları.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ Bu problemi çözmek için 5 sistematik adımdan oluşan bir işlem hattı (pipe
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-05.png" alt="Kalibre Edilmemiş Stereo İşlem Hattı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-05.png" alt="Kalibre Edilmemiş Stereo İşlem Hattı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Kalibre edilmemiş stereo rekonstrüksiyonunun 5 temel adımı ve geometric parametreler.</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-03.png" alt="Kamera Matrislerinin Bilinmesi ve İlk Noktalar" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-03.png" alt="Kamera Matrislerinin Bilinmesi ve İlk Noktalar" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: İçsel kamera matrislerinin ($K_l, K_r$) bilinmesi ve ilk güvenilir noktaların seçilmesi.</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-04.png" alt="Seyrek Öznitelik Noktalarının Eşleştirilmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-04.png" alt="Seyrek Öznitelik Noktalarının Eşleştirilmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Sol ve sağ görüntüler üzerinde saptanan seyrek öznitelik eşleşmeleri.</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ Göreceli kamera konumlarını çözmemizi sağlayan **Epipolar Geometri**, iki 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-06.png" alt="Epipolar Geometri Elemanları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-06.png" alt="Epipolar Geometri Elemanları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Epipolar geometri bileşenleri: Optik merkezler ($O_l, O_r$), epipoller ($e_l, e_r$), epipolar düzlem ve epipolar çizgiler.</em></figcaption>
   </div>
 </figure>
@@ -138,7 +138,7 @@ Epipolar düzlemin normal vektörünü ($\mathbf{n}$), öteleme vektörü $\math
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-07.png" alt="Epipolar Düzlem Normal Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-07.png" alt="Epipolar Düzlem Normal Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Epipolar düzlem normal vektörünün türetilmesi ($\mathbf{n} = \mathbf{t} \times \mathbf{X}_l$).</em></figcaption>
   </div>
 </figure>
@@ -181,7 +181,7 @@ $$\mathbf{u}_l^T F \mathbf{u}_r = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-08.png" alt="Epipolar Çizgi Hizalanmaları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-08.png" alt="Epipolar Çizgi Hizalanmaları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Kalibre edilmiş (yatay çakışık) epipolar çizgiler ile genel (açılı) epipolar çizgilerin karşılaştırılması.</em></figcaption>
   </div>
 </figure>
@@ -242,7 +242,7 @@ Kameraların göreceli ilişkisi ($R, \mathbf{t}$) çözüldükten sonra, görü
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-09.png" alt="1D Epipolar Çizgide Piksel Arama" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-09.png" alt="1D Epipolar Çizgide Piksel Arama" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Epipolar kısıt sayesinde arama alanının 2B piksel ızgarasından 1B epipolar çizgiye indirgenmesi.</em></figcaption>
   </div>
 </figure>
@@ -292,7 +292,7 @@ Yoğun eşleşmeler saptandıktan sonra, her piksel çiftinin 3B uzay koordinatl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-10.png" alt="Photo Tourism St Peters Basilica 3B Nokta Bulutu" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-10.png" alt="Photo Tourism St Peters Basilica 3B Nokta Bulutu" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: 1275 adet rastgele turistik fotoğraftan kalibre edilmemiş stereo ve SfM ile oluşturulan St. Peter's Basilica 3B nokta bulutu (Snavely et al., 2006).</em></figcaption>
   </div>
 </figure>
@@ -326,7 +326,7 @@ Dokusuz, pürüzsüz veya tek renkli yüzeylerde (örneğin insan yüzü veya bo
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-11.png" alt="Aktif Aydınlatma İle Yüz Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-11.png" alt="Aktif Aydınlatma İle Yüz Rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Dokusuz yüzeylerde hassas stereo eşleşme sağlamak için rastgele çizgi/desen projeksiyonu kullanımı ve elde edilen 3B yüz modeli.</em></figcaption>
   </div>
 </figure>
@@ -343,7 +343,7 @@ Evrimsel süreçte canlıların göz yerleşimleri yaşam stratejilerine göre �
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-12.png" alt="Avcı ve Av Canlılarda Göz Konumları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-12.png" alt="Avcı ve Av Canlılarda Göz Konumları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: Avcılarda öne bakan gözler (derinlik hassasiyeti) vs Avlarda yana bakan gözler (geniş görüş alanı).</em></figcaption>
   </div>
 </figure>
@@ -357,7 +357,7 @@ Evrimsel süreçte canlıların göz yerleşimleri yaşam stratejilerine göre �
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-13.png" alt="İnsan Görsel Sistemi ve Optik Yolları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-13.png" alt="İnsan Görsel Sistemi ve Optik Yolları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: Göz kasları (verjans), optik kiyazma (optic chiasma), LGN ve görsel korteks yönlendirme mekanizması.</em></figcaption>
   </div>
 </figure>
@@ -372,7 +372,7 @@ Derinlik algısının beynimizdeki işleyişini kanıtlayan klasik psikofiziksel
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-14.png" alt="Pseudoscope ve Telestereoscope Düzenekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-14.png" alt="Pseudoscope ve Telestereoscope Düzenekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: Pseudoscope (ışınları çaprazlayarak derinliği ters çevirir) ve Telestereoscope (aynalarla baz çizgisini artırır).</em></figcaption>
   </div>
 </figure>
@@ -386,7 +386,7 @@ Tek bir gözün önüne koyu renkli bir cam konulduğunda, ışık azlığı ned
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-15.png" alt="Pulfrich Sarkaç Etkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-15.png" alt="Pulfrich Sarkaç Etkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Pulfrich etkisi: Tek gözdeki zamansal iletim gecikmesi nedeniyle düz hatta sallanan sarkacın 3B elips çiziyor gibi algılanması.</em></figcaption>
   </div>
 </figure>
@@ -399,7 +399,7 @@ George Stratton, gözün retinasına düşen ters görüntüyü aynalarla düzel
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-16.png" alt="Stratton Ters Görüntü Gözlük Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-16.png" alt="Stratton Ters Görüntü Gözlük Düzeneği" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 16: Stratton'ın ters görüntü deneyinde kullandığı optik ayna mekanizması (Stratton, 1896).</em></figcaption>
   </div>
 </figure>

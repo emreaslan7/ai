@@ -12,7 +12,7 @@ Kenar tespiti (*edge detection*) aşamasında elde edilen çıktılar, genellikl
 
 <figure style="display:flex; justify- content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-01.png" alt="Boundary Detection Pipeline on Antique Vase" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-01.png" alt="Boundary Detection Pipeline on Antique Vase" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Antik vazo görüntüsü üzerinde kenar tespitinden eşiklemeye, morfolojik filtrelerden inceltmeye ve nihai sürekli sınır tespitine uzanan işlem hattı.</em></figcaption>
   </div>
 </figure>
@@ -69,7 +69,7 @@ En klasik yöntem, her noktanın doğruya olan ortalama karesel dikey uzaklığ�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-02.png" alt="Vertical Distance Line Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-02.png" alt="Vertical Distance Line Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: En küçük kareler doğru uydurmada $(x_i, y_i)$ noktasının $y = mx + c$ doğrusuna dikey uzaklığı $|y_i - mx_i - c|$.</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ Dikey mesafe minimizasyonu yöntemi, kenar noktaları dikey (düşey) bir doğru
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-03.png" alt="Vertical Line Failure Mode" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-03.png" alt="Vertical Line Failure Mode" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Dikey doğru çökme problemi: Dikey hizalanmış noktalar için dikey mesafe minimizasyonu tamamen yanlış yatay bir doğru uydurur.</em></figcaption>
   </div>
 </figure>
@@ -118,7 +118,7 @@ $$x \sin\theta - y \cos\theta + \rho = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-05.png" alt="Line Normal Parametrization" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-05.png" alt="Line Normal Parametrization" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Doğrunun normal form parametrizasyonu ($\theta, \rho$). $\theta$ normal açısını, $\rho$ orijine olan dik mesafeyi gösterir.</em></figcaption>
   </div>
 </figure>
@@ -151,7 +151,7 @@ Kenar noktaları bir doğru yerine karmaşık bir eğri oluşturuyorsa, örneği
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-04.png" alt="Polynomial Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-04.png" alt="Polynomial Curve Fitting" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Noktalar kümesine $y = f(x)$ parametrik polinom eğrisinin uydurulması.</em></figcaption>
   </div>
 </figure>
@@ -198,7 +198,7 @@ Bu denklemdeki $X^+ = (X^T X)^{-1} X^T$ ifadesine **Sözde Evrik (Moore-Penrose 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-06.png" alt="Deformable Boundaries Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-06.png" alt="Deformable Boundaries Examples" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Deforme olabilen sınırlar: Zaman içinde şekil değiştiren dudak hareketi ve bakış açısına göre değişen araç silüeti.</em></figcaption>
   </div>
 </figure>
@@ -211,14 +211,14 @@ $$v_i = (x_i, y_i) \quad \text{burada} \quad i = 0, 1, 2, \dots, N-1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-08.png" alt="Contour Representation" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-08.png" alt="Contour Representation" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Konturun $N$ adet kontrol noktası $v_i = (x_i, y_i)$ ile ayrık olarak temsil edilmesi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-07.png" alt="Initial Contour around Quarter Coin" style="display:flex; border-radius: 5px; justify-content: center; width: 360px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-07.png" alt="Initial Contour around Quarter Coin" style="display:flex; border-radius: 5px; justify-content: center; width: 360px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Madeni para etrafında ilklendirilen (kabaca çizilen) başlangıç konturu ve kontrol noktaları.</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ Konturun gürültüye kapılıp ani kıvrılmalar, düğümler yapmasını engel
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-09.png" alt="Physical Intuition of Internal Energy" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-09.png" alt="Physical Intuition of Internal Energy" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: İç enerjilerin fiziksel sezgisi: Esneklik bir lastik bant (rubber band) gibi büzülmeyi, Pürüzsüzlük ise metal şerit (metal strip) gibi yumuşak kıvrılmayı temsil eder.</em></figcaption>
   </div>
 </figure>
@@ -260,7 +260,7 @@ Konturu yüksek gradyanlı nesne sınırlarına çekmek için görüntünün gra
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-10.png" alt="Blurred Gradient Magnitude Potential Field" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-10.png" alt="Blurred Gradient Magnitude Potential Field" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Görüntü Enerjisi: Orijinal kontur (sol), ham gradyan büyüklüğü $\|\nabla I\|^2$ (orta) ve Gauss filtresi ile bulanıklaştırılmış $\|\nabla G_\sigma * I\|^2$ potansiyel çekim alanı (sağ).</em></figcaption>
   </div>
 </figure>
@@ -287,7 +287,7 @@ Toplam enerjiyi minimize etmek için pratik ve hızlı bir **açgözlü (*greedy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-12.png" alt="Greedy Algorithm Local Window Search" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-12.png" alt="Greedy Algorithm Local Window Search" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Greedy Algoritmasında her bir $v_i$ kontrol noktası için etrafındaki $W$ yerel arama penceresindeki (mavi kareler) konumların test edilmesi.</em></figcaption>
   </div>
 </figure>
@@ -299,7 +299,7 @@ Toplam enerjiyi minimize etmek için pratik ve hızlı bir **açgözlü (*greedy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-13.png" alt="Failure without Uniform Resampling" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-13.png" alt="Failure without Uniform Resampling" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Düzgün yeniden örnekleme yapılmadığında esneklik kuvvetleri nedeniyle noktaların düğümlenmesi ve kontur çökme hatası.</em></figcaption>
   </div>
 </figure>
@@ -314,7 +314,7 @@ Esneklik katsayısı $\alpha$, konturun büzülme şiddetini belirler.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-11.png" alt="Effect of Alpha Parameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fitting-lines-and-active-contours-11.png" alt="Effect of Alpha Parameter" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Yan yana iki madeni para örneğinde $\alpha$ parametresinin etkisi. Büyük $\alpha$ konturu iki para arasındaki dar boşluğa büzüştürürken, küçük $\alpha$ daha gevşek bir hat çizer.</em></figcaption>
   </div>
 </figure>

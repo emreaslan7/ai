@@ -17,7 +17,7 @@ Dinamik bir sahneyi analiz ederken, zamansal olarak ardışık çekilen video ka
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-02.png" alt="Image Sequence and Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-02.png" alt="Image Sequence and Optical Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Ardışık iki görüntü karesi arasında parlaklık deseninin hız vektörleri (Optik Akış). İdeal koşullarda Optik Akış, Hareket Alanına eşittir.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ Dünya koordinat sisteminde, iğne deliği kamerasının optik merkezine (*pinho
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-01.png" alt="Motion Field Geometry and Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-01.png" alt="Motion Field Geometry and Perspective Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: İğne deliği kamera modelinde 3B nokta hızı (v0) ile görüntü düzlemindeki hareket alanı (vi) geometrisi.</em></figcaption>
   </div>
 </figure>
@@ -84,7 +84,7 @@ Bu bağıntı; bir noktanın 3B konumu ($\mathbf{r}_0$), derinliği ($z_w$) ve 3
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-03.png" alt="Spinning Sphere vs Moving Light Source" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-03.png" alt="Spinning Sphere vs Moving Light Source" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Sol: Dönen pürüzsüz küre (Hareket alanı var, optik akış yok). Sağ: Hareketsiz küre ve hareket eden ışık kaynağı (Hareket alanı yok, optik akış var).</em></figcaption>
   </div>
 </figure>
@@ -103,7 +103,7 @@ Bu bağıntı; bir noktanın 3B konumu ($\mathbf{r}_0$), derinliği ($z_w$) ve 3
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-04.png" alt="Barber Pole Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-04.png" alt="Barber Pole Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Barber Pole İllüzyonu: Fiziksel hareket alanı yatay yöndeyken, algılanan optik akış dikey yöndedir (90 derece dik sapma).</em></figcaption>
   </div>
 </figure>
@@ -116,7 +116,7 @@ Bu bağıntı; bir noktanın 3B konumu ($\mathbf{r}_0$), derinliği ($z_w$) ve 3
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-05.png" alt="Donguri Wave Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-05.png" alt="Donguri Wave Illusion" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Donguri Dalga İllüzyonu (Donguri Wave Illusion): Resim tamamen durağan olmasına rağmen, göz hareketleri asimetrik parlaklık gradyanları üzerinden dalgalanan optik akış üretir.</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ Bu bağıntı; bir noktanın 3B konumu ($\mathbf{r}_0$), derinliği ($z_w$) ve 3
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-06.png" alt="Optical Flow Pixel Displacement Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-06.png" alt="Optical Flow Pixel Displacement Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Uçan bir kuşun t anındaki (x, y) pikselinin t + dt anında (x + dx, y + dy) konumuna ötelenmesi.</em></figcaption>
   </div>
 </figure>
@@ -143,7 +143,7 @@ Optik akış kısıt denklemi iki temel fiziksel varsayım üzerine inşa edilir
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-07.png" alt="Brightness Constancy Assumption" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-07.png" alt="Brightness Constancy Assumption" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Varsayım 1: Parlaklık Değişmezliği İlkesi — Bir sahne noktasının parlaklığı hareket boyunca sabit kalır.</em></figcaption>
   </div>
 </figure>
@@ -184,7 +184,7 @@ $I_x, I_y, I_t$ türevleri, video kareleri üzerinde $2 \times 2 \times 2$ boyut
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-08.png" alt="Spatio-Temporal Finite Differences Cube" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-08.png" alt="Spatio-Temporal Finite Differences Cube" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: 2x2x2 uzay-zaman piksel küpü üzerinden simetrik sonlu farklar ile Ix, Iy ve It türevlerinin hesaplanması.</em></figcaption>
   </div>
 </figure>
@@ -201,7 +201,7 @@ Optik akış kısıt denklemi $I_x u + I_y v + I_t = 0$, $u-v$ hız uzayında do
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-09.png" alt="Optical Flow Constraint Line in Velocity Space" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-09.png" alt="Optical Flow Constraint Line in Velocity Space" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: u-v hız uzayında kısıt doğrusu, normal akış bileşeni (un) ve paralel akış bileşeni (up).</em></figcaption>
   </div>
 </figure>
@@ -219,8 +219,8 @@ $$\mathbf{u} = \mathbf{u}_n + \mathbf{u}_p$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-10.png" alt="Actual Motion of an Edge" style="display:flex; border-radius: 5px; justify-content: center; width: 320px; margin-right: 15px;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-11.png" alt="Aperture Problem Normal Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-10.png" alt="Actual Motion of an Edge" style="display:flex; border-radius: 5px; justify-content: center; width: 320px; margin-right: 15px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-11.png" alt="Aperture Problem Normal Flow" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10 & 11: Açıklık Problemi (Aperture Problem): Sol: Nesnenin gerçek 2B hareketi (u,v). Sağ: Dairesel bir açıklıktan bakıldığında kenara paralel kayma görünmez; yalnızca kenara dik normal akış algılanabilir.</em></figcaption>
   </div>
 </figure>
@@ -258,7 +258,7 @@ $$A \mathbf{u} = \mathbf{b}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-12.png" alt="Lucas-Kanade Overdetermined Matrix Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-12.png" alt="Lucas-Kanade Overdetermined Matrix Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Lucas-Kanade doğrusal matris sistemi A u = b (n^2 x 2 boyutlu katsayılar matrisi).</em></figcaption>
   </div>
 </figure>
@@ -286,21 +286,21 @@ Lucas-Kanade yönteminin doğru ve gürültüye dayanıklı akış üretebilmesi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-13.png" alt="Conditioning Textureless Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-13.png" alt="Conditioning Textureless Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Durum 1: Dokusuz Düz Alan (Gökyüzü) — lambda1 ~ lambda2 ~ 0 (Kötü koşullanmış, tersi alınamaz).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-14.png" alt="Conditioning Edge Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-14.png" alt="Conditioning Edge Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Durum 2: Düz Kenar Bölgesi (Çatı Kenarı) — lambda1 >> lambda2 ~ 0 (Açıklık problemi, kenara dik akış çözülebilir).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-15.png" alt="Conditioning Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-15.png" alt="Conditioning Textured Region" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Durum 3: Zengin Dokulu Alan (Çiçekli Yamaç / Köşe) — lambda1 ve lambda2 her ikisi de büyük (İyi koşullanmış, tam akış çözülür).</em></figcaption>
   </div>
 </figure>
@@ -321,7 +321,7 @@ Bu problemi çözmek için **Çözünürlük Piramitleri (*Resolution / Gaussian
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-16.png" alt="Resolution Pyramid Multi-Scale Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-16.png" alt="Resolution Pyramid Multi-Scale Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Çözünürlük Piramidi: Orijinal boyutta büyük olan piksel kaymaları, en kaba piramit seviyesinde 1 pikselin altına düşer.</em></figcaption>
   </div>
 </figure>
@@ -338,7 +338,7 @@ Bu problemi çözmek için **Çözünürlük Piramitleri (*Resolution / Gaussian
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-17.png" alt="Coarse-to-Fine Optical Flow Pipeline with Warping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-17.png" alt="Coarse-to-Fine Optical Flow Pipeline with Warping" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Kaba-Hassas Akış Mimarisi: En kaba seviyeden başlanarak akış kestirimi (OF), geriye yamultma (Warp), artık akış hesabı (Delta u,v) ve akış akümülasyonu (Bouguet 2000).</em></figcaption>
   </div>
 </figure>
@@ -375,7 +375,7 @@ Optik akış diferansiyel türevler yerine, doğrudan piksel pencerelerinin kore
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-18.png" alt="Template Matching for Optical Flow Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-18.png" alt="Template Matching for Optical Flow Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: Şablon Eşleştirme ile Akış Kestirimi: t anındaki T şablonu, t + dt anındaki S arama penceresinde kaydırılarak en iyi eşleşme aranır.</em></figcaption>
   </div>
 </figure>
@@ -397,7 +397,7 @@ Günlük hayatta kullandığımız optik farelerin altında ultra yüksek hızl�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-19.png" alt="Optical Mouse Internal Computer Vision Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-19.png" alt="Optical Mouse Internal Computer Vision Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 19: Optik Farenin İç Mimarisi: LED aydınlatma, mikroskobik lens, optik CMOS sensör ve entegre DSP işlemcisi.</em></figcaption>
   </div>
 </figure>
@@ -414,7 +414,7 @@ Otoyol güvenlik kameralarında araç takip ve otomatik ceza kesim sistemlerinde
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-20.png" alt="Traffic Monitoring and Vehicle Velocity Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-20.png" alt="Traffic Monitoring and Vehicle Velocity Estimation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 20: Optik akış ile otoyol üzerindeki araçların gerçek hızlarının (mph / km/h) saptanması.</em></figcaption>
   </div>
 </figure>
@@ -431,7 +431,7 @@ Akıllı telefon kameralarında el titremelerinden kaynaklanan sarsıntıların 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/optical-flow-21.png" alt="Captured Video vs Stabilized Video" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/optical-flow-21.png" alt="Captured Video vs Stabilized Video" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 21: Çekilen sarsıntılı video (sol) ile optik akış tabanlı baskın hareket telafisiyle üretilen stabilize video (sağ).</em></figcaption>
   </div>
 </figure>

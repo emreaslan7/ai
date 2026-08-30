@@ -18,7 +18,7 @@ To understand how Gradient Descent works, let's recall our dataset:
 | 4        | 8        |
 
 <div style="text-align: center;display:flex; justify-content: center; margin-top: 15px;">
-    <img src="../../../img/machine-learning-specialization/linear-regression-and-cost-function-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/linear-regression-and-cost-function-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 We aim to find the best value of $\theta_0$ that minimizes the error between our predictions $h_\theta(x) = \theta_0 \cdot x$ and the actual $y$ values. Gradient Descent will iteratively adjust $\theta_0$ to reach the minimum cost.
@@ -45,7 +45,7 @@ Gradient Descent uses the derivative of the cost function to determine **the dir
 $$\theta := \theta - \alpha \frac{\partial J(\theta)}{\partial \theta}$$
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Where:
@@ -90,7 +90,7 @@ $$
 - **If the error is small**, the update step is smaller.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 This way, the algorithm gradually moves towards the optimal $ \theta_0 $.
@@ -113,7 +113,7 @@ If the learning rate is set too small:
 - The algorithm might get stuck in local variations of the cost function, slowing down learning.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Mathematically, the update rule is:
@@ -129,7 +129,7 @@ If the learning rate is chosen optimally:
 - The cost function decreases steadily without oscillations or divergence.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 A well-chosen $\alpha$ ensures that gradient descent follows a smooth and steady path to the minimum.
@@ -143,7 +143,7 @@ If the learning rate is set too large:
 - The cost function might increase instead of decreasing due to overshooting the optimal $\theta_0$.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 In extreme cases, the cost function values might increase indefinitely, causing the algorithm to fail to find a minimum.
@@ -153,7 +153,7 @@ In extreme cases, the cost function values might increase indefinitely, causing 
 Selecting the right learning rate is essential for gradient descent to work efficiently. A well-balanced $\alpha$ ensures that the algorithm converges quickly and effectively. In the next section, we will implement gradient descent with different learning rates to visualize their effects.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-05.gif" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-05.gif" style="display:flex; justify-content: center; width: 800px;"alt="regression-example"/>
 </div>
 
 ---
@@ -194,7 +194,7 @@ For convex functions (such as our quadratic cost function), gradient descent is 
 1. **Convex Functions**
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-06.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-06.jpeg" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - The cost function $ J(\theta) $ is convex for linear regression.
@@ -204,7 +204,7 @@ For convex functions (such as our quadratic cost function), gradient descent is 
 2. **Non-Convex Functions**
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/gradient-descent-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/gradient-descent-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - More common in deep learning and complex machine learning models.

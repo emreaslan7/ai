@@ -52,7 +52,7 @@ Burada:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-01.png" alt="Tekil Değer Ayrışımı (SVD) Teoremi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-01.png" alt="Tekil Değer Ayrışımı (SVD) Teoremi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Tekil Değer Ayrışımı (SVD): $A = U \Sigma V^T$ faktörizasyonu ve $\Sigma$ tekil değerler matrisi.</em></figcaption>
   </div>
 </figure>
@@ -97,7 +97,7 @@ Döner tabladan ardışık çekilen görüntülerde bilgi fazlalığı (korelasy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-02.png" alt="Özvektörler ve Hızlı Azalan Özdeğerler Grafiği" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-02.png" alt="Özvektörler ve Hızlı Azalan Özdeğerler Grafiği" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Görünüm Verisinde Öz-uzay: 1) Ortalama imaj ve sıralı özvektörler (1., 2., 3., 10., 20., 40., 50.); 2) Özdeğerlerin ($\lambda_k$) hızlı sönüm eğrisi.</em></figcaption>
   </div>
 </figure>
@@ -108,7 +108,7 @@ $$\text{En küçük } K \text{ değerini seç öyle ki:} \quad \frac{\sum_{i=1}^
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-03.png" alt="Alt Uzay Boyutu K Seçim Kriteri" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-03.png" alt="Alt Uzay Boyutu K Seçim Kriteri" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Enerji Korunum Kriteri: Toplam varyansın $\%95$'ini yakalayan en küçük $K$ bileşen sayısının tespiti.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$\boldsymbol{\omega} = \begin{bmatrix} \omega_1 \\ \omega_2 \\ \vdots \\ \omega
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-04.png" alt="Görünüm Fonksiyonu ve Dışsal Parametreler" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-04.png" alt="Görünüm Fonksiyonu ve Dışsal Parametreler" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Görsel Görünüm Fonksiyonu: İçsel özellikler (şekil, BRDF) ve dışsal parametre vektörü $\boldsymbol{\omega}$ (duruş, aydınlatma).</em></figcaption>
   </div>
 </figure>
@@ -136,7 +136,7 @@ Böylece $40.000$ piksellik koca bir görüntü, $K$-boyutlu öz-uzayda tek bir 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-05.png" alt="Eigenspace Projeksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-05.png" alt="Eigenspace Projeksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Eigenspace Projeksiyonu: $N$-boyutlu görüntülerin $K$-boyutlu öz-uzayda ($\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3$) noktalara $\mathbf{p}(\boldsymbol{\omega})$ dönüşmesi.</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ Fiziksel olarak döner tablayı sonsuz küçük adımlarla döndüremeyiz; gör�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-07.png" alt="Çoklu Nesnelerin Sürekli Görünüm Manifoldları" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-07.png" alt="Çoklu Nesnelerin Sürekli Görünüm Manifoldları" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Sürekli Görünüm Manifoldları: Farklı nesneler (ördek, kuş, tavuk, köpek) için duruş açısı $\theta_1$ ve aydınlatma yönü $\theta_2$ parametrelerine bağlı kapalı 3B manifold yüzeyleri.</em></figcaption>
   </div>
 </figure>
@@ -207,7 +207,7 @@ Eğer $d^{(r)} \le T$ (güvenlik eşiği) ise nesnenin kimliği $r$ olarak onayl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-08.png" alt="100 Nesneli COIL Veritabanı ve Gerçek Zamanlı Tanıma" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-08.png" alt="100 Nesneli COIL Veritabanı ve Gerçek Zamanlı Tanıma" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Columbia COIL-100 Veritabanı: 100 farklı nesne arasında test görüntüsünün tanınması ve anlık duruş açısının (Pose = 334°) kestirimi.</em></figcaption>
   </div>
 </figure>
@@ -220,7 +220,7 @@ $$d^2 = \|\mathbf{p}_1 - \mathbf{p}_2\|^2 = \left\| \sum_{k=1}^{K} p_k^{(1)} \ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-06.png" alt="Öz-Uzay Mesafesi ve SSD Denkliği İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-06.png" alt="Öz-Uzay Mesafesi ve SSD Denkliği İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Mesafe Korunumu: $K$-boyutlu öz-uzaydaki $L_2$ mesafesi karesinin ($d^2 = \|\mathbf{p}_1 - \mathbf{p}_2\|^2$), görüntü uzayındaki SSD farkına denkliğinin gösterimi.</em></figcaption>
   </div>
 </figure>
@@ -244,7 +244,7 @@ $$\text{Yüz Görüntüsü} \approx \mathbf{c} + w_1 \mathbf{e}_1 + w_2 \mathbf{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-10.png" alt="Eigenfaces Yüz Tanıma Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 780px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-10.png" alt="Eigenfaces Yüz Tanıma Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 780px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Eigenfaces (Turk & Pentland, 1991): Eğitim yüzleri, türetilen öz-yüzler (Eigenfaces) ve test görüntüsünün ağırlık vektörüyle doğru kişiyle eşleştirilmesi.</em></figcaption>
   </div>
 </figure>
@@ -258,7 +258,7 @@ Endüstriyel montaj hatlarında (örneğin *peg-in-hole* / pimi deliğe takma g�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-09.png" alt="Visual Servoing ve Robotik Yönlendirme" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
+    <img src="../../../../img/first-principles-of-computer-vision/svd-parametric-manifolds-and-appearance-matching-09.png" alt="Visual Servoing ve Robotik Yönlendirme" style="display:flex; border-radius: 5px; justify-content: center; width: 720px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Visual Servoing (Robotik Görsel Yönlendirme): Tutucuya bağlı kamera ve ışık kaynağıyla 3B geometri hesaplamadan hassas montaj ve takip.</em></figcaption>
   </div>
 </figure>

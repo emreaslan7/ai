@@ -12,7 +12,7 @@ In computer vision, **Object Tracking** is the process of continuously, robustly
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-01.png" alt="Object Tracking Scenarios: Highway Vehicle Tracking and Pedestrian Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-01.png" alt="Object Tracking Scenarios: Highway Vehicle Tracking and Pedestrian Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Typical object tracking and perception scenarios (Left: Tracking high-speed vehicles on a highway; Right: Tracking pedestrians crossing a walkway).</em></figcaption>
   </div>
 </figure>
@@ -43,7 +43,7 @@ In real-world operating environments, tracking algorithms must remain resilient 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-02.png" alt="Uninteresting Changes That Tracking Algorithms Must Ignore" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-02.png" alt="Uninteresting Changes That Tracking Algorithms Must Ignore" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Irrelevant variations to be filtered: 1) Water surface ripples (Background fluctuations); 2) Precipitation and sensor noise (Rain, snow & turbulence); 3) Dynamic lighting and cast shadows (Illumination changes & shadows).</em></figcaption>
   </div>
 </figure>
@@ -102,7 +102,7 @@ $$F(x, y, t) = \begin{cases} 1 & \text{if } |I(x, y, t) - I(x, y, t-1)| > \tau \
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-03.png" alt="Frame Differencing Method and Interior Hole Problem" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-03.png" alt="Frame Differencing Method and Interior Hole Problem" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Frame Differencing ($F_t = |I_t - I_{t-1}| > T$). Homogeneously colored regions inside moving objects produce zero temporal difference, resulting in a hollow (hole-filled) interior where only high-contrast leading/trailing edges are detected.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$F(x, y, t) = |I(x, y, t) - B(x, y)| > \tau$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-04.png" alt="Average Background Method for Foreground Extraction" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-04.png" alt="Average Background Method for Foreground Extraction" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Average Background Method ($B = \text{average}\{I_1, \dots, I_K\}$). Using a persistent background allows full interior extraction of moving objects but fails under ambient illumination drift.</em></figcaption>
   </div>
 </figure>
@@ -140,7 +140,7 @@ $$B(x, y) = \text{median}\{I(x, y, 1), I(x, y, 2), \dots, I(x, y, K)\}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-05.png" alt="Median Background Method" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-05.png" alt="Median Background Method" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Median Background Method ($B = \text{median}\{I_1, \dots, I_K\}$). The median operator is highly robust to statistical outliers, filtering out passing vehicles from the initial training frames.</em></figcaption>
   </div>
 </figure>
@@ -167,7 +167,7 @@ Consider an outdoor surveillance camera monitoring a roadway during heavy snowfa
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-06.png" alt="Intensity Histogram for a Single Pixel Over Time" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-06.png" alt="Intensity Histogram for a Single Pixel Over Time" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Temporal intensity histogram for a single pixel in an active snowfall scene, exhibiting two prominent peaks corresponding to dark road surface and bright passing snowflakes.</em></figcaption>
   </div>
 </figure>
@@ -176,7 +176,7 @@ Physical decomposition of this temporal distribution reveals three distinct comp
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-07.png" alt="Histogram Component Analysis: Road, Snow, and Foreground Vehicle" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-07.png" alt="Histogram Component Analysis: Road, Snow, and Foreground Vehicle" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Physical components of the pixel histogram: 1) Dark Blue Peak: Static Background Asphalt (BG - Road); 2) Light Blue Peak: Background Snow Precipitation (BG - Snow); 3) Red Floor: Infrequent passing Foreground Vehicle (FG - Vehicle).</em></figcaption>
   </div>
 </figure>
@@ -193,7 +193,7 @@ GMM models the probability density of a pixel intensity $x$ as a weighted mixtur
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-08.png" alt="1-Dimensional Gaussian Distribution Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-08.png" alt="1-Dimensional Gaussian Distribution Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: 1D Gaussian distribution component: $\omega \cdot \eta(x, \mu, \sigma)$ parameterized by Mean ($\mu$), Standard Deviation ($\sigma$), and Scale / Supporting Evidence ($\omega$).</em></figcaption>
   </div>
 </figure>
@@ -216,7 +216,7 @@ $$\sum_{k=1}^K \omega_k = 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-09.png" alt="Weighted Sum of K Gaussians in GMM" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-09.png" alt="Weighted Sum of K Gaussians in GMM" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Gaussian Mixture Model as a weighted linear combination of $K$ Gaussians ($P(x) \approx \sum_{k=1}^K \omega_k \eta_k$). Combining multiple components accurately captures complex multimodal pixel distributions.</em></figcaption>
   </div>
 </figure>
@@ -244,7 +244,7 @@ $$\text{Component Score} = \frac{\omega_k}{\sigma_k}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-10.png" alt="GMM Foreground and Background Classification Decision Rule" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-10.png" alt="GMM Foreground and Background Classification Decision Rule" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: GMM Classification Intuition: High $\frac{\omega}{\sigma}$ ratio $\rightarrow$ Persistent Background; Low $\frac{\omega}{\sigma}$ ratio $\rightarrow$ Transient Foreground.</em></figcaption>
   </div>
 </figure>
@@ -286,7 +286,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-11.png" alt="Performance Comparison Between Moving Median and Adaptive GMM" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-11.png" alt="Performance Comparison Between Moving Median and Adaptive GMM" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Foreground extraction under snowfall: Left: Moving Median method is overwhelmed by false positive snowflake detections; Right: Adaptive GMM seamlessly absorbs snowfall into a secondary background Gaussian, cleanly isolating the true moving vehicle.</em></figcaption>
   </div>
 </figure>
@@ -299,7 +299,7 @@ Once a target is localized (via change detection or user initialization), **Temp
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-12.png" alt="Template Matching for Soccer Player Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-12.png" alt="Template Matching for Soccer Player Tracking" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Bounding box initialization (ROI) for tracking a player in a soccer match.</em></figcaption>
   </div>
 </figure>
@@ -308,7 +308,7 @@ Template matching relies on two primary target representation paradigms:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-13.png" alt="Appearance-Based and Histogram-Based Template Representations" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-13.png" alt="Appearance-Based and Histogram-Based Template Representations" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Two fundamental template models: Top: Appearance-Based Template (raw pixel intensity grid); Bottom: Histogram-Based Template (non-parametric color/intensity distribution).</em></figcaption>
   </div>
 </figure>
@@ -319,7 +319,7 @@ Template matching relies on two primary target representation paradigms:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-14.png" alt="Search Window and Sliding Template Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-14.png" alt="Search Window and Sliding Template Matching" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Sliding an object template from Frame $I_{t-1}$ across a local candidate search window in Frame $I_t$ to locate the peak similarity response.</em></figcaption>
   </div>
 </figure>
@@ -342,7 +342,7 @@ To suppress background contamination at bounding box corners, an isotropic **Epa
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-15.png" alt="Weighted Histogram Computation via Epanechnikov Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-15.png" alt="Weighted Histogram Computation via Epanechnikov Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Spatial weighting with the Epanechnikov Kernel: Central pixels receive maximal voting weight (+1.0), whereas peripheral corner pixels are suppressed (+0.4 down to 0), eliminating background contamination.</em></figcaption>
   </div>
 </figure>
@@ -366,7 +366,7 @@ $$D(H_1, H_2) = \sum_{i=1}^M \min(H_1(i), H_2(i))$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-16.png" alt="Basketball Player Tracking and Identity Latching Risk" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-16.png" alt="Basketball Player Tracking and Identity Latching Risk" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Tracking players in a basketball game. Players sharing the same jersey color create severe ambiguity for histogram-only trackers, risking identity latching.</em></figcaption>
   </div>
 </figure>
@@ -379,7 +379,7 @@ To overcome the rigid alignment limits of template matching and the spatial ambi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-17.png" alt="SIFT Bag of Features Tracking Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-17.png" alt="SIFT Bag of Features Tracking Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: SIFT Bag of Features Tracking Architecture (Gu et al., 2010): Maintaining and updating distinct Object and Background feature bags across consecutive frames.</em></figcaption>
   </div>
 </figure>
@@ -390,7 +390,7 @@ At the initial video frame ($t=1$):
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-18.png" alt="Initial Frame Feature Assignment" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-18.png" alt="Initial Frame Feature Assignment" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Initialization at Frame 1: 1) User selects bounding box $W_1$; 2) SIFT keypoints are extracted; 3) Features within $W_1$ form the Object Model ($O_1$), while peripheral features form the Background Model ($B$).</em></figcaption>
   </div>
 </figure>
@@ -406,7 +406,7 @@ In each subsequent frame $I_t$:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-19.png" alt="Frame-to-Frame Feature Tracking Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-19.png" alt="Frame-to-Frame Feature Tracking Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 19: Tracking execution at Frame $t$: 1) SIFT extraction; 2) Nearest-neighbor ratio test ($d_O / d_B &lt; 0.5$) assigns confidence scores ($C(\mathbf{v}_i) = \pm 1$); 3) Candidate window scoring ($\mu(W) = \varphi(W) - \tau(W)$); 4) Optimal window selection; 5) Online model update.</em></figcaption>
   </div>
 </figure>
@@ -443,14 +443,14 @@ $$O_t = O_{t-1} \cup \{\mathbf{v}_i \mid \mathbf{v}_i \in W_t \text{ and } C(\ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-20.png" alt="Robust Tracking Under Lighting Variation and 3D Head Turning" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-20.png" alt="Robust Tracking Under Lighting Variation and 3D Head Turning" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 20: Robust tracking performance: Left: Severe illumination changes; Right: Out-of-plane 3D head rotation against cluttered background.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-21.png" alt="Robust Tracking Under Severe Occlusion" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/object-tracking-21.png" alt="Robust Tracking Under Severe Occlusion" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 21: Severe occlusion handling: Left: Subject wearing a hat obscuring upper face; Right: Magazine obscuring half the face. Remaining unoccluded SIFT features maintain correct bounding box alignment.</em></figcaption>
   </div>
 </figure>

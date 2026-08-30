@@ -11,7 +11,7 @@ Recommender systems are everywhere in our digital lives, from Netflix suggesting
 Collaborative filtering is one of the most widely used techniques in recommender systems. It works by leveraging the behavior and preferences of users to make predictions about what they might like. Instead of relying on the characteristics of items themselves, collaborative filtering focuses on the interactions between users and items.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/recommender-systems-01.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/recommender-systems-01.webp" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 Imagine a streaming service like Netflix. If many users who watched "The Matrix" also watched "Inception," the system might recommend "Inception" to a user who has already watched "The Matrix." This works because the system assumes that similar users have similar tastes.
@@ -133,7 +133,7 @@ Since **M1** has the highest predicted rating, we recommend **M1** to **D**.
 ## Item-based Collaborative Filtering
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/recommender-systems-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/recommender-systems-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 Rather than finding similar users, **item-based collaborative filtering** identifies similar items based on how users have rated them. The main idea is that if two movies are rated similarly by multiple users, they are likely to be similar.
@@ -188,7 +188,7 @@ Content-based filtering recommends items to users by analyzing the characteristi
 In content-based filtering, each item is represented by a set of features. Users are assumed to have a preference for items with similar features to those they have previously liked. The recommendation process typically involves:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/recommender-systems-02.png" style="display:flex; justify-content: center; width: 7ı00px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/recommender-systems-02.png" style="display:flex; justify-content: center; width: 7ı00px;"alt="regression-example"/>
 </div>
 
 1. **Feature Representation**: Representing items in terms of feature vectors.
@@ -286,7 +286,7 @@ By integrating deep learning techniques, such as word embeddings and neural netw
 Principal Components Analysis (PCA) is a dimensionality reduction technique used in machine learning and statistics to transform a large set of correlated features into a smaller set of uncorrelated features called principal components. This helps in reducing the complexity of data while retaining most of its variability.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/recommender-systems-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/recommender-systems-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 PCA is commonly used in:
@@ -421,7 +421,7 @@ plt.show()
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/recommender-systems-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/recommender-systems-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - The first plot shows the original dataset.

@@ -12,7 +12,7 @@ Binary edge maps produced by low-level edge detectors contain background clutter
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-01.png" alt="Inliers vs Outliers in Image Space" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-01.png" alt="Inliers vs Outliers in Image Space" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Inlier points lying on true line $y = mx + c$ (dark grey) vs outlier background noise points (light grey) in Image Space.</em></figcaption>
   </div>
 </figure>
@@ -38,7 +38,7 @@ This relationship establishes a fundamental geometric duality between **Image Sp
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-02.png" alt="Duality Concept Point to Line" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-02.png" alt="Duality Concept Point to Line" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Image points mapping to lines in parameter space, intersecting at candidate parameter pair $(m, c)$.</em></figcaption>
   </div>
 </figure>
@@ -47,7 +47,7 @@ This relationship establishes a fundamental geometric duality between **Image Sp
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-03.png" alt="Duality Summary Intersections" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-03.png" alt="Duality Summary Intersections" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Geometric duality summary: collinear image points concur at a single point $(m, c)$ in parameter space, whereas outlier points pass elsewhere.</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ Where:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-06.png" alt="Polar Parametrization Mapping to Sinusoids" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-06.png" alt="Polar Parametrization Mapping to Sinusoids" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Polar parametrization ($\theta - \rho$): image points map to sinusoidal curves in parameter space, intersecting at common parameters $(\theta^*, \rho^*)$.</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-04.png" alt="Accumulator Matrix Voting" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-04.png" alt="Accumulator Matrix Voting" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Discrete accumulator matrix $A(m, c)$ voting concept: 3 collinear image points yield a peak count of 3.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-05.png" alt="Four Lines Peak Finding" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-05.png" alt="Four Lines Peak Finding" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Four distinct lines forming a polygon in image space map to four clear intersection peaks in parameter space.</em></figcaption>
   </div>
 </figure>
@@ -125,14 +125,14 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-07.png" alt="Film Roll Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-07.png" alt="Film Roll Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Real Hough line detection pipeline on camera film roll: Original Image $\rightarrow$ Gradient $\rightarrow$ Thresholded Edges $\rightarrow$ Accumulator $A(\rho, \theta)$ peaks $\rightarrow$ Detected red lines.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-08.png" alt="Machine Box Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-08.png" alt="Machine Box Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Hough line detection on an industrial machine panel with accumulator peak extraction.</em></figcaption>
   </div>
 </figure>
@@ -157,7 +157,7 @@ If the radius $r$ is fixed, the parameter space is 2D: $A(a, b)$. Each edge poin
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-09.png" alt="Single Point Voting Circle in Parameter Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-09.png" alt="Single Point Voting Circle in Parameter Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Single image point $(x_i, y_i)$ voting along a circle of radius $r$ in parameter space $A(a, b)$.</em></figcaption>
   </div>
 </figure>
@@ -166,14 +166,14 @@ The intersection of these voting circles pinpoints the true circle center $(a^*,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-10.png" alt="Multiple Points Voting Circles Intersecting at Center" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-10.png" alt="Multiple Points Voting Circles Intersecting at Center" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Overlapping voting circles from all edge points along a circle concurring at center $(a^*, b^*)$.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-11.png" alt="Real Coins Circle Hough Transform" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-11.png" alt="Real Coins Circle Hough Transform" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Real coin detection: accumulators $A_1(a,b)$ for Penny ($r = r_1$) and $A_2(a,b)$ for Quarter ($r = r_2$).</em></figcaption>
   </div>
 </figure>
@@ -213,7 +213,7 @@ Before searching an image, a geometric model of the target template shape is ext
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-12.png" alt="GHT Model Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-12.png" alt="GHT Model Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: GHT model geometry: reference center $(x_c, y_c)$, edge orientation $\phi_i$, and polar vector $\vec{r}_k^i = (r_k^i, \alpha_k^i)$.</em></figcaption>
   </div>
 </figure>
@@ -225,7 +225,7 @@ Before searching an image, a geometric model of the target template shape is ext
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-13.png" alt="GHT Phi Table Structure" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-13.png" alt="GHT Phi Table Structure" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: $\phi$-Table data structure mapping edge orientation $\phi_i$ to lists of displacement vectors $\vec{r} = (r, \alpha)$.</em></figcaption>
   </div>
 </figure>
@@ -249,7 +249,7 @@ $$A(x_c, y_c) = A(x_c, y_c) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-14.png" alt="GHT Online Voting into Accumulator" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-14.png" alt="GHT Online Voting into Accumulator" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: GHT online voting into reference center accumulator $A(x_c, y_c)$ producing a sharp peak at true center location.</em></figcaption>
   </div>
 </figure>
@@ -258,7 +258,7 @@ $$A(x_c, y_c) = A(x_c, y_c) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-15.png" alt="Real GHT Results Leaf and Cat Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-15.png" alt="Real GHT Results Leaf and Cat Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Practical GHT detection results: leaf template detected among flowers (top) and cat template detected among rabbits (bottom).</em></figcaption>
   </div>
 </figure>

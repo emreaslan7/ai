@@ -49,7 +49,7 @@ The mathematical definition of pixel neighborhood is critical for topological co
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-01.png" alt="4-Connectedness vs 8-Connectedness Grid" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-01.png" alt="4-Connectedness vs 8-Connectedness Grid" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>4-Connectedness (4-C) and 8-Connectedness (8-C) Pixel Neighborhood Definitions</em></figcaption>
   </div>
 </figure>
@@ -63,7 +63,7 @@ Consider a closed ring geometry formed by diagonal pixels (e.g., a $2\times2$ ar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-02.png" alt="Jordan's Curve Theorem Violation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-02.png" alt="Jordan's Curve Theorem Violation" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Jordan's Curve Theorem Violation on Square Pixel Grids (4-C Hole Without Loop vs 8-C Leaking Background)</em></figcaption>
   </div>
 </figure>
@@ -74,7 +74,7 @@ This geometric paradox is solved by introducing an artificial asymmetry into the
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-03.png" alt="Asymmetric 6-Connectedness Configurations" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-03.png" alt="Asymmetric 6-Connectedness Configurations" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Asymmetric 6-Connectedness (6-C) Configurations Resolving Jordan's Paradox into Two Line Segments</em></figcaption>
   </div>
 </figure>
@@ -83,7 +83,7 @@ This asymmetric definition causes a square pixel grid to behave like a **hexagon
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-04.png" alt="Square Grid Behaving Like Hexagonal Grid" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-04.png" alt="Square Grid Behaving Like Hexagonal Grid" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Asymmetry Causing a Square Pixel Grid to Equivalently Perform as a Hexagonal Grid</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ A crucial property of the Euler number is **additivity**. Partitioning an image 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-05.png" alt="Euler Number Calculation Example" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-05.png" alt="Euler Number Calculation Example" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Euler Number Calculation Example on Binary Text ($E = B - H$) and Additive Property Demonstration</em></figcaption>
   </div>
 </figure>
@@ -194,7 +194,7 @@ Two algorithms are of paramount importance:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-06.png" alt="Butterfly Skeleton Thinning" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/segmenting-binary-images-and-iterative-modification-06.png" alt="Butterfly Skeleton Thinning" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Butterfly Silhouette Thinning via Algorithm 4 (Preserving Euler Number) to Extract Topological Skeleton</em></figcaption>
   </div>
 </figure>

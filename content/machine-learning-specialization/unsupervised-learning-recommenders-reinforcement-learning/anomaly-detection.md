@@ -7,7 +7,7 @@
 Anomaly detection is the process of identifying rare or unusual patterns in data that do not conform to expected behavior. These anomalies may indicate critical situations such as fraud detection, system failures, or rare events in various fields like healthcare and finance.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/anomaly-detection-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/anomaly-detection-02.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 ### Real-World Examples
@@ -34,7 +34,7 @@ Where:
 ### Properties of Gaussian Distribution
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/anomaly-detection-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/anomaly-detection-01.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **Symmetric**: Centered around the mean $ \mu $
@@ -156,7 +156,7 @@ plt.show()
 ```
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/anomaly-detection-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/anomaly-detection-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 ### Explanation

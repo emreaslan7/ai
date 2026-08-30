@@ -8,7 +8,7 @@
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-01.png" alt="Face Detection Output with Bounding Boxes over Input Image" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-01.png" alt="Face Detection Output with Bounding Boxes over Input Image" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Detection of human faces within a digital image using bounding boxes.</em></figcaption>
   </div>
 </figure>
@@ -39,7 +39,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-02.png" alt="Feature Extraction and Binary Classification on Candidate Patch" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-02.png" alt="Feature Extraction and Binary Classification on Candidate Patch" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Extracting feature vector f from a local candidate window and matching against a face model for binary prediction.</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ A robust face detection system must tolerate significant physical variations:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-04.png" alt="Face Samples vs Non-Face Background Samples" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-04.png" alt="Face Samples vs Non-Face Background Samples" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Contrast between face class instances (left) and arbitrary non-face background scenes (right).</em></figcaption>
   </div>
 </figure>
@@ -69,7 +69,7 @@ The choice of visual features dictates both system execution speed and classific
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-03.png" alt="Limitations of Interest Points and Component Templates for Face Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-03.png" alt="Limitations of Interest Points and Component Templates for Face Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Conceptual limitations of traditional interest points (edges/corners/SIFT) and isolated facial component templates.</em></figcaption>
   </div>
 </figure>
@@ -105,14 +105,14 @@ where $I(x,y)$ represents original pixel intensity values. Eliminating multiplic
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-07.png" alt="Haar Filter Positioned Over Eye-Cheek Region" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-07.png" alt="Haar Filter Positioned Over Eye-Cheek Region" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Overlaying Haar filter H_A over facial structure (White=1, Black=-1) for correlation.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-05.png" alt="Extracting Feature Vector f via Haar Filter Cascade" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-05.png" alt="Extracting Feature Vector f via Haar Filter Cascade" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Convolving the input image with filter cascade H_A, H_B, H_C, H_D to produce feature vector f[i,j].</em></figcaption>
   </div>
 </figure>
@@ -127,7 +127,7 @@ Haar filter banks are structured into scales and orientations to extract diverse
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-06.png" alt="Multi-Scale Haar Filter Bank Arrangement" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-06.png" alt="Multi-Scale Haar Filter Bank Arrangement" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Bank of Haar filters arranged across columns representing multiple spatial scales and aspect ratios.</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ $$II(x,y) = \sum_{x' \le x, \, y' \le y} I(x',y')$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-08.png" alt="Original Image I vs Integral Image II Matrices" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-08.png" alt="Original Image I vs Integral Image II Matrices" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Pixel matrix Image I (left) vs Integral Image II (right), storing top-left cumulative area sums at each cell.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ $$II(O) = II(A) + II(B) - II(C) + I(O)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-11.png" alt="Recursive Construction of Integral Cell Value During Raster Scan" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-11.png" alt="Recursive Construction of Integral Cell Value During Raster Scan" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Computing cell A recursively during single-pass raster scanning (II_A = II_B + II_C - II_D + I_A).</em></figcaption>
   </div>
 </figure>
@@ -182,7 +182,7 @@ $$\text{Rectangle Sum} = II(P) - II(Q) - II(S) + II(R)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-09.png" alt="Evaluating Rectangle Sum in O(1) Time using Integral Image Vertices" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-09.png" alt="Evaluating Rectangle Sum in O(1) Time using Integral Image Vertices" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Computing rectangular area sum in only 3 addition/subtraction steps using corner lookups P, Q, R, S (3490 - 1137 - 1249 + 417 = 1521).</em></figcaption>
   </div>
 </figure>
@@ -204,7 +204,7 @@ $$\text{Haar Response} = (II(O) - II(T) + II(R) - II(S)) - (II(P) - II(Q) + II(T
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-10.png" alt="Evaluating Haar Feature Response in 7 Additions" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-10.png" alt="Evaluating Haar Feature Response in 7 Additions" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Evaluating a two-rectangle Haar filter response in exactly 7 addition operations via shared integral boundary cancellation.</em></figcaption>
   </div>
 </figure>
@@ -223,7 +223,7 @@ A training dataset of thousands of labeled face and non-face image patches is co
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-12.png" alt="Nearest Neighbor Query Point Classification in Feature Space" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-12.png" alt="Nearest Neighbor Query Point Classification in Feature Space" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Mapping test query windows into N-dimensional feature space to assign Face (left) or Non-Face (right) class labels based on closest training point.</em></figcaption>
   </div>
 </figure>
@@ -241,7 +241,7 @@ If a non-face test pattern resembles facial geometry (e.g., a cat face or unalig
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-13.png" alt="False Positive Cat Face Misclassification and Dataset Expansion Solution" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-13.png" alt="False Positive Cat Face Misclassification and Dataset Expansion Solution" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Misclassifying a cat face as false positive (left) vs surrounding feature space outliers by expanding non-face training data (right).</em></figcaption>
   </div>
 </figure>
@@ -254,7 +254,7 @@ However, scaling training data creates severe latency issues. A brute-force NN c
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-14.png" alt="Placing Geometric Decision Plane in Feature Space" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-14.png" alt="Placing Geometric Decision Plane in Feature Space" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Constructing a geometric decision plane between face and non-face clusters to bypass point-by-point database searching.</em></figcaption>
   </div>
 </figure>
@@ -281,7 +281,7 @@ $$\mathbf{w}^T \mathbf{f} + b = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-15.png" alt="Vector Equation of Decision Boundary and Side Direction Rules" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-15.png" alt="Vector Equation of Decision Boundary and Side Direction Rules" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Vector representation of decision line w^T f + b = 0 and evaluating side orientation signs.</em></figcaption>
   </div>
 </figure>
@@ -301,7 +301,7 @@ Infinitely many hyperplanes can separate linearly separable training sets. Selec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-16.png" alt="Infinitely Many Hyperplanes Separating Two Classes" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-16.png" alt="Infinitely Many Hyperplanes Separating Two Classes" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Multiple valid decision lines capable of zero-error separation on training data.</em></figcaption>
   </div>
 </figure>
@@ -312,7 +312,7 @@ SVM optimizes: Maximizing the margin thickness ($\rho$) separating face (+1) and
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-17.png" alt="Comparing Wide Margin I vs Narrow Margin II" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-17.png" alt="Comparing Wide Margin I vs Narrow Margin II" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Selecting maximum safe margin (Margin I, left) over narrow unstable candidate decision lines (right).</em></figcaption>
   </div>
 </figure>
@@ -323,7 +323,7 @@ Training points touching the outer boundaries of the safe zone are called **Supp
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-18.png" alt="Definition of Support Vectors Touching Safe Zone Margin" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-18.png" alt="Definition of Support Vectors Touching Safe Zone Margin" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 18: Support vectors (circled points) touching boundary safe zone margins and controlling boundary location.</em></figcaption>
   </div>
 </figure>
@@ -353,7 +353,7 @@ Classification rules:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/face-detection-19.png" alt="SVM Decision Thresholds based on Distance d" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/face-detection-19.png" alt="SVM Decision Thresholds based on Distance d" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 19: Classification decision rules comparing signed distance d against margin limits.</em></figcaption>
   </div>
 </figure>

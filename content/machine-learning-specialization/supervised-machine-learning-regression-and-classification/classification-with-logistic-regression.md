@@ -9,7 +9,7 @@ Classification is a supervised learning problem where the goal is to predict **d
 ### **Classification vs. Regression**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-01.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 | Feature           | Regression              | Classification       |
@@ -45,14 +45,14 @@ Linear regression might seem like a reasonable approach for classification, but 
 1. **Unbounded Output**: Linear regression produces outputs that can take any real value, meaning predictions could be **negative** or **greater than 1**, which makes no sense for probability-based classification.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-03.jpeg" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-03.jpeg" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 2. **Poor Decision Boundaries**: If we use a linear function for classification, extreme values in the dataset can distort the decision boundary, leading to incorrect classifications.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 15px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 To solve these issues, we use **logistic regression**, which applies the **sigmoid function** to transform outputs into a probability range between **0 and 1**.
@@ -70,7 +70,7 @@ y = \theta_0 + \theta_1 x_1 + \theta_2 x_2
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-02.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-02.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 For some transactions, the output might be **y = 7.5** or **y = -3.2**, which do not make sense as probability values. Instead, we use the **sigmoid function** to squash any real number into a valid probability range:
@@ -150,7 +150,7 @@ $$
 This means that when $ x_1 $ crosses this threshold, the model switches from predicting **Class 0** to **Class 1**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-06.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-06.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Example:**
@@ -180,7 +180,7 @@ $$
 This represents a **straight line** separating the two classes in a **2D plane**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Example:**
@@ -212,7 +212,7 @@ $$
 This equation represents a **flat plane** dividing the 3D space into two regions, one for **Class 1** and the other for **Class 0**.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-08.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-08.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Example:**  
@@ -245,7 +245,7 @@ $$
 This represents a **circle** in 2D space.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-10.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-10.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 For example:
@@ -267,7 +267,7 @@ $$
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-11.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-11.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 This allows for **elliptical** decision boundaries.
@@ -281,7 +281,7 @@ $$
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 This enables **twists and curves** in the decision boundary, allowing logistic regression to model **highly non-linear** patterns.
@@ -326,7 +326,7 @@ However, this cost function does not work well for **logistic regression** becau
 - Using squared errors results in a **non-convex** function with multiple local minima, making optimization difficult.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px;">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-12.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-12.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 We need a different cost function that:  
@@ -354,7 +354,7 @@ This function ensures:
 - **If $ y = 0 $** → The second term dominates: $ -\log(1 - h_θ(x)) $, which is close to 0 if $ h\_\theta(x) \approx 0 $.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/classification-with-logistic-regression-13.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/classification-with-logistic-regression-13.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 ✅ **Interpretation**: The function penalizes incorrect predictions heavily while rewarding correct predictions.

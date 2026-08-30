@@ -10,7 +10,7 @@ $$g[i,j] = f[i,j] * h[i,j] = \sum_{m} \sum_{n} f[m,n] \, h[i - m, j - n]$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-01.png" alt="Ayrık 2D Konvolüsyon İşlem Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-01.png" alt="Ayrık 2D Konvolüsyon İşlem Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ayrık 2D konvolüsyon denklemi, maske tanımı ve f, h, g matrisleri</em></figcaption>
   </div>
 </figure>
@@ -46,7 +46,7 @@ Konvolüsyon işlemini yazılımsal veya görsel olarak gerçekleştirmek için 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-02.png" alt="Kenar Sınır Problemi Maske Taşması" style="display:flex; border-radius: 5px; justify-content: center; width: 250px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-02.png" alt="Kenar Sınır Problemi Maske Taşması" style="display:flex; border-radius: 5px; justify-content: center; width: 250px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Filtre maskesinin görüntü sınırları dışına taşması durumunda ortaya çıkan kenar problemi</em></figcaption>
   </div>
 </figure>
@@ -86,7 +86,7 @@ $$g[i,j] = f[i,j] * \delta[i,j] = f[i,j]$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-03.png" alt="Birim Darbe Filtresi Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-03.png" alt="Birim Darbe Filtresi Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Birim darbe filtresi (Impulse Filter) konvolüsyonu sonucunda değişmeyen görüntü</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ $$h = \begin{bmatrix} 0 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix} \implies
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-04.png" alt="Görüntü Kaydırma Filtresi Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-04.png" alt="Görüntü Kaydırma Filtresi Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ötelenmiş darbe filtresi (Shift Filter) ile görüntünün uzamsal olarak kaydırılması</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-05.png" alt="Unnormalize Kutu Filtresi Beyaza Doygunluk Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-05.png" alt="Unnormalize Kutu Filtresi Beyaza Doygunluk Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Unnormalize 5x5 kutu filtresi sonucunda piksel değerlerinin 255'e kilitlenerek beyaza doyması</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-06.png" alt="Normalize Kutu Filtresi Doğru Pürüzsüzleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-06.png" alt="Normalize Kutu Filtresi Doğru Pürüzsüzleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Normalize edilmiş 5x5 kutu filtresi ile elde edilen başarılı pürüzsüzleşmiş çıktı</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-07.png" alt="21x21 Kutu Filtresi Bloklaşma Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-07.png" alt="21x21 Kutu Filtresi Bloklaşma Hatası" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>21x21 boyutundaki büyük kutu filtresinin ürettiği yapay kutulaşma ve bloklaşma efektleri</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ $$h_{\text{unnorm}} = \begin{bmatrix} 1 & 1 & 1 & 1 & 1 \\ \vdots & & \ddots & &
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-08.png" alt="21x21 Dairesel Gauss Filtresi Yumuşak Pürüzsüzleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-08.png" alt="21x21 Dairesel Gauss Filtresi Yumuşak Pürüzsüzleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>21x21 boyutundaki dairesel Gauss (Fuzzy) filtresi ile bloklaşma olmadan doğal yumuşatma</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ $$K \approx 2\pi\sigma \quad (\text{veya } K \approx 6\sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-09.png" alt="Gauss Sigma Karşılaştırması sigma=4 vs sigma=16" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-09.png" alt="Gauss Sigma Karşılaştırması sigma=4 vs sigma=16" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gauss standart sapması sigma=4 ve sigma=16 değerlerinin bulanıklaştırma miktarı karşılaştırması</em></figcaption>
   </div>
 </figure>
@@ -178,7 +178,7 @@ $$K \approx 2\pi\sigma \quad (\text{veya } K \approx 6\sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-10.png" alt="2D Gauss Filtresinin 1D+1D Ayrıştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-10.png" alt="2D Gauss Filtresinin 1D+1D Ayrıştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>2D KxK Gauss matrisinin dikey Kx1 ve yatay 1xK iki adet 1D Gauss vektörüne ayrıştırılması</em></figcaption>
   </div>
 </figure>
@@ -253,7 +253,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-11.png" alt="Gauss Filtresinin Tuz Biber Gürültüsündeki Başarısızlığı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-11.png" alt="Gauss Filtresinin Tuz Biber Gürültüsündeki Başarısızlığı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Doğrusal Gauss filtresinin tuz-biber gürültüsünü temizleyemeyip pikselleri yayarak bulandırması</em></figcaption>
   </div>
 </figure>
@@ -263,7 +263,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-12.png" alt="Medyan Filtrenin Tuz Biber Gürültüsünü Tam Temizlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-12.png" alt="Medyan Filtrenin Tuz Biber Gürültüsünü Tam Temizlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Medyan filtre (K=3) ile tuz-biber gürültüsünün kenarlara zarar verilmeden mükemmel temizlenmesi</em></figcaption>
   </div>
 </figure>
@@ -278,7 +278,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-13.png" alt="Standart Gauss Filtresinin Kenarları Bulanıklaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-13.png" alt="Standart Gauss Filtresinin Kenarları Bulanıklaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Standart Gauss filtresinin düz alanlarla birlikte 10 rakamı gibi keskin kenarları da bulanıklaştırması</em></figcaption>
   </div>
 </figure>
@@ -296,7 +296,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-14.png" alt="Bilateral Filtrenin Kenarları Koruyarak Pürüzsüzleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-14.png" alt="Bilateral Filtrenin Kenarları Koruyarak Pürüzsüzleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İki taraflı filtre ile 10 rakamının ve kenarların keskinliğini koruyarak pürüzsüzleştirme</em></figcaption>
   </div>
 </figure>
@@ -308,7 +308,7 @@ $$g[i,j] = \frac{1}{W[i,j]} \sum_{m} \sum_{n} f[i-m, j-n] \cdot G_s[m,n] \cdot G
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-15.png" alt="Bilateral Filtre 3D Yüzey Grafiği ve Çift Gauss Çarpımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-15.png" alt="Bilateral Filtre 3D Yüzey Grafiği ve Çift Gauss Çarpımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İki taraflı filtrenin 3D yüzey temsili: Uzaysal Gauss (Gs) ve Parlaklık Gauss'unun (Gr) birleşimi</em></figcaption>
   </div>
 </figure>
@@ -346,7 +346,7 @@ Filtre bir adım kenarının (*step edge*) sol tarafında yer aldığında:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-16.png" alt="Orijinal vs Gauss vs Bilateral Filtre Portre Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/linear-and-non-linear-filters-16.png" alt="Orijinal vs Gauss vs Bilateral Filtre Portre Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Portre fotoğrafı üzerinde Orijinal, Gauss (sigma_s=2) ve Bilateral (sigma_s=2, sigma_r=10) filtreleme sonuçlarının karşılaştırması</em></figcaption>
   </div>
 </figure>

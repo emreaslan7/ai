@@ -51,7 +51,7 @@ Burada:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-01.png" alt="Sinüzoid Dalga Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-01.png" alt="Sinüzoid Dalga Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sinüzoid dalganın geometrik bileşenleri: Genlik ($A$), Frekans ($u$), Periyot ($T = 1/u$) ve Evre ($\phi$).</em></figcaption>
   </div>
 </figure>
@@ -82,14 +82,14 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-02.png" alt="Fourier Serisi ile Kare Dalga İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-02.png" alt="Fourier Serisi ile Kare Dalga İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Fourier Serisi ile kare dalga inşası (İlk 7 ve 8 harmonik sinüzoidin toplamı)</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-03.png" alt="Kare Dalganın Genlik ve Evre Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-03.png" alt="Kare Dalganın Genlik ve Evre Spektrumu" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kare dalganın Genlik (Amplitude) ve Evre (Phase, $\phi \in \{-\pi/2, \pi/2\}$) spektrumu ayrışımı</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ Burada $x$ uzamsal koordinatı, $u$ ise frekans koordinatını temsil eder.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-04.png" alt="Fourier Dönüşümü ve Ters Fourier Dönüşümü Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 750px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-04.png" alt="Fourier Dönüşümü ve Ters Fourier Dönüşümü Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 750px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Fourier Dönüşümü (FT) ile Ters Fourier Dönüşümü (IFT) arasındaki girdi-çıktı ve spektral bağıntı</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$e^{i\theta} = \cos\theta + i\sin\theta \quad (\text{burada } i = \sqrt{-1})$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-05.png" alt="Taylor Serisi ile Euler Formülü İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-05.png" alt="Taylor Serisi ile Euler Formülü İspatı" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Euler Formülünün ($e^{i\theta} = \cos\theta + i\sin\theta$) Taylor serisi açılımı ile matematiksel ispatı</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ $$\mathcal{F}\{\cos(2\pi k x)\} = \frac{1}{2} \left[ \delta(u - k) + \delta(u + 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-06.png" alt="Kosinüs Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-06.png" alt="Kosinüs Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Kosinüs fonksiyonu $f(x) = \cos(2\pi k x)$ ve frekanstaki iki adet simetrik Dirac delta darbesi</em></figcaption>
   </div>
 </figure>
@@ -206,7 +206,7 @@ $$\mathcal{F}\{\cos(2\pi k x)\} = \frac{1}{2} \left[ \delta(u - k) + \delta(u + 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-07.png" alt="Kosinüslerin Toplamının Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-07.png" alt="Kosinüslerin Toplamının Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İki farklı kosinüsün toplamı ve spektrumda oluşan dört adet Dirac delta darbesi</em></figcaption>
   </div>
 </figure>
@@ -223,7 +223,7 @@ $$\mathcal{F}\{1\} = \delta(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-08.png" alt="Sabit Sinyalin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-08.png" alt="Sabit Sinyalin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sabit DC sinyal $f(x) = 1$ ve orijindeki ($u=0$) tekil Dirac delta darbesi</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ $$\mathcal{F}\{\delta(x)\} = 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-09.png" alt="Birim Darbenin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-09.png" alt="Birim Darbenin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal birim darbe $f(x) = \delta(x)$ ve tamamen düz frekans spektrumu $F(u) = 1$</em></figcaption>
   </div>
 </figure>
@@ -247,7 +247,7 @@ $$\mathcal{F}\{\text{Rect}(x/T)\} = T \cdot \text{sinc}(Tu) = T \frac{\sin(\pi T
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-10.png" alt="Dikdörtgen Pencerenin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-10.png" alt="Dikdörtgen Pencerenin Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal dikdörtgen pencere $f(x) = \text{Rect}(x/T)$ ve frekanstaki Sinc spektrumu</em></figcaption>
   </div>
 </figure>
@@ -259,7 +259,7 @@ $$\mathcal{F}\{e^{-ax^2}\} = \sqrt{\frac{\pi}{a}} e^{-\frac{\pi^2 u^2}{a}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-11.png" alt="Gauss Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-11.png" alt="Gauss Fonksiyonunun Fourier Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal Gauss eğrisi $f(x) = e^{-ax^2}$ ve frekanstaki Gauss spektrumu</em></figcaption>
   </div>
 </figure>
@@ -275,7 +275,7 @@ $$f(ax) \iff \frac{1}{|a|} F\left(\frac{u}{a}\right)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-12.png" alt="Fourier Dönüşümü Özellikler Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-12.png" alt="Fourier Dönüşümü Özellikler Tablosu" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Uzamsal düzlem ile frekans düzlemi arasındaki temel dönüşüm özellikleri tablosu</em></figcaption>
   </div>
 </figure>
@@ -307,7 +307,7 @@ $$\mathcal{F}\{f(x) \cdot h(x)\} = F(u) * H(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-13.png" alt="Konvolüsyon Teoremi İfadesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-13.png" alt="Konvolüsyon Teoremi İfadesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Konvolüsyon Teoremi: Uzamsal konvolüsyon frekansta nokta çarpımına, uzamsal çarpım ise frekansta konvolüsyona karşılık gelir.</em></figcaption>
   </div>
 </figure>
@@ -359,13 +359,13 @@ flowchart LR
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 25px 0;">
   <div style="flex: 1; min-width: 300px; text-align: center;">
     <figure style="margin: 0;">
-      <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-14.png" alt="Uzamsal Konvolüsyon vs Frekans Çarpımı - Bölüm 1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+      <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-14.png" alt="Uzamsal Konvolüsyon vs Frekans Çarpımı - Bölüm 1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
       <figcaption style="margin-top: 0.5em; font-size: 13px; color: #888;"><em>Gürültülü sinyal ($f(x)$) ile Gauss çekirdeğinin ($n_\sigma(x)$) Fourier dönüşümleri ($F(u)$ ve $N_\sigma(u)$) ve frekanstaki nokta çarpımı</em></figcaption>
     </figure>
   </div>
   <div style="flex: 1; min-width: 300px; text-align: center;">
     <figure style="margin: 0;">
-      <img src="../../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-15.png" alt="Uzamsal Konvolüsyon vs Frekans Çarpımı - Bölüm 2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+      <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-15.png" alt="Uzamsal Konvolüsyon vs Frekans Çarpımı - Bölüm 2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
       <figcaption style="margin-top: 0.5em; font-size: 13px; color: #888;"><em>Frekansta filtrelenmiş spektrumun ($F(u)H(u)$) Ters Fourier Dönüşümü ile pürüzsüzleştirilmiş çıktı sinyali $g(x)$</em></figcaption>
     </figure>
   </div>

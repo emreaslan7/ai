@@ -18,7 +18,7 @@ Genel bölütleme teorisine geçmeden önce, bilgisayarlı görü literatüründ
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-01.png" alt="Histogram Eşikleme Yöntemi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-01.png" alt="Histogram Eşikleme Yöntemi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Histogram Eşikleme (Thresholding): 1) Gri seviye görüntü $g(x,y)$ ve histogram vadisinden saptanan eşik $T$; 2) Elde edilen ikili (binary) bölütleme maskesi $b(x,y)$.</em></figcaption>
   </div>
 </figure>
@@ -27,7 +27,7 @@ Genel bölütleme teorisine geçmeden önce, bilgisayarlı görü literatüründ
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-02.png" alt="Aktif Konturlar ile Sınır Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-02.png" alt="Aktif Konturlar ile Sınır Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Aktif Konturlar (Snakes): Madeni para etrafına başlatılan elastik eğrinin gradyan kuvvetleriyle sınıra kilitlenmesi.</em></figcaption>
   </div>
 </figure>
@@ -41,7 +41,7 @@ Doğal sahneler (**natural scenes**) üzerinde genel bir bölütleme yapmaya ça
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-10.png" alt="Bölütlemenin İnsan Algısındaki Öznelliği" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-10.png" alt="Bölütlemenin İnsan Algısındaki Öznelliği" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Bölütlemenin öznel doğası (Martin et al., 2001): Aynı giriş görüntüsü üzerinde farklı insan deneklerin (User 1, User 2, User 3) çizdiği bölütleme sınırları.</em></figcaption>
   </div>
 </figure>
@@ -74,7 +74,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-03.png" alt="Gestalt Bütüncül Algı - Dalmaçyalı Köpek" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-03.png" alt="Gestalt Bütüncül Algı - Dalmaçyalı Köpek" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Gestalt Psikolojisi: Bütüncül algı ilkesi ("We perceive objects in their entirety before their individual parts").</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ Uzamsal olarak birbirine daha yakın konumlandırılmış olan nesneler ve ögel
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-04.png" alt="Gestalt Yakınlık İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-04.png" alt="Gestalt Yakınlık İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Yakınlık İlkesi (Proximity): Birbirine uzamsal olarak daha yakın olan görsel ögeler birlikte gruplanır.</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ Görünüm özellikleri (parlaklık, renk, boyut, yönelim vb.) benzer olan gör
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-05.png" alt="Gestalt Benzerlik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-05.png" alt="Gestalt Benzerlik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Benzerlik İlkesi (Similarity): Benzer parlaklık, renk, ölçek ve yönelime sahip ögelerin gruplanması.</em></figcaption>
   </div>
 </figure>
@@ -111,7 +111,7 @@ Birbirinden uzamsal olarak çok uzakta veya dağınık olsalar dahi, aynı doğr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-06.png" alt="Gestalt Ortak Kader İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-06.png" alt="Gestalt Ortak Kader İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Ortak Kader İlkesi (Common Fate): Birlikte hareket eden veya görünümü aynı anda değişen ögelerin gruplanması.</em></figcaption>
   </div>
 </figure>
@@ -122,7 +122,7 @@ Birbirinden uzamsal olarak çok uzakta veya dağınık olsalar dahi, aynı doğr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-07.png" alt="Gestalt Bağlantılılık ve Ortak Bölge İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-07.png" alt="Gestalt Bağlantılılık ve Ortak Bölge İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Ortak Bölge ve Bağlantılılık (Common Region & Connectivity): Kapalı sınırlar veya fiziksel bağlantılarla birleştirilen ögelerin algısal gruplanması.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ Aynı pürüzsüz ve sürekli bir geometrik eğri (**continuous curve**) üzerin
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-08.png" alt="Gestalt Süreklilik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-08.png" alt="Gestalt Süreklilik İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Süreklilik İlkesi (Continuity): Pürüzsüz eğri boyunca uzanan ögelerin kesintisiz bir hat olarak algılanması ($A-X-B$ hattının $C-X$ hattından ayrışması).</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ Birbirine paralel ve simetrik (öteleme veya yansıma simetrisi) olan yapılar �
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-09.png" alt="Gestalt Simetri İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-09.png" alt="Gestalt Simetri İlkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Simetri İlkesi (Symmetry): Paralel ve simetrik çizgisel yapıların algısal olarak birbirine bağlanması.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ Bu özellik vektörü, her pikseli yüksek boyutlu bir **Öklid Uzayına (Euclid
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-11.png" alt="Özellik Uzayı ve Renk Dağılım Haritalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-11.png" alt="Özellik Uzayı ve Renk Dağılım Haritalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Öklid Özellik Uzayı: Mandrill görüntüsünün piksellerinin 3B RGB renk uzayına dağıtılması ve özellik vektörü $\mathbf{f} = [R, G, B, x, y, d, \dots]^T$ temsili.</em></figcaption>
   </div>
 </figure>
@@ -184,7 +184,7 @@ Bu matematiksel kurala göre; **özellik uzayındaki mesafe ne kadar küçükse,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-12.png" alt="Kümeleme Olarak Bölütleme" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-12.png" alt="Kümeleme Olarak Bölütleme" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Kümeleme olarak bölütleme: RGB uzayında kümelenen noktaların etiketlenmesi ve görüntü düzleminde segmentlere dönüştürülmesi.</em></figcaption>
   </div>
 </figure>
@@ -222,14 +222,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-13.png" alt="k-Means İlklendirme Adımı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-13.png" alt="k-Means İlklendirme Adımı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: k-Means İlklendirme: $k=3$ adet başlangıç merkezinin özellik uzayına rastgele yerleştirilmesi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-14.png" alt="k-Means İteratif Güncelleme ve Yakınsama" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-14.png" alt="k-Means İteratif Güncelleme ve Yakınsama" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: k-Means İterasyonları: Adım 2 (Voronoi ataması), Adım 3 (Merkezlerin ağırlıklı ortalamaya kayması) ve Adım 4 (Yakınsama).</em></figcaption>
   </div>
 </figure>
@@ -248,7 +248,7 @@ Küme sayısı $k$, bölütlemenin detay seviyesini doğrudan belirler:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-15.png" alt="k-Means Farklı k Değerleri Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-15.png" alt="k-Means Farklı k Değerleri Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Mandrill görüntüsünde k-Means sonuçları: Sol: $k=2$ (sadece 2 renk tonu); Sağ: $k=8$ (daha zengin ve detaylı segmentasyon).</em></figcaption>
   </div>
 </figure>
@@ -260,7 +260,7 @@ Küme sayısı $k$, bölütlemenin detay seviyesini doğrudan belirler:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-16.png" alt="k-Means RGB vs RGB-XY Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-16.png" alt="k-Means RGB vs RGB-XY Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Peppers görüntüsünde k-Means ($k=16$): Sol: $\{R,G,B\}$-uzayı (ayrık bölgeler tek kümede birleşir); Sağ: $\{R,G,B,x,y\}$-uzayı (uzamsal süreklilik korunur).</em></figcaption>
   </div>
 </figure>
@@ -287,7 +287,7 @@ Küme sayısı $k$, bölütlemenin detay seviyesini doğrudan belirler:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-17.png" alt="Mean-Shift Olasılık Yoğunluk Tepeleri ve Tepe Tırmanma" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-17.png" alt="Mean-Shift Olasılık Yoğunluk Tepeleri ve Tepe Tırmanma" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Mean-Shift Prensibi: Özellik dağılımının normalize yoğunluk yüzeyine dönüştürülmesi, her pikselin zirveye tırmanması ve modların küme merkezleri olarak etiketlenmesi.</em></figcaption>
   </div>
 </figure>
@@ -306,14 +306,14 @@ $N$ pikselli bir dağılım ve $W$ yarıçapında dairesel bir analiz penceresi 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-18.png" alt="Pencere İçinde Ağırlık Merkezi ve Mean Shift Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-18.png" alt="Pencere İçinde Ağırlık Merkezi ve Mean Shift Vektörü" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: Mean-Shift Adımları: $W$ penceresi içindeki ağırlıklı merkezin hesaplanması ve pencerenin bu merkeze kaydırılması (Mean Shift Vektörü).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-19.png" alt="Moda Yakınsama ve Küme Etiketleme" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-19.png" alt="Moda Yakınsama ve Küme Etiketleme" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 19: Yakınsama: Tepe noktasına (moda) ulaşan pencere durur; aynı moda ulaşan tüm piksel yolları aynı küme etiketini alır.</em></figcaption>
   </div>
 </figure>
@@ -324,14 +324,14 @@ $N$ pikselli bir dağılım ve $W$ yarıçapında dairesel bir analiz penceresi 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-20.png" alt="k-Means ve Mean-Shift Karşılaştırması - Aykırı Değerler" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-20.png" alt="k-Means ve Mean-Shift Karşılaştırması - Aykırı Değerler" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 20: Karmaşık dağılımda karşılaştırma: Sol: Orijinal veri (Mickey şekli ve aykırı değerler); Orta: k-Means ($k=3$) başarısızlığı; Sağ: Mean-Shift'in doğru kümeleme başarısı.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-21.png" alt="Peppers Görüntüsünde k-Means vs Mean Shift" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-21.png" alt="Peppers Görüntüsünde k-Means vs Mean Shift" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 21: Doğal görüntüde karşılaştırma: k-Means ($k=16$) arka planı yapay olarak parçalarken; Mean-Shift ($W=21$) biberleri ve arka planı homojen bir şekilde bölütler.</em></figcaption>
   </div>
 </figure>
@@ -356,7 +356,7 @@ Görüntü, $G = (V, E)$ şeklinde ağırlıklı ve yönsüz bir grafiğe dönü
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-22.png" alt="Görüntünün Grafik Olarak Temsili" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-22.png" alt="Görüntünün Grafik Olarak Temsili" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 22: Görüntü Grafiği: Düğümler (pikseller), kenarlar ve kenar ağırlığı olarak tanımlanan afinite (benzerlik) değerleri.</em></figcaption>
   </div>
 </figure>
@@ -380,7 +380,7 @@ $$\text{cut}(V\_A, V\_B) = \sum\_{u \in V\_A, \, v \in V\_B} w(u,v)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-23.png" alt="Grafik Kesimi ve Kesim Maliyeti" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-23.png" alt="Grafik Kesimi ve Kesim Maliyeti" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 23: Grafik Kesimi: $V$ grafiğinin $V_A$ ve $V_B$ kümelerine ayrılması ve $\text{cut}(V_A, V_B) = \sum w(u,v)$ maliyet hesabı.</em></figcaption>
   </div>
 </figure>
@@ -421,7 +421,7 @@ $$\text{NCut}(V\_A, V\_B) = \frac{\text{cut}(V\_A, V\_B)}{\text{assoc}(V\_A, V)}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/image-segmentation-24.png" alt="Normalized Cut Doğal Görüntü Segmentasyon Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/image-segmentation-24.png" alt="Normalized Cut Doğal Görüntü Segmentasyon Sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 24: Normalized Cut (Shi & Malik, 2000) Başarımı: Parlaklık ve konum özellikleri ($\{Brightness, Location\}$) kullanılarak doğal portre ve manzara görüntülerinin spektral grafik kesimiyle dengeli bölütlenmesi.</em></figcaption>
   </div>
 </figure>

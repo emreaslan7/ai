@@ -37,7 +37,7 @@ LeNet-5 was one of the earliest CNN models designed to recognize handwritten dig
 ### Architecture
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-01.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-01.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
 </div>
 
 - **Input**: 32x32 grayscale image
@@ -73,7 +73,7 @@ AlexNet marked the first major success of deep learning in the ImageNet Large Sc
 ### Architecture
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-02.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-02.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
 </div>
 
 - **Input**: 224x224x3 RGB image
@@ -112,7 +112,7 @@ VGG emphasized simplicity and depth: using small 3x3 filters and stacking them d
 ### Architecture (VGG-16)
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-03.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/classic-networks-lenet-alexnet-vgg-03.png" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
 </div>
 
 - **Input**: 224x224x3 RGB image

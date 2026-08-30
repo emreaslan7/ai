@@ -10,7 +10,7 @@ Bir kamerayı kendi optik merkezi etrafında döndürerek farklı açılardan g�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-01.png" alt="Ortak Projeksiyon Merkezinden Çekilen Görüntü Düzlemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-01.png" alt="Ortak Projeksiyon Merkezinden Çekilen Görüntü Düzlemleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Pinhole etrafında dönen kameranın görüntü düzlemleri (Π₁, Π₂, Π₃) ve ortak referans düzlemine (Πₚ) homografik izdüşümü.</em></figcaption>
   </div>
 </figure>
@@ -35,7 +35,7 @@ $$\begin{bmatrix} \tilde{x}_d \\ \tilde{y}_d \\ \tilde{z}_d \end{bmatrix} = \beg
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-02.png" alt="Eşleşen Noktalar Üzerinden Homografi Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-02.png" alt="Eşleşen Noktalar Üzerinden Homografi Dönüşümü" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Kaynak görüntüdeki (Source) nokta pₛ ile hedef görüntüdeki (Destination) nokta p_d arasındaki homografi eşlemesi.</em></figcaption>
   </div>
 </figure>
@@ -64,7 +64,7 @@ Burada $h = [h_{11}, h_{12}, h_{13}, h_{21}, h_{22}, h_{23}, h_{31}, h_{32}, h_{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-03.png" alt="A Matrisi İstifleme ve Kısıtlı Denklem Yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-03.png" alt="A Matrisi İstifleme ve Kısıtlı Denklem Yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: N adet nokta çiftinden oluşturulan 2N x 9 boyutundaki A matrisi ve ||h||² = 1 kısıtlı en küçük kareler denklemi.</em></figcaption>
   </div>
 </figure>
@@ -93,7 +93,7 @@ SIFT gibi ilgi noktası dedektörleri, iki görüntüyü eşleştirirken sadece 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-04.png" alt="Geçerli ve Hatalı Eşleşmeler" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-04.png" alt="Geçerli ve Hatalı Eşleşmeler" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: İki görüntü arasındaki doğru eşleşmeler (Inliers - Yeşil çizgiler) ve hatalı sahte eşleşmeler (Outliers - Kırmızı çizgiler).</em></figcaption>
   </div>
 </figure>
@@ -120,14 +120,14 @@ Algoritmanın homografi hesaplama üzerindeki adımları şu şekildedir:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-05.png" alt="En Küçük Kareler vs RANSAC 1. İterasyon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-05.png" alt="En Küçük Kareler vs RANSAC 1. İterasyon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Klasik En Küçük Kareler fitting (Outlier'lar yüzünden kayar, Inlier: 2) vs. RANSAC 1. İterasyon (Inlier: 4).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-06.png" alt="RANSAC Kazanan İterasyon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-06.png" alt="RANSAC Kazanan İterasyon" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: RANSAC İterasyon i - Doğru model yakalandığında en yüksek inlier sayısına (Inlier: 20) ulaşılır.</em></figcaption>
   </div>
 </figure>
@@ -142,7 +142,7 @@ Doğru homografi matrisi hesaplandıktan sonra, görüntüleri birleştirip kusu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-07.png" alt="Görüntü Yamultma Temel Konsepti" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-07.png" alt="Görüntü Yamultma Temel Konsepti" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Görüntü Yamultma (Image Warping): Koordinat operatörü T(x,y) ile girdi görüntüsü f(x,y)'nin g(x,y) düzlemine bükülmesi.</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ Yamultma işleminde girdi görüntüsündeki her bir pikselin koordinatına $H$ 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-08.png" alt="İleri Yamultma ve Piksel Izgarasında Delikler" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-08.png" alt="İleri Yamultma ve Piksel Izgarasında Delikler" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: İleri Doğru Yamultma (Forward Warping): Pikseller tam sayı olmayan konumlara düşer ve çıktıda boşluklar (holes) oluşur.</em></figcaption>
   </div>
 </figure>
@@ -173,21 +173,21 @@ Delik problemini kesin olarak çözmek için geriye doğru yamultma yöntemi uyg
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-09.png" alt="Geriye Doğru Yamultma Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-09.png" alt="Geriye Doğru Yamultma Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Geriye Doğru Yamultma (Backward Warping): Hedef pikselden T⁻¹ ile girdi görüntüsüne dönüp interpolasyonla değer çekme.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-10.png" alt="Çoklu Görüntü Sınır Kutusu Hesaplama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-10.png" alt="Çoklu Görüntü Sınır Kutusu Hesaplama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Görsellerin köşe noktalarının referans tuvale bükülerek ortak sınır kutusunun (Bounding Box) belirlenmesi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-11.png" alt="Ters Homografi ile Referans Tuvalden Görüntülere Erişim" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-11.png" alt="Ters Homografi ile Referans Tuvalden Görüntülere Erişim" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Ters Homografiler (H₁₂, H₃₂) kullanılarak tuvaldeki pikseller için orijinal fotoğraflardan kesintisiz veri çekilmesi.</em></figcaption>
   </div>
 </figure>
@@ -205,7 +205,7 @@ Görüntüler geometrik olarak mükemmel hizalansa dahi, doğrudan üst üste bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-12.png" alt="Doğrudan Bindirmede Keskin Dikiş İzi Oluşumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-12.png" alt="Doğrudan Bindirmede Keskin Dikiş İzi Oluşumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: İki görüntünün doğrudan üst üste konması (Hard overlay / Adım fonksiyonu ağırlıkları w₁, w₂) sonucu oluşan keskin dikiş izi.</em></figcaption>
   </div>
 </figure>
@@ -224,7 +224,7 @@ $$I_{\text{blend}} = \frac{w_1 I_1 + w_2 I_2}{w_1 + w_2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-13.png" alt="Lineer Ağırlıklı Harmanlama Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-13.png" alt="Lineer Ağırlıklı Harmanlama Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Yumuşak eğimli ağırlık fonksiyonları (w₁, w₂) ile ağırlıklı harmanlama (Weighted Blending) denklemi.</em></figcaption>
   </div>
 </figure>
@@ -238,21 +238,21 @@ Görüntü birleştirmede en başarılı ağırlık matrisleri Mesafe Dönüşü
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-14.png" alt="Mesafe Dönüşümü Ağırlık Haritaları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-14.png" alt="Mesafe Dönüşümü Ağırlık Haritaları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Görüntü 1, 2 ve 3 için Mesafe Dönüşümü (Distance Transform) ile üretilen alfa ağırlık haritaları (w₁, w₂, w₃).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-15.png" alt="Ham Bindirme vs Harmanlanmış Panorama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-15.png" alt="Ham Bindirme vs Harmanlanmış Panorama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: (Üst) Pozlama izlerinin görüldüğü ham bindirme vs. (Alt) Distance Transform harmanlaması ile kusursuz kesintisiz panorama.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-16.png" alt="Çoklu Fotoğraf Panoramik Mozaik Hizalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/homography-ransac-warping-and-blending-16.png" alt="Çoklu Fotoğraf Panoramik Mozaik Hizalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: 6 adet kaynak görüntünün ikili homografiler ve geriye doğru yamultma / harmanlama ile tamamlanan panoramik mozaik birleşimi.</em></figcaption>
   </div>
 </figure>

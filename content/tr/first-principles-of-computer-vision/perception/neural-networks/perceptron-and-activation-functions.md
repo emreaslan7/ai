@@ -17,7 +17,7 @@ Bilgisayarlı görüde daha önce ele aldığımız kenar algılama, kamera kali
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-01.png" alt="Görsel Varyasyon ve Klasik Sınıflandırıcılar" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-01.png" alt="Görsel Varyasyon ve Klasik Sınıflandırıcılar" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Yüksek Görsel Varyasyon: Farklı yaş, cinsiyet, açı ve aydınlatma altındaki yüzler; klasik deterministik şablonların ve basit doğrusal uzayların (SVM, PCA vb.) ötesinde öğrenen sistemleri zorunlu kılar.</em></figcaption>
   </div>
 </figure>
@@ -44,7 +44,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-02.png" alt="İnsan Beyni ve Biyolojik Sinir Ağı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-02.png" alt="İnsan Beyni ve Biyolojik Sinir Ağı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Biyolojik Hesaplama Gücü: İnsan beyni ve 100 milyar nöron ile 100 trilyon sinaptik bağlantı içeren karmaşık sinir ağı yapısı.</em></figcaption>
   </div>
 </figure>
@@ -58,7 +58,7 @@ Biyolojik bir nöronun temel anatomik bileşenleri şunlardır:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-03.png" alt="Biyolojik Nöron Anatomisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-03.png" alt="Biyolojik Nöron Anatomisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Biyolojik Nöron Anatomisi: Dendritler (girdi), Hücre Çekirdeği (toplama/entegrasyon), Akson (iletim hattı) ve Sinaptik Uçlar (çıktı bağlantıları).</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ Bir perceptron, dış dünyadan veya önceki katmanlardan gelen $d$ adet bağım
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-04.png" alt="Perceptron Matematiksel Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-04.png" alt="Perceptron Matematiksel Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Perceptron Hesaplama Modeli: Girdilerin ağırlıklı toplamı ve bias teriminin basamak (step) fonksiyonundan geçirilmesi.</em></figcaption>
   </div>
 </figure>
@@ -118,7 +118,7 @@ $$a = f(z) = \begin{cases} 1, & \text{eğer } z > 0 \quad (\mathbf{w}^T \mathbf{
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-05.png" alt="Heaviside Step Aktivasyon Fonksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-05.png" alt="Heaviside Step Aktivasyon Fonksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Step (Heaviside) Aktivasyon Fonksiyonu: $z \leq 0$ için çıktı $0$, $z > 0$ için çıktı $1$'dir.</em></figcaption>
   </div>
 </figure>
@@ -136,7 +136,7 @@ Bu karar üç ikili (binary) değişkene bağlı olsun:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-06.png" alt="Sinemaya Gitme Karar Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-06.png" alt="Sinemaya Gitme Karar Modeli" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Perceptron ile Öncelikli Karar Modellemesi: Hava durumunun en baskın faktör olduğu senaryoda $w_1 = 4, w_2 = 2, w_3 = 2$ ve $b = -5$.</em></figcaption>
   </div>
 </figure>
@@ -168,7 +168,7 @@ $$-2x_1 - 2x_2 + 3 = 0 \implies x_2 = -x_1 + 1.5$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-07.png" alt="Karar Sınırı ve 2B Doğrusal Ayrılabilirlik" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-07.png" alt="Karar Sınırı ve 2B Doğrusal Ayrılabilirlik" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: 2B Girdi Uzayında Karar Sınırı: $-2x_1 - 2x_2 + 3 = 0$ doğrusu uzayı iki yarı düzleme böler ($z > 0 \implies a=1$, $z \leq 0 \implies a=0$).</em></figcaption>
   </div>
 </figure>
@@ -240,7 +240,7 @@ Doğrusal olarak ayrılamayan karmaşık karar bölgelerini izole etmek için bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-11.png" alt="Çok Katmanlı Perceptron ile Karmaşık Karar Bölgesi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-11.png" alt="Çok Katmanlı Perceptron ile Karmaşık Karar Bölgesi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Çok Katmanlı Perceptron Karar Bölgesi: 4 adet doğrusal sınırın kesişimiyle kapalı bir konveks poligon oluşturulması.</em></figcaption>
   </div>
 </figure>
@@ -263,7 +263,7 @@ Ağırlıkları $w_1 = -2, w_2 = -2$ ve sapması $b = 3$ olan 2-girdili perceptr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-08.png" alt="Perceptron ve NAND Kapısı Eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-08.png" alt="Perceptron ve NAND Kapısı Eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Perceptron ve NAND Kapısı Eşdeğerliği: Doğruluk tablosu ve devre sembolü.</em></figcaption>
   </div>
 </figure>
@@ -273,7 +273,7 @@ Dijital mantık teorisinde **NAND** kapısı evrensel bir kapıdır (**Universal
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-09.png" alt="NAND Kapıları ile Tüm Temel Mantık Kapılarının Kurulması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-09.png" alt="NAND Kapıları ile Tüm Temel Mantık Kapılarının Kurulması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: NAND Tabanlı Mantık Devreleri: NOT, AND, OR ve NOR kapılarının sadece NAND kapıları kullanılarak inşası.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ Tek bir perceptron bir NAND kapısını kusursuz taklit edebildiğine göre:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-10.png" alt="1-Bit Toplayıcı Devresi ve Eşdeğer Perceptron Ağı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-10.png" alt="1-Bit Toplayıcı Devresi ve Eşdeğer Perceptron Ağı" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Dijital Devre ve Eşdeğer Perceptron Ağı: 1-Bit Toplayıcı devresinin (Sum & Carry) perceptron ağı olarak eşdeğer gösterimi.</em></figcaption>
   </div>
 </figure>
@@ -297,7 +297,7 @@ Perceptron ağları teorik olarak evrensel hesaplama yeteneğine sahip olsa da, 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-12.png" alt="Çok Katmanlı Yapay Sinir Ağı Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-12.png" alt="Çok Katmanlı Yapay Sinir Ağı Mimarisi" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Çok Katmanlı Ağ Mimarisi: Girdi Katmanı (Layer 1), Gizli Katmanlar (Layer 2 & 3) ve Çıktı Katmanı (Layer 4). İlgili katmandaki $j$. nöronun parametreleri $w_{jk}^{(l)}$ ve $b_j^{(l)}$ ile ifade edilir.</em></figcaption>
   </div>
 </figure>
@@ -323,7 +323,7 @@ Ancak basamak fonksiyonu içeren klasik perceptron'da bu türevsel geri bildirim
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-13.png" alt="Basamak Fonksiyonunda Öğrenme Krizi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-13.png" alt="Basamak Fonksiyonunda Öğrenme Krizi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Step Fonksiyonunun Sınırlaması: Parametre değişimi $\Delta w$ net girdiyi $\Delta z$ kadar kaydırsa bile çıktıda hiçbir değişim oluşmaz ($\Delta a = 0$), türevsel geri bildirim sıfırlanır.</em></figcaption>
   </div>
 </figure>
@@ -339,7 +339,7 @@ $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-14.png" alt="Sigmoid Nöronu ve Pürüzsüz Çıktı Geçişleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../../img/first-principles-of-computer-vision/perceptron-and-activation-functions-14.png" alt="Sigmoid Nöronu ve Pürüzsüz Çıktı Geçişleri" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Sigmoid Nöronu: Ağırlık ve sapmalardaki küçük değişimlerin çıktıda oluşturduğu sürekli ve ölçülebilir pürüzsüz $\Delta a$ tepkileri.</em></figcaption>
   </div>
 </figure>

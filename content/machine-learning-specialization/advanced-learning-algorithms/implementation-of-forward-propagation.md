@@ -15,7 +15,7 @@ For simplicity, we define:
 - **Bad coffee:** Any other condition.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/implementation-of-forward-propagation-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/implementation-of-forward-propagation-01.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 We collect the following data:
@@ -35,7 +35,7 @@ We will implement a simple neural network using TensorFlow to classify new coffe
 We construct a neural network using the following structure:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/implementation-of-forward-propagation-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/implementation-of-forward-propagation-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Input Layer**: Two neurons (temperature, time)
@@ -113,7 +113,7 @@ We now implement forward propagation manually using **NumPy** to understand how 
 ### Initializing Weights and Biases
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/implementation-of-forward-propagation-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/implementation-of-forward-propagation-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ```python
@@ -168,7 +168,7 @@ This manually replicates TensorFlow's forward propagation but using **pure NumPy
 AGI refers to AI that can perform any intellectual task a human can. Unlike current AI systems, AGI would **adapt, learn, and generalize** across different tasks without needing task-specific training.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/implementation-of-forward-propagation-04.jpeg" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/implementation-of-forward-propagation-04.jpeg" style="display:flex; justify-content: center; width: 750px;"alt="regression-example"/>
 </div>
 
 ### Everyday Example: AGI vs. Narrow AI

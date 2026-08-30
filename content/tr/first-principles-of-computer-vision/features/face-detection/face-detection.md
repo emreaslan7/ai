@@ -8,7 +8,7 @@
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-01.png" alt="Dijital Görüntü Üzerinde Sınırlayıcı Kutular İle Yüz Tespiti Çıktısı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-01.png" alt="Dijital Görüntü Üzerinde Sınırlayıcı Kutular İle Yüz Tespiti Çıktısı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Bir dijital görüntü üzerindeki insan yüzlerinin sınırlayıcı kutular (bounding boxes) ile saptanması.</em></figcaption>
   </div>
 </figure>
@@ -39,7 +39,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-02.png" alt="Aday Pencereden Öznitelik Çıkarımı ve İkili Sınıflandırma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-02.png" alt="Aday Pencereden Öznitelik Çıkarımı ve İkili Sınıflandırma" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Yerel bir aday görüntü penceresinden f öznitelik vektörünün çıkarılması ve sınıflandırıcı modeli ile Evet/Hayır Kararı üretilmesi.</em></figcaption>
   </div>
 </figure>
@@ -54,7 +54,7 @@ Başarılı ve kararlı bir yüz tespit sisteminin aşağıdaki fiziksel varyasy
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-04.png" alt="Yüz Örnekleri ile Yüz Olmayan Arka Plan Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-04.png" alt="Yüz Örnekleri ile Yüz Olmayan Arka Plan Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Yüz sınıfı (sol) ile doğa, hayvan ve nesnelerden oluşan yüz dışı sınıf (sağ) arasındaki belirgin farklar.</em></figcaption>
   </div>
 </figure>
@@ -69,7 +69,7 @@ Yüz tespiti için kullanılacak özniteliklerin (*features*) seçimi sistemin h
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-03.png" alt="İlgi Noktaları SIFT ve Yüz Bileşen Şablonlarının Sınırları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-03.png" alt="İlgi Noktaları SIFT ve Yüz Bileşen Şablonlarının Sınırları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: İlgi noktaları (kenarlar/köşeler/SIFT) ile bağımsız yüz bileşen şablonlarının yüz tespitindeki kısıtlılıkları.</em></figcaption>
   </div>
 </figure>
@@ -107,14 +107,14 @@ Burada $I(x,y)$ orijinal görüntünün piksel yoğunluk değerleridir. Çarpma 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-07.png" alt="Haar Filtresinin Yüz Bölgesi Üzerinde Konumlandırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-07.png" alt="Haar Filtresinin Yüz Bölgesi Üzerinde Konumlandırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: H_A Haar filtresinin yüz üzerinde (göz-yanak geçişinde) konumlandırılarak Beyaz=1, Siyah=-1 ağırlıklarıyla korelasyonu.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-05.png" alt="Girdi Görüntüsü ve Haar Filtre Kaskadı İle Öznitelik Vektörü Eldesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-05.png" alt="Girdi Görüntüsü ve Haar Filtre Kaskadı İle Öznitelik Vektörü Eldesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Girdi görüntüsünün farklı H_A, H_B, H_C, H_D Haar filtreleriyle evriştirilerek f[i,j] öznitelik vektörünün oluşturulması.</em></figcaption>
   </div>
 </figure>
@@ -129,7 +129,7 @@ Haar filtre bankası, farklı yönelimleri ve geometrik yapıları saptamak üze
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-06.png" alt="Farklı Ölçeklerde Düzenlenmiş Haar Filtre Bankası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-06.png" alt="Farklı Ölçeklerde Düzenlenmiş Haar Filtre Bankası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Kolonlar halinde farklı boyutlarda ve ölçeklerde genişletilmiş Haar filtre bankası.</em></figcaption>
   </div>
 </figure>
@@ -156,7 +156,7 @@ $$II(x,y) = \sum_{x' \leq x, \, y' \leq y} I(x',y')$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-08.png" alt="Orijinal Görüntü I ve Karşılık Gelen İntegral Görüntü II Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-08.png" alt="Orijinal Görüntü I ve Karşılık Gelen İntegral Görüntü II Matrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Orijinal görüntü piksel matrisi I (sol) ile her hücrede sol-üst alan kümülatif toplamını barındıran İntegral Görüntü II (sağ).</em></figcaption>
   </div>
 </figure>
@@ -171,7 +171,7 @@ $$II(O) = II(A) + II(B) - II(C) + I(O)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-11.png" alt="Raster Tarama Esnasında İntegral Hücre Değerinin Rekürsif İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-11.png" alt="Raster Tarama Esnasında İntegral Hücre Değerinin Rekürsif İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Tek geçişli raster tarama sırasında komşu integral değerleri (B, C, D) kullanılarak A hücresinin hesabı (II_A = II_B + II_C - II_D + I_A).</em></figcaption>
   </div>
 </figure>
@@ -184,7 +184,7 @@ $$\text{Dikdörtgen Toplamı} = II(P) - II(Q) - II(S) + II(R)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-09.png" alt="İntegral Görüntü Üzerinde Dikdörtgen Alan Toplamının O(1) Sürede Hesaplanması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-09.png" alt="İntegral Görüntü Üzerinde Dikdörtgen Alan Toplamının O(1) Sürede Hesaplanması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: P, Q, R, S köşe koordinatları çekilerek dikdörtgen alan toplamının sadece 3 toplama/çıkarma işlemiyle elde edilmesi (3490 - 1137 - 1249 + 417 = 1521).</em></figcaption>
   </div>
 </figure>
@@ -206,7 +206,7 @@ $$\text{Haar Yanıtı} = (II(O) - II(T) + II(R) - II(S)) - (II(P) - II(Q) + II(T
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-10.png" alt="Haar Öznitelik Yanıtının İntegral Görüntü İle 7 İşlemde Hesaplanması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-10.png" alt="Haar Öznitelik Yanıtının İntegral Görüntü İle 7 İşlemde Hesaplanması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: İki bölgeli bir Haar filtresinin yanıtının integral görüntüdeki ortak kenarlar sadeleştirilerek yalnızca 7 toplama/çıkarma işleminde elde edilişi.</em></figcaption>
   </div>
 </figure>
@@ -225,7 +225,7 @@ Sistemi eğitmek için önceden etiketlenmiş binlerce yüz (*faces*) ve yüz ol
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-12.png" alt="En Yakın Komşu Algoritmasında Sorgu Noktasının Sınıflandırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-12.png" alt="En Yakın Komşu Algoritmasında Sorgu Noktasının Sınıflandırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Test görüntüsünün öznitelik uzayına aktarılarak en yakın eğitim noktasına göre Yüz (sol) veya Yüz Değil (sağ) şeklinde etiketlenmesi.</em></figcaption>
   </div>
 </figure>
@@ -243,7 +243,7 @@ Eğer test görüntüsü insan yüzü olmayan ancak geometrik olarak yüzü and�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-13.png" alt="Hatalı Eşleşme False Positive Örneği ve Veri Setini Genişleterek Çözümü" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-13.png" alt="Hatalı Eşleşme False Positive Örneği ve Veri Setini Genişleterek Çözümü" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Kedi kafası gibi yüz benzeri sahte desenlerin hatalı eşleşmesi (sol) ve yüz dışı veri setini artırarak bu sahte desenlerin doğru etiketlenmesi (sağ).</em></figcaption>
   </div>
 </figure>
@@ -256,7 +256,7 @@ Ancak eğitim verisini büyütmek, en yakın komşu algoritmasında çok büyük
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-14.png" alt="Öznitelik Uzayına Karar Düzleminin Yerleştirilmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-14.png" alt="Öznitelik Uzayına Karar Düzleminin Yerleştirilmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Nokta arama maliyetini ortadan kaldırmak için öznitelik uzayında yüzler ile yüz olmayanlar arasına geometrik karar düzleminin çizilmesi.</em></figcaption>
   </div>
 </figure>
@@ -283,7 +283,7 @@ $$\mathbf{w}^T \mathbf{f} + b = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-15.png" alt="Doğrusal Karar Sınırının Vektörel Denklemi ve Yön İpuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-15.png" alt="Doğrusal Karar Sınırının Vektörel Denklemi ve Yön İpuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Doğrusal karar çizgisinin w^T f + b = 0 denklemi ile temsil edilmesi ve noktanın konumuna göre işaret hesabı.</em></figcaption>
   </div>
 </figure>
@@ -303,7 +303,7 @@ Eğitim esnasında, yüz ve yüz olmayan noktalarını sıfır hatayla birbirind
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-16.png" alt="Veriyi Sıfır Hatalarla Ayıran Sonsuz Olası Karar Çizgisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-16.png" alt="Veriyi Sıfır Hatalarla Ayıran Sonsuz Olası Karar Çizgisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: İki sınıfı kusursuz ayıran sonsuz sayıda olası karar doğrusu seçeneği.</em></figcaption>
   </div>
 </figure>
@@ -314,7 +314,7 @@ SVM algoritmasının temel amacı: Yüz ve yüz olmayan kümeleri arasındaki ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-17.png" alt="Geniş Marjin I ile Dar Marjin II Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-17.png" alt="Geniş Marjin I ile Dar Marjin II Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Kararsız dar marjinli çizgi (sağ) yerine maksimum güvenli marjine (Margin I) sahip optimal karar çizgisinin seçimi (sol).</em></figcaption>
   </div>
 </figure>
@@ -325,7 +325,7 @@ Maksimum marjin sınırına ulaşıldığında, güvenli bölgenin sınır çizg
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-18.png" alt="Destek Vektörleri Support Vectors Tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-18.png" alt="Destek Vektörleri Support Vectors Tanımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: Güvenli bölgenin çeperine temas eden destek vektörleri (daire içine alınmış noktalar) ve marjine etkisi.</em></figcaption>
   </div>
 </figure>
@@ -364,7 +364,7 @@ Elde edilen $d$ mesafesine göre şu kesin kararlar verilir:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/face-detection-19.png" alt="SVM Karar Mesafesi d İçin Sınıflandırma Kuralları" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/face-detection-19.png" alt="SVM Karar Mesafesi d İçin Sınıflandırma Kuralları" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 19: d yönlü mesafesinin marjin sınırları ile karşılaştırılarak Yüz, Muhtemelen Yüz, Muhtemelen Yüz Değil veya Yüz Değil kararının verilmesi.</em></figcaption>
   </div>
 </figure>

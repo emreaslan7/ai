@@ -51,7 +51,7 @@ $$P(k) = \frac{\lambda^k e^{-\lambda}}{k!}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-01.png" alt="Foton Gürültüsü Poisson Dağılım Grafikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-01.png" alt="Foton Gürültüsü Poisson Dağılım Grafikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Foton Gürültüsü Poisson Dağılım Grafikleri: Farklı ortalama foton geliş oranları ($\lambda$) için olasılık dağılım eğrileri.</em></figcaption>
   </div>
 </figure>
@@ -89,7 +89,7 @@ burada:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-02.png" alt="Okuma ve Elektronik Gürültüsü Gauss Dağılım Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-02.png" alt="Okuma ve Elektronik Gürültüsü Gauss Dağılım Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Okuma ve Elektronik Gürültüsü Gauss Dağılım Eğrisi: Sensör ön yükselteç gürültüsünü temsil eden simetrik Gauss dağılım eğrisi.</em></figcaption>
   </div>
 </figure>
@@ -107,7 +107,7 @@ $$\sigma^2_q = \frac{\Delta^2}{12}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-03.png" alt="Nicelleştirme Gürültüsü Basamak Fonksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-03.png" alt="Nicelleştirme Gürültüsü Basamak Fonksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Nicelleştirme Gürültüsü Basamak Fonksiyonu: ADC dönüşümünde $-\Delta/2$ ile $+\Delta/2$ arasında düzgün yuvarlama hatası dağılımı.</em></figcaption>
   </div>
 </figure>
@@ -124,7 +124,7 @@ Kamera merceği ışık geçirmez bir kapakla kapatılsa bile, silisyum tabandak
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-04.png" alt="Karanlık Akım Isıl Gürültü ve Sabit Desen Gürültüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-04.png" alt="Karanlık Akım Isıl Gürültü ve Sabit Desen Gürültüsü" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Karanlık Akım Isıl Gürültü ve Sabit Desen Gürültüsü: Pozlama süresince ısıl elektron birikimi ve pikseller arası mekânsal FPN duyarlılık farkları.</em></figcaption>
   </div>
 </figure>
@@ -173,7 +173,7 @@ Sürekli bir spektral foton dağılımı $p(\lambda)$ taşıyan gelen bir ışı
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-05.png" alt="Silisyum Kuantum Verimliliği q(λ) Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-05.png" alt="Silisyum Kuantum Verimliliği q(λ) Eğrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Silisyum Kuantum Verimliliği $q(\lambda)$ Eğrisi: Silisyumun 1000 nm yakın kızılötesinde 1.0 zirvesi ve 400 nm ultraviyole kesim noktası.</em></figcaption>
   </div>
 </figure>
@@ -190,7 +190,7 @@ $$I = \int_{0}^{\infty} q(\lambda) p(\lambda) \, d\lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-06.png" alt="Görünür Dalga Boyu Spektrumu Gradyanı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-06.png" alt="Görünür Dalga Boyu Spektrumu Gradyanı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görünür Dalga Boyu Spektrumu Gradyanı: Ultraviyole ve kızılötesi sınırları arasındaki 400 nm ile 700 nm arası görünür tayf.</em></figcaption>
   </div>
 </figure>
@@ -256,7 +256,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-07.png" alt="Retina Üzerindeki Çubuk ve Koni Hücrelerinin Mekânsal Dağılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-07.png" alt="Retina Üzerindeki Çubuk ve Koni Hücrelerinin Mekânsal Dağılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Retina Üzerindeki Çubuk ve Koni Hücrelerinin Mekânsal Dağılımı: Foveada (0°) yüksek koni yoğunlaşması ve çevre bölgelerde zirve yapan çubuk dağılımı.</em></figcaption>
   </div>
 </figure>
@@ -279,7 +279,7 @@ $$B = \int_{0}^{\infty} h_B(\lambda) p(\lambda) \, d\lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-08.png" alt="İnsan Üçlü Uyarıcı (Tristimulus) Duyarlılık Eğrileri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-08.png" alt="İnsan Üçlü Uyarıcı (Tristimulus) Duyarlılık Eğrileri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>İnsan Üçlü Uyarıcı (Tristimulus) Duyarlılık Eğrileri: L-koni (kırmızı), M-koni (yeşil) ve S-koni (mavi) spektral yanıt fonksiyonları.</em></figcaption>
   </div>
 </figure>
@@ -292,7 +292,7 @@ $$B = \int_{0}^{\infty} h_B(\lambda) p(\lambda) \, d\lambda$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-09.png" alt="Metamerizm Fenomeni" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-09.png" alt="Metamerizm Fenomeni" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Metamerizm Fenomeni: Üç farklı fiziksel spektral ışık dağılımının ($p_1, p_2, p_3$) entegre edilerek birebir aynı tristimulus ($R, G, B$) değerlerini üretebilmesi.</em></figcaption>
   </div>
 </figure>
@@ -309,7 +309,7 @@ Thomas Young tarihi renk karışımı deneyinde, sadece üç birincil ışık da
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-10.png" alt="Dikroik Prizma Renk Ayrıştırma Sistemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-10.png" alt="Dikroik Prizma Renk Ayrıştırma Sistemi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Dikroik Prizma Renk Ayrıştırma Sistemi: Beyaz ışığı kırıp 3 ayrı sensöre Kırmızı, Yeşil ve Mavi dalga boylarında aktaran optik prizma düzenek şeması.</em></figcaption>
   </div>
 </figure>
@@ -335,7 +335,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-11.png" alt="Bayer Deseni Mozaiği ve Demosaicing Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/resolution-noise-and-color-sensing-11.png" alt="Bayer Deseni Mozaiği ve Demosaicing Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Bayer Deseni Mozaiği ve Demosaicing Adımları: RGGB renk filtresi ızgarası, ham tek-kanal piksel görüntüsü, komşu piksel interpolasyonu ve tam RGB rekonstrüksiyonu.</em></figcaption>
   </div>
 </figure>

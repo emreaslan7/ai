@@ -11,7 +11,7 @@ Computer Vision is a field of artificial intelligence (AI) that enables machines
 **Real-World Applications**
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Facial Recognition:** Used in security systems and social media tagging.
@@ -31,7 +31,7 @@ Computer Vision is a field of artificial intelligence (AI) that enables machines
 An image can be represented as a matrix:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-02.jpg" style="display:flex; justify-content: center; width: 550px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-02.jpg" style="display:flex; justify-content: center; width: 550px;"alt="regression-example"/>
 </div>
 
 $$
@@ -53,7 +53,7 @@ where $m$ and $n$ represent height and width, and $c$ represents the number of c
 Edge detection aims to find points in an image where the intensity changes sharply. These points often correspond to boundaries of objects, texture changes, or discontinuities in depth. To detect these changes, we apply **convolution operations** with specific filters.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-  <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-06.gif" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+  <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-06.gif" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 **Convolution** is a mathematical operation that helps us apply a small matrix (called a **filter** or **kernel**) across the entire image to detect specific patterns like edges.
@@ -180,7 +180,7 @@ The result of convolving the image with these filters gives us areas of strong g
 - Horizontal ($ G_x $) and vertical ($ G_y $) gradients are calculated using predefined 3x3 kernels.
   $$ 3 x 3 \text(Sobel Kernels)$$
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-03.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-03.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
     </div>
 - The gradient magnitude is:
   $$
@@ -194,7 +194,7 @@ The result of convolving the image with these filters gives us areas of strong g
 - Similar to Sobel, but with uniform weights.
   $$ 3 x 3 \text(Prewitt Kernels)$$
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-04.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-04.png" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
     </div>
 - Slightly less sensitive to noise compared to Sobel.
 
@@ -203,7 +203,7 @@ The result of convolving the image with these filters gives us areas of strong g
 - A second derivative method.
 - Detects edges by identifying zero-crossings after applying the Laplacian to a Gaussian-smoothed image.
     <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="./../../img/deep-learning-specialization/computer-vision-and-edge-detection-05.gif" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
+    <img src="../../img/deep-learning-specialization/computer-vision-and-edge-detection-05.gif" style="display:flex; justify-content: center; width: 250px;"alt="regression-example"/>
     </div>
 - Equation:
   $$

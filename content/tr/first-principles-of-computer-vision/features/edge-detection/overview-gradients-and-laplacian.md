@@ -27,7 +27,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-01.png" alt="Henry Moore Heykeli Fotoğrafı ve Çizgi Eskiz Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-01.png" alt="Henry Moore Heykeli Fotoğrafı ve Çizgi Eskiz Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel bilgi seyrekliği: Henry Moore 3B heykel fotoğrafı ve minimalist çizgi eskizi (Nalwa).</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-02.png" alt="Kenarların Fiziksel Nedenleri Şişe Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-02.png" alt="Kenarların Fiziksel Nedenleri Şişe Şeması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Bir şişe nesnesi üzerinde kenar oluşturan 4 fiziksel neden: derinlik, yüzey normali, yansıtıcılık ve aydınlatma süreksizlikleri.</em></figcaption>
   </div>
 </figure>
@@ -88,7 +88,7 @@ $$\begin{aligned}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-03.png" alt="Geometrik Kenar Profilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-03.png" alt="Geometrik Kenar Profilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Temel 1D geometrik kenar profilleri: Adım Kenarlar (Step), Çatı Kenar (Roof) ve Çizgi Kenarlar (Line).</em></figcaption>
   </div>
 </figure>
@@ -101,7 +101,7 @@ Gerçek dünyada görüntüler hiçbir zaman ideal birer adım fonksiyonu (step 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-04.png" alt="Gerçek Dünya Gürültülü Ayrık Kenar Profili" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-04.png" alt="Gerçek Dünya Gürültülü Ayrık Kenar Profili" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gerçek dünya kenar profili: sürekli eğim geçişi, gürültü dalgalanmaları ve ayrık örnekleme pürüzleri.</em></figcaption>
   </div>
 </figure>
@@ -139,14 +139,14 @@ $$\frac{df}{dx} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-05.png" alt="1D Sinyal Yoğunluk Profili" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-05.png" alt="1D Sinyal Yoğunluk Profili" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sürekli 1D f(x) yoğunluk sinyali ve yükselen/düşen kenar konumları.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-06.png" alt="Birinci Türev ve Mutlak Değer Ekstremum Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-06.png" alt="Birinci Türev ve Mutlak Değer Ekstremum Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Birinci türev ∂f/∂x extremum değerleri ve mutlak değer |∂f/∂x| pozitif tepe noktalarının kenar konumunu göstermesi.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ Bu kısmi türev bileşenlerinden ($I_x, I_y$) yararlanılarak her piksel için 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-07.png" alt="2D Gradiyent Vektörü Yönü ve Bileşenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-07.png" alt="2D Gradiyent Vektörü Yönü ve Bileşenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>2D gradyan vektörünün ∇I dikey (Ix ≠ 0, Iy = 0), yatay (Ix = 0, Iy ≠ 0) ve açılı kenarlardaki yönelimi.</em></figcaption>
   </div>
 </figure>
@@ -191,7 +191,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-09.png" alt="Lena Görüntüsü Kısmi Türevler ve Gradiyent Büyüklüğü Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-09.png" alt="Lena Görüntüsü Kısmi Türevler ve Gradiyent Büyüklüğü Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Lena fotoğrafının yatay kısmi türev ∂I/∂x, dikey kısmi türev ∂I/∂y ve birleşik Gradiyent Büyüklüğü haritasına |∇I| ayrıştırılması.</em></figcaption>
   </div>
 </figure>
@@ -218,7 +218,7 @@ Yüksek frekanslı gürültüleri filtrelemek adına türev operatörleri bir al
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-08.png" alt="Gradiyent Operatörleri Çekirdekleri ve Başarım Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-08.png" alt="Gradiyent Operatörleri Çekirdekleri ve Başarım Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Klasik gradyan operatör çekirdekleri (Roberts, Prewitt, Sobel 3x3, Sobel 5x5) ve konumlandırma ile gürültü direnci arasındaki temel ödünleşim (trade-off).</em></figcaption>
   </div>
 </figure>
@@ -261,7 +261,7 @@ $$\frac{d^2f}{dx^2} = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - 2f(x) + f(x-\D
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-10.png" alt="İkinci Türev Sıfır Geçişi ve Birinci Türev Tepe Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-10.png" alt="İkinci Türev Sıfır Geçişi ve Birinci Türev Tepe Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Birinci türev tepe noktaları ile ikinci türev sıfır geçişlerinin (zero-crossing) kenar merkezlerini gösterme karşılaştırması.</em></figcaption>
   </div>
 </figure>
@@ -298,7 +298,7 @@ $$\nabla^2 I = \frac{\partial^2 I}{\partial x^2} + \frac{\partial^2 I}{\partial 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-11.png" alt="Ayrık Laplacian Sonlu Farklar ve Çekirdek Maskeleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-11.png" alt="Ayrık Laplacian Sonlu Farklar ve Çekirdek Maskeleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>2D Laplacian sonlu farklar matematiksel ifadesi ve standart 4-komşulu ile köşegen düzeltmeli 8-komşulu konvolüsyon çekirdekleri.</em></figcaption>
   </div>
 </figure>
@@ -312,7 +312,7 @@ $$\nabla^2 I = \frac{\partial^2 I}{\partial x^2} + \frac{\partial^2 I}{\partial 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-12.png" alt="Lena Laplacian Görselleştirmesi ve Sıfır Geçişleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-12.png" alt="Lena Laplacian Görselleştirmesi ve Sıfır Geçişleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Lena fotoğrafının 2D Laplacian ile işlenmesi (128 gri seviye referansı) ve elde edilen ikili sıfır geçişi (zero-crossing) kenar haritası.</em></figcaption>
   </div>
 </figure>
@@ -325,7 +325,7 @@ $$\nabla^2 I = \frac{\partial^2 I}{\partial x^2} + \frac{\partial^2 I}{\partial 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-13.png" alt="Görüntü Türevlerinde Gürültü Hassasiyeti" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-13.png" alt="Görüntü Türevlerinde Gürültü Hassasiyeti" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şiddetli gürültü büyümesi: gürültülü adım sinyalinin türevi alındığında gerçek kenar tamamen kaybolur.</em></figcaption>
   </div>
 </figure>
@@ -336,7 +336,7 @@ $$G_\sigma(x,y) = \frac{1}{2\pi \sigma^2} e^{-\frac{x^2+y^2}{2\sigma^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-14.png" alt="Gauss Yumuşatma Ardından Türev İşlemi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-14.png" alt="Gauss Yumuşatma Ardından Türev İşlemi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gürültüyü bastırma: gürültülü sinyali türevden önce Gauss filtresi ile konvolüsyona sokma.</em></figcaption>
   </div>
 </figure>
@@ -347,7 +347,7 @@ $$\nabla^2 \left( G_\sigma * I \right) = \left( \nabla^2 G_\sigma \right) * I$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-15.png" alt="Gauss Türevi Doğrusal Değişim Özelliği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-15.png" alt="Gauss Türevi Doğrusal Değişim Özelliği" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gauss Türevi (DoG) doğrusal değişim özelliği: ∇(n_σ * f) = ∇(n_σ) * f tek bir konvolüsyon işlem tasarrufu sağlar.</em></figcaption>
   </div>
 </figure>
@@ -358,14 +358,14 @@ $$\text{LoG}(x,y) = -\frac{1}{\pi \sigma^4} \left[ 1 - \frac{x^2+y^2}{2\sigma^2}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-16.png" alt="Laplacian of Gaussian Doğrusal Özelliği ve Sıfır Geçişi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-16.png" alt="Laplacian of Gaussian Doğrusal Özelliği ve Sıfır Geçişi" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Laplacian of Gaussian (LoG) doğrusal özelliği: ∇²(n_σ * f) = ∇²(n_σ) * f net sıfır geçişi kenar tespiti üretir.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-17.png" alt="3B Yüzey Grafiği DoG ve LoG Meksika Şapkası Çekirdeği" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-17.png" alt="3B Yüzey Grafiği DoG ve LoG Meksika Şapkası Çekirdeği" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Gauss Türevi (∇G) yönlü filtreler ile izotropik Laplacian of Gaussian (∇²G) Ters Meksika Şapkası çekirdeğinin 3B yüzey grafiği.</em></figcaption>
   </div>
 </figure>

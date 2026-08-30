@@ -10,7 +10,7 @@ Bu kısıtlamayı aşmak için veriye dayalı (*data-driven*) bir yöntem olan *
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-01.png" alt="Kalibrasyon küresi ve nesne üzerinde yönelim tutarlılığı ilkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-01.png" alt="Kalibrasyon küresi ve nesne üzerinde yönelim tutarlılığı ilkesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Yönelim tutarlılığı ilkesi: Aynı malzemeden yapılan kalibrasyon küresi ve hedef nesnede aynı normal açısına sahip noktalar aynı parlaklık değerlerini verir.</em></figcaption>
   </div>
 </figure>
@@ -48,7 +48,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-02.png" alt="Kalibrasyon küresinin K adet görüntüsü ve analitik normaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-02.png" alt="Kalibrasyon küresinin K adet görüntüsü ve analitik normaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Kalibrasyon küresinin K adet aydınlatma altındaki görüntüleri, dairesel sınır tespiti (r) ve hesaplanan analitik yüzey normalleri (p,q,1).</em></figcaption>
   </div>
 </figure>
@@ -59,7 +59,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-03.png" alt="Hedef nesne görüntüleri ve LUT ile kestirilen normaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-03.png" alt="Hedef nesne görüntüleri ve LUT ile kestirilen normaller" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Hedef karmaşık nesne (plastik şişe) görüntüleri ve LUT tablosu sorgusuyla kestirilen yerel yüzey normalleri.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ Bu sayede hiçbir yansıtma fiziği denklemine ihtiyaç duyulmadan, her türlü 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-09.png" alt="Hertzmann 2005 kalibrasyonlu fotometrik stereo örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-09.png" alt="Hertzmann 2005 kalibrasyonlu fotometrik stereo örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: Hertzmann (2005) uygulaması: Çoklu kalibrasyon küreleri kullanılarak cilalı seramik balık figürünün karmaşık yansımalara rağmen 3D rekonstrüksiyonu.</em></figcaption>
   </div>
 </figure>
@@ -83,7 +83,7 @@ Fotometrik stereo uygulandıktan sonra her piksel için yüzey yönelim eğimler
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-04.png" alt="Gradyan haritası ile derinlik haritası arasındaki ilişki" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-04.png" alt="Gradyan haritası ile derinlik haritası arasındaki ilişki" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Yüzey gradyan/normal haritası [p, q, 1] ile 3D derinlik haritası z(x,y) arasındaki türev (Differentiation) ve entegrasyon (Integration) ilişkisi.</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$z(x, y) = z(x_0, y_0) + \int_{x_0}^{x} -p \, dx + \int_{y_0}^{y} -q \, dy$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-05.png" alt="Ayrık ızgarada farklı entegrasyon yolları" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-05.png" alt="Ayrık ızgarada farklı entegrasyon yolları" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Ayrık piksel ızgarasında (x0, y0) noktasından (x, y) noktasına farklı iki entegrasyon yolu (Path 1 ve Path 2).</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ Ancak gerçek ölçümlerde yoğun gürültüler mevcuttur. Gürültülü bir gr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-06.png" alt="Satır ve sütunlar boyunca gürültü birikimi" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-06.png" alt="Satır ve sütunlar boyunca gürültü birikimi" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Taraftaki satır ve sütunlar boyunca biriken gradyan gürültüsünün haritadaki ilerleyişi.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ Hatalar dalga dalga yayılarak yüzeyde süreksizliklere ve yırtılmalara yol a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-07.png" alt="Gürültülü gradyanlarda yola bağımlılık ve yüzey yırtılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-07.png" alt="Gürültülü gradyanlarda yola bağımlılık ve yüzey yırtılması" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Gerçek yüzey gradyanlarındaki gürültü nedeniyle Path 1 ve Path 2 entegrasyonlarının uyumsuzluğu ve yüzey yırtılması.</em></figcaption>
   </div>
 </figure>
@@ -150,7 +150,7 @@ Hesaplanan bu spektrumun **Ters Hızlı Fourier Dönüşümü (IFFT)** hesapland
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-08.png" alt="Frankot-Chellappa entegrasyonu ile kestirilen 3D derinlik haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-08.png" alt="Frankot-Chellappa entegrasyonu ile kestirilen 3D derinlik haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Frankot-Chellappa Fourier entegrasyonu: Yüzey normalleri, kestirilen kesintisiz derinlik haritası z = f(x,y) ve işlenmiş 3D model.</em></figcaption>
   </div>
 </figure>
@@ -165,7 +165,7 @@ Fotometrik stereonun en büyük basitleştirici kabullerinden biri, sahnedeki bi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-10.png" alt="İçbükey kasede ikincil karşılıklı yansımalar" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-10.png" alt="İçbükey kasede ikincil karşılıklı yansımalar" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: İçbükey yüzeylerde karşılıklı yansımalar: Bir noktaya doğrudan gelen ışık ışınının yanı sıra komşu yüzey piksellerinden yansıyan ikincil ışınlar.</em></figcaption>
   </div>
 </figure>
@@ -205,7 +205,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-11.png" alt="Nayar-Ikeuchi-Kanade algoritmasının kase profili yakınsaması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-11.png" alt="Nayar-Ikeuchi-Kanade algoritmasının kase profili yakınsaması" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Nayar-Ikeuchi-Kanade algoritmasının yakınsaması: Naif fotometrik stereo ile elde edilen hatalı sığ profilden (üst çizgi), ikincil yansıma düzeltmeleriyle gerçek derin kase profilinde (alt çizgi) kararlı yakınsama.</em></figcaption>
   </div>
 </figure>

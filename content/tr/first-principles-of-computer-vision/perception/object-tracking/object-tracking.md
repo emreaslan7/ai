@@ -12,7 +12,7 @@ Bilgisayarlı görüde **Nesne Takibi (Object Tracking)**; zamansal olarak ardı
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-01.png" alt="Nesne Takibi Senaryoları: Otoyol Araç Takibi ve Yaya Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-01.png" alt="Nesne Takibi Senaryoları: Otoyol Araç Takibi ve Yaya Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Tipik nesne takibi ve dinamik algılama senaryoları (Sol: Otoyolda hızla akan araçların takibi; Sağ: Kavşakta yürüyen yayaların takibi).</em></figcaption>
   </div>
 </figure>
@@ -43,7 +43,7 @@ Gerçek dünya ortamlarında video çeken kameralar ideal laboratuvar koşullar�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-02.png" alt="Takip Algoritmalarını Zorlayan Anlamsız Değişim Kaynakları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-02.png" alt="Takip Algoritmalarını Zorlayan Anlamsız Değişim Kaynakları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Algoritmaların filtrelemesi gereken ilgisiz değişimler: 1) Su yüzeyi dalgalanmaları (Background fluctuations); 2) Şiddetli yağmur ve sensör gürültüsü (Rain, turbulence & noise); 3) Dinamik aydınlatma ve zemin gölgeleri (Illumination changes & shadows).</em></figcaption>
   </div>
 </figure>
@@ -102,7 +102,7 @@ $$F(x, y, t) = \begin{cases} 1 & \text{eğer } |I(x, y, t) - I(x, y, t-1)| > \ta
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-03.png" alt="Kare Farkı Yöntemi ve İç Bölge Boşluğu Sorunu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-03.png" alt="Kare Farkı Yöntemi ve İç Bölge Boşluğu Sorunu" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Kare Farkı Yöntemi ($F_t = |I_t - I_{t-1}| > T$). Homojen renge sahip aracın iç kısımlarında kareler arası fark oluşmadığı için nesnenin içi boş (delikli/hollow) kalmakta, sadece dış hatları aydınlanmaktadır.</em></figcaption>
   </div>
 </figure>
@@ -123,7 +123,7 @@ $$F(x, y, t) = |I(x, y, t) - B(x, y)| > \tau$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-04.png" alt="Ortalama Arka Plan Yöntemi İle Ön Plan Çıkarma" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-04.png" alt="Ortalama Arka Plan Yöntemi İle Ön Plan Çıkarma" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Ortalama Arka Plan Yöntemi ($B = \text{average}\{I_1, \dots, I_K\}$). Sabit arka plan çıkarımı sayesinde hareketli nesnelerin içi dolu tespit edilir ancak aydınlatma değişimlerine ve arka plan dalgalanmalarına karşı duyarsızdır.</em></figcaption>
   </div>
 </figure>
@@ -140,7 +140,7 @@ $$B(x, y) = \text{median}\{I(x, y, 1), I(x, y, 2), \dots, I(x, y, K)\}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-05.png" alt="Medyan Arka Plan Çıkarma Yöntemi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-05.png" alt="Medyan Arka Plan Çıkarma Yöntemi" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Medyan Arka Plan Yöntemi ($B = \text{median}\{I_1, \dots, I_K\}$). Medyan fonksiyonu aykırı değerlere (outliers) karşı son derece dirençlidir ve arka plandan geçen tekil arabaları arka plan modeline karıştırmaz.</em></figcaption>
   </div>
 </figure>
@@ -167,7 +167,7 @@ Gerçek dünyada bir pikselin zaman içindeki parlaklık değişimi tek bir tepe
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-06.png" alt="Zaman İçinde Bir Pikselin Yoğunluk Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-06.png" alt="Zaman İçinde Bir Pikselin Yoğunluk Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Yağışlı bir sahnede seçilen tek bir pikselin zaman içindeki parlaklık histogramı. Pikselin hem koyu asfalt zemin hem de parlak kar taneleri görmesinden ötürü iki belirgin tepe (bimodal dağılım) oluşmaktadır.</em></figcaption>
   </div>
 </figure>
@@ -176,7 +176,7 @@ Bu histogram dikkatle analiz edildiğinde dağılımı oluşturan 3 temel fiziks
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-07.png" alt="Histogram Bileşenlerinin Analizi: Yol, Kar ve Ön Plan Araç" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-07.png" alt="Histogram Bileşenlerinin Analizi: Yol, Kar ve Ön Plan Araç" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Piksel histogramının fiziksel bileşenleri: 1) Koyu Mavi Tepe: Statik Arka Plan Asfalt (BG - Road); 2) Açık Mavi Tepe: Arka Plan Kar Yağışı (BG - Snow); 3) Kırmızı Düzlük: Piksel üzerinden nadiren geçen Ön Plan Araç (FG - Vehicle).</em></figcaption>
   </div>
 </figure>
@@ -193,7 +193,7 @@ GMM, bir pikselin parlaklık histogramını $K$ adet ($K = 3, 4, 5$) bağımsız
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-08.png" alt="1 Boyutlu Gauss Dağılımı ve Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-08.png" alt="1 Boyutlu Gauss Dağılımı ve Parametreleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: 1 Boyutlu Gauss Dağılımı: $\omega \cdot \eta(x, \mu, \sigma)$; Ortalama ($\mu$), Standart Sapma ($\sigma$) ve Destekleyici Kanıt / Ağırlık ($\omega$).</em></figcaption>
   </div>
 </figure>
@@ -216,7 +216,7 @@ $$\sum_{k=1}^K \omega_k = 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-09.png" alt="K Adet Gauss Dağılımının Ağırlıklı Toplamı (GMM)" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-09.png" alt="K Adet Gauss Dağılımının Ağırlıklı Toplamı (GMM)" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: $K$ adet Gauss bileşeninin ağırlıklı toplamı ($P(x) \approx \sum_{k=1}^K \omega_k \eta_k$). Farklı tepe noktaları birleşerek karmaşık ve çok modlu piksel dağılımını kusursuz şekilde modeller.</em></figcaption>
   </div>
 </figure>
@@ -246,7 +246,7 @@ $$\text{Bileşen Skoru} = \frac{\omega_k}{\sigma_k}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-10.png" alt="GMM Ön Plan ve Arka Plan Sınıflandırma Kuralı" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-10.png" alt="GMM Ön Plan ve Arka Plan Sınıflandırma Kuralı" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: GMM Sınıflandırma Sezgisi: Büyük $\frac{\omega}{\sigma}$ oranı $\rightarrow$ Kararlı Arka Plan (Background); Küçük $\frac{\omega}{\sigma}$ oranı $\rightarrow$ Geçici Ön Plan (Foreground).</em></figcaption>
   </div>
 </figure>
@@ -288,7 +288,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-11.png" alt="Hareketli Medyan ve Uyarlamalı GMM Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-11.png" alt="Hareketli Medyan ve Uyarlamalı GMM Karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Kar yağışı altındaki sahnede ön plan çıkarımı: Sol: Hareketli Medyan Yöntemi (Moving Median) kar tanelerini yanlışlıkla ön plan olarak algılayıp sahneyi gürültüye boğar; Sağ: Uyarlamalı GMM (Adaptive GMM) çoklu tepe modellemesiyle kar yağışını arka plana katar ve sadece gerçek hareketli aracı temiz bir şekilde tespit eder.</em></figcaption>
   </div>
 </figure>
@@ -301,7 +301,7 @@ Değişim tespiti veya manuel seçim yardımıyla hedef nesnenin etrafına bir s
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-12.png" alt="Futbol Maçında Şablon Eşleştirme ile Oyuncu Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-12.png" alt="Futbol Maçında Şablon Eşleştirme ile Oyuncu Takibi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Geniş açılı bir futbol maçında hedef oyuncu etrafına yerleştirilen sınır kutusu (ROI) ve şablon takibi.</em></figcaption>
   </div>
 </figure>
@@ -310,7 +310,7 @@ Değişim tespiti veya manuel seçim yardımıyla hedef nesnenin etrafına bir s
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-13.png" alt="Görünüm Tabanlı ve Histogram Tabanlı Şablon Temsilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-13.png" alt="Görünüm Tabanlı ve Histogram Tabanlı Şablon Temsilleri" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: İki Temel Şablon Temsili: Üst: Görünüm Tabanlı Şablon (Görüntü piksel matrisi); Alt: Histogram Tabanlı Şablon (Renk/yoğunluk olasılık dağılımı).</em></figcaption>
   </div>
 </figure>
@@ -321,7 +321,7 @@ Değişim tespiti veya manuel seçim yardımıyla hedef nesnenin etrafına bir s
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-14.png" alt="Kareden Kareye Şablon Arama Penceresi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-14.png" alt="Kareden Kareye Şablon Arama Penceresi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: Kare $I_{t-1}$'deki nesne şablonunun, Kare $I_t$'deki genişletilmiş arama penceresi içinde kaydırılarak en yüksek korelasyonlu konumun bulunması.</em></figcaption>
   </div>
 </figure>
@@ -344,7 +344,7 @@ Arka plan piksellerinin histogramı kirletmesini engellemek için **Epanechnikov
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-15.png" alt="Epanechnikov Çekirdeği ile Ağırlıklı Histogram Hesabı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-15.png" alt="Epanechnikov Çekirdeği ile Ağırlıklı Histogram Hesabı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Epanechnikov Çekirdeği ile Ağırlıklı Histogram. Takip kutusunun merkezindeki piksellere tam ağırlık (+1.0), kenar ve köşelerdeki piksellere ise düşük ağırlık (+0.4) atanarak arka plan kirliliği matematiksel olarak filtrelenir.</em></figcaption>
   </div>
 </figure>
@@ -370,7 +370,7 @@ $$D(H_1, H_2) = \sum_{i=1}^M \min(H_1(i), H_2(i))$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-16.png" alt="Basketbol Maçında Benzer Formalı Oyuncular ve Latching Riski" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-16.png" alt="Basketbol Maçında Benzer Formalı Oyuncular ve Latching Riski" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Basketbol maçında hedef oyuncu takibi. Aynı formayı giyen sporcuların birbirinin yanından geçmesi histogram tabanlı takipte kilitlenme (latching) riskini doğurur.</em></figcaption>
   </div>
 </figure>
@@ -383,7 +383,7 @@ $$D(H_1, H_2) = \sum_{i=1}^M \min(H_1(i), H_2(i))$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-17.png" alt="SIFT Bag of Features Nesne Takip Mimarisi Genel Akışı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-17.png" alt="SIFT Bag of Features Nesne Takip Mimarisi Genel Akışı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: SIFT Bag of Features Takip Mimarisi (Gu et al., 2010). Nesne ve Arka Plan öznitelik torbalarının başlatılması, kareden kareye eşleştirilmesi ve dinamik çevrimiçi güncellenmesi.</em></figcaption>
   </div>
 </figure>
@@ -394,7 +394,7 @@ $$D(H_1, H_2) = \sum_{i=1}^M \min(H_1(i), H_2(i))$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-18.png" alt="İlk Karede Model İlklendirme Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-18.png" alt="İlk Karede Model İlklendirme Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: İlk Karede İlklendirme: 1) Sınır kutusu $W_1$ seçimi; 2) SIFT anahtar noktalarının çıkarılması; 3) Kutu içindeki noktaların Nesne Torbasına ($O_1$), dışındakilerin Arka Plan Torbasına ($B$) atanması.</em></figcaption>
   </div>
 </figure>
@@ -410,7 +410,7 @@ Sonraki $I_t$ karesi geldiğinde takip süreci şu matematiksel adımlarla yür�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-19.png" alt="Kareden Kareye Takip ve Optimal Pencere Arama Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-19.png" alt="Kareden Kareye Takip ve Optimal Pencere Arama Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 19: Takip Aşamaları: 1) SIFT özniteliklerinin çıkarılması; 2) Mesafe oran testi ($d_O / d_B &lt; 0.5$) ile güven skorlarının ($C(\mathbf{v}_i) = \pm 1$) atanması; 3) Aday pencerelerde skor hesabı ($\mu(W) = \varphi(W) - \tau(W)$); 4) En yüksek skorlu $W_t$ penceresinin seçilmesi; 5) Nesne modelinin çevrimiçi güncellenmesi.</em></figcaption>
   </div>
 </figure>
@@ -448,14 +448,14 @@ SIFT tabanlı Bag of Features mimarisi, geleneksel şablon ve histogram eşleşt
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-20.png" alt="Işık Değişimi ve 3B Baş Dönmesinde Kararlı Takip" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-20.png" alt="Işık Değişimi ve 3B Baş Dönmesinde Kararlı Takip" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 20: Zorlu takip koşulları: Sol: Ani aydınlatma değişimi; Sağ: Karmaşık arka plan önünde 3B kafa dönmesi. SIFT tanımlayıcılarının değişmezliği sayesinde takip kusursuz sürdürülür.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/object-tracking-21.png" alt="Aşırı Kapanma Senaryolarında Takip Başarımı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/object-tracking-21.png" alt="Aşırı Kapanma Senaryolarında Takip Başarımı" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 21: Aşırı kapanma (Severe Occlusion) senaryoları: Sol: Şapka takarak yüzün üst kısmının kapatılması; Sağ: Dergi ile yüzün yarısının tamamen perdelenmesi. Açıkta kalan SIFT noktaları sayesinde takip kutusu hedefi asla kaybetmez.</em></figcaption>
   </div>
 </figure>

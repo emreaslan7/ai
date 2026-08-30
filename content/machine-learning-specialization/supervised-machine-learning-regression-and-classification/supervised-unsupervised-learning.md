@@ -42,7 +42,7 @@ graph TD
 - **Model's Job:** Learn the relationship between apartment features and rent prices, then predict the rent for a new apartment.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/supervised-unsupervised-learning-01.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/supervised-unsupervised-learning-01.png" style="display:flex; justify-content: center; width: 350px;"alt="regression-example"/>
 </div>
 
 ### **Example: Classification**
@@ -54,7 +54,7 @@ graph TD
 - **Model's Job:** Classify a new tumor as benign or malignant based on input features.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/supervised-unsupervised-learning-02.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/supervised-unsupervised-learning-02.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 ---
@@ -85,7 +85,7 @@ graph TD
 - **Model's Job:** Identify clusters of customers (e.g., "High-spenders," "Budget-conscious buyers").
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/supervised-unsupervised-learning-03.png" style="display:flex; justify-content: center; width: 450px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/supervised-unsupervised-learning-03.png" style="display:flex; justify-content: center; width: 450px;"alt="regression-example"/>
 </div>
 
 ### **Example: Dimensionality Reduction**
@@ -97,7 +97,7 @@ graph TD
 - **Model's Job:** Keep the important structure of the data while reducing complexity.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/supervised-unsupervised-learning-04.png" style="display:flex; justify-content: center; width: 450px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/supervised-unsupervised-learning-04.png" style="display:flex; justify-content: center; width: 450px;"alt="regression-example"/>
 </div>
 
 ### **Example: Association**
@@ -110,7 +110,7 @@ graph TD
 - **Use Case:** Recommendation systems, inventory planning.
 
 <div style="text-align: center;display:flex; justify-content: center;">
-    <img src="../../../img/machine-learning-specialization/supervised-unsupervised-learning-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/supervised-unsupervised-learning-05.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 ---

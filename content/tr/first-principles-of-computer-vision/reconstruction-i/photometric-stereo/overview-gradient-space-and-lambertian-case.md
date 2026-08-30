@@ -8,7 +8,7 @@
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-01.png" alt="Fotometrik Stereo görüntü alma düzeneği ve piksel parlaklık denklemi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-01.png" alt="Fotometrik Stereo görüntü alma düzeneği ve piksel parlaklık denklemi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Fotometrik Stereo görüntü alma düzeneği ve piksel parlaklık denklemi I = F(Source, Normal n, Reflectance).</em></figcaption>
   </div>
 </figure>
@@ -71,7 +71,7 @@ $$\mathbf{n} = \frac{\mathbf{N}}{|\mathbf{N}|} = \frac{1}{\sqrt{p^2 + q^2 + 1}} 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-02.png" alt="z = 1 projeksiyon düzleminde gradyan uzayı parametrizasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-02.png" alt="z = 1 projeksiyon düzleminde gradyan uzayı parametrizasyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: z = 1 projeksiyon düzleminde N(p, q, 1) ve S(ps, qs, 1) ile gradyan uzayı (p-q düzlemi) parametrizasyonu.</em></figcaption>
   </div>
 </figure>
@@ -81,7 +81,7 @@ Görüntü düzlemimize paralel ve $z = 1$ mesafesinde yer alan bir düzlem haya
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-03.png" alt="Uzak ışık kaynağı ve kamera doğrultusu altında yüzey normali" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-03.png" alt="Uzak ışık kaynağı ve kamera doğrultusu altında yüzey normali" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Uzak ışık kaynağı s ve v = (0,0,1) bakış doğrultusu altında ölçekli yüzey normali N(p, q, 1).</em></figcaption>
   </div>
 </figure>
@@ -100,7 +100,7 @@ $$I(x, y) = R(p, q)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-04.png" alt="Lambertian yüzeylerde farklı geliş açılarındaki ışığın yansıma davranışı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-04.png" alt="Lambertian yüzeylerde farklı geliş açılarındaki ışığın yansıma davranışı" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: İdeal mat (Lambertian) yüzeylerde farklı geliş açılarındaki ışığın tüm yönlere eşit yayılımı (Örnek: Toprak saksı).</em></figcaption>
   </div>
 </figure>
@@ -109,7 +109,7 @@ $$I = \cos\theta_i = \mathbf{n} \cdot \mathbf{s}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-05.png" alt="Işık vektörü s ile yüzey normali n arasındaki θi geliş açısı" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-05.png" alt="Işık vektörü s ile yüzey normali n arasındaki θi geliş açısı" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Işık kaynağı vektörü s ile yüzey normali n arasındaki geliş açısı θi ve v = (0,0,1) kamera doğrultusu.</em></figcaption>
   </div>
 </figure>
@@ -120,7 +120,7 @@ $$R(p, q) = \frac{p p_s + q q_s + 1}{\sqrt{p^2 + q^2 + 1} \sqrt{p_s^2 + q_s^2 + 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-06.png" alt="Gradyan uzayında yansıtma haritası R(p,q)" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-06.png" alt="Gradyan uzayında yansıtma haritası R(p,q)" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Gradyan uzayında yansıtma haritası R(p,q) ve maksimum parlaklığın oluştuğu (ps, qs) merkez noktası.</em></figcaption>
   </div>
 </figure>
@@ -131,7 +131,7 @@ Yansıtma haritası üzerinde aynı yoğunluk değerini ($I = C$) veren noktalar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-07.png" alt="Tek bir ışık kaynağı altında z = 1 düzleminde konik kesit" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-07.png" alt="Tek bir ışık kaynağı altında z = 1 düzleminde konik kesit" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Tek bir ışık kaynağı altında aynı θi açısını koruyan normallerin z = 1 düzleminde oluşturduğu konik kesit.</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ $$p p_s + q q_s + 1 = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-08.png" alt="Eş-parlaklık seviye eğrileri ve karanlık sınırı" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-08.png" alt="Eş-parlaklık seviye eğrileri ve karanlık sınırı" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Yansıtma haritası üzerinde eş-parlaklık seviye eğrileri (0.1 - 1.0) ve θi = 90° karanlık sınırı (terminator).</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ Tek bir görüntüde ölçülen piksel parlaklığı, bu eğrilerden birine kar�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-09.png" alt="Tek piksel parlaklığının yansıtma haritasında bir eğriye karşılık gelmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-09.png" alt="Tek piksel parlaklığının yansıtma haritasında bir eğriye karşılık gelmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Görüntü I üzerindeki tek piksel ölçümünün R(p,q) haritasındaki bir eğriye eşleşmesi ve çözümsüzlük belirsizliği.</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ Fotometrik stereo, bu sonsuz yönelim adayını, farklı yönlerden gelen kontro
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-10.png" alt="Üç farklı ışık kaynağı ile aydınlatılan yüzey noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-10.png" alt="Üç farklı ışık kaynağı ile aydınlatılan yüzey noktası" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: Üç farklı yönden gelen bilinen s1, s2, s3 ışık kaynakları ile aydınlatılan aynı yerel yüzey noktası.</em></figcaption>
   </div>
 </figure>
@@ -194,7 +194,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-11.png" alt="s1 ışık kaynağı altında R1 haritasındaki eğri" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-11.png" alt="s1 ışık kaynağı altında R1 haritasındaki eğri" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Tek s1 ışık kaynağı altında ölçülen I1 = 0.9 yoğunluğunun R1(p,q) haritasındaki iso-brightness eğrisi.</em></figcaption>
   </div>
 </figure>
@@ -203,7 +203,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-12.png" alt="R1 ve R2 eğrilerinin kesişimi ile normal adaylarının 2 noktaya inmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-12.png" alt="R1 ve R2 eğrilerinin kesişimi ile normal adaylarının 2 noktaya inmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: İki farklı s1, s2 ışığı altındaki R1 ve R2 eğrilerinin kesişimi ile çözümlerin en fazla iki noktaya indirgenmesi.</em></figcaption>
   </div>
 </figure>
@@ -264,14 +264,14 @@ $$\text{Birim Yüzey Normali } (\mathbf{n}) = \frac{\mathbf{N}}{|\mathbf{N}|}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-16.png" alt="Dörtlü albedo bölgesine sahip kürenin Fotometrik Stereo rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-16.png" alt="Dörtlü albedo bölgesine sahip kürenin Fotometrik Stereo rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 16: Dört farklı albedoya sahip küre üzerinde Fotometrik Stereo: 5 girdi görüntüsü, iğne haritası (normaller) ve kestirilen albedo.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-17.png" alt="Yüz maskesi üzerinde Fotometrik Stereo rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-17.png" alt="Yüz maskesi üzerinde Fotometrik Stereo rekonstrüksiyonu" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 17: İki renkli insan yüzü maskesinde Fotometrik Stereo: Farklı aydınlatmalı girdiler, yüzey normalleri iğne haritası ve ayrıştırılan albedo.</em></figcaption>
   </div>
 </figure>
@@ -282,7 +282,7 @@ Işık matrisinin tersinin alınamadığı ($\det(S) = 0$) durumlarda sistem ç�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-13.png" alt="Tüm ışık kaynaklarının aynı düzlem üzerinde kalması" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-13.png" alt="Tüm ışık kaynaklarının aynı düzlem üzerinde kalması" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: Coplanar ışık kaynakları tekilliği: Tüm s1, s2, s3 ışık vektörleri ve orijin aynı düzlem üzerinde kalır (det(S) = 0).</em></figcaption>
   </div>
 </figure>
@@ -291,7 +291,7 @@ Işık matrisinin tersinin alınamadığı ($\det(S) = 0$) durumlarda sistem ç�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-14.png" alt="Ekinoks günlerinde güneşin ekvator düzlemindeki hareketi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-14.png" alt="Ekinoks günlerinde güneşin ekvator düzlemindeki hareketi" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: Ekinoks tekilliği: Güneşin dünya ekvator düzleminde hareket etmesi nedeniyle tüm güneş doğrultularının coplanar kalması.</em></figcaption>
   </div>
 </figure>
@@ -312,7 +312,7 @@ Aynı anda yanan birden fazla noktasal ışık kaynağı veya geniş alan aydın
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-15.png" alt="Çoklu noktasal ve uzatılmış alan ışık kaynaklarının tek etkin ışığa eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/overview-gradient-space-and-lambertian-case-15.png" alt="Çoklu noktasal ve uzatılmış alan ışık kaynaklarının tek etkin ışığa eşdeğerliği" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Çoklu noktasal ışık kaynaklarının (1) veya uzatılmış alan aydınlatmasının (2) tek bir si etkin ışık kaynağına eşdeğerliği.</em></figcaption>
   </div>
 </figure>

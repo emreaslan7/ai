@@ -12,7 +12,7 @@ Kenar tespiti sonrasında elde edilen ikili kenar haritaları, arka plan gürül
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-01.png" alt="Inliers vs Outliers in Image Space" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-01.png" alt="Inliers vs Outliers in Image Space" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: Görüntü uzayında doğru üzerindeki gerçek pikseller (*inliers* - koyu gri) ve bağımsız arka plan gürültü pikselleri (*outliers* - açık gri).</em></figcaption>
   </div>
 </figure>
@@ -38,7 +38,7 @@ Bu eşitlik, **Görüntü Uzayı ($x-y$)** ile **Parametre Uzayı ($m-c$)** aras
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-02.png" alt="Duality Concept Point to Line" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-02.png" alt="Duality Concept Point to Line" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Görüntü uzayındaki $(x_i, y_i)$ noktalarının parametre uzayında birer doğru çizmesi ve kesişimleri.</em></figcaption>
   </div>
 </figure>
@@ -47,7 +47,7 @@ Bu eşitlik, **Görüntü Uzayı ($x-y$)** ile **Parametre Uzayı ($m-c$)** aras
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-03.png" alt="Duality Summary Intersections" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-03.png" alt="Duality Summary Intersections" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Geometrik ikilik özeti: Görüntü uzayındaki doğru üzerindeki tüm pikseller parametre uzayında tek bir $(m, c)$ noktasında kesişir; gürültü pikseli ise farklı bir doğru çizer.</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ Burada:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-06.png" alt="Polar Parametrization Mapping to Sinusoids" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-06.png" alt="Polar Parametrization Mapping to Sinusoids" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Kutupsal parametrizasyon ($\theta - \rho$): Görüntü uzayındaki her piksel parametre uzayında bir sinüzoid çizer; aynı doğru üzerindeki pikseller tek $(\theta^*, \rho^*)$ noktasında kesişir.</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-04.png" alt="Accumulator Matrix Voting" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-04.png" alt="Accumulator Matrix Voting" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Akümülatör matrisinde oylama mantığı: Doğru üzerindeki 3 nokta ilgili hücredeki oy sayısını 3 yapar.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-05.png" alt="Four Lines Peak Finding" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-05.png" alt="Four Lines Peak Finding" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Görüntü uzayındaki 4 bağımsız doğru, parametre uzayında 4 ayrı tepe kesişim noktası oluşturur.</em></figcaption>
   </div>
 </figure>
@@ -125,14 +125,14 @@ $$A(\theta, \rho) = A(\theta, \rho) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-07.png" alt="Film Roll Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-07.png" alt="Film Roll Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: Kamera filmi şeridi üzerinde gerçek Hough doğru tespiti: Orijinal resim $\rightarrow$ Gradyan $\rightarrow$ Eşiklenmiş Kenar $\rightarrow$ Hough Akümülatör $A(\rho, \theta)$ ve tepe noktaları $\rightarrow$ Tespit edilen doğrular.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-08.png" alt="Machine Box Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-08.png" alt="Machine Box Hough Line Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Endüstriyel makine paneli üzerinde Hough doğru tespiti ve akümülatör yerel maksimumları.</em></figcaption>
   </div>
 </figure>
@@ -157,7 +157,7 @@ Eğer aranacak dairenin $r$ yarıçapı önceden biliniyorsa parametre uzayı ik
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-09.png" alt="Single Point Voting Circle in Parameter Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-09.png" alt="Single Point Voting Circle in Parameter Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Görüntü uzayındaki $(x_i, y_i)$ pikselinin parametre uzayında $r$ yarıçaplı bir daire çizerek oylama yapması.</em></figcaption>
   </div>
 </figure>
@@ -166,14 +166,14 @@ Tüm bu oylama daireleri, görüntüdeki dairenin gerçek merkezi olan $(a^*, b^
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-10.png" alt="Multiple Points Voting Circles Intersecting at Center" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-10.png" alt="Multiple Points Voting Circles Intersecting at Center" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: Daire üzerindeki tüm kenar piksellerinin oylama daireleri gerçek merkez $(a^*, b^*)$ noktasında birleşir.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-11.png" alt="Real Coins Circle Hough Transform" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-11.png" alt="Real Coins Circle Hough Transform" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Gerçek madeni paralar üzerinde daire tespiti: Penny ($r = r_1$) için $A_1(a,b)$ akümülatörü ve Quarter ($r = r_2$) için $A_2(a,b)$ akümülatör çıktıları.</em></figcaption>
   </div>
 </figure>
@@ -213,7 +213,7 @@ Hedef nesne görüntüde aranmadan önce şablon nesnenin geometrik bir modeli �
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-12.png" alt="GHT Model Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-12.png" alt="GHT Model Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: Genelleştirilmiş Hough Dönüşümünde model geometrisi: Referans noktası $(x_c, y_c)$, kenar açısı $\phi_i$ ve polar vektör $\vec{r}_k^i = (r_k^i, \alpha_k^i)$.</em></figcaption>
   </div>
 </figure>
@@ -225,7 +225,7 @@ Hedef nesne görüntüde aranmadan önce şablon nesnenin geometrik bir modeli �
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-13.png" alt="GHT Phi Table Structure" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-13.png" alt="GHT Phi Table Structure" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: $\phi$-Table veri yapısı: İndeks kenar yönelim açısı $\phi_i$, değerler ise referans noktasına uzanan $\vec{r} = (r, \alpha)$ vektör listesi.</em></figcaption>
   </div>
 </figure>
@@ -249,7 +249,7 @@ $$A(x_c, y_c) = A(x_c, y_c) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-14.png" alt="GHT Online Voting into Accumulator" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-14.png" alt="GHT Online Voting into Accumulator" style="display:flex; border-radius: 5px; justify-content: center; width: 340px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: GHT çevrimiçi oylama süreci: Kenar pikselleri $\phi$-Table üzerinden olası referans merkez hücrelerini oylar ve tepe noktası oluşur.</em></figcaption>
   </div>
 </figure>
@@ -258,7 +258,7 @@ $$A(x_c, y_c) = A(x_c, y_c) + 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-15.png" alt="Real GHT Results Leaf and Cat Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../../img/first-principles-of-computer-vision/hough-transform-and-generalized-hough-transform-15.png" alt="Real GHT Results Leaf and Cat Detection" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Gerçek GHT algılama sonuçları: Yaprak şablonunun çiçekler arasında saptanması (üst) ve Kedi şablonunun tavşanlar arasında saptanması (alt).</em></figcaption>
   </div>
 </figure>

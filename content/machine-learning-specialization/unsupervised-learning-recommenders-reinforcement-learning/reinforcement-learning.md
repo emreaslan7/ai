@@ -9,7 +9,7 @@ Reinforcement Learning (RL) is a machine learning paradigm where an **agent** le
 ### Key Characteristics of Reinforcement Learning:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-01.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Agent**: The entity making decisions (e.g., a robot, a self-driving car, or an AI player in a game).
@@ -31,7 +31,7 @@ Let's illustrate RL concepts using a **Mars Rover** example. Imagine a rover exp
 Each position is numbered from 1 to 6. The rover starts at position **4**, and it can move **left (-1)** or **right (+1)**. The goal is to maximize its rewards, which are given at positions **1** and **6**:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-02.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - **Position 1 reward**: **100** (e.g., a research station with supplies)
@@ -127,7 +127,7 @@ Reinforcement Learning problems are often modeled as **Markov Decision Processes
 In our **Mars Rover** example:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-03.png" style="display:flex; justify-content: center; width: 500px;"alt="regression-example"/>
 </div>
 
 - **States (S)**: {1, 2, 3, 4, 5, 6}
@@ -159,7 +159,7 @@ This function helps the agent determine which action will lead to the highest re
 Using our Mars rover example, we can estimate $Q(s,a)$ values for each state-action pair. Suppose:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-04.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - $Q(4, \text{left}) = 25$
@@ -256,7 +256,7 @@ In real-world applications, environments are often **stochastic**, meaning actio
 Suppose the Mars rover’s motors sometimes malfunction, causing it to move in the opposite direction with a small probability (e.g., 10% of the time). Now, the transition dynamics include:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-05.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 - $P(s' = 5 | s = 4, a = \text{right}) = 0.9$
@@ -285,7 +285,7 @@ This concept is central to algorithms like **Q-Learning** and **Policy Gradient 
 In reinforcement learning, states can be either discrete or continuous. A **discrete state** means that the number of possible states is finite and well-defined, whereas a **continuous state** implies an infinite number of possible states.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-06.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-06.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 For example, consider our **Mars Rover** example with six possible states. The rover can be in any one of these six states at any given time, making it a discrete state environment. However, if we consider a truck driving on a highway, its position, speed, angle, and other attributes can take an infinite number of values, making it a continuous state environment.
@@ -302,7 +302,7 @@ Continuous state spaces are often approximated using function approximators like
 A classic reinforcement learning problem is the **Lunar Lander**, where the objective is to safely land a spacecraft on the surface of a planet. The agent (lander) interacts with the environment by selecting one of four possible actions:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-07.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - **Do Nothing**: No thrust is applied.
@@ -348,7 +348,7 @@ To approximate the optimal policy, we use a **deep neural network**. The network
 #### Network Architecture:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-08.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-08.png" style="display:flex; justify-content: center; width: 600px;"alt="regression-example"/>
 </div>
 
 - **Input Layer (8 neurons)**: Corresponds to $ x, y, \theta, l, r, x', y', \theta' $
@@ -374,7 +374,7 @@ The network is trained using the **Bellman equation** to minimize the difference
 In reinforcement learning, an agent must balance **exploration** (trying new actions) and **exploitation** (choosing the best-known action). The **$ \varepsilon $-greedy policy** is a common approach to achieve this balance:
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/reinforcement-learning-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/reinforcement-learning-09.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 - With probability $ \varepsilon $, take a random action (exploration).

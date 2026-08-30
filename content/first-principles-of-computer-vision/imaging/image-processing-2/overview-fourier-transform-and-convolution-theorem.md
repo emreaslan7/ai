@@ -51,7 +51,7 @@ where:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-01.png" alt="Sinusoidal Wave Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-01.png" alt="Sinusoidal Wave Parameters" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Geometric decomposition of a sinusoid showing Amplitude ($A$), Frequency ($u$), Period ($T = 1/u$), and Phase ($\phi$).</em></figcaption>
   </div>
 </figure>
@@ -82,14 +82,14 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-02.png" alt="Fourier Series Square Wave Approximation" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-02.png" alt="Fourier Series Square Wave Approximation" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Fourier Series square wave construction (Sum of first 7 and 8 harmonic sinusoids)</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-03.png" alt="Square Wave Amplitude and Phase Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-03.png" alt="Square Wave Amplitude and Phase Decomposition" style="display:flex; border-radius: 5px; justify-content: center; width: 650px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Decomposition of a square wave into its Amplitude and Phase ($\phi \in \{-\pi/2, \pi/2\}$) spectra</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ where $x$ denotes spatial position and $u$ represents spatial frequency.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-04.png" alt="Fourier Transform and Inverse Fourier Transform Relationship" style="display:flex; border-radius: 5px; justify-content: center; width: 750px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-04.png" alt="Fourier Transform and Inverse Fourier Transform Relationship" style="display:flex; border-radius: 5px; justify-content: center; width: 750px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Forward Fourier Transform (FT) vs. Inverse Fourier Transform (IFT) input-output mapping</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ $$e^{i\theta} = \cos\theta + i\sin\theta \quad (\text{where } i = \sqrt{-1})$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-05.png" alt="Proof of Euler's Formula via Taylor Series" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-05.png" alt="Proof of Euler's Formula via Taylor Series" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Mathematical derivation of Euler's Formula ($e^{i\theta} = \cos\theta + i\sin\theta$) using Taylor series expansion</em></figcaption>
   </div>
 </figure>
@@ -196,7 +196,7 @@ $$\mathcal{F}\{\cos(2\pi k x)\} = \frac{1}{2} \left[ \delta(u - k) + \delta(u + 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-06.png" alt="Fourier Transform of Cosine Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-06.png" alt="Fourier Transform of Cosine Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Cosine function $f(x) = \cos(2\pi k x)$ and its two symmetric real-axis Dirac delta impulses</em></figcaption>
   </div>
 </figure>
@@ -206,7 +206,7 @@ A signal composed of two cosines $f(x) = \cos(2\pi k_1 x) + \cos(2\pi k_2 x)$ pr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-07.png" alt="Fourier Transform of Sum of Cosines" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-07.png" alt="Fourier Transform of Sum of Cosines" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Sum of two cosines and its corresponding four Dirac delta impulses</em></figcaption>
   </div>
 </figure>
@@ -223,7 +223,7 @@ $$\mathcal{F}\{1\} = \delta(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-08.png" alt="Fourier Transform of Constant Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-08.png" alt="Fourier Transform of Constant Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Constant DC signal $f(x) = 1$ and its zero-frequency Dirac delta impulse</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ $$\mathcal{F}\{\delta(x)\} = 1$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-09.png" alt="Fourier Transform of Unit Impulse" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-09.png" alt="Fourier Transform of Unit Impulse" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial unit impulse $f(x) = \delta(x)$ and its flat frequency spectrum $F(u) = 1$</em></figcaption>
   </div>
 </figure>
@@ -247,7 +247,7 @@ $$\mathcal{F}\{\text{Rect}(x/T)\} = T \cdot \text{sinc}(Tu) = T \frac{\sin(\pi T
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-10.png" alt="Fourier Transform of Rectangular Window" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-10.png" alt="Fourier Transform of Rectangular Window" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial rectangular window $f(x) = \text{Rect}(x/T)$ and its Sinc spectrum</em></figcaption>
   </div>
 </figure>
@@ -259,7 +259,7 @@ $$\mathcal{F}\{e^{-ax^2}\} = \sqrt{\frac{\pi}{a}} e^{-\frac{\pi^2 u^2}{a}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-11.png" alt="Fourier Transform of Gaussian Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-11.png" alt="Fourier Transform of Gaussian Function" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Spatial Gaussian $f(x) = e^{-ax^2}$ and its corresponding frequency Gaussian spectrum</em></figcaption>
   </div>
 </figure>
@@ -275,7 +275,7 @@ $$f(ax) \iff \frac{1}{|a|} F\left(\frac{u}{a}\right)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-12.png" alt="Properties of Fourier Transform Table" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-12.png" alt="Properties of Fourier Transform Table" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Fundamental transformation properties table between spatial and frequency domains</em></figcaption>
   </div>
 </figure>
@@ -307,7 +307,7 @@ $$\mathcal{F}\{f(x) \cdot h(x)\} = F(u) * H(u)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-13.png" alt="Convolution Theorem Statement" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-13.png" alt="Convolution Theorem Statement" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Convolution Theorem: Spatial convolution corresponds to frequency multiplication, and spatial multiplication corresponds to frequency convolution.</em></figcaption>
   </div>
 </figure>
@@ -359,13 +359,13 @@ flowchart LR
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 25px 0;">
   <div style="flex: 1; min-width: 300px; text-align: center;">
     <figure style="margin: 0;">
-      <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-14.png" alt="Spatial Convolution vs Frequency Multiplication - Part 1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+      <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-14.png" alt="Spatial Convolution vs Frequency Multiplication - Part 1" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
       <figcaption style="margin-top: 0.5em; font-size: 13px; color: #888;"><em>Fourier transforms ($F(u)$ and $N_\sigma(u)$) of noisy signal ($f(x)$) and Gaussian kernel ($n_\sigma(x)$) and point-wise multiplication</em></figcaption>
     </figure>
   </div>
   <div style="flex: 1; min-width: 300px; text-align: center;">
     <figure style="margin: 0;">
-      <img src="../../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-15.png" alt="Spatial Convolution vs Frequency Multiplication - Part 2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+      <img src="../../../img/first-principles-of-computer-vision/overview-fourier-transform-and-convolution-theorem-15.png" alt="Spatial Convolution vs Frequency Multiplication - Part 2" style="width: 100%; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
       <figcaption style="margin-top: 0.5em; font-size: 13px; color: #888;"><em>Inverse Fourier Transform of filtered spectrum ($F(u)H(u)$) yielding smoothed output signal $g(x)$</em></figcaption>
     </figure>
   </div>

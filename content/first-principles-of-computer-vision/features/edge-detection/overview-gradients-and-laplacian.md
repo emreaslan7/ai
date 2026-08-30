@@ -27,7 +27,7 @@ From an **information theory** perspective, edges carry the vast majority of sem
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-01.png" alt="Henry Moore Sculpture Photo vs Line Sketch" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-01.png" alt="Henry Moore Sculpture Photo vs Line Sketch" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Visual information sparsity: Henry Moore 3D sculpture photograph alongside minimal line sketch (Nalwa).</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-02.png" alt="Physical Causes of Edges Bottle Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-02.png" alt="Physical Causes of Edges Bottle Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Physical edge drivers demonstrated on a bottle object: depth, surface normal, reflectance, and illumination discontinuities.</em></figcaption>
   </div>
 </figure>
@@ -88,7 +88,7 @@ $$\begin{aligned}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-03.png" alt="Geometric Edge Profiles Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-03.png" alt="Geometric Edge Profiles Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Standard 1D geometric edge profiles: Step Edges, Roof Edge, and Line Edges.</em></figcaption>
   </div>
 </figure>
@@ -101,7 +101,7 @@ In real-world camera systems, ideal step edges do not exist due to physical degr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-04.png" alt="Real World Noisy Discrete Edge Profile" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-04.png" alt="Real World Noisy Discrete Edge Profile" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Real-world edge profile exhibiting continuous slope, noise fluctuations, and spatial sampling discretization.</em></figcaption>
   </div>
 </figure>
@@ -139,14 +139,14 @@ $$\frac{df}{dx} = \lim_{\Delta x \to 0} \frac{f(x + \Delta x) - f(x)}{\Delta x}$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-05.png" alt="1D Signal Intensity Profile" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-05.png" alt="1D Signal Intensity Profile" style="display:flex; border-radius: 5px; justify-content: center; width: 440px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Continuous 1D intensity profile f(x) with rising and falling edge boundaries.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-06.png" alt="First Derivative and Absolute Value Local Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-06.png" alt="First Derivative and Absolute Value Local Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>First derivative ∂f/∂x extrema and its absolute value |∂f/∂x| positive peaks corresponding to edge locations.</em></figcaption>
   </div>
 </figure>
@@ -169,7 +169,7 @@ From the partial derivatives $I_x$ and $I_y$, we compute two essential spatial m
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-07.png" alt="2D Gradient Vector Direction and Components" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-07.png" alt="2D Gradient Vector Direction and Components" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Behavior of 2D gradient vector ∇I for vertical (Ix ≠ 0, Iy = 0), horizontal (Ix = 0, Iy ≠ 0), and angled edge boundaries.</em></figcaption>
   </div>
 </figure>
@@ -191,7 +191,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-09.png" alt="Lena Image Partial Derivatives and Gradient Magnitude" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-09.png" alt="Lena Image Partial Derivatives and Gradient Magnitude" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Decomposition of Lena image into horizontal partial derivative ∂I/∂x, vertical partial derivative ∂I/∂y, and combined Gradient Magnitude map |∇I|.</em></figcaption>
   </div>
 </figure>
@@ -218,7 +218,7 @@ To mitigate high-frequency sensor noise, modern gradient operators combine a fin
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-08.png" alt="Gradient Operators Kernels and Trade-off Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-08.png" alt="Gradient Operators Kernels and Trade-off Comparison" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Discrete gradient operator kernels (Roberts, Prewitt, Sobel 3x3, Sobel 5x5) and the fundamental trade-off between localization vs noise robustness.</em></figcaption>
   </div>
 </figure>
@@ -262,7 +262,7 @@ $$\frac{d^2f}{dx^2} = \lim_{\Delta x \to 0} \frac{f(x+\Delta x) - 2f(x) + f(x-\D
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-10.png" alt="Second Derivative Zero-Crossing vs First Derivative Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-10.png" alt="Second Derivative Zero-Crossing vs First Derivative Extrema" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Comparison of first derivative extrema vs second derivative zero-crossings indicating exact edge centers.</em></figcaption>
   </div>
 </figure>
@@ -301,7 +301,7 @@ In discrete grids, 2D second derivatives are approximated using 3x3 stencil oper
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-11.png" alt="Discrete Laplacian Finite Difference Kernels" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-11.png" alt="Discrete Laplacian Finite Difference Kernels" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Discrete finite difference formulas for 2D Laplacian and comparison of standard 4-neighbor vs diagonal-corrected 8-neighbor convolution kernels.</em></figcaption>
   </div>
 </figure>
@@ -315,7 +315,7 @@ In discrete grids, 2D second derivatives are approximated using 3x3 stencil oper
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-12.png" alt="Lena Image Laplacian Visualization and Zero Crossings" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-12.png" alt="Lena Image Laplacian Visualization and Zero Crossings" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Lena image processed with 2D Laplacian (mapped to 128 mid-gray level) and extracted binary zero-crossing edge contours.</em></figcaption>
   </div>
 </figure>
@@ -328,7 +328,7 @@ Second derivatives severely amplify high-frequency noise. Taking the second deri
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-13.png" alt="Noise Sensitivity in Image Derivatives" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-13.png" alt="Noise Sensitivity in Image Derivatives" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Severe noise amplification: taking the derivative of a noisy step signal obscures the true edge.</em></figcaption>
   </div>
 </figure>
@@ -339,7 +339,7 @@ $$G_\sigma(x,y) = \frac{1}{2\pi \sigma^2} e^{-\frac{x^2+y^2}{2\sigma^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-14.png" alt="Gaussian Smoothing followed by Derivative" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-14.png" alt="Gaussian Smoothing followed by Derivative" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Mitigating noise: convolving noisy signal with Gaussian filter prior to derivative evaluation.</em></figcaption>
   </div>
 </figure>
@@ -350,7 +350,7 @@ $$\nabla^2 \left( G_\sigma * I \right) = \left( \nabla^2 G_\sigma \right) * I$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-15.png" alt="Derivative of Gaussian Linear Associative Property" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-15.png" alt="Derivative of Gaussian Linear Associative Property" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Derivative of Gaussian (DoG) associative property: ∇(n_σ * f) = ∇(n_σ) * f saves one convolution step.</em></figcaption>
   </div>
 </figure>
@@ -361,14 +361,14 @@ $$\text{LoG}(x,y) = -\frac{1}{\pi \sigma^4} \left[ 1 - \frac{x^2+y^2}{2\sigma^2}
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-16.png" alt="Laplacian of Gaussian Linear Property and Zero Crossing" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-16.png" alt="Laplacian of Gaussian Linear Property and Zero Crossing" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Laplacian of Gaussian (LoG) linear property: ∇²(n_σ * f) = ∇²(n_σ) * f yielding clean zero-crossing edge locator.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-17.png" alt="3D Surface Plots of DoG and LoG Sombrero Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-gradients-and-laplacian-17.png" alt="3D Surface Plots of DoG and LoG Sombrero Kernel" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>3D surface visualizations of Derivative of Gaussian (∇G) directional filters vs Laplacian of Gaussian (∇²G) isotropic Inverted Sombrero kernel.</em></figcaption>
   </div>
 </figure>

@@ -10,7 +10,7 @@ To overcome this limitation, a data-driven approach called **Calibration-Based P
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-01.png" alt="Orientation consistency principle between calibration sphere and scene" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-01.png" alt="Orientation consistency principle between calibration sphere and scene" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Orientation consistency principle: A calibration sphere and a scene object made of identical material produce identical intensity tuples for matching surface normals under fixed lights.</em></figcaption>
   </div>
 </figure>
@@ -48,7 +48,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-02.png" alt="Calibration sphere images under K lights and analytical normals" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-02.png" alt="Calibration sphere images under K lights and analytical normals" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Calibration sphere images under K lights, occluding boundary detection (radius r), and analytical surface normals (p,q,1).</em></figcaption>
   </div>
 </figure>
@@ -59,7 +59,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-03.png" alt="Target object images and estimated surface normals via LUT" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-03.png" alt="Target object images and estimated surface normals via LUT" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Target object (green bottle) images under K lights and estimated local surface normals via LUT query.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ This data-driven technique eliminates the need for analytical BRDF equations, yi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-09.png" alt="Hertzmann 2005 calibration-based photometric stereo example" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-09.png" alt="Hertzmann 2005 calibration-based photometric stereo example" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Hertzmann (2005) implementation: 3D surface reconstruction of a glossy ceramic fish figurine using multiple material calibration spheres under specular highlights.</em></figcaption>
   </div>
 </figure>
@@ -83,7 +83,7 @@ After applying Photometric Stereo, local surface gradient components ($p, q$) ar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-04.png" alt="Relationship between gradient map and depth map" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-04.png" alt="Relationship between gradient map and depth map" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Differentiation and Integration relationship between gradient map [p, q, 1] and 3D depth map z(x,y).</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ $$z(x, y) = z(x_0, y_0) + \int_{x_0}^{x} -p \, dx + \int_{y_0}^{y} -q \, dy$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-05.png" alt="Path integration along discrete grid" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-05.png" alt="Path integration along discrete grid" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Integrating from (x0, y0) to (x, y) along two distinct integration paths (Path 1 vs Path 2) on a discrete pixel grid.</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ In real-world measurements, gradients contain noise. Under noisy gradients, path
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-06.png" alt="Noise accumulation along raster grid" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-06.png" alt="Noise accumulation along raster grid" style="display:flex; border-radius: 5px; justify-content: center; width: 300px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Accumulation of gradient noise along rows and columns across image width W and height H.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ Errors accumulate progressively, leading to severe surface tearing and distortio
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-07.png" alt="Surface tearing caused by path dependence of noisy gradients" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-07.png" alt="Surface tearing caused by path dependence of noisy gradients" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Surface tearing and tearing caused by path dependence when integrating noisy surface gradients.</em></figcaption>
   </div>
 </figure>
@@ -148,7 +148,7 @@ Taking the **Inverse Fast Fourier Transform (IFFT)** of $Z(u,v)$ reconstructs a 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-08.png" alt="Estimated 3D depth map via Frankot-Chellappa integration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-08.png" alt="Estimated 3D depth map via Frankot-Chellappa integration" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Frankot-Chellappa Fourier integration: Input surface normals, estimated seamless depth map z = f(x,y), and rendered 3D surface model.</em></figcaption>
   </div>
 </figure>
@@ -163,7 +163,7 @@ A fundamental assumption in standard photometric stereo is that scene points rec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-10.png" alt="Interreflections in concave bowl geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-10.png" alt="Interreflections in concave bowl geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 400px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Interreflections in concave surfaces: A surface point receives direct light as well as secondary bounced light reflected from surrounding inner points.</em></figcaption>
   </div>
 </figure>
@@ -203,7 +203,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-11.png" alt="Nayar-Ikeuchi-Kanade iterative bowl profile convergence" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/calibration-shape-from-normals-and-interreflections-11.png" alt="Nayar-Ikeuchi-Kanade iterative bowl profile convergence" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Convergence of the Nayar-Ikeuchi-Kanade algorithm: Transition from an initial flawed shallow profile (top line) to the true deep bowl profile (bottom line) via iterative interreflection removal.</em></figcaption>
   </div>
 </figure>

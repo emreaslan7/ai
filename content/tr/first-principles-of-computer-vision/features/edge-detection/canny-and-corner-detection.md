@@ -82,7 +82,7 @@ Gauss filtresinin standart sapması $\sigma$, ölçek uzayı (scale-space) param
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-01.png" alt="Farklı Gauss Ölçek Değerlerinde Canny Kenar Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-01.png" alt="Farklı Gauss Ölçek Değerlerinde Canny Kenar Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Lena fotoğrafında farklı Gauss ölçek parametrelerinde (σ = 1, σ = 2, σ = 4) Canny kenar tespiti yanıtları.</em></figcaption>
   </div>
 </figure>
@@ -101,7 +101,7 @@ Köşeler; kamera kalibrasyonu, 3B rekonstrüksiyon, optik akış takibi ve nesn
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-02.png" alt="Ewald Hering Illüzyonu Paralel Çizgiler ve Işınlar" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-02.png" alt="Ewald Hering Illüzyonu Paralel Çizgiler ve Işınlar" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Ewald Hering illüzyonu (1861): Kesişen arka plan ışınları sebebiyle paralel düz çizgilerin bükülmüş algılanması.</em></figcaption>
   </div>
 </figure>
@@ -114,7 +114,7 @@ Lokal bir $W$ penceresi küçük bir $(u,v)$ kaydırıldığında oluşan parlak
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-03.png" alt="Görüntü Bölgelerinin Sınıflandırılması Flat Edge Corner" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-03.png" alt="Görüntü Bölgelerinin Sınıflandırılması Flat Edge Corner" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Temel lokal bölge türleri: Düz Bölge (Flat), Kenar Bölgesi (Edge), Köşe Bölgesi (Corner).</em></figcaption>
   </div>
 </figure>
@@ -139,7 +139,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-04.png" alt="Flat Edge ve Corner Bölgelerinin Ix ve Iy Türevlerine Ayrışımı" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-04.png" alt="Flat Edge ve Corner Bölgelerinin Ix ve Iy Türevlerine Ayrışımı" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Flat, Edge ve Corner bölgelerinin ham yoğunluk I ile Ix = ∂I/∂x ve Iy = ∂I/∂y kısmi türev haritalarına ayrıştırılması.</em></figcaption>
   </div>
 </figure>
@@ -178,7 +178,7 @@ $M$ matrisi, pencere içindeki lokal gradyan dağılımının özetidir.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-05.png" alt="Ix vs Iy Gradiyent Dağılımı Saçılım Grafikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-05.png" alt="Ix vs Iy Gradiyent Dağılımı Saçılım Grafikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>(Ix, Iy) gradyan saçılım grafikleri: Flat bölge (orijinde toplanma), Edge bölgesi (tek bir doğru boyunca dağılım), Corner bölgesi (çok yönlü yayılım).</em></figcaption>
   </div>
 </figure>
@@ -189,7 +189,7 @@ $M$ matrisinin iki özdeğeri $\lambda_1$ ve $\lambda_2$ olsun. Bu özdeğerler,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-06.png" alt="Kovaryans Elipsleri ve Lambda 1 Lambda 2 Özdeğerleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-06.png" alt="Kovaryans Elipsleri ve Lambda 1 Lambda 2 Özdeğerleri" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Özdeğerler λ1 ve λ2 tarafından oluşturulan kovaryans elipsleri: Flat, Edge ve Corner bölgelerinin geometrik karakterizasyonu.</em></figcaption>
   </div>
 </figure>
@@ -199,7 +199,7 @@ $M$ matrisinin iki özdeğeri $\lambda_1$ ve $\lambda_2$ olsun. Bu özdeğerler,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-07.png" alt="Eylemsizlik Momenti Özdeğer Yorumlaması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-07.png" alt="Eylemsizlik Momenti Özdeğer Yorumlaması" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Fiziksel eylemsizlik momenti yorumu: λ1 = Emax (yarı-büyük eksen) ve λ2 = Emin (yarı-küçük eksen).</em></figcaption>
   </div>
 </figure>
@@ -208,7 +208,7 @@ $M$ matrisinin iki özdeğeri $\lambda_1$ ve $\lambda_2$ olsun. Bu özdeğerler,
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-08.png" alt="Özdeğerler Bölge Sınıflandırma Özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-08.png" alt="Özdeğerler Bölge Sınıflandırma Özeti" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Özdeğer bölge sınıflandırma özeti: Flat (λ1 ~ λ2 küçük), Edge (λ1 >> λ2), Corner (λ1 ~ λ2 her ikisi de büyük).</em></figcaption>
   </div>
 </figure>
@@ -237,7 +237,7 @@ Burada $k$ ampirik bir sabit parametredir ve genellikle $0.04 \le k \le 0.06$ ar
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-09.png" alt="Harris Yanıt Fonksiyonu Özellik Uzayı Bölümlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-09.png" alt="Harris Yanıt Fonksiyonu Özellik Uzayı Bölümlemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>(λ1, λ2) özellik uzayının Harris köşe yanıt fonksiyonu R = det(M) - k(trace(M))² ile R > T eşiklemesine göre bölümlemesi.</em></figcaption>
   </div>
 </figure>
@@ -277,14 +277,14 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-10.png" alt="BBC Logosu Üzerinde Harris Köşe Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-10.png" alt="BBC Logosu Üzerinde Harris Köşe Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 540px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>BBC logosu üzerinde Harris köşe yanıt haritası R ve eşiklenmiş R > T köşe noktaları.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-11.png" alt="Devre Kartı Üzerinde Harris Köşe Tespiti Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../../img/first-principles-of-computer-vision/canny-and-corner-detection-11.png" alt="Devre Kartı Üzerinde Harris Köşe Tespiti Adımları" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Mikro devre kartında tam Harris köşe tespiti adımları: ham görüntü, yanıt haritası R, eşikleme (R > 5.1×10⁷) ve nihai tespit edilen köşeler.</em></figcaption>
   </div>
 </figure>

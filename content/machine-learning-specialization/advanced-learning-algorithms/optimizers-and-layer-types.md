@@ -16,7 +16,7 @@ Choosing the right optimizer depends on several factors, including:
 - The required computational efficiency
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-01.jpeg" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-01.jpeg" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 Below, we examine different types of optimizers along with their mathematical formulations.
@@ -34,7 +34,7 @@ $$
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-02.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 where:
@@ -67,7 +67,7 @@ $$
 $$
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-03.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 where $ x_i, y_i $ is a single training example.
@@ -85,14 +85,14 @@ where $ x_i, y_i $ is a single training example.
 SGD follows a noisy optimization path, requiring more iterations and longer computation time. To speed up convergence, SGD with momentum is used.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-04.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Momentum helps stabilize updates by adding a fraction of the previous update to the current one, reducing oscillations and accelerating convergence. However, a high momentum term requires lowering the learning rate to avoid overshooting the optimal minimum.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-05.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-06.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-05.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-06.png" style="display:flex; justify-content: center; width: 300px;"alt="regression-example"/>
 </div>
 
 While momentum improves speed, too much momentum can cause instability and poor accuracy. Proper tuning is essential for effective optimization.
@@ -126,7 +126,7 @@ where:
 Mini-batch gradient descent optimizes training by using a subset of data instead of the entire dataset, reducing the number of iterations needed. This makes it faster than both stochastic and batch gradient descent while being more efficient and memory-friendly.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-07.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 **Key Advantages**
@@ -154,7 +154,7 @@ Instead of updating with the entire dataset or a single example, mini-batch GD u
 Adagrad differs from other gradient descent algorithms by using a unique learning rate for each iteration, adjusting based on parameter changes. Larger parameter updates lead to smaller learning rate adjustments, making it effective for datasets with both sparse and dense features.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-08.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-08.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Key Advantages**
@@ -367,7 +367,7 @@ The above table shows the validation accuracy and loss at different epochs. It a
 - Adadelta shows poor results both with accuracy and computation time.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-09.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-09.webp" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 You can analyze the accuracy of each optimizer with each epoch from the above graph.
@@ -377,11 +377,11 @@ You can analyze the accuracy of each optimizer with each epoch from the above gr
 ## Conclusion
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-10.gif" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-10.gif" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-11.gif" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-11.gif" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 Different optimizers offer unique advantages based on the dataset and model architecture. While SGD is the simplest, Adam is often preferred for deep learning tasks due to its adaptive learning rate and momentum.
@@ -402,7 +402,7 @@ In deep learning, different layer types serve distinct purposes, helping neural 
 A **Dense layer** is a fundamental layer where each neuron is connected to every neuron in the previous layer.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-12.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-12.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Mathematical Representation:**
@@ -437,7 +437,7 @@ model.summary()
 A **Convolutional layer** is used in image processing, applying filters (kernels) to extract features from input images.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-13.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-13.png" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Mathematical Representation:**
@@ -467,7 +467,7 @@ model.summary()
 Pooling layers reduce dimensionality while preserving important features.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-15.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-15.jpeg" style="display:flex; justify-content: center; width: 400px;"alt="regression-example"/>
 </div>
 
 **Max Pooling:**
@@ -501,7 +501,7 @@ model.summary()
 Recurrent layers process sequential data by maintaining memory of past inputs.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-14.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-14.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 ### RNN Mathematical Model:
@@ -543,7 +543,7 @@ model.summary()
 The **Dropout layer** randomly sets a fraction of input units to 0 to prevent overfitting.
 
 <div style="text-align: center;display:flex; justify-content: center; margin-bottom: 20px; ">
-    <img src="../../../img/machine-learning-specialization/advanced-neural-network-concepts-16.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
+    <img src="../../img/machine-learning-specialization/advanced-neural-network-concepts-16.png" style="display:flex; justify-content: center; width: 700px;"alt="regression-example"/>
 </div>
 
 **Mathematical Explanation:**

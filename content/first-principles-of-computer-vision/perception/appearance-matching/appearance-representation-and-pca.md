@@ -34,7 +34,7 @@ The primary objective is to compress massive visual data from a high-dimensional
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-05.png" alt="Input Image and Multi-Object Appearance Templates" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-05.png" alt="Input Image and Multi-Object Appearance Templates" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Appearance-based recognition problem: An unknown input image and an extensive library of object appearance templates across poses and lightings.</em></figcaption>
   </div>
 </figure>
@@ -57,7 +57,7 @@ Here, $r, s, t$ are real parameters. Varying these exponents morphs the shape be
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-01.png" alt="Voxel and Analytical Superquadrics Representations" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-01.png" alt="Voxel and Analytical Superquadrics Representations" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Explicit 3D Geometric Models: Left: Voxel representation (dragon model); Right: Analytical superquadrics family ($|x|^r + |y|^s + |z|^t = 1$).</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ Here, $r, s, t$ are real parameters. Varying these exponents morphs the shape be
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-02.png" alt="Constructive Solid Geometry Boolean Operations" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-02.png" alt="Constructive Solid Geometry Boolean Operations" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Constructive Solid Geometry (CSG) Operations: Union, Difference, and Intersection between a cube and a sphere.</em></figcaption>
   </div>
 </figure>
@@ -98,7 +98,7 @@ The machine learning methodology for appearance modeling mirrors human visual co
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-03.png" alt="Human Visual Inspection Across Orientations" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-03.png" alt="Human Visual Inspection Across Orientations" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Emulating Human Perception: Rotating and inspecting an object across orientations and viewpoints.</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ To automate and standardize this process, a controlled laboratory apparatus is u
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-04.png" alt="Turntable and Robotic Light Arm Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-04.png" alt="Turntable and Robotic Light Arm Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Appearance Acquisition Setup: Turntable (Pose $\omega_1$), robotic arm with light source (Lighting $\omega_2$), and stationary camera.</em></figcaption>
   </div>
 </figure>
@@ -154,7 +154,7 @@ Each preprocessed canonical image contains $P \times Q = N$ pixels. By unrolling
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-08.png" alt="2D Image to 1D Feature Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-08.png" alt="2D Image to 1D Feature Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Image Vectorization: Unrolling a $P \times Q = N$ image into an $N \times 1$ feature vector $\mathbf{f}'$.</em></figcaption>
   </div>
 </figure>
@@ -168,7 +168,7 @@ $$\mathbf{i}_1 = \begin{bmatrix} 1 \\ 0 \\ \vdots \\ 0 \end{bmatrix}, \quad \mat
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-09.png" alt="N-Dimensional Pixel Space" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-09.png" alt="N-Dimensional Pixel Space" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: $N$-Dimensional Space: Standard orthonormal basis $\{\mathbf{i}_1, \dots, \mathbf{i}_N\}$ and the image point $\mathbf{f}'$.</em></figcaption>
   </div>
 </figure>
@@ -181,7 +181,7 @@ $$\text{SSD} = \sum_{p=1}^P \sum_{q=1}^Q \left( I_1[p,q] - I_2[p,q] \right)^2 \e
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-10.png" alt="SSD and N-D Euclidean Distance Equivalence" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-10.png" alt="SSD and N-D Euclidean Distance Equivalence" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Equivalence between pixel-space SSD and the squared Euclidean distance ($d^2 = \|\mathbf{f}'_1 - \mathbf{f}'_2\|^2$) in $N$-D space.</em></figcaption>
   </div>
 </figure>
@@ -192,7 +192,7 @@ For a $200 \times 200$ image, $N = 40,000$. Performing exhaustive template match
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-07.png" alt="Exhaustive Template Matching Challenge" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-07.png" alt="Exhaustive Template Matching Challenge" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: The high-dimensional template matching challenge: Comparing an input image against discrete templates in $N$-D space is prohibitively expensive.</em></figcaption>
   </div>
 </figure>
@@ -201,7 +201,7 @@ However, sequentially sampled turntable images exhibit immense **visual redundan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-06.png" alt="Visual Correlation and Redundancy Across Poses" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-06.png" alt="Visual Correlation and Redundancy Across Poses" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Smooth pixel transitions across neighboring views demonstrate that image points are confined to a compact subspace.</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ Because neighboring pixel values change smoothly, the $M$ sample points do not s
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-11.png" alt="Low-Dimensional Subspace in High-Dimensional Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-11.png" alt="Low-Dimensional Subspace in High-Dimensional Space" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: $M$ image points in $N$-D space lying on a $K$-dimensional orthonormal subspace $\{\mathbf{e}_1, \dots, \mathbf{e}_K\}$ where $K \ll N$.</em></figcaption>
   </div>
 </figure>
@@ -235,7 +235,7 @@ The 1st Principal Component $\mathbf{e}_1$ is the unit direction vector along wh
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-12.png" alt="1st Principal Component and Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-12.png" alt="1st Principal Component and Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: First Principal Component $\mathbf{e}_1$: Direction of maximum variance and scalar projection $p = \mathbf{e}_1 \cdot \mathbf{f}$.</em></figcaption>
   </div>
 </figure>
@@ -310,7 +310,7 @@ The second principal component $\mathbf{e}_2$ is the eigenvector corresponding t
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-13.png" alt="2nd Principal Component and 2D Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-13.png" alt="2nd Principal Component and 2D Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Second Principal Component $\mathbf{e}_2$: Orthogonal to $\mathbf{e}_1$ with coordinates $\mathbf{p} = [p_1, p_2]^T$.</em></figcaption>
   </div>
 </figure>
@@ -321,7 +321,7 @@ $$E = \begin{bmatrix} \mathbf{e}_1 & \mathbf{e}_2 & \dots & \mathbf{e}_K \end{bm
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-14.png" alt="K-Dimensional Subspace Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-14.png" alt="K-Dimensional Subspace Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 560px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: $K$-Dimensional Subspace Representation: Projecting an $N \times 1$ image vector $\mathbf{f}$ into a compact $K \times 1$ coordinate vector $\mathbf{p}$.</em></figcaption>
   </div>
 </figure>
@@ -342,7 +342,7 @@ $$\mathbf{f}' \approx \mathbf{c} + \sum_{k=1}^K p_k \mathbf{e}_k$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-15.png" alt="Forward and Back Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
+    <img src="../../../img/first-principles-of-computer-vision/appearance-representation-and-pca-15.png" alt="Forward and Back Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 580px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Forward Projection ($\mathbf{p} = E^T \mathbf{f}$) and Back Projection ($\mathbf{f} \approx \sum_{k=1}^K p_k \mathbf{e}_k$).</em></figcaption>
   </div>
 </figure>

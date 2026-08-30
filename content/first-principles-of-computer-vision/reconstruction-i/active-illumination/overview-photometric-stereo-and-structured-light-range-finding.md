@@ -27,7 +27,7 @@ Photometric stereo estimates surface normals by maintaining fixed camera and obj
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-01.png" alt="Photometric Stereo Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-01.png" alt="Photometric Stereo Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 320px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Basic setup of photometric stereo with fixed camera and light sources s1, s2, s3 illuminating a surface with normal n.</em></figcaption>
   </div>
 </figure>
@@ -41,14 +41,14 @@ Traditional photometric stereo assumes that surface reflectance follows a purely
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-02.png" alt="Diffuser Dome Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-02.png" alt="Diffuser Dome Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 350px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Spherical diffuser dome equipped with distributed light sources for photometric sampling [Nayar 1989].</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-03.png" alt="Photometric Sampling Results" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-03.png" alt="Photometric Sampling Results" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Photometric sampling separation results showing target metallic object, recovered surface normals, and separated diffuse vs specular reflectance maps.</em></figcaption>
   </div>
 </figure>
@@ -62,14 +62,14 @@ The principles of photometric sampling were scaled up by Paul Debevec and collea
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-04.png" alt="Debevec Light Stage Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-04.png" alt="Debevec Light Stage Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Paul Debevec's Light Stage apparatus featuring a spherical LED array for rapidly capturing facial performance under diverse lighting.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-05.png" alt="Light Stage Output" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-05.png" alt="Light Stage Output" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Extracted high-resolution surface normals (left) and final relighting into a target movie environment (right).</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-06.png" alt="Point-Based Triangulation Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-06.png" alt="Point-Based Triangulation Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Geometry of point-based range finding: Intersecting camera viewing ray with laser pointer ray.</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-07.png" alt="Point-Based Background Subtraction" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-07.png" alt="Point-Based Background Subtraction" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Background subtraction process: Subtracting ambient image I_B from laser pointer image I_P to isolate the spot centroid.</em></figcaption>
   </div>
 </figure>
@@ -124,14 +124,14 @@ where $f$ is the lens focal length.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-08.png" alt="Light Striping Triangulation Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-08.png" alt="Light Striping Triangulation Geometry" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Mathematical geometry of light striping: Intersecting camera viewing ray with projector light plane Ax + By + Cz + D = 0.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-09.png" alt="Light Striping Camera vs Projector View" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-09.png" alt="Light Striping Camera vs Projector View" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Light striping example: Curved line observed by camera vs straight vertical plane generated by projector.</em></figcaption>
   </div>
 </figure>
@@ -144,7 +144,7 @@ To achieve real-time speed, multiple stripes can be projected simultaneously in 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-10.png" alt="Multi-Stripe Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-10.png" alt="Multi-Stripe Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Correspondence ambiguity when projecting multiple stripes simultaneously on complex geometry.</em></figcaption>
   </div>
 </figure>
@@ -162,14 +162,14 @@ Space-time encoding resolves multi-stripe ambiguity by assigning a unique tempor
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-11.png" alt="Binary Code Space-Time Table" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-11.png" alt="Binary Code Space-Time Table" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Space-time binary codeword pattern table: Encoding 2^n - 1 stripes into n sequential projection images [Posdamer 1981].</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-12.png" alt="Sequential Binary Projection and 3D Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-12.png" alt="Sequential Binary Projection and 3D Model" style="display:flex; border-radius: 5px; justify-content: center; width: 620px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Sequence of binary projection patterns onto a scene object and the resulting 3D reconstruction.</em></figcaption>
   </div>
 </figure>
@@ -182,7 +182,7 @@ In general, $n$ sequential projection images can encode $2^n - 1$ distinct strip
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-13.png" alt="Binary Thresholding Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-13.png" alt="Binary Thresholding Ambiguity" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Edge transitions in standard binary coding causing severe thresholding ambiguity due to optical light bleeding.</em></figcaption>
   </div>
 </figure>
@@ -191,7 +191,7 @@ In general, $n$ sequential projection images can encode $2^n - 1$ distinct strip
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-14.png" alt="Gray Code Transformation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-14.png" alt="Gray Code Transformation" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Conversion from standard binary code to Gray Code ensuring only 1 bit changes between adjacent stripes.</em></figcaption>
   </div>
 </figure>
@@ -202,7 +202,7 @@ Instead of binary (on/off) coding, using $k$ intensity levels or distinct color 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-15.png" alt="Multi-Level Encoding Systems Table" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-15.png" alt="Multi-Level Encoding Systems Table" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Comparison of encoding bases: Binary (k=2), Ternary (k=3), and general k-ary systems.</em></figcaption>
   </div>
 </figure>
@@ -211,7 +211,7 @@ Instead of binary (on/off) coding, using $k$ intensity levels or distinct color 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-16.png" alt="Color Coded Ternary Pattern Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-16.png" alt="Color Coded Ternary Pattern Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: RGB color-coded ternary structured light: Encoding 7 stripes into just 2 images using Red, Green, and Blue patterns.</em></figcaption>
   </div>
 </figure>
@@ -220,7 +220,7 @@ Instead of binary (on/off) coding, using $k$ intensity levels or distinct color 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-17.png" alt="Color Coding Physical Limitations" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/overview-photometric-stereo-and-structured-light-range-finding-17.png" alt="Color Coding Physical Limitations" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Physical limitations of color coding: Total light absorption on colored regions and color ambiguity.</em></figcaption>
   </div>
 </figure>

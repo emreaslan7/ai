@@ -12,7 +12,7 @@ In calibrated (simple) stereo systems, the cameras are fixed, their optical axes
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-01.png" alt="Calibrated Stereo Setup Review" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-01.png" alt="Calibrated Stereo Setup Review" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Review of calibrated (simple) stereo constraints: Parallel optical axes, horizontal baseline b, and aligned epipolar lines.</em></figcaption>
   </div>
 </figure>
@@ -53,7 +53,7 @@ The core objective of uncalibrated stereo is recovering 3D scene structure from 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-02.png" alt="Uncalibrated Stereo Problem Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-02.png" alt="Uncalibrated Stereo Problem Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: The uncalibrated stereo problem: Arbitrary camera positions and orientations viewing a 3D scene.</em></figcaption>
   </div>
 </figure>
@@ -62,7 +62,7 @@ The problem is resolved through a systematic 5-step processing pipeline:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-05.png" alt="Uncalibrated Stereo 5-Step Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-05.png" alt="Uncalibrated Stereo 5-Step Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Overview of the 5-step uncalibrated stereo reconstruction pipeline and geometric parameters.</em></figcaption>
   </div>
 </figure>
@@ -87,7 +87,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-03.png" alt="Intrinsic Camera Matrices and Keypoints" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-03.png" alt="Intrinsic Camera Matrices and Keypoints" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Known intrinsic camera matrices ($K_l, K_r$) and initial keypoint selection.</em></figcaption>
   </div>
 </figure>
@@ -96,7 +96,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-04.png" alt="Sparse Feature Correspondences" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-04.png" alt="Sparse Feature Correspondences" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Corresponding sparse feature points matched across left and right views.</em></figcaption>
   </div>
 </figure>
@@ -113,7 +113,7 @@ flowchart TD
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-06.png" alt="Epipolar Geometry Elements" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-06.png" alt="Epipolar Geometry Elements" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Fundamental elements of epipolar geometry: Optical centers ($O_l, O_r$), epipoles ($e_l, e_r$), epipolar plane, and epipolar lines.</em></figcaption>
   </div>
 </figure>
@@ -138,7 +138,7 @@ The normal vector ($\mathbf{n}$) to the epipolar plane is constructed via the cr
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-07.png" alt="Epipolar Plane Normal Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-07.png" alt="Epipolar Plane Normal Vector" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Derivation of the epipolar plane normal vector ($\mathbf{n} = \mathbf{t} \times \mathbf{X}_l$).</em></figcaption>
   </div>
 </figure>
@@ -177,7 +177,7 @@ $$\mathbf{u}_l^T F \mathbf{u}_r = 0$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-08.png" alt="Epipolar Line Alignments" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-08.png" alt="Epipolar Line Alignments" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Comparison between rectified horizontal epipolar lines and uncalibrated general epipolar lines.</em></figcaption>
   </div>
 </figure>
@@ -224,7 +224,7 @@ Once $F$ is estimated, dense correspondences across the entire image pair are es
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-09.png" alt="1D Search along Epipolar Line" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-09.png" alt="1D Search along Epipolar Line" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Epipolar constraint reducing correspondence search to a 1D line search in the target image.</em></figcaption>
   </div>
 </figure>
@@ -265,7 +265,7 @@ Having computed dense correspondences, 3D point positions are reconstructed via 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-10.png" alt="St Peters Basilica 3D Point Cloud Photo Tourism" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-10.png" alt="St Peters Basilica 3D Point Cloud Photo Tourism" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: 3D point cloud reconstruction of St. Peter's Basilica generated from 1,275 uncalibrated photos via Structure from Motion (Snavely et al., 2006).</em></figcaption>
   </div>
 </figure>
@@ -299,7 +299,7 @@ For textureless or uniform surfaces (e.g., human faces or blank walls), template
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-11.png" alt="Active Illumination Pattern Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-11.png" alt="Active Illumination Pattern Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Active illumination pattern projection on textureless human face enabling precise 3D surface reconstruction.</em></figcaption>
   </div>
 </figure>
@@ -316,7 +316,7 @@ Evolutionary adaptations have placed eyes according to survival requirements:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-12.png" alt="Predator vs Prey Eye Placement" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-12.png" alt="Predator vs Prey Eye Placement" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Predator forward-facing eyes (depth estimation) vs. prey side-facing eyes (panoramic field of view).</em></figcaption>
   </div>
 </figure>
@@ -330,7 +330,7 @@ The human interocular distance averages 64 mm. When converging on an object, 6 e
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-13.png" alt="Human Visual System Optics and LGN" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-13.png" alt="Human Visual System Optics and LGN" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Extraocular vergence muscles, optic chiasma crossover, LGN relay station, and visual cortex routing.</em></figcaption>
   </div>
 </figure>
@@ -345,7 +345,7 @@ Classic experiments demonstrate the mechanisms of visual stereopsis:
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-14.png" alt="Pseudoscope and Telestereoscope Configurations" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-14.png" alt="Pseudoscope and Telestereoscope Configurations" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Ray diagrams for the Pseudoscope (swapping optical paths for depth reversal) and Telestereoscope (enlarging effective baseline).</em></figcaption>
   </div>
 </figure>
@@ -359,7 +359,7 @@ Placing a dark filter over one eye causes a temporal latency in retinal transmis
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-15.png" alt="Pulfrich Pendulum Effect Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-15.png" alt="Pulfrich Pendulum Effect Diagram" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: The Pulfrich pendulum effect: Neural transmission latency in one eye turns 2D planar harmonic motion into perceived 3D elliptical rotation.</em></figcaption>
   </div>
 </figure>
@@ -372,7 +372,7 @@ George Stratton wore optical harnesses that inverted his visual field for consec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/uncalibrated-stereo-16.png" alt="Stratton Inverted Vision Mirror Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/uncalibrated-stereo-16.png" alt="Stratton Inverted Vision Mirror Apparatus" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Mirror apparatus used in Stratton's 1896 inverted vision experiments (Stratton, 1896).</em></figcaption>
   </div>
 </figure>

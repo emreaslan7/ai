@@ -8,7 +8,7 @@ Geleneksel bilgisayarlı görü yaklaşımlarında, nesneleri tanımak ve konuml
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-01.png" alt="Basit Şablon vs Karmaşık 2B Görünüm Eşleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-01.png" alt="Basit Şablon vs Karmaşık 2B Görünüm Eşleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 1: (Sol) Tekil ve izole şablon kapağı. (Sağ) Karmaşık, üst üste binmiş ve dönmüş CD kapaklarından oluşan gerçek dünya 2B sahnesi.</em></figcaption>
   </div>
 </figure>
@@ -28,14 +28,14 @@ Eğer bir nesneyi aratmak için klasik **şablon eşleştirme (template matching
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-02.png" alt="Rotasyon ve Aydınlatma Değişimi Altında Görünüm" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-02.png" alt="Rotasyon ve Aydınlatma Değişimi Altında Görünüm" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 2: Aynı nesnenin düz duruşu (sol) ile döndürülmüş ve ışık açısı değişmiş duruşu (sağ). Yerel penceredeki piksel değerleri doğrudan eşleştirilemez.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-03.png" alt="Yakınlaştırılmış Piksel Yamalarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-03.png" alt="Yakınlaştırılmış Piksel Yamalarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 3: Yakınlaştırılmış lokal piksel yaması. Nesne döndüğünde piksellerin matris dizilimi tamamen değiştiği için doğrudan piksel farkı almak başarısız olur.</em></figcaption>
   </div>
 </figure>
@@ -57,7 +57,7 @@ Bir görüntünün **ilgi noktası (interest point)**, yerel olarak en zengin g�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-04.png" alt="Homojen ve Düz Doku Yamaları" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-04.png" alt="Homojen ve Düz Doku Yamaları" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 4: Düz ve homojen dokulu yamalar (ahşap dokusu/düz yüzey). İçerisinde gradyan varyasyonu olmadığı için ilgi noktası olamazlar.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ Bir görüntünün **ilgi noktası (interest point)**, yerel olarak en zengin g�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-05.png" alt="Kenar Tespiti ve Açıklık Problemi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-05.png" alt="Kenar Tespiti ve Açıklık Problemi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 5: Kenar boyunca kaydırma belirsizliği (Aperture Problem). Pencere kenar çizgisi üzerinde hareket ettirildiğinde pikseller değişmez, kesin uzamsal konum tespit edilemez.</em></figcaption>
   </div>
 </figure>
@@ -78,7 +78,7 @@ Bir görüntünün **ilgi noktası (interest point)**, yerel olarak en zengin g�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-06.png" alt="Köşe ve Leke Yamalarının İncelemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-06.png" alt="Köşe ve Leke Yamalarının İncelemesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 6: Köşe ve leke yamalarının karşılaştırılması. Leke yamaları hem uzamsal konumu hem de ölçek penceresini net olarak tanımlar.</em></figcaption>
   </div>
 </figure>
@@ -97,7 +97,7 @@ $$G(x, \sigma) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{x^2}{2\sigma^2}}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-07.png" alt="1D Sinyal ve Gauss Yumuşatma" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-07.png" alt="1D Sinyal ve Gauss Yumuşatma" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 7: (Üstten alta) Gürültülü adım sinyali $f$, Gauss yumuşatma çekirdeği $n_\sigma$ ve yumuşatılmış sinyal $n_\sigma * f$.</em></figcaption>
   </div>
 </figure>
@@ -106,7 +106,7 @@ Sinyal, Gauss'un birinci türeviyle ($\frac{d}{dx} G_\sigma$) konvolüsyona soku
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-08.png" alt="Gauss Birinci Türevi ile Kenar Yanıtı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-08.png" alt="Gauss Birinci Türevi ile Kenar Yanıtı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 8: Gauss'un 1. türevi $\nabla(n_\sigma)$ filtre yanıtı. Kenarın tam üzerinde maksimum genlik (peak) oluşturur.</em></figcaption>
   </div>
 </figure>
@@ -115,14 +115,14 @@ Gauss'un ikinci türevi filtresi ($\frac{d^2}{dx^2} G_\sigma$ / Inverted Mexican
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-09.png" alt="Gauss İkinci Türevi ve Sıfır Geçişi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-09.png" alt="Gauss İkinci Türevi ve Sıfır Geçişi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 9: Gauss'un 2. türevi $\nabla^2(n_\sigma)$ filtresi ve sinyalle konvolüsyonu. Kenar merkezinde tam sıfır geçişi (zero-crossing) gözlenir.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-10.png" alt="1D Blob Yapı Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-10.png" alt="1D Blob Yapı Örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 10: 1D sinyaldeki farklı blob benzeri (pulse, bump, trough) temel yapılar.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$S(x, \sigma) = f(x) * G(x, \sigma)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-11.png" alt="Farklı Genişlikteki Bloblar Üzerinde Filtre Yanıtları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-11.png" alt="Farklı Genişlikteki Bloblar Üzerinde Filtre Yanıtları" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 11: Farklı genişlikteki Bloblar ($A, B, C$) üzerinde Gauss yumuşatma, 2. türev ve normalleştirilmemiş yanıtlar. Normalleştirme yapılmazsa geniş ölçeklerde yanıt genliği düşer.</em></figcaption>
   </div>
 </figure>
@@ -146,14 +146,14 @@ $$\text{NLoG}_{1D} = \sigma^2 \frac{d^2 G_\sigma}{dx^2} * f(x)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-12.png" alt="Karakteristik Ölçek ve Yerel Ekstremumlar" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-12.png" alt="Karakteristik Ölçek ve Yerel Ekstremumlar" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 12: $\sigma^2$-normalleştirilmiş NLoG yanıtının blobların tam merkezinde en yüksek ekstremumu (tepe noktasını) oluşturması.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-13.png" alt="Blob Boyutu ile Karakteristik Ölçek İlişkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-13.png" alt="Blob Boyutu ile Karakteristik Ölçek İlişkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 13: Karakteristik Ölçek ($\sigma^*$): $A$ bloğu için $\sigma_1$, $B$ bloğu için $2\sigma_1$, $C$ bloğu için $3\sigma_1$ seviyesinde maksimum yanıt alınır.</em></figcaption>
   </div>
 </figure>
@@ -176,7 +176,7 @@ $$\text{NLoG}_{2D}(x, y, \sigma) = -\frac{1}{2\pi\sigma^2} \left( 2 - \frac{x^2 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-14.png" alt="2D Filtre Operatörleri: Laplacian, Gaussian, LoG, NLoG" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-14.png" alt="2D Filtre Operatörleri: Laplacian, Gaussian, LoG, NLoG" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 14: 2B Filtre Operatörlerinin 3B yüzey görünümleri: Laplacian ($\nabla^2$), Gaussian ($n_\sigma$), LoG ($\nabla^2 n_\sigma$) ve Normalleştirilmiş NLoG ($\sigma^2 \nabla^2 n_\sigma$).</em></figcaption>
   </div>
 </figure>
@@ -189,21 +189,21 @@ Bu 3B hacim içinde yerel ekstremum ($x^*, y^*, \sigma^*$) noktaları aranır.
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-15.png" alt="Ölçek Uzayı Görselleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-15.png" alt="Ölçek Uzayı Görselleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 15: Düşen adam resmi üzerinde Ölçek Uzayı (Scale-Space) serisi: $S(x,y,\sigma_0) \dots S(x,y,\sigma_3)$. $\sigma$ büyüdükçe detaylar kaybolur ve çözünürlük düşer.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-16.png" alt="Zengin Dokulu Bölgede Karakteristik Ölçek Ekstremumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-16.png" alt="Zengin Dokulu Bölgede Karakteristik Ölçek Ekstremumu" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 16: Düşen adamın göz bölgesinde ölçek boyunca NLoG yanıtı. $\sigma_1$ ölçeğinde belirgin bir ekstremum tepe noktası oluşur (Lindeberg 1994).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-17.png" alt="Homojen Bölgede Ekstremum Oluşmaması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-17.png" alt="Homojen Bölgede Ekstremum Oluşmaması" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 17: Düz/homojen (pantolon paçası yanındaki arka plan) bir noktada ölçek boyunca NLoG yanıtı. Güçlü bir ekstremum oluşmadığı için leke olarak kabul edilmez.</em></figcaption>
   </div>
 </figure>
@@ -232,7 +232,7 @@ $$G(x,y,k\sigma) - G(x,y,\sigma) \approx (k-1) \cdot \left[ \sigma^2 \nabla^2 G 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-18.png" alt="NLoG ve DoG Eğrilerinin Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-18.png" alt="NLoG ve DoG Eğrilerinin Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 18: Tam normalleştirilmiş NLoG eğrisi ile DoG yaklaşımının birebir çakışması ($DoG \approx (s-1)\text{NLoG}$).</em></figcaption>
   </div>
 </figure>
@@ -241,7 +241,7 @@ Bu matematiksel ilişki sayesinde, sadece Gauss pürüzsüzleştirilmiş görün
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-19.png" alt="DoG Piramidinin İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-19.png" alt="DoG Piramidinin İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 19: Görüntü $I(x,y)$ Gauss ölçek uzayından geçirilir ve ardışık seviyelerin birbirinden çıkarılmasıyla DoG fark görüntüleri yığını elde edilir (Lowe 2004).</em></figcaption>
   </div>
 </figure>
@@ -256,7 +256,7 @@ DoG fark görüntüleri yığını (stack) oluşturulduktan sonra yerel ekstremu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-20.png" alt="3B Komşulukta Ekstremum Arama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-20.png" alt="3B Komşulukta Ekstremum Arama" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 20: DoG hacminde $3 \times 3 \times 3$ komşuluğundaki 26 piksel ile merkez pikselin karşılaştırılması.</em></figcaption>
   </div>
 </figure>
@@ -265,14 +265,14 @@ DoG fark görüntüleri yığını (stack) oluşturulduktan sonra yerel ekstremu
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-21.png" alt="Kararlı SIFT Noktalarının Seçimi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-21.png" alt="Kararlı SIFT Noktalarının Seçimi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 21: Zayıf ve kararsız ekstremumların elenmesiyle görüntü üzerinde kararlı SIFT dairelerinin (konum ve ölçek yarıçapı) elde edilmesi (Lowe 2004).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-22.png" alt="God of War Kapak Resminde SIFT Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-22.png" alt="God of War Kapak Resminde SIFT Noktaları" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 22: PS2 God of War kapak resmi üzerinde farklı ölçek yarıçaplarında ($r \propto \sigma^*$) tespit edilmiş SIFT ilgi halkaları.</em></figcaption>
   </div>
 </figure>
@@ -284,7 +284,7 @@ Nesnenin kameraya uzaklığına bağlı olarak değişen büyütme oranları (ma
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-23.png" alt="Ölçek Oranının Karakteristik Ölçeklerle Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-23.png" alt="Ölçek Oranının Karakteristik Ölçeklerle Tespiti" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 23: Farklı mesafelerden çekilmiş aynı nesne için Karakteristik Ölçeklerin Oranı ($\frac{\sigma_1^*}{\sigma_2^*}$) doğrudan ölçek değişim oranını verir (Mikolajczyk 2001).</em></figcaption>
   </div>
 </figure>
@@ -303,14 +303,14 @@ $$m(x,y) = \sqrt{I_x^2 + I_y^2} \quad \text{ve} \quad \theta(x,y) = \tan^{-1}\le
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-24.png" alt="Birincil Yönelim Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-24.png" alt="Birincil Yönelim Histogramı" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 24: (Sol) Yerel yamadaki piksellerin gradyan yön vektörleri. (Sağ) 36 dilimli yönelim histogramı ve tepe noktası seçimi.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-25.png" alt="Döndürülmüş Nesnede Birincil Yönelim Hizalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-25.png" alt="Döndürülmüş Nesnede Birincil Yönelim Hizalaması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 25: Döndürülmüş CD kapağında ana yönelim okunun tespit edilerek yamanın standart dik konuma döndürülmesi.</em></figcaption>
   </div>
 </figure>
@@ -345,7 +345,7 @@ Boyut ve rotasyon etkileri tamamen sıfırlandıktan sonra, normalize edilmiş v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-26.png" alt="SIFT Descriptor Vektör İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-26.png" alt="SIFT Descriptor Vektör İnşası" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 26: SIFT Tanımlayıcısının oluşumu: Hizalanmış pencere alt bölgelere ayrılır, her bölgenin yön histogramı hesaplanır ve birleştirilerek 128D imza oluşturulur.</em></figcaption>
   </div>
 </figure>
@@ -371,42 +371,42 @@ Boyut ve rotasyon etkileri tamamen sıfırlandıktan sonra, normalize edilmiş v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-27.png" alt="Ölçek Değişiminde SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-27.png" alt="Ölçek Değişiminde SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 27: Büyük ölçek farkı içeren görüntülerde (Donnie Darko DVD ve God of War kapakları) birebir SIFT eşleşme hatları.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-28.png" alt="Rotasyon Altında SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-28.png" alt="Rotasyon Altında SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 28: $45^\circ$, $90^\circ$ ve ters dönmüş ($180^\circ$) Michel Gondry CD kapağında kararlı SIFT eşleşmeleri.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-29.png" alt="Karmaşık Yığın ve Kısmi Tıkanmada SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-29.png" alt="Karmaşık Yığın ve Kısmi Tıkanmada SIFT Eşleştirmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 29: Üst üste binmiş karmaşık CD kapakları (clutter & occlusion) arasında aranılan nesnenin SIFT ile tespiti.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-30.png" alt="Dağ Fotoğraflarında SIFT Noktası Eşleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-30.png" alt="Dağ Fotoğraflarında SIFT Noktası Eşleştirme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 30: İki dağ manzarası fotoğrafındaki ortak SIFT noktalarının otomatik eşleştirilmesi (Autostitch).</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-31.png" alt="Panorama Dikme ve Dönüştürme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-31.png" alt="Panorama Dikme ve Dönüştürme" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 31: Eşleşen SIFT noktaları kullanılarak fotoğrafların geometrik olarak dönüştürülmesi (warp) ve panorama oluşturulması.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-32.png" alt="30 Fotoğraftan Devasa Kolaj Oluşturma" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-32.png" alt="30 Fotoğraftan Devasa Kolaj Oluşturma" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 32: Cam arkasından çekilmiş 30 farklı kareden SIFT eşleştirmesi ile birleştirilmiş devasa iç/dış mekan kolajı (Nomura 2007).</em></figcaption>
   </div>
 </figure>
@@ -419,7 +419,7 @@ Ancak **üç boyutlu (3D) nesnelerin tanınmasında SIFT başarısız olmaya ba�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/sift-detector-33.png" alt="3B Bakış Açısı Değişiminde SIFT Sınırı" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../../img/first-principles-of-computer-vision/sift-detector-33.png" alt="3B Bakış Açısı Değişiminde SIFT Sınırı" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Şekil 33: 3B nesnelerde bakış açısı (viewpoint) etkisi: Açı farkı $0^\circ$ (kusursuz eşleşme), $30^\circ$ (dramatik düşüş), $90^\circ$ (eşleşmenin tamamen çökmesi).</em></figcaption>
   </div>
 </figure>

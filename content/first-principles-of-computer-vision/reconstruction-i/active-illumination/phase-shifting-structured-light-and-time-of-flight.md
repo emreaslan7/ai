@@ -17,7 +17,7 @@ Rather than projecting discrete binary stripes, the phase shifting method projec
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-01.png" alt="Intensity Ratio Method Projection Patterns" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-01.png" alt="Intensity Ratio Method Projection Patterns" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Projection of linear ramp pattern L1 and flat uniform pattern L2 [Carrihill 1985].</em></figcaption>
   </div>
 </figure>
@@ -28,7 +28,7 @@ $$\frac{I_1}{I_2} = \frac{\rho \cdot L_1}{\rho \cdot L_2} = \frac{L_1}{L_2}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-02.png" alt="Intensity Ratio Normalization" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-02.png" alt="Intensity Ratio Normalization" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: Ratioing I1/I2 eliminates albedo variation, yielding direct mapping to projector column coordinate x_p.</em></figcaption>
   </div>
 </figure>
@@ -45,7 +45,7 @@ $$I_1(x_c, y_c) = \rho a + \rho b + \rho b \cos\left( \frac{2\pi x_p}{P} \right)
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-03.png" alt="Sinusoidal Cosine Wave Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-03.png" alt="Sinusoidal Cosine Wave Projection" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: First reference cosine wave L1 projected onto the scene [Wust 1991].</em></figcaption>
   </div>
 </figure>
@@ -57,7 +57,7 @@ This equation contains three unknowns: $\rho a$ (ambient component), $\rho b$ (a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-04.png" alt="Phase Shift -120 degrees" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-04.png" alt="Phase Shift -120 degrees" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Second cosine pattern L2 shifted by -120° (-2π/3).</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ This equation contains three unknowns: $\rho a$ (ambient component), $\rho b$ (a
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-05.png" alt="Phase Shift +120 degrees" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-05.png" alt="Phase Shift +120 degrees" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Third cosine pattern L3 shifted by +120° (+2π/3).</em></figcaption>
   </div>
 </figure>
@@ -77,7 +77,7 @@ $$x_p = \frac{P}{2\pi} \tan^{-1}\left( \sqrt{3} \frac{I_2 - I_3}{2I_1 - I_2 - I_
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-06.png" alt="Phase Shifting Closed-Form Solution" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-06.png" alt="Phase Shifting Closed-Form Solution" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Closed-form trigonometric solution for projector column coordinate x_p using 3 phase-shifted images.</em></figcaption>
   </div>
 </figure>
@@ -95,7 +95,7 @@ Intersecting the computed projector column plane $x_p$ with the camera viewing r
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-08.png" alt="Digital Michelangelo Project Scanning David Statue" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-08.png" alt="Digital Michelangelo Project Scanning David Statue" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Digital Michelangelo Project: High-resolution 3D mesh (1/4 mm accuracy) of Michelangelo's David statue [Levoy 2000].</em></figcaption>
   </div>
 </figure>
@@ -104,7 +104,7 @@ Intersecting the computed projector column plane $x_p$ with the camera viewing r
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-09.png" alt="Great Buddha Project" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-09.png" alt="Great Buddha Project" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: Great Buddha Project: Physical statue in Nara and its 3D digital model [Ikeuchi 2007].</em></figcaption>
   </div>
 </figure>
@@ -121,7 +121,7 @@ Despite high accuracy, structured light systems face physical limitations on cer
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-10.png" alt="Unsolved Problems in Structured Light" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-10.png" alt="Unsolved Problems in Structured Light" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Challenging surfaces for structured light: Subsurface scattering (marble), participating media (underwater), specular metal, transparent glass, and hair.</em></figcaption>
   </div>
 </figure>
@@ -132,7 +132,7 @@ The table below summarizes the image count complexity of all major structured li
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-07.png" alt="Structured Light Methods Summary Table" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-07.png" alt="Structured Light Methods Summary Table" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Summary table comparing required image frame counts across structured light paradigms.</em></figcaption>
   </div>
 </figure>
@@ -149,7 +149,7 @@ Time of Flight (ToF) range sensing bypasses baseline triangulation entirely by d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-11.png" alt="Echolocation in Nature" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-11.png" alt="Echolocation in Nature" style="display:flex; border-radius: 5px; justify-content: center; width: 420px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Biological origins of Time-of-Flight: Echolocation using sound waves in bats, dolphins, and submarines.</em></figcaption>
   </div>
 </figure>
@@ -158,7 +158,7 @@ Time of Flight (ToF) range sensing bypasses baseline triangulation entirely by d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-12.png" alt="Galileo's Speed of Light Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-12.png" alt="Galileo's Speed of Light Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Galileo's early attempt to measure the speed of light across 1000m hilltop baselines.</em></figcaption>
   </div>
 </figure>
@@ -167,7 +167,7 @@ Time of Flight (ToF) range sensing bypasses baseline triangulation entirely by d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-13.png" alt="Fizeau's Cogwheel Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-13.png" alt="Fizeau's Cogwheel Experiment" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Fizeau's 1849 cogwheel setup for measuring the speed of light over an 8633m baseline.</em></figcaption>
   </div>
 </figure>
@@ -179,7 +179,7 @@ Time of Flight (ToF) range sensing bypasses baseline triangulation entirely by d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-14.png" alt="Pulse Modulation ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-14.png" alt="Pulse Modulation ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Pulse modulation (Flash ToF): Measuring exact pulse time delay using nanosecond timing circuits.</em></figcaption>
   </div>
 </figure>
@@ -192,7 +192,7 @@ Depth is directly proportional to the phase shift $\varphi$ measured between the
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-15.png" alt="Continuous Modulation Phase ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-15.png" alt="Continuous Modulation Phase ToF" style="display:flex; border-radius: 5px; justify-content: center; width: 450px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: Continuous modulation ToF: Phase shift φ between emitted and received sinusoidal light signals.</em></figcaption>
   </div>
 </figure>
@@ -209,7 +209,7 @@ $$S_{ref} = \cos(\omega t - \delta)$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-16.png" alt="Correlation-Based Phase Measurement Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-16.png" alt="Correlation-Based Phase Measurement Setup" style="display:flex; border-radius: 5px; justify-content: center; width: 480px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Correlation-based phase measurement parameters: Ambient light O, albedo A, phase shift φ, and reference phase δ.</em></figcaption>
   </div>
 </figure>
@@ -231,7 +231,7 @@ $$d = c \frac{\varphi}{4\pi f}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-17.png" alt="Google Self-Driving Car 3D Point Cloud" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../img/first-principles-of-computer-vision/phase-shifting-structured-light-and-time-of-flight-17.png" alt="Google Self-Driving Car 3D Point Cloud" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Autonomous vehicle 3D point cloud generation using scanning LiDAR / Time-of-Flight sensors.</em></figcaption>
   </div>
 </figure>

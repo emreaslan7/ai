@@ -10,7 +10,7 @@ Tamamen kalibre edilmiş bir tekil kamerada, görüntü düzlemi üzerinde sapta
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-01.png" alt="Geriye Projeksiyon Belirsizliği ve Çıkan Işın" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-01.png" alt="Geriye Projeksiyon Belirsizliği ve Çıkan Işın" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Geriye projeksiyon belirsizliği: Kalibre bir kamerada $(u,v)$ pikselinin 3B uzaya geriye izdüşümü tek bir nokta değil, sahneye doğru sonsuza uzayan bir ışın (outgoing ray) tanımlar.</em></figcaption>
   </div>
 </figure>
@@ -28,7 +28,7 @@ Görüntüdeki o piksel, kameranın optik merkezinden $(0,0,0)$ çıkıp görün
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-02.png" alt="3B-2B İleri İzdüşüm ve 2B-3B Geri İzdüşüm Eşitlikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-02.png" alt="3B-2B İleri İzdüşüm ve 2B-3B Geri İzdüşüm Eşitlikleri" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: 3B'dan 2B'a ileri izdüşüm denklemleri ile 2B'dan 3B'a geriye izdüşüm ışın denklemlerinin matematiksel karşılaştırması.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ Derinliği kesin olarak saptayabilmek için, bu ışını farklı bir bakış a�
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-03.png" alt="Basit Stereo Kamera Geometrisi ve Baz Çizgisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-03.png" alt="Basit Stereo Kamera Geometrisi ve Baz Çizgisi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Basit stereo geometrisi: Sol kamera orijinde $(0,0,0)$, sağ kamera $(b,0,0)$ konumundadır. İki kameradan çıkan ışınların 3B uzayda kesişimi $(x,y,z)$ noktasını verir.</em></figcaption>
   </div>
 </figure>
@@ -71,7 +71,7 @@ Gerçek dünya uygulamalarında basit stereo sistemleri, iki optik sensörün te
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-04.png" alt="Fiziksel Çift Lensli Stereo Kamera Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-04.png" alt="Fiziksel Çift Lensli Stereo Kamera Örneği" style="display:flex; border-radius: 5px; justify-content: center; width: 380px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: Fiziksel stereo kamera örneği (Fujifilm 3D HD kamera, 75mm sabit baz çizgisi mesafesi).</em></figcaption>
   </div>
 </figure>
@@ -84,7 +84,7 @@ $$v_l = v_r$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-05.png" alt="Sol-Sağ Görüntü Çifti ve Yer Doğruluğu Disparite Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-05.png" alt="Sol-Sağ Görüntü Çifti ve Yer Doğruluğu Disparite Haritası" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Sol ve sağ kamera görüntüleri, gerçek disparite haritası ve dikey piksel koordinatlarının eşitliği ($v_l = v_r$).</em></figcaption>
   </div>
 </figure>
@@ -105,7 +105,7 @@ $$\text{Sağ Kamera:} \quad u_r = f_x \frac{x - b}{z} + o_x \quad \text{ve} \qua
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-06.png" alt="Tarama Çizgisi Üzerinde Stereo Eşleştirme ve Disparite" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-06.png" alt="Tarama Çizgisi Üzerinde Stereo Eşleştirme ve Disparite" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Sol görüntüdeki şablon penceresinin ($T$) sağ görüntüdeki yatay tarama çizgisi ($L$) boyunca aranması, disparite ($d = u_l - u_r$) ve derinlik ($z = \frac{b f_x}{d}$) hesabı.</em></figcaption>
   </div>
 </figure>
@@ -152,7 +152,7 @@ Yatay tarama çizgisi boyunca en iyi eşleşen pikseli bulmak için küçük bir
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-08.png" alt="Pencere Boyutu İkilemi Küçük ve Büyük Pencereler" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-08.png" alt="Pencere Boyutu İkilemi Küçük ve Büyük Pencereler" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Pencere boyutu ikilemi: Küçük pencereler ($5 \times 5$) gürültüye hassastır; büyük pencereler ($30 \times 30$) pürüzsüzdür ancak nesne sınırlarını ve detaylarını bulandırır.</em></figcaption>
   </div>
 </figure>
@@ -166,7 +166,7 @@ Stereo eşleştirme algoritmalarının matematiksel ve optik olarak çaresiz kal
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-07.png" alt="Dokusuz Yüzeyler ve Perspektif Bükülme Etkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-07.png" alt="Dokusuz Yüzeyler ve Perspektif Bükülme Etkisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Stereo eşleştirmeyi zorlaştıran fiziksel etkenler: Yüzeylerin dokusuz/tekrarlı olması ve açılı bakışta oluşan Perspektif Bükülme (Foreshortening) etkisi.</em></figcaption>
   </div>
 </figure>
@@ -177,7 +177,7 @@ Stereo eşleştirme algoritmalarının matematiksel ve optik olarak çaresiz kal
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/simple-stereo-09.png" alt="Stereo Eşleştirme Algoritmalarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/simple-stereo-09.png" alt="Stereo Eşleştirme Algoritmalarının Karşılaştırılması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Farklı stereo eşleştirme yaklaşımlarının karşılaştırılması: Klasik SSD (sabit pencere), Adaptif Pencere (Adaptive Window) ve Modern Küresel Optimizasyon (State of the Art).</em></figcaption>
   </div>
 </figure>

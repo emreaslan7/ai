@@ -11,14 +11,14 @@ Doğadaki yansıtma süreçleri temelde iki fiziksel mekanizmanın birleşimiyle
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-01.png" alt="Aynasal ve hacimsel yansıma fiziksel mekanizması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-01.png" alt="Aynasal ve hacimsel yansıma fiziksel mekanizması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 1: Yüzey (Aynasal/Specular) ve Hacimsel (Yayılı/Diffuse) yansıma süreçlerinin fiziksel mekanizmaları.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-02.png" alt="Gerçek dünyada yansıma türü örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-02.png" alt="Gerçek dünyada yansıma türü örnekleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 2: Gerçek dünya malzemelerinde Hacimsel (toprak vazo), Aynasal (krom küre) ve Hibrit (cilalı ahşap) yansıma örnekleri.</em></figcaption>
   </div>
 </figure>
@@ -49,7 +49,7 @@ $$L = \frac{\rho_d}{\pi} E = \frac{\rho_d}{\pi} \frac{J}{r^2} (\mathbf{n} \cdot 
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-03.png" alt="Lambertian yüzeyde geliş açısına bağlı saçılım" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-03.png" alt="Lambertian yüzeyde geliş açısına bağlı saçılım" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 3: Lambertian yüzeyde geliş açısı değiştikçe (n · s) homojen küresel yansıma miktarının değişimi.</em></figcaption>
   </div>
 </figure>
@@ -68,7 +68,7 @@ Burada paydadaki terim enerjinin korunumu yasasını sağlamak için kullanılan
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-04.png" alt="Lambertian ve İdeal Aynasal küre yansıma karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-04.png" alt="Lambertian ve İdeal Aynasal küre yansıma karşılaştırması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 4: Lambertian küre (üstte yumuşak gölgeleme) ile İdeal Aynasal küre (altta tekil parlak ayna noktası q) karşılaştırması.</em></figcaption>
   </div>
 </figure>
@@ -81,14 +81,14 @@ Gerçek dünyadaki yüzeyler kusursuz pürüzsüz değildir. Piksel düzeyinde b
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-05.png" alt="Piksel düzeyinde mikro-yüzeycik geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-05.png" alt="Piksel düzeyinde mikro-yüzeycik geometrisi" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 5: Pinhole kamera pikselinin gördüğü makro yüzey altındaki mikroskobik yüzeycik (microfacet) yapısı.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-06.png" alt="Farklı pürüzlülük değerlerinde Gauss yüzey yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-06.png" alt="Farklı pürüzlülük değerlerinde Gauss yüzey yapısı" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 6: Gauss pürüzlülük parametresi σ (0, 0.1, 0.3, 0.6) arttıkça mikro-yüzeycik dağılımının değişimi.</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ $$f_{\text{Torrance-Sparrow}} = \frac{\rho_s}{(\mathbf{n} \cdot \mathbf{s})(\mat
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-07.png" alt="Torrance-Sparrow modelinde pürüzlülükle genişleyen specular lobe" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-07.png" alt="Torrance-Sparrow modelinde pürüzlülükle genişleyen specular lobe" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 7: Torrance-Sparrow modelinde σ arttıkça ayna noktasının genişleyerek mat parlamaya (specular lobe) dönüşmesi.</em></figcaption>
   </div>
 </figure>
@@ -126,7 +126,7 @@ Pürüzlülük ($\sigma$) arttıkça, tekil ayna noktası genişleyerek mat parl
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-08.png" alt="Gerçek dünyada pürüzlülük arttıkça parlama bulanıklaşması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-08.png" alt="Gerçek dünyada pürüzlülük arttıkça parlama bulanıklaşması" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 8: Pürüzlülük arttıkça çevre yansımasının net ayna görüntüsünden bulanık parlamaya geçişi.</em></figcaption>
   </div>
 </figure>
@@ -137,7 +137,7 @@ Her bir mikro-yüzeyciğin ideal birer Lambertian mat yüzey olduğu varsayılı
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-09.png" alt="Oren-Nayar modelinde küre kenar kararmasının engellenmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-09.png" alt="Oren-Nayar modelinde küre kenar kararmasının engellenmesi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 9: Oren-Nayar modelinde σ arttıkça kürenin kenarlarına doğru parlaklık düşüşünün engellenmesi.</em></figcaption>
   </div>
 </figure>
@@ -146,7 +146,7 @@ Ancak pürüzlülük ($\sigma$) arttıkça, küre şeklindeki nesnelerin kenarla
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-10.png" alt="Dolunay fenomeni ve düz disk görünümü" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-10.png" alt="Dolunay fenomeni ve düz disk görünümü" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 10: Dolunay (Full Moon) olgusunun fiziksel açıklaması: Aşırı pürüzlü toz tabakası küreyi kenarlara kadar eşit parlaklıkta düz bir tepsi gibi gösterir.</em></figcaption>
   </div>
 </figure>
@@ -161,7 +161,7 @@ Shafer (1985) tarafından önerilen bu model, hibrit yüzeylerde yansıma mekani
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-11.png" alt="Dikromatik model spektral renk bileşenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-11.png" alt="Dikromatik model spektral renk bileşenleri" style="display:flex; border-radius: 5px; justify-content: center; width: 500px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 11: Dikromatik modelde Hacimsel (Body: Işık x Nesne rengi) ve Aynasal (Surface: Işık rengi) yansıma renkleri.</em></figcaption>
   </div>
 </figure>
@@ -179,7 +179,7 @@ $$\mathbf{C} = m_b \mathbf{C}_b + m_s \mathbf{C}_s$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-12.png" alt="RGB uzayında dikromatik düzlem" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-12.png" alt="RGB uzayında dikromatik düzlem" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 12: RGB renk uzayında Cb ve Cs vektörlerinin tanımladığı Dikromatik Düzlem (Dichromatic Plane).</em></figcaption>
   </div>
 </figure>
@@ -190,7 +190,7 @@ Tek bir homojen malzemeden üretilmiş nesne üzerindeki tüm piksellerin renk d
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-13.png" alt="RGB renk kübünde Skewed-T dağılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-13.png" alt="RGB renk kübünde Skewed-T dağılımı" style="display:flex; border-radius: 5px; justify-content: center; width: 520px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 13: Mavi ışık altında renklendirilmiş nesnenin RGB renk histogramında oluşturduğu Skewed-T dağılımı.</em></figcaption>
   </div>
 </figure>
@@ -199,7 +199,7 @@ Pikseller renk uzayında haritalandırıldığında, gölgeden başlayıp saf ne
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-14.png" alt="Sarı ışık altında plastik bardaklar deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-14.png" alt="Sarı ışık altında plastik bardaklar deneyi" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 14: Sarı ışık altında plastik bardaklar deneyi ve RGB küpü içindeki dikromatik düzlem kümelenmesi.</em></figcaption>
   </div>
 </figure>
@@ -210,7 +210,7 @@ Klinker (1990) tarafından geliştirilen algoritmalarla bu "Skewed-T" geometrisi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-15.png" alt="Klinker algoritması ile saf gölge ve parlama ayrıştırma sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../../img/first-principles-of-computer-vision/reflectance-models-rough-surfaces-and-dichromatic-model-15.png" alt="Klinker algoritması ile saf gölge ve parlama ayrıştırma sonuçları" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Görsel 15: Klinker algoritması sonuçları: Orijinal girdi (üst sol), RGB histogramı (üst sağ), saf difüz gölge (alt sol) ve saf aynasal parlama (alt sağ).</em></figcaption>
   </div>
 </figure>

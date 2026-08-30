@@ -53,7 +53,7 @@ A typical Multi-Layer Perceptron consists of three fundamental structural stages
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-01.png" alt="Multilayer Neural Network Architecture and Sigmoid Neurons" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-01.png" alt="Multilayer Neural Network Architecture and Sigmoid Neurons" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 1: Multilayer Neural Network Anatomy: Input Layer (Layer 1), Hidden Layers (Layers 2 & 3), and Output Layer (Layer 4), where synaptic weights and biases are denoted as $w_{jk}^{(l)}$ and $b_j^{(l)}$.</em></figcaption>
   </div>
 </figure>
@@ -66,7 +66,7 @@ Michael Nielsen's canonical handwritten digit classification network demonstrate
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-02.png" alt="MNIST Handwritten Decimal Digits Dataset" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-02.png" alt="MNIST Handwritten Decimal Digits Dataset" style="display:flex; border-radius: 5px; justify-content: center; width: 550px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 2: MNIST Benchmark Dataset: Segmented $28 \times 28$ grayscale decimal handwritten digit samples.</em></figcaption>
   </div>
 </figure>
@@ -77,7 +77,7 @@ Michael Nielsen's canonical handwritten digit classification network demonstrate
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-03.png" alt="Nielsen MNIST Network Architecture with 95 Percent Accuracy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-03.png" alt="Nielsen MNIST Network Architecture with 95 Percent Accuracy" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 3: Nielsen's MNIST Network Architecture: For an input image of '6', the 6th output neuron produces $a_6 \approx 1$ while other neurons output near $0$, yielding $>95\%$ classification accuracy.</em></figcaption>
   </div>
 </figure>
@@ -108,7 +108,7 @@ For each training image $x$, ground-truth class labels are represented as one-ho
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-04.png" alt="MNIST Training Data with Desired Activations" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-04.png" alt="MNIST Training Data with Desired Activations" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 4: Ground Truth Training Data: MNIST training samples and their corresponding one-hot desired activation vectors $\hat{\mathbf{a}}(x)$.</em></figcaption>
   </div>
 </figure>
@@ -117,7 +117,7 @@ Prior to training, random initialization yields noisy output distributions far f
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-05.png" alt="Untrained Network Activations for Sample Input" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-05.png" alt="Untrained Network Activations for Sample Input" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 5: Untrained State: For an input digit '5', the random network generates $\mathbf{a} = [0.3, 0.5, 0.0, 0.1, 0.8, 0.3, 0.5, 0.2, 0.7, 0.1]^T$, diverging heavily from the target $[0,0,0,0,0,1,0,0,0,0]^T$.</em></figcaption>
   </div>
 </figure>
@@ -133,7 +133,7 @@ $$C(\mathbf{w}, \mathbf{b}) = \frac{1}{n} \sum_{x} C_x(\mathbf{w}, \mathbf{b})$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-07.png" alt="Single Image and Dataset-Wide Cost Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-07.png" alt="Single Image and Dataset-Wide Cost Formulation" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 6: Cost Quantification: Sample loss $C_x = 2.27$ and the dataset-wide mean cost formula. Minimizing cost directly correlates with higher classification accuracy.</em></figcaption>
   </div>
 </figure>
@@ -153,7 +153,7 @@ flowchart LR
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-06.png" alt="Training Cycle Flowchart" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-06.png" alt="Training Cycle Flowchart" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 7: Closed-Loop Training Pipeline: Training Data $\to$ Neural Network $\to$ Compute Cost $\to$ Gradient Updates.</em></figcaption>
   </div>
 </figure>
@@ -166,14 +166,14 @@ The objective is to locate the global or near-optimal local minimum on the 23,86
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-09.png" alt="3D Error Surface and Minimum Cost Basin" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-09.png" alt="3D Error Surface and Minimum Cost Basin" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 8: High-Dimensional Loss Surface: Navigating from a high initial random cost point down to the minimum cost basin.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-11.png" alt="Foggy Mountain Analogy for Gradient Descent" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-11.png" alt="Foggy Mountain Analogy for Gradient Descent" style="display:flex; border-radius: 5px; justify-content: center; width: 640px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 9: Foggy Mountain Intuition: A hiker trapped in thick fog on a peak cannot see the valley floor, but safely reaches the base by iteratively stepping in the direction of steepest local downward slope.</em></figcaption>
   </div>
 </figure>
@@ -199,14 +199,14 @@ Because $-\eta \|\nabla C\|^2$ is **strictly non-positive**, every gradient desc
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-10.png" alt="Gradient Descent Vector Proof and Update Rule" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-10.png" alt="Gradient Descent Vector Proof and Update Rule" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 10: Gradient Descent Formulation: $\Delta \mathbf{v} = -\eta \nabla C \implies \Delta C = -\eta \|\nabla C\|^2$. In each step, weights and biases adjust along the negative gradient.</em></figcaption>
   </div>
 </figure>
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-08.png" alt="Gradient Descent Closed-Loop Optimization Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-08.png" alt="Gradient Descent Closed-Loop Optimization Pipeline" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 11: Closed-Loop Parameter Adjustment: The gradient engine iteratively steers network weights and biases toward optimal configurations.</em></figcaption>
   </div>
 </figure>
@@ -223,7 +223,7 @@ To execute gradient descent, we must evaluate $23,860$ partial derivatives at ev
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-12.png" alt="Computational Bottleneck of Finite Differences" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-12.png" alt="Computational Bottleneck of Finite Differences" style="display:flex; border-radius: 5px; justify-content: center; width: 600px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 12: Brute-Force Complexity: Estimating gradient elements via numerical perturbations requires 23,861 complete dataset evaluations per single optimization step.</em></figcaption>
   </div>
 </figure>
@@ -255,7 +255,7 @@ Backpropagation computes exact analytical derivatives in a single backward sweep
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-13.png" alt="Chain Rule Derivation on the Output Layer" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-13.png" alt="Chain Rule Derivation on the Output Layer" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 13: Chain Rule Dependency Path: Loss $C_x \to$ Output Activation $a_1^{(4)} \to$ Net Input $z_1^{(4)} \to$ Synaptic Weight $w_{11}^{(4)}$.</em></figcaption>
   </div>
 </figure>
@@ -292,7 +292,7 @@ $$\frac{\partial C_x}{\partial b_j^{(l)}} = \delta_j^{(l)}$$
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-14.png" alt="Local Gradient Formulation across All Layers" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-14.png" alt="Local Gradient Formulation across All Layers" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 14: Generalized Backpropagation Equations: Any weight or bias derivative in layer $l$ evaluates as the product of that layer's local error $\delta_j^{(l)}$ and the upstream activation $a_k^{(l-1)}$.</em></figcaption>
   </div>
 </figure>
@@ -337,7 +337,7 @@ Trained MLPs correctly classify heavily stylized and noisy digits with high conf
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-15.png" alt="MNIST Test Digit Predictions" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-15.png" alt="MNIST Test Digit Predictions" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 15: MNIST Classification Performance: Unseen test digits and their corresponding output activation distributions correctly predicting labels 7, 2, 5, and 8.</em></figcaption>
   </div>
 </figure>
@@ -353,7 +353,7 @@ In early computer vision, spatial feature extractors (e.g., Sobel or Gaussian fi
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-16.png" alt="LeCun CNN Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-16.png" alt="LeCun CNN Architecture" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 16: Convolutional Neural Network (CNN): Convolutional Layer with learned kernels $k_1 \dots k_5$, Subsampling/Pooling, and a Fully Connected classification stage [LeCun et al. 1998].</em></figcaption>
   </div>
 </figure>
@@ -366,7 +366,7 @@ Modern deep networks extract rich multi-concept descriptors from unconstrained v
 
 <figure style="display:flex; justify-content: center; margin: 20px 0;">
   <div style="text-align: center;">
-    <img src="../../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-17.png" alt="Clarifai Automated Visual Tagging" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
+    <img src="../../../img/first-principles-of-computer-vision/multilayer-neural-networks-and-backpropagation-17.png" alt="Clarifai Automated Visual Tagging" style="display:flex; border-radius: 5px; justify-content: center; width: 680px;">
     <figcaption style="margin-top: 0.5em; text-align: center; font-size: 13px; color: #888;"><em>Figure 17: Semantic Tagging: A food scene classified into simultaneous multi-label semantic attributes ('food', 'dinner', 'meat', 'chicken', 'sauce', 'restaurant', etc.) [Clarifai.com].</em></figcaption>
   </div>
 </figure>
