@@ -197,6 +197,7 @@
 - [Introducing Deep Learning and the PyTorch Library](./deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
 - [Pretrained Networks and the Model Zoo](./deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.md)
 - [It Starts with a Tensor: Storage, Strides, and Memory Layouts](./deep-learning-with-pytorch/part-1-core-pytorch/it-starts-with-a-tensor.md)
+- [Real-World Data Representation Using Tensors: Images, Volumetric Data, Tables, Time Series, and Text](./deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.md)
 
 # TR
 
@@ -399,4 +400,5 @@
 - [Derin Öğrenmeye Giriş ve PyTorch Kütüphanesi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/introducing-deep-learning-and-the-pytorch-library.md)
 - [Önceden Eğitilmiş Ağlar ve Model Zoo](./tr/deep-learning-with-pytorch/part-1-core-pytorch/pretrained-networks-and-model-zoo.md)
 - [Tensörlerle Başlamak: Storage, Strides ve Bellek Mimarisi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/it-starts-with-a-tensor.md)
+- [Tensörlerle Gerçek Dünya Verilerini Temsil Etme: Görüntü, Hacimsel Veri, Tablo, Zaman Serisi ve Metin](./tr/deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.md)
 

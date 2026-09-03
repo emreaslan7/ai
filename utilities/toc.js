@@ -1131,6 +1131,12 @@ function updateTOC(url, theme) {
             "It Starts with a Tensor: Storage, Strides, and Memory Layouts",
             theme
           ),
+          SubHeading(
+            "1.4",
+            "/deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.html",
+            "Real-World Data Representation Using Tensors: Images, Volumetric Data, Tables, Time Series, and Text",
+            theme
+          ),
         ],
         true
       )
@@ -2121,6 +2127,12 @@ function updateTOC(url, theme) {
             "1.3",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/it-starts-with-a-tensor.html",
             "Tensörlerle Başlamak: Storage, Strides ve Bellek Mimarisi",
+            theme
+          ),
+          SubHeading(
+            "1.4",
+            "/tr/deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.html",
+            "Tensörlerle Gerçek Dünya Verilerini Temsil Etme: Görüntü, Hacimsel Veri, Tablo, Zaman Serisi ve Metin",
             theme
           ),
         ],
