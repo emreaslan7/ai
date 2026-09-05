@@ -1137,6 +1137,12 @@ function updateTOC(url, theme) {
             "Real-World Data Representation Using Tensors: Images, Volumetric Data, Tables, Time Series, and Text",
             theme
           ),
+          SubHeading(
+            "1.5",
+            "/deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.html",
+            "The Mechanics of Learning: Parameter Estimation, Loss Functions, Autograd, and Optimizers",
+            theme
+          ),
         ],
         true
       )
@@ -2133,6 +2139,12 @@ function updateTOC(url, theme) {
             "1.4",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.html",
             "Tensörlerle Gerçek Dünya Verilerini Temsil Etme: Görüntü, Hacimsel Veri, Tablo, Zaman Serisi ve Metin",
+            theme
+          ),
+          SubHeading(
+            "1.5",
+            "/tr/deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.html",
+            "Öğrenmenin Mekaniği: Parametre Tahmini, Kayıp Fonksiyonları, Autograd ve Optimizatörler",
             theme
           ),
         ],
