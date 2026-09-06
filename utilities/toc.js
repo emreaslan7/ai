@@ -1143,6 +1143,12 @@ function updateTOC(url, theme) {
             "The Mechanics of Learning: Parameter Estimation, Loss Functions, Autograd, and Optimizers",
             theme
           ),
+          SubHeading(
+            "1.6",
+            "/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.html",
+            "Using a Neural Network to Fit the Data: Artificial Neurons, Activation Functions, and Modular PyTorch Architectures",
+            theme
+          ),
         ],
         true
       )
@@ -2145,6 +2151,12 @@ function updateTOC(url, theme) {
             "1.5",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.html",
             "Öğrenmenin Mekaniği: Parametre Tahmini, Kayıp Fonksiyonları, Autograd ve Optimizatörler",
+            theme
+          ),
+          SubHeading(
+            "1.6",
+            "/tr/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.html",
+            "Veriye Uydurmak İçin Bir Yapay Sinir Ağı Kullanmak: Yapay Nöronlar, Aktivasyon Fonksiyonları ve Modüler PyTorch Mimarisi",
             theme
           ),
         ],
