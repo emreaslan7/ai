@@ -1149,6 +1149,12 @@ function updateTOC(url, theme) {
             "Using a Neural Network to Fit the Data: Artificial Neurons, Activation Functions, and Modular PyTorch Architectures",
             theme
           ),
+          SubHeading(
+            "1.7",
+            "/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.html",
+            "Telling Birds from Airplanes: Learning from Images",
+            theme
+          ),
         ],
         true
       )
@@ -2157,6 +2163,12 @@ function updateTOC(url, theme) {
             "1.6",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.html",
             "Veriye Uydurmak İçin Bir Yapay Sinir Ağı Kullanmak: Yapay Nöronlar, Aktivasyon Fonksiyonları ve Modüler PyTorch Mimarisi",
+            theme
+          ),
+          SubHeading(
+            "1.7",
+            "/tr/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.html",
+            "Kuşları Uçaklardan Ayırmak: Görüntülerden Öğrenme",
             theme
           ),
         ],

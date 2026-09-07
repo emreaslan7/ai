@@ -200,6 +200,7 @@
 - [Real-World Data Representation Using Tensors: Images, Volumetric Data, Tables, Time Series, and Text](./deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.md)
 - [The Mechanics of Learning: Parameter Estimation, Loss Functions, Autograd, and Optimizers](./deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.md)
 - [Using a Neural Network to Fit the Data: Artificial Neurons, Activation Functions, and Modular PyTorch Architectures](./deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.md)
+- [Telling Birds from Airplanes: Learning from Images](./deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
 
 # TR
 
@@ -405,4 +406,5 @@
 - [Tensörlerle Gerçek Dünya Verilerini Temsil Etme: Görüntü, Hacimsel Veri, Tablo, Zaman Serisi ve Metin](./tr/deep-learning-with-pytorch/part-1-core-pytorch/real-world-data-representation-using-tensors.md)
 - [Öğrenmenin Mekaniği: Parametre Tahmini, Kayıp Fonksiyonları, Autograd ve Optimizatörler](./tr/deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.md)
 - [Veriye Uydurmak İçin Bir Yapay Sinir Ağı Kullanmak: Yapay Nöronlar, Aktivasyon Fonksiyonları ve Modüler PyTorch Mimarisi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.md)
+- [Kuşları Uçaklardan Ayırmak: Görüntülerden Öğrenme](./tr/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
 
