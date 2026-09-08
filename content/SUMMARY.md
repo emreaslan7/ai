@@ -201,6 +201,7 @@
 - [The Mechanics of Learning: Parameter Estimation, Loss Functions, Autograd, and Optimizers](./deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.md)
 - [Using a Neural Network to Fit the Data: Artificial Neurons, Activation Functions, and Modular PyTorch Architectures](./deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.md)
 - [Telling Birds from Airplanes: Learning from Images](./deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
+- [Using Convolutions to Generalize](./deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.md)
 
 # TR
 
@@ -407,4 +408,5 @@
 - [Öğrenmenin Mekaniği: Parametre Tahmini, Kayıp Fonksiyonları, Autograd ve Optimizatörler](./tr/deep-learning-with-pytorch/part-1-core-pytorch/the-mechanics-of-learning.md)
 - [Veriye Uydurmak İçin Bir Yapay Sinir Ağı Kullanmak: Yapay Nöronlar, Aktivasyon Fonksiyonları ve Modüler PyTorch Mimarisi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.md)
 - [Kuşları Uçaklardan Ayırmak: Görüntülerden Öğrenme](./tr/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
+- [Genelleme Yapmak İçin Konvolüsyonları Kullanmak](./tr/deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.md)
 

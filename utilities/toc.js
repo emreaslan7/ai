@@ -1155,6 +1155,12 @@ function updateTOC(url, theme) {
             "Telling Birds from Airplanes: Learning from Images",
             theme
           ),
+          SubHeading(
+            "1.8",
+            "/deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.html",
+            "Using Convolutions to Generalize",
+            theme
+          ),
         ],
         true
       )
@@ -2169,6 +2175,12 @@ function updateTOC(url, theme) {
             "1.7",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.html",
             "Kuşları Uçaklardan Ayırmak: Görüntülerden Öğrenme",
+            theme
+          ),
+          SubHeading(
+            "1.8",
+            "/tr/deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.html",
+            "Genelleme Yapmak İçin Konvolüsyonları Kullanmak",
             theme
           ),
         ],
