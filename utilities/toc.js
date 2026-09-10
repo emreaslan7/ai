@@ -1165,6 +1165,26 @@ function updateTOC(url, theme) {
         true
       )
     ),
+    SubHeadingCollapsible(
+      "dlwpt-2",
+      "2.",
+      "",
+      "Practical Applications",
+      theme,
+      "13px",
+      "bold",
+      SubHeadingList(
+        [
+          SubHeading(
+            "2.1",
+            "/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.html",
+            "How Transformers Work",
+            theme
+          ),
+        ],
+        true
+      )
+    ),
   ])}
     </div>
 
@@ -2181,6 +2201,26 @@ function updateTOC(url, theme) {
             "1.8",
             "/tr/deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.html",
             "Genelleme Yapmak İçin Konvolüsyonları Kullanmak",
+            theme
+          ),
+        ],
+        true
+      )
+    ),
+    SubHeadingCollapsible(
+      "dlwpt-tr-2",
+      "2.",
+      "",
+      "Pratik Uygulamalar",
+      theme,
+      "13px",
+      "bold",
+      SubHeadingList(
+        [
+          SubHeading(
+            "2.1",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.html",
+            "Transformer Mimarisi Nasıl Çalışır?",
             theme
           ),
         ],

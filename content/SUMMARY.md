@@ -203,6 +203,10 @@
 - [Telling Birds from Airplanes: Learning from Images](./deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
 - [Using Convolutions to Generalize](./deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.md)
 
+## Part 2: Practical Applications
+
+- [How Transformers Work](./deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
+
 # TR
 
 - [Hoş Geldiniz](./tr/README.md)
@@ -409,4 +413,8 @@
 - [Veriye Uydurmak İçin Bir Yapay Sinir Ağı Kullanmak: Yapay Nöronlar, Aktivasyon Fonksiyonları ve Modüler PyTorch Mimarisi](./tr/deep-learning-with-pytorch/part-1-core-pytorch/using-a-neural-network-to-fit-the-data.md)
 - [Kuşları Uçaklardan Ayırmak: Görüntülerden Öğrenme](./tr/deep-learning-with-pytorch/part-1-core-pytorch/telling-birds-from-airplanes.md)
 - [Genelleme Yapmak İçin Konvolüsyonları Kullanmak](./tr/deep-learning-with-pytorch/part-1-core-pytorch/using-convolutions-to-generalize.md)
+
+## 2. Pratik Uygulamalar
+
+- [Transformer Mimarisi Nasıl Çalışır?](./tr/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
 
