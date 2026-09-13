@@ -206,6 +206,7 @@
 ## Part 2: Practical Applications
 
 - [How Transformers Work](./deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
+- [Diffusion Models for Images](./deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 
 # TR
 
@@ -417,4 +418,5 @@
 ## 2. Pratik Uygulamalar
 
 - [Transformer Mimarisi Nasıl Çalışır?](./tr/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
+- [Görüntüler İçin Difüzyon Modelleri](./tr/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 

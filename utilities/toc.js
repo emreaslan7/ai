@@ -1181,6 +1181,12 @@ function updateTOC(url, theme) {
             "How Transformers Work",
             theme
           ),
+          SubHeading(
+            "2.2",
+            "/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.html",
+            "Diffusion Models for Images",
+            theme
+          ),
         ],
         true
       )
@@ -2221,6 +2227,12 @@ function updateTOC(url, theme) {
             "2.1",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.html",
             "Transformer Mimarisi Nasıl Çalışır?",
+            theme
+          ),
+          SubHeading(
+            "2.2",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.html",
+            "Görüntüler İçin Difüzyon Modelleri",
             theme
           ),
         ],
