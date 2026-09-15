@@ -1187,6 +1187,12 @@ function updateTOC(url, theme) {
             "Diffusion Models for Images",
             theme
           ),
+          SubHeading(
+            "2.3",
+            "/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.html",
+            "Using PyTorch to Fight Cancer",
+            theme
+          ),
         ],
         true
       )
@@ -2233,6 +2239,12 @@ function updateTOC(url, theme) {
             "2.2",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.html",
             "Görüntüler İçin Difüzyon Modelleri",
+            theme
+          ),
+          SubHeading(
+            "2.3",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.html",
+            "Kanserle Savaşmak İçin PyTorch Kullanımı",
             theme
           ),
         ],
