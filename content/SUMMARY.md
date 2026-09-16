@@ -208,6 +208,7 @@
 - [How Transformers Work](./deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
 - [Diffusion Models for Images](./deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 - [Using PyTorch to Fight Cancer](./deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
+- [Combining Data Sources into a Unified Dataset](./deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 
 # TR
 
@@ -421,4 +422,5 @@
 - [Transformer Mimarisi Nasıl Çalışır?](./tr/deep-learning-with-pytorch/part-2-practical-applications/how-transformers-work.md)
 - [Görüntüler İçin Difüzyon Modelleri](./tr/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 - [Kanserle Savaşmak İçin PyTorch Kullanımı](./tr/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
+- [Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak](./tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 

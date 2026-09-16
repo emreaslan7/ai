@@ -1193,6 +1193,12 @@ function updateTOC(url, theme) {
             "Using PyTorch to Fight Cancer",
             theme
           ),
+          SubHeading(
+            "2.4",
+            "/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.html",
+            "Combining Data Sources into a Unified Dataset",
+            theme
+          ),
         ],
         true
       )
@@ -2245,6 +2251,12 @@ function updateTOC(url, theme) {
             "2.3",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.html",
             "Kanserle Savaşmak İçin PyTorch Kullanımı",
+            theme
+          ),
+          SubHeading(
+            "2.4",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.html",
+            "Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak",
             theme
           ),
         ],
