@@ -1199,6 +1199,12 @@ function updateTOC(url, theme) {
             "Combining Data Sources into a Unified Dataset",
             theme
           ),
+          SubHeading(
+            "2.5",
+            "/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.html",
+            "Training a Classification Model to Detect Suspected Tumors",
+            theme
+          ),
         ],
         true
       )
@@ -2257,6 +2263,12 @@ function updateTOC(url, theme) {
             "2.4",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.html",
             "Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak",
+            theme
+          ),
+          SubHeading(
+            "2.5",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.html",
+            "Şüpheli Tümörleri Tespit Etmek İçin Bir Sınıflandırma Modeli Eğitmek",
             theme
           ),
         ],

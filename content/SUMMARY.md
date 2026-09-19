@@ -209,6 +209,7 @@
 - [Diffusion Models for Images](./deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 - [Using PyTorch to Fight Cancer](./deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
 - [Combining Data Sources into a Unified Dataset](./deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
+- [Training a Classification Model to Detect Suspected Tumors](./deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
 
 # TR
 
@@ -423,4 +424,5 @@
 - [Görüntüler İçin Difüzyon Modelleri](./tr/deep-learning-with-pytorch/part-2-practical-applications/diffusion-models-for-images.md)
 - [Kanserle Savaşmak İçin PyTorch Kullanımı](./tr/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
 - [Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak](./tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
+- [Şüpheli Tümörleri Tespit Etmek İçin Bir Sınıflandırma Modeli Eğitmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
 
