@@ -1205,6 +1205,12 @@ function updateTOC(url, theme) {
             "Training a Classification Model to Detect Suspected Tumors",
             theme
           ),
+          SubHeading(
+            "2.6",
+            "/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.html",
+            "Improving Training with Metrics and Augmentation",
+            theme
+          ),
         ],
         true
       )
@@ -2269,6 +2275,12 @@ function updateTOC(url, theme) {
             "2.5",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.html",
             "Şüpheli Tümörleri Tespit Etmek İçin Bir Sınıflandırma Modeli Eğitmek",
+            theme
+          ),
+          SubHeading(
+            "2.6",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.html",
+            "Metrikler ve Veri Artırma ile Eğitimi İyileştirmek",
             theme
           ),
         ],

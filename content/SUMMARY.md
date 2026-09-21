@@ -210,6 +210,7 @@
 - [Using PyTorch to Fight Cancer](./deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
 - [Combining Data Sources into a Unified Dataset](./deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 - [Training a Classification Model to Detect Suspected Tumors](./deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
+- [Improving Training with Metrics and Augmentation](./deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
 
 # TR
 
@@ -425,4 +426,5 @@
 - [Kanserle Savaşmak İçin PyTorch Kullanımı](./tr/deep-learning-with-pytorch/part-2-practical-applications/using-pytorch-to-fight-cancer.md)
 - [Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak](./tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 - [Şüpheli Tümörleri Tespit Etmek İçin Bir Sınıflandırma Modeli Eğitmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
+- [Metrikler ve Veri Artırma ile Eğitimi İyileştirmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
 
