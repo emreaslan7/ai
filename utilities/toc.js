@@ -1211,6 +1211,12 @@ function updateTOC(url, theme) {
             "Improving Training with Metrics and Augmentation",
             theme
           ),
+          SubHeading(
+            "2.7",
+            "/deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.html",
+            "Using Segmentation to Find Suspected Nodules",
+            theme
+          ),
         ],
         true
       )
@@ -2281,6 +2287,12 @@ function updateTOC(url, theme) {
             "2.6",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.html",
             "Metrikler ve Veri Artırma ile Eğitimi İyileştirmek",
+            theme
+          ),
+          SubHeading(
+            "2.7",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.html",
+            "Şüpheli Nodülleri Bulmak İçin Segmentasyon Kullanımı",
             theme
           ),
         ],

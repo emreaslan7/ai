@@ -211,6 +211,7 @@
 - [Combining Data Sources into a Unified Dataset](./deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 - [Training a Classification Model to Detect Suspected Tumors](./deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
 - [Improving Training with Metrics and Augmentation](./deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
+- [Using Segmentation to Find Suspected Nodules](./deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.md)
 
 # TR
 
@@ -427,4 +428,6 @@
 - [Veri Kaynaklarını Birleştirilmiş Bir Veri Kümesinde Toplamak](./tr/deep-learning-with-pytorch/part-2-practical-applications/combining-data-sources-into-a-unified-dataset.md)
 - [Şüpheli Tümörleri Tespit Etmek İçin Bir Sınıflandırma Modeli Eğitmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/training-a-classification-model-to-detect-suspected-tumors.md)
 - [Metrikler ve Veri Artırma ile Eğitimi İyileştirmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
+- [Şüpheli Nodülleri Bulmak İçin Segmentasyon Kullanımı](./tr/deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.md)
+
 
