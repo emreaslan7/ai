@@ -1217,6 +1217,12 @@ function updateTOC(url, theme) {
             "Using Segmentation to Find Suspected Nodules",
             theme
           ),
+          SubHeading(
+            "2.8",
+            "/deep-learning-with-pytorch/part-2-practical-applications/training-models-on-multiple-gpus.html",
+            "Training Models on Multiple GPUs",
+            theme
+          ),
         ],
         true
       )
@@ -2293,6 +2299,12 @@ function updateTOC(url, theme) {
             "2.7",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.html",
             "Şüpheli Nodülleri Bulmak İçin Segmentasyon Kullanımı",
+            theme
+          ),
+          SubHeading(
+            "2.8",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/training-models-on-multiple-gpus.html",
+            "Çoklu GPU'larda Model Eğitimi",
             theme
           ),
         ],
