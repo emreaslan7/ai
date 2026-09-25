@@ -213,6 +213,7 @@
 - [Improving Training with Metrics and Augmentation](./deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
 - [Using Segmentation to Find Suspected Nodules](./deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.md)
 - [Training Models on Multiple GPUs](./deep-learning-with-pytorch/part-2-practical-applications/training-models-on-multiple-gpus.md)
+- [Deploying to Production](./deep-learning-with-pytorch/part-2-practical-applications/deploying-to-production.md)
 
 # TR
 
@@ -431,5 +432,6 @@
 - [Metrikler ve Veri Artırma ile Eğitimi İyileştirmek](./tr/deep-learning-with-pytorch/part-2-practical-applications/improving-training-with-metrics-and-augmentation.md)
 - [Şüpheli Nodülleri Bulmak İçin Segmentasyon Kullanımı](./tr/deep-learning-with-pytorch/part-2-practical-applications/using-segmentation-to-find-suspected-nodules.md)
 - [Çoklu GPU'larda Model Eğitimi](./tr/deep-learning-with-pytorch/part-2-practical-applications/training-models-on-multiple-gpus.md)
+- [Üretime Dağıtım (Deploying to Production)](./tr/deep-learning-with-pytorch/part-2-practical-applications/deploying-to-production.md)
 
 

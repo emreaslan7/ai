@@ -1223,6 +1223,12 @@ function updateTOC(url, theme) {
             "Training Models on Multiple GPUs",
             theme
           ),
+          SubHeading(
+            "2.9",
+            "/deep-learning-with-pytorch/part-2-practical-applications/deploying-to-production.html",
+            "Deploying to Production",
+            theme
+          ),
         ],
         true
       )
@@ -2305,6 +2311,12 @@ function updateTOC(url, theme) {
             "2.8",
             "/tr/deep-learning-with-pytorch/part-2-practical-applications/training-models-on-multiple-gpus.html",
             "Çoklu GPU'larda Model Eğitimi",
+            theme
+          ),
+          SubHeading(
+            "2.9",
+            "/tr/deep-learning-with-pytorch/part-2-practical-applications/deploying-to-production.html",
+            "Üretime Dağıtım (Deploying to Production)",
             theme
           ),
         ],
